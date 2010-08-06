@@ -71,26 +71,6 @@ void appearance_setup_tab()
     mapping = FALSE;
 }
 
-void on_window_border_toggled(GtkToggleButton *w, gpointer data)
-{
-    gboolean b;
-
-    if (mapping) return;
-
-    b = gtk_toggle_button_get_active(w);
-    tree_set_bool("theme/keepBorder", b);
-}
-
-void on_animate_iconify_toggled(GtkToggleButton *w, gpointer data)
-{
-    gboolean b;
-
-    if (mapping) return;
-
-    b = gtk_toggle_button_get_active(w);
-    tree_set_bool("theme/animateIconify", b);
-}
-
 void on_title_layout_changed(GtkEntry *w, gpointer data)
 {
     gchar *layout;

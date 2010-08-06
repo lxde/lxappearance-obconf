@@ -36,7 +36,7 @@
 
 GtkWidget *mainwin = NULL;
 
-GladeXML *glade;
+GtkBuilder* builder;
 xmlDocPtr doc;
 xmlNodePtr root;
 RrInstance *rrinst;
@@ -174,13 +174,14 @@ int main(int argc, char **argv)
     }
 
     p = g_build_filename(GLADEDIR, "obconf.glade", NULL);
-    glade = glade_xml_new(p, NULL, NULL);
-    g_free(p);
 
-    if (!glade) {
+    builder = gtk_builder_new();
+    if(!gtk_builder_add_from_file(builder, p, NULL))
+    {
         obconf_error(_("Failed to load the obconf.glade interface file. You have probably failed to install ObConf properly."), TRUE);
         exit_with_error = TRUE;
     }
+    g_free(p);
 
     parse_paths_startup();
     rrinst = RrInstanceNew(GDK_DISPLAY(), gdk_x11_get_default_screen());
@@ -217,14 +218,13 @@ int main(int argc, char **argv)
     }
 
     if (!exit_with_error) {
-        glade_xml_signal_autoconnect(glade);
-
+        gtk_builder_connect_signals(builder, NULL);
         {
             gchar *s = g_strdup_printf
                 ("<span weight=\"bold\" size=\"xx-large\">ObConf %s</span>",
                  PACKAGE_VERSION);
             gtk_label_set_markup(GTK_LABEL
-                                 (glade_xml_get_widget(glade, "title_label")),
+                                 (get_widget("title_label")),
                                  s);
             g_free(s);
         }
@@ -262,11 +262,6 @@ gboolean on_main_window_delete_event(GtkWidget *w, GdkEvent *e, gpointer d)
 {
     gtk_main_quit();
     return FALSE;
-}
-
-void on_close_clicked()
-{
-    gtk_main_quit();
 }
 
 void obconf_show_main()

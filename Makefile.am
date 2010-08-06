@@ -18,7 +18,7 @@ bin_PROGRAMS = \
 src_lxappearance_obconf_CPPFLAGS = \
 	$(OPENBOX_CFLAGS) \
 	$(GTK_CFLAGS) \
-	$(GLADE_CFLAGS) \
+	$(GMODULE_CFLAGS) \
 	$(GDK_PIXBUF_CFLAGS) \
 	$(XML_CFLAGS) \
 	$(LIBSTARTUPNOTIFICATION_CFLAGS) \
@@ -30,13 +30,12 @@ src_lxappearance_obconf_CPPFLAGS = \
 src_lxappearance_obconf_LDADD = \
 	$(OPENBOX_LIBS) \
 	$(GTK_LIBS) \
-	$(GLADE_LIBS) \
+	$(GMODULE_LIBS) \
 	$(GDK_PIXBUF_LIBS) \
 	$(LIBINTL) \
 	$(LIBSTARTUPNOTIFICATION_LIBS)
 src_lxappearance_obconf_SOURCES = \
 	src/gettext.h \
-	src/about.c \
 	src/archive.c \
 	src/archive.h \
 	src/main.c \
@@ -53,31 +52,14 @@ src_lxappearance_obconf_SOURCES = \
 	src/tree.h
 
 dist_glade_DATA = \
-	src/obconf.glade \
-	pixmaps/video-display.png
-
-dist_noinst_DATA = \
-	src/obconf.gladep
-
-dist_desktop_DATA = \
-	obconf.desktop
-
-dist_mimepkg_DATA = \
-	obconf.xml
-
-dist_kdemime_DATA = \
-	x-openbox-theme.desktop
-
-dist_pixmap_DATA = \
-	data/obconf.png
+	src/obconf.glade
 
 EXTRA_DIST = \
 	config.rpath \
 	README \
 	CHANGELOG \
 	COPYING \
-	AUTHORS \
-	data/video-display.svg
+	AUTHORS
 
 # Packages need to run these...
 

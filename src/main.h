@@ -24,16 +24,15 @@
 #include <openbox/parse.h>
 
 #include <gtk/gtk.h>
-#include <glade/glade-xml.h>
 
-extern GladeXML *glade;
+extern GtkBuilder *builder;
 extern xmlDocPtr doc;
 extern xmlNodePtr root;
 extern RrInstance *rrinst;
 extern GtkWidget *mainwin;
 extern gchar *obc_config_file;
 
-#define get_widget(s) glade_xml_get_widget(glade, s)
+#define get_widget(s) GTK_WIDGET(gtk_builder_get_object(builder, s))
 
 void obconf_error(gchar *msg, gboolean model);
 void obconf_show_main();
