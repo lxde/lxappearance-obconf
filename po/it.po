@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: http://bugzilla.icculus.org/\n"
-"POT-Creation-Date: 2008-02-02 11:51-0500\n"
+"POT-Creation-Date: 2010-08-06 16:59+0800\n"
 "PO-Revision-Date: 2007-08-05 13:02+0200\n"
 "Last-Translator: Davide Truffa <davide@catoblepa.org>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -17,521 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/strings.c:7
-msgid "Openbox Configuration Manager"
-msgstr "Gestore Configurazione di Openbox"
-
-#: src/strings.c:8
-msgid "<span weight=\"bold\">Theme</span>"
-msgstr "<span weight=\"bold\">Tema</span>"
-
-#: src/strings.c:9 src/strings.c:14 src/strings.c:18 src/strings.c:27
-#: src/strings.c:43 src/strings.c:51 src/strings.c:54 src/strings.c:63
-#: src/strings.c:72 src/strings.c:80 src/strings.c:85 src/strings.c:98
-#: src/strings.c:100 src/strings.c:107 src/strings.c:113 src/strings.c:116
-#: src/strings.c:118 src/strings.c:125 src/strings.c:137 src/strings.c:148
-#: src/strings.c:151 src/strings.c:157 src/strings.c:162 src/strings.c:164
-#: src/strings.c:167
-msgid "    "
-msgstr "    "
-
-#: src/strings.c:10
-msgid "_Install a new theme..."
-msgstr "_Installa un nuovo tema..."
-
-#: src/strings.c:11
-msgid "Create a theme _archive (.obt)..."
-msgstr "Crea un archivio-tema (.obt)..."
-
-#: src/strings.c:12
-msgid "Theme"
-msgstr "Tema"
-
-#: src/strings.c:13
-msgid "<span weight=\"bold\">Windows</span>"
-msgstr "<span weight=\"bold\">Finestre</span>"
-
-#: src/strings.c:15
-msgid "_Windows retain a border when undecorated"
-msgstr "_Mostra un bordo per le finestre non decorate"
-
-#: src/strings.c:16
-msgid "A_nimate iconify and restore"
-msgstr "Mostra a_nimazione durante minimizza e ripristina"
-
-#: src/strings.c:17
-msgid "<span weight=\"bold\">Window Titles</span>"
-msgstr "<span weight=\"bold\">Barra del Titolo</span>"
-
-#: src/strings.c:19
-msgid "_Button order:"
-msgstr "Ordine dei _Pulsanti:"
-
-#: src/strings.c:20
-msgid ""
-"N - The window's icon\n"
-"D - The all-desktops (sticky) button\n"
-"S - The shade (roll up) button\n"
-"L - The label (window title)\n"
-"I - The iconify (minimize) button\n"
-"M - The maximize button\n"
-"C - The close button"
-msgstr ""
-"N - Icona della finestra\n"
-"D - Pulsante mostra su tutti i desktop\n"
-"S - Pulsante arrotola\n"
-"L - Titolo della finestra\n"
-"I - Pulsante minimizza\n"
-"M - Pulsante massimizza\n"
-"C - Pulsante chiudi"
-
-#: src/strings.c:28
-msgid ""
-"N:\n"
-"L:\n"
-"I:\n"
-"M:"
-msgstr ""
-
-#: src/strings.c:32
-msgid ""
-"Window icon\n"
-"Window label (Title)\n"
-"Iconify (Minimize)\n"
-"Maximize"
-msgstr ""
-
-#: src/strings.c:36
-msgid ""
-"C:\n"
-"S:\n"
-"D:"
-msgstr ""
-
-#: src/strings.c:39
-msgid ""
-"Close\n"
-"Shade (Roll up)\n"
-"Omnipresent (On all desktops)"
-msgstr ""
-
-#: src/strings.c:42
-msgid "<span weight=\"bold\">Fonts</span>"
-msgstr "<span weight=\"bold\">Caratteri</span>"
-
-#: src/strings.c:44
-msgid "_Active window title: "
-msgstr "Titolo finestra _attiva:"
-
-#: src/strings.c:45
-msgid "_Inactive window title: "
-msgstr "Titolo finestra _inattiva: "
-
-#: src/strings.c:46
-msgid "Menu _header: "
-msgstr "Intestazione _menù: "
-
-#: src/strings.c:47
-msgid "_Menu Item: "
-msgstr "_Voci menù: "
-
-#: src/strings.c:48
-msgid "_On-screen display: "
-msgstr "_On-screen display: "
-
-#: src/strings.c:49
-msgid "Appearance"
-msgstr "Aspetto"
-
-#: src/strings.c:50 src/strings.c:97
-msgid "<span weight=\"bold\">Focusing Windows</span>"
-msgstr "<span weight=\"bold\">Focus Finestre</span>"
-
-#: src/strings.c:52
-msgid "Focus _new windows when they appear"
-msgstr "Assegna il focus alle _nuove finestre"
-
-#: src/strings.c:53
-msgid "<span weight=\"bold\">Placing Windows</span>"
-msgstr "<span weight=\"bold\">Posizionamento Finestre</span>"
-
-#: src/strings.c:55
-msgid "_Place new windows under the mouse pointer"
-msgstr "_Posiziona le nuove finestre sotto il puntatore del mouse"
-
-#: src/strings.c:56
-msgid "_Center new windows when they are placed"
-msgstr "_Centra le nuove finestre nello schermo"
-
-#: src/strings.c:57
-msgid "Prefer to place new windows _on:"
-msgstr ""
-
-#: src/strings.c:58
-msgid "All monitors"
-msgstr ""
-
-#: src/strings.c:59
-msgid "The active monitor"
-msgstr ""
-
-#: src/strings.c:60
-msgid "The monitor with the mouse"
-msgstr ""
-
-#: src/strings.c:61
-msgid "Windows"
-msgstr "Finestre"
-
-#: src/strings.c:62
-msgid "<span weight=\"bold\">Moving and Resizing Windows</span>"
-msgstr "<span weight=\"bold\">Movimento e Ridimensionamento Finestre</span>"
-
-#: src/strings.c:64
-msgid "Update the window contents while _resizing"
-msgstr ""
-"Aggiorna il contenuto delle finestre\n"
-"quando vengono _ridimensionate"
-
-#: src/strings.c:65
-msgid "Drag _threshold distance:"
-msgstr "Soglia _trascinamento:"
-
-#: src/strings.c:66 src/strings.c:68 src/strings.c:70 src/strings.c:90
-#: src/strings.c:95 src/strings.c:128 src/strings.c:130 src/strings.c:132
-#: src/strings.c:134
-msgid "px"
-msgstr "px"
-
-#: src/strings.c:67
-msgid "Amount of resistance against other _windows:"
-msgstr "Resistenza alle altre _finestre:"
-
-#: src/strings.c:69
-msgid "Amount of resistance against screen _edges:"
-msgstr "Resistenza ai _bordi dello schermo:"
-
-#: src/strings.c:71
-msgid "_Switch desktops when moving a window past the screen edge"
-msgstr ""
-"Cambia _desktop se una finestra viene spostata fuori dai bordi dello schermo"
-
-#: src/strings.c:73
-msgid "_Amount of time to wait before switching:"
-msgstr "_Attesa prima di cambiare desktop:"
-
-#: src/strings.c:74 src/strings.c:105 src/strings.c:112 src/strings.c:120
-#: src/strings.c:166 src/strings.c:169
-msgid "ms"
-msgstr "ms"
-
-#: src/strings.c:75
-msgid "<span weight=\"bold\">Information Dialog</span>"
-msgstr ""
-
-#: src/strings.c:76
-msgid "Show _information dialog:"
-msgstr ""
-
-#: src/strings.c:77
-msgid "When resizing terminal windows"
-msgstr "Quando ridimensioni un terminale"
-
-#: src/strings.c:78
-msgid "Always"
-msgstr "Sempre"
-
-#: src/strings.c:79
-msgid "Never"
-msgstr "Mai"
-
-#: src/strings.c:81
-msgid "Information dialog's _position:"
-msgstr ""
-
-#: src/strings.c:82
-msgid "Centered on the window"
-msgstr "Al centro della finestra"
-
-#: src/strings.c:83
-msgid "Above the window"
-msgstr "Sopra la finestra"
-
-#: src/strings.c:84
-msgid "Fixed position on screen"
-msgstr ""
-
-#: src/strings.c:86
-msgid "Fixed _x position:"
-msgstr ""
-
-#: src/strings.c:87 src/strings.c:92
-msgid "Centered"
-msgstr ""
-
-#: src/strings.c:88 src/strings.c:93
-msgid "From left edge"
-msgstr ""
-
-#: src/strings.c:89 src/strings.c:94
-msgid "From right edge"
-msgstr ""
-
-#: src/strings.c:91
-msgid "Fixed _y position:"
-msgstr ""
-
-#: src/strings.c:96
-msgid "Move & Resize"
-msgstr ""
-
-#: src/strings.c:99
-msgid "_Focus windows when the mouse pointer moves over them"
-msgstr "Il _Focus segue il mouse"
-
-#: src/strings.c:101
-msgid "Move focus under the mouse when _switching desktops"
-msgstr "Sposta il focus sotto il mouse al _cambio del desktop"
-
-#: src/strings.c:102
-msgid "Move focus _under the mouse when the mouse is not moving"
-msgstr "Sposta il focus _sotto il mouse anche quando il mouse rimane fermo"
-
-#: src/strings.c:103
-msgid "_Raise windows when the mouse pointer moves over them"
-msgstr "_Alza le finestre al passaggio del mouse"
-
-#: src/strings.c:104
-msgid "_Delay before focusing and raising windows:"
-msgstr "_Ritardo prima di alzare o dare il focus:"
-
-#: src/strings.c:106
-msgid "<span weight=\"bold\">Titlebar</span>"
-msgstr "<span weight=\"bold\">Barra del Titolo</span>"
-
-#: src/strings.c:108
-msgid "Double click on the _titlebar:"
-msgstr "Doppio click sulla barra del _titolo:"
-
-#: src/strings.c:109
-msgid "Maximizes the window"
-msgstr "Massimizza la finestra"
-
-#: src/strings.c:110
-msgid "Shades the window"
-msgstr "Arrotola la finestra"
-
-#: src/strings.c:111
-msgid "Double click ti_me:"
-msgstr "_Velocità doppio click:"
-
-#: src/strings.c:114
-msgid "Mouse"
-msgstr "Mouse"
-
-#: src/strings.c:115
-msgid "<span weight=\"bold\">Desktops</span>"
-msgstr "<span weight=\"bold\">Desktop</span>"
-
-#: src/strings.c:117
-msgid "_Show a notification when switching desktops"
-msgstr "_Mostra una notifica al cambio del desktop"
-
-#: src/strings.c:119
-msgid "_Amount of time to show the notification for:"
-msgstr "_Attesa prima di mostrare la notifica:"
-
-#: src/strings.c:121
-msgid "_Number of desktops: "
-msgstr "_Numero dei desktop: "
-
-#: src/strings.c:122
-msgid "_Desktop names:"
-msgstr "_Nomi dei desktop:"
-
-#: src/strings.c:123
-msgid "Desktops"
-msgstr "Desktop"
-
-#: src/strings.c:124
-msgid "<span weight=\"bold\">Desktop Margins</span>"
-msgstr "<span weight=\"bold\">Margini dei Desktop</span>"
-
-#: src/strings.c:126
-msgid ""
-"Desktop margins are reserved areas on the edge of your screen.  New windows "
-"will not be placed within a margin, and maximized windows will not cover "
-"them."
-msgstr ""
-"I margini del desktop sono aree riservate ai bordi dello schermo.  Le nuove "
-"finestre verranno posizionate al loro interno e le finestre massimizzate non "
-"li copriranno."
-
-#: src/strings.c:127
-msgid "_Top"
-msgstr "In _Alto"
-
-#: src/strings.c:129
-msgid "_Left"
-msgstr "A _Sinistra"
-
-#: src/strings.c:131
-msgid "_Right"
-msgstr "A _Destra"
-
-#: src/strings.c:133
-msgid "_Bottom"
-msgstr "In _Basso"
-
-#: src/strings.c:135
-msgid "Margins"
-msgstr "Margini"
-
-#: src/strings.c:136
-msgid "<span weight=\"bold\">Position</span>"
-msgstr "<span weight=\"bold\">Posizione</span>"
-
-#: src/strings.c:138
-msgid "_Position:"
-msgstr "_Posizione:"
-
-#: src/strings.c:139
-msgid "Top Left"
-msgstr "In Alto a Sinistra"
-
-#: src/strings.c:140
-msgid "Top"
-msgstr "In Alto"
-
-#: src/strings.c:141
-msgid "Top Right"
-msgstr "In Alto a Destra"
-
-#: src/strings.c:142
-msgid "Left"
-msgstr "A Sinistra"
-
-#: src/strings.c:143
-msgid "Right"
-msgstr "A Destra"
-
-#: src/strings.c:144
-msgid "Bottom Left"
-msgstr "In Basso a Sinistra"
-
-#: src/strings.c:145
-msgid "Bottom"
-msgstr "In Basso"
-
-#: src/strings.c:146
-msgid "Bottom Right"
-msgstr "In Basso a Destra"
-
-#: src/strings.c:147
-msgid "Floating"
-msgstr "Fluttuante"
-
-#: src/strings.c:149
-msgid "_Floating position:"
-msgstr "Posizione:"
-
-#: src/strings.c:150
-msgid "x"
-msgstr "x"
-
-#: src/strings.c:152
-msgid "Allow _windows to be placed within the dock's area"
-msgstr "Permetti alle finestre di posizionarsi nell'area della dock"
-
-#: src/strings.c:153
-msgid "_Orientation: "
-msgstr "_Disposizione: "
-
-#: src/strings.c:154
-msgid "Vertical"
-msgstr "Verticale"
-
-#: src/strings.c:155
-msgid "Horizontal"
-msgstr "Orizzontale"
-
-#: src/strings.c:156
-msgid "<span weight=\"bold\">Stacking</span>"
-msgstr "<span weight=\"bold\">Livello</span>"
-
-#: src/strings.c:158
-msgid "Keep dock _above other windows"
-msgstr "Mantieni la dock _sopra le altre finestre"
-
-#: src/strings.c:159
-msgid "A_llow dock to be both above and below windows"
-msgstr "La dock _può stare sopra o sotto le altre finestre"
-
-#: src/strings.c:160
-msgid "Keep dock _below other windows"
-msgstr "Mantieni la dock s_otto le altre finestre"
-
-#: src/strings.c:161
-msgid "<span weight=\"bold\">Hiding</span>"
-msgstr "<span weight=\"bold\">Effetto Scomparsa</span>"
-
-#: src/strings.c:163
-msgid "_Hide off screen"
-msgstr "_Nascondi dallo schermo"
-
-#: src/strings.c:165
-msgid "_Delay before hiding:"
-msgstr "_Ritardo prima di nascondere:"
-
-#: src/strings.c:168
-msgid "Delay before _showing:"
-msgstr "Ritardo prima di _mostrare:"
-
-#: src/strings.c:170
-msgid "Dock"
-msgstr "Dock"
-
-#: src/strings.c:171
-msgid "Abo_ut"
-msgstr "Informa_zioni"
-
-#: src/strings.c:172
-msgid "About ObConf"
-msgstr "Informazioni su ObConf"
-
-#: src/strings.c:173
-msgid "<span weight=\"bold\" size=\"xx-large\">ObConf VERSION</span>"
-msgstr "<span weight=\"bold\" size=\"xx-large\">ObConf VERSION</span>"
-
-#: src/strings.c:174
-msgid "A preferences manager for Openbox"
-msgstr "Un gestore delle preferenze di Openbox"
-
-#: src/strings.c:175
-msgid ""
-"Copyright (c) 2003-2008\n"
-"Dana Jansens <danakj@orodu.net>\n"
-"Tim Riley <tr@slackzone.org>\n"
-"Javeed Shaikh <syscrash2k@gmail.com>"
-msgstr ""
-
-#: src/strings.c:179
-msgid "window1"
-msgstr "window1"
-
-#: src/strings.c:180
-msgid "<span weight=\"bold\">Press the key you wish to bind...</span>"
-msgstr "<span weight=\"bold\">Premi il tasto che desideri catturare...</span>"
-
-#: src/main.c:72 src/main.c:74 src/main.c:76
+#: ../src/main.c:71 ../src/main.c:73 ../src/main.c:75
+#, c-format
 msgid "Copyright (c)"
 msgstr "Copyright (c)"
 
-#: src/main.c:87
+#: ../src/main.c:86
+#, c-format
 msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
 msgstr "Sintassi: obconf [opzioni] [ARCHIVIO.obt]\n"
 
-#: src/main.c:88
+#: ../src/main.c:87
+#, c-format
 msgid ""
 "\n"
 "Options:\n"
@@ -539,20 +36,24 @@ msgstr ""
 "\n"
 "Opzioni:\n"
 
-#: src/main.c:89
+#: ../src/main.c:88
+#, c-format
 msgid "  --help                Display this help and exit\n"
 msgstr "  --help                 Mostra questo aiuto ed esce\n"
 
-#: src/main.c:90
+#: ../src/main.c:89
+#, c-format
 msgid "  --version             Display the version and exit\n"
 msgstr "  --version              Mostra la versione ed esce\n"
 
-#: src/main.c:91
+#: ../src/main.c:90
+#, c-format
 msgid "  --install ARCHIVE.obt Install the given theme archive and select it\n"
 msgstr ""
 "  --install ARCHIVIO.obt Installa e seleziona l'archivio-tema specificato\n"
 
-#: src/main.c:92
+#: ../src/main.c:91
+#, c-format
 msgid ""
 "  --archive THEME       Create a theme archive from the given theme "
 "directory\n"
@@ -560,11 +61,12 @@ msgstr ""
 "  --archive TEMA         Crea un archivio contenente il tema dalla directory "
 "tema specificata\n"
 
-#: src/main.c:93
+#: ../src/main.c:92
+#, c-format
 msgid "  --config-file FILE    Specify the path to the config file to use\n"
 msgstr ""
 
-#: src/main.c:94
+#: ../src/main.c:93
 #, c-format
 msgid ""
 "\n"
@@ -575,32 +77,19 @@ msgstr ""
 "Segnalate eventuali bug a %s\n"
 "\n"
 
-#: src/main.c:110
-msgid "--install requires an argument\n"
-msgstr "--install richiede un argomento\n"
-
-#: src/main.c:116
-msgid "--archive requires an argument\n"
-msgstr "--archive richiede un argomento\n"
-
-#: src/main.c:122
-#, fuzzy
-msgid "--config-file requires an argument\n"
-msgstr "--archive richiede un argomento\n"
-
-#: src/main.c:213
+#: ../src/main.c:181
 msgid ""
 "Failed to load the obconf.glade interface file. You have probably failed to "
 "install ObConf properly."
 msgstr ""
 
-#: src/main.c:234
+#: ../src/main.c:202
 msgid ""
 "Failed to load an rc.xml. You have probably failed to install Openbox "
 "properly."
 msgstr ""
 
-#: src/main.c:243
+#: ../src/main.c:211
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file.  Your configuration file "
@@ -609,29 +98,25 @@ msgid ""
 "Message: %s"
 msgstr ""
 
-#: src/desktops.c:134 src/desktops.c:165 src/desktops.c:181
-msgid "(Unnamed desktop)"
-msgstr "(Desktop senza nome)"
-
-#: src/theme.c:109 src/theme.c:141
+#: ../src/theme.c:109 ../src/theme.c:141
 msgid "Choose an Openbox theme"
 msgstr "Scegli un tema per Openbox"
 
-#: src/theme.c:118
+#: ../src/theme.c:118
 msgid "Openbox theme archives"
 msgstr "Archivio tema Openbox"
 
-#: src/archive.c:40
+#: ../src/archive.c:40
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" è stato installato in %s"
 
-#: src/archive.c:65
+#: ../src/archive.c:65
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" è stato creato con successo"
 
-#: src/archive.c:101
+#: ../src/archive.c:101
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -642,27 +127,27 @@ msgstr ""
 "Sono stati riscontrati i seguenti errori:\n"
 "%s"
 
-#: src/archive.c:106 src/archive.c:190
+#: ../src/archive.c:106 ../src/archive.c:190
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Impossibile eseguire il comando \"tar\": %s"
 
-#: src/archive.c:126
+#: ../src/archive.c:126
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "Impossibile creare la directory \"%s\": %s"
 
-#: src/archive.c:148
+#: ../src/archive.c:148
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" non sembra contenere un tema per Openbox"
 
-#: src/archive.c:158
+#: ../src/archive.c:158
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
 msgstr "Impossibile posizionarsi nella directory \"%s\": %s"
 
-#: src/archive.c:197
+#: ../src/archive.c:197
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -677,6 +162,328 @@ msgstr ""
 "Sono stati riscontrati i seguenti errori:\n"
 "%s"
 
-#: src/mouse.c:72
-msgid "Custom actions"
-msgstr "Azioni personalizzate"
+#~ msgid "Openbox Configuration Manager"
+#~ msgstr "Gestore Configurazione di Openbox"
+
+#~ msgid "<span weight=\"bold\">Theme</span>"
+#~ msgstr "<span weight=\"bold\">Tema</span>"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "_Install a new theme..."
+#~ msgstr "_Installa un nuovo tema..."
+
+#~ msgid "Create a theme _archive (.obt)..."
+#~ msgstr "Crea un archivio-tema (.obt)..."
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "<span weight=\"bold\">Windows</span>"
+#~ msgstr "<span weight=\"bold\">Finestre</span>"
+
+#~ msgid "_Windows retain a border when undecorated"
+#~ msgstr "_Mostra un bordo per le finestre non decorate"
+
+#~ msgid "A_nimate iconify and restore"
+#~ msgstr "Mostra a_nimazione durante minimizza e ripristina"
+
+#~ msgid "<span weight=\"bold\">Window Titles</span>"
+#~ msgstr "<span weight=\"bold\">Barra del Titolo</span>"
+
+#~ msgid "_Button order:"
+#~ msgstr "Ordine dei _Pulsanti:"
+
+#~ msgid ""
+#~ "N - The window's icon\n"
+#~ "D - The all-desktops (sticky) button\n"
+#~ "S - The shade (roll up) button\n"
+#~ "L - The label (window title)\n"
+#~ "I - The iconify (minimize) button\n"
+#~ "M - The maximize button\n"
+#~ "C - The close button"
+#~ msgstr ""
+#~ "N - Icona della finestra\n"
+#~ "D - Pulsante mostra su tutti i desktop\n"
+#~ "S - Pulsante arrotola\n"
+#~ "L - Titolo della finestra\n"
+#~ "I - Pulsante minimizza\n"
+#~ "M - Pulsante massimizza\n"
+#~ "C - Pulsante chiudi"
+
+#~ msgid "<span weight=\"bold\">Fonts</span>"
+#~ msgstr "<span weight=\"bold\">Caratteri</span>"
+
+#~ msgid "_Active window title: "
+#~ msgstr "Titolo finestra _attiva:"
+
+#~ msgid "_Inactive window title: "
+#~ msgstr "Titolo finestra _inattiva: "
+
+#~ msgid "Menu _header: "
+#~ msgstr "Intestazione _menù: "
+
+#~ msgid "_Menu Item: "
+#~ msgstr "_Voci menù: "
+
+#~ msgid "_On-screen display: "
+#~ msgstr "_On-screen display: "
+
+#~ msgid "Appearance"
+#~ msgstr "Aspetto"
+
+#~ msgid "<span weight=\"bold\">Focusing Windows</span>"
+#~ msgstr "<span weight=\"bold\">Focus Finestre</span>"
+
+#~ msgid "Focus _new windows when they appear"
+#~ msgstr "Assegna il focus alle _nuove finestre"
+
+#~ msgid "<span weight=\"bold\">Placing Windows</span>"
+#~ msgstr "<span weight=\"bold\">Posizionamento Finestre</span>"
+
+#~ msgid "_Place new windows under the mouse pointer"
+#~ msgstr "_Posiziona le nuove finestre sotto il puntatore del mouse"
+
+#~ msgid "_Center new windows when they are placed"
+#~ msgstr "_Centra le nuove finestre nello schermo"
+
+#~ msgid "Windows"
+#~ msgstr "Finestre"
+
+#~ msgid "<span weight=\"bold\">Moving and Resizing Windows</span>"
+#~ msgstr "<span weight=\"bold\">Movimento e Ridimensionamento Finestre</span>"
+
+#~ msgid "Update the window contents while _resizing"
+#~ msgstr ""
+#~ "Aggiorna il contenuto delle finestre\n"
+#~ "quando vengono _ridimensionate"
+
+#~ msgid "Drag _threshold distance:"
+#~ msgstr "Soglia _trascinamento:"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid "Amount of resistance against other _windows:"
+#~ msgstr "Resistenza alle altre _finestre:"
+
+#~ msgid "Amount of resistance against screen _edges:"
+#~ msgstr "Resistenza ai _bordi dello schermo:"
+
+#~ msgid "_Switch desktops when moving a window past the screen edge"
+#~ msgstr ""
+#~ "Cambia _desktop se una finestra viene spostata fuori dai bordi dello "
+#~ "schermo"
+
+#~ msgid "_Amount of time to wait before switching:"
+#~ msgstr "_Attesa prima di cambiare desktop:"
+
+#~ msgid "ms"
+#~ msgstr "ms"
+
+#~ msgid "When resizing terminal windows"
+#~ msgstr "Quando ridimensioni un terminale"
+
+#~ msgid "Always"
+#~ msgstr "Sempre"
+
+#~ msgid "Never"
+#~ msgstr "Mai"
+
+#~ msgid "Centered on the window"
+#~ msgstr "Al centro della finestra"
+
+#~ msgid "Above the window"
+#~ msgstr "Sopra la finestra"
+
+#~ msgid "_Focus windows when the mouse pointer moves over them"
+#~ msgstr "Il _Focus segue il mouse"
+
+#~ msgid "Move focus under the mouse when _switching desktops"
+#~ msgstr "Sposta il focus sotto il mouse al _cambio del desktop"
+
+#~ msgid "Move focus _under the mouse when the mouse is not moving"
+#~ msgstr "Sposta il focus _sotto il mouse anche quando il mouse rimane fermo"
+
+#~ msgid "_Raise windows when the mouse pointer moves over them"
+#~ msgstr "_Alza le finestre al passaggio del mouse"
+
+#~ msgid "_Delay before focusing and raising windows:"
+#~ msgstr "_Ritardo prima di alzare o dare il focus:"
+
+#~ msgid "<span weight=\"bold\">Titlebar</span>"
+#~ msgstr "<span weight=\"bold\">Barra del Titolo</span>"
+
+#~ msgid "Double click on the _titlebar:"
+#~ msgstr "Doppio click sulla barra del _titolo:"
+
+#~ msgid "Maximizes the window"
+#~ msgstr "Massimizza la finestra"
+
+#~ msgid "Shades the window"
+#~ msgstr "Arrotola la finestra"
+
+#~ msgid "Double click ti_me:"
+#~ msgstr "_Velocità doppio click:"
+
+#~ msgid "Mouse"
+#~ msgstr "Mouse"
+
+#~ msgid "<span weight=\"bold\">Desktops</span>"
+#~ msgstr "<span weight=\"bold\">Desktop</span>"
+
+#~ msgid "_Show a notification when switching desktops"
+#~ msgstr "_Mostra una notifica al cambio del desktop"
+
+#~ msgid "_Amount of time to show the notification for:"
+#~ msgstr "_Attesa prima di mostrare la notifica:"
+
+#~ msgid "_Number of desktops: "
+#~ msgstr "_Numero dei desktop: "
+
+#~ msgid "_Desktop names:"
+#~ msgstr "_Nomi dei desktop:"
+
+#~ msgid "Desktops"
+#~ msgstr "Desktop"
+
+#~ msgid "<span weight=\"bold\">Desktop Margins</span>"
+#~ msgstr "<span weight=\"bold\">Margini dei Desktop</span>"
+
+#~ msgid ""
+#~ "Desktop margins are reserved areas on the edge of your screen.  New "
+#~ "windows will not be placed within a margin, and maximized windows will "
+#~ "not cover them."
+#~ msgstr ""
+#~ "I margini del desktop sono aree riservate ai bordi dello schermo.  Le "
+#~ "nuove finestre verranno posizionate al loro interno e le finestre "
+#~ "massimizzate non li copriranno."
+
+#~ msgid "_Top"
+#~ msgstr "In _Alto"
+
+#~ msgid "_Left"
+#~ msgstr "A _Sinistra"
+
+#~ msgid "_Right"
+#~ msgstr "A _Destra"
+
+#~ msgid "_Bottom"
+#~ msgstr "In _Basso"
+
+#~ msgid "Margins"
+#~ msgstr "Margini"
+
+#~ msgid "<span weight=\"bold\">Position</span>"
+#~ msgstr "<span weight=\"bold\">Posizione</span>"
+
+#~ msgid "_Position:"
+#~ msgstr "_Posizione:"
+
+#~ msgid "Top Left"
+#~ msgstr "In Alto a Sinistra"
+
+#~ msgid "Top"
+#~ msgstr "In Alto"
+
+#~ msgid "Top Right"
+#~ msgstr "In Alto a Destra"
+
+#~ msgid "Left"
+#~ msgstr "A Sinistra"
+
+#~ msgid "Right"
+#~ msgstr "A Destra"
+
+#~ msgid "Bottom Left"
+#~ msgstr "In Basso a Sinistra"
+
+#~ msgid "Bottom"
+#~ msgstr "In Basso"
+
+#~ msgid "Bottom Right"
+#~ msgstr "In Basso a Destra"
+
+#~ msgid "Floating"
+#~ msgstr "Fluttuante"
+
+#~ msgid "_Floating position:"
+#~ msgstr "Posizione:"
+
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgid "Allow _windows to be placed within the dock's area"
+#~ msgstr "Permetti alle finestre di posizionarsi nell'area della dock"
+
+#~ msgid "_Orientation: "
+#~ msgstr "_Disposizione: "
+
+#~ msgid "Vertical"
+#~ msgstr "Verticale"
+
+#~ msgid "Horizontal"
+#~ msgstr "Orizzontale"
+
+#~ msgid "<span weight=\"bold\">Stacking</span>"
+#~ msgstr "<span weight=\"bold\">Livello</span>"
+
+#~ msgid "Keep dock _above other windows"
+#~ msgstr "Mantieni la dock _sopra le altre finestre"
+
+#~ msgid "A_llow dock to be both above and below windows"
+#~ msgstr "La dock _può stare sopra o sotto le altre finestre"
+
+#~ msgid "Keep dock _below other windows"
+#~ msgstr "Mantieni la dock s_otto le altre finestre"
+
+#~ msgid "<span weight=\"bold\">Hiding</span>"
+#~ msgstr "<span weight=\"bold\">Effetto Scomparsa</span>"
+
+#~ msgid "_Hide off screen"
+#~ msgstr "_Nascondi dallo schermo"
+
+#~ msgid "_Delay before hiding:"
+#~ msgstr "_Ritardo prima di nascondere:"
+
+#~ msgid "Delay before _showing:"
+#~ msgstr "Ritardo prima di _mostrare:"
+
+#~ msgid "Dock"
+#~ msgstr "Dock"
+
+#~ msgid "Abo_ut"
+#~ msgstr "Informa_zioni"
+
+#~ msgid "About ObConf"
+#~ msgstr "Informazioni su ObConf"
+
+#~ msgid "<span weight=\"bold\" size=\"xx-large\">ObConf VERSION</span>"
+#~ msgstr "<span weight=\"bold\" size=\"xx-large\">ObConf VERSION</span>"
+
+#~ msgid "A preferences manager for Openbox"
+#~ msgstr "Un gestore delle preferenze di Openbox"
+
+#~ msgid "window1"
+#~ msgstr "window1"
+
+#~ msgid "<span weight=\"bold\">Press the key you wish to bind...</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Premi il tasto che desideri catturare...</span>"
+
+#~ msgid "--install requires an argument\n"
+#~ msgstr "--install richiede un argomento\n"
+
+#~ msgid "--archive requires an argument\n"
+#~ msgstr "--archive richiede un argomento\n"
+
+#, fuzzy
+#~ msgid "--config-file requires an argument\n"
+#~ msgstr "--archive richiede un argomento\n"
+
+#~ msgid "(Unnamed desktop)"
+#~ msgstr "(Desktop senza nome)"
+
+#~ msgid "Custom actions"
+#~ msgstr "Azioni personalizzate"

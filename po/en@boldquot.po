@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: http://bugzilla.icculus.org/\n"
-"POT-Creation-Date: 2008-02-02 11:51-0500\n"
+"POT-Creation-Date: 2010-08-06 16:59+0800\n"
 "PO-Revision-Date: 2008-02-02 11:51-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -41,536 +41,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/strings.c:7
-msgid "Openbox Configuration Manager"
-msgstr "Openbox Configuration Manager"
-
-#: src/strings.c:8
-msgid "<span weight=\"bold\">Theme</span>"
-msgstr "<span weight=“[1mbold[0m”>Theme</span>"
-
-#: src/strings.c:9 src/strings.c:14 src/strings.c:18 src/strings.c:27
-#: src/strings.c:43 src/strings.c:51 src/strings.c:54 src/strings.c:63
-#: src/strings.c:72 src/strings.c:80 src/strings.c:85 src/strings.c:98
-#: src/strings.c:100 src/strings.c:107 src/strings.c:113 src/strings.c:116
-#: src/strings.c:118 src/strings.c:125 src/strings.c:137 src/strings.c:148
-#: src/strings.c:151 src/strings.c:157 src/strings.c:162 src/strings.c:164
-#: src/strings.c:167
-msgid "    "
-msgstr "    "
-
-#: src/strings.c:10
-msgid "_Install a new theme..."
-msgstr "_Install a new theme..."
-
-#: src/strings.c:11
-msgid "Create a theme _archive (.obt)..."
-msgstr "Create a theme _archive (.obt)..."
-
-#: src/strings.c:12
-msgid "Theme"
-msgstr "Theme"
-
-#: src/strings.c:13
-msgid "<span weight=\"bold\">Windows</span>"
-msgstr "<span weight=“[1mbold[0m”>Windows</span>"
-
-#: src/strings.c:15
-msgid "_Windows retain a border when undecorated"
-msgstr "_Windows retain a border when undecorated"
-
-#: src/strings.c:16
-msgid "A_nimate iconify and restore"
-msgstr "A_nimate iconify and restore"
-
-#: src/strings.c:17
-msgid "<span weight=\"bold\">Window Titles</span>"
-msgstr "<span weight=“[1mbold[0m”>Window Titles</span>"
-
-#: src/strings.c:19
-msgid "_Button order:"
-msgstr "_Button order:"
-
-#: src/strings.c:20
-msgid ""
-"N - The window's icon\n"
-"D - The all-desktops (sticky) button\n"
-"S - The shade (roll up) button\n"
-"L - The label (window title)\n"
-"I - The iconify (minimize) button\n"
-"M - The maximize button\n"
-"C - The close button"
-msgstr ""
-"N - The window's icon\n"
-"D - The all-desktops (sticky) button\n"
-"S - The shade (roll up) button\n"
-"L - The label (window title)\n"
-"I - The iconify (minimize) button\n"
-"M - The maximize button\n"
-"C - The close button"
-
-#: src/strings.c:28
-msgid ""
-"N:\n"
-"L:\n"
-"I:\n"
-"M:"
-msgstr ""
-"N:\n"
-"L:\n"
-"I:\n"
-"M:"
-
-#: src/strings.c:32
-msgid ""
-"Window icon\n"
-"Window label (Title)\n"
-"Iconify (Minimize)\n"
-"Maximize"
-msgstr ""
-"Window icon\n"
-"Window label (Title)\n"
-"Iconify (Minimize)\n"
-"Maximize"
-
-#: src/strings.c:36
-msgid ""
-"C:\n"
-"S:\n"
-"D:"
-msgstr ""
-"C:\n"
-"S:\n"
-"D:"
-
-#: src/strings.c:39
-msgid ""
-"Close\n"
-"Shade (Roll up)\n"
-"Omnipresent (On all desktops)"
-msgstr ""
-"Close\n"
-"Shade (Roll up)\n"
-"Omnipresent (On all desktops)"
-
-#: src/strings.c:42
-msgid "<span weight=\"bold\">Fonts</span>"
-msgstr "<span weight=“[1mbold[0m”>Fonts</span>"
-
-#: src/strings.c:44
-msgid "_Active window title: "
-msgstr "_Active window title: "
-
-#: src/strings.c:45
-msgid "_Inactive window title: "
-msgstr "_Inactive window title: "
-
-#: src/strings.c:46
-msgid "Menu _header: "
-msgstr "Menu _header: "
-
-#: src/strings.c:47
-msgid "_Menu Item: "
-msgstr "_Menu Item: "
-
-#: src/strings.c:48
-msgid "_On-screen display: "
-msgstr "_On-screen display: "
-
-#: src/strings.c:49
-msgid "Appearance"
-msgstr "Appearance"
-
-#: src/strings.c:50 src/strings.c:97
-msgid "<span weight=\"bold\">Focusing Windows</span>"
-msgstr "<span weight=“[1mbold[0m”>Focusing Windows</span>"
-
-#: src/strings.c:52
-msgid "Focus _new windows when they appear"
-msgstr "Focus _new windows when they appear"
-
-#: src/strings.c:53
-msgid "<span weight=\"bold\">Placing Windows</span>"
-msgstr "<span weight=“[1mbold[0m”>Placing Windows</span>"
-
-#: src/strings.c:55
-msgid "_Place new windows under the mouse pointer"
-msgstr "_Place new windows under the mouse pointer"
-
-#: src/strings.c:56
-msgid "_Center new windows when they are placed"
-msgstr "_Center new windows when they are placed"
-
-#: src/strings.c:57
-msgid "Prefer to place new windows _on:"
-msgstr "Prefer to place new windows _on:"
-
-#: src/strings.c:58
-msgid "All monitors"
-msgstr "All monitors"
-
-#: src/strings.c:59
-msgid "The active monitor"
-msgstr "The active monitor"
-
-#: src/strings.c:60
-msgid "The monitor with the mouse"
-msgstr "The monitor with the mouse"
-
-#: src/strings.c:61
-msgid "Windows"
-msgstr "Windows"
-
-#: src/strings.c:62
-msgid "<span weight=\"bold\">Moving and Resizing Windows</span>"
-msgstr "<span weight=“[1mbold[0m”>Moving and Resizing Windows</span>"
-
-#: src/strings.c:64
-msgid "Update the window contents while _resizing"
-msgstr "Update the window contents while _resizing"
-
-#: src/strings.c:65
-msgid "Drag _threshold distance:"
-msgstr "Drag _threshold distance:"
-
-#: src/strings.c:66 src/strings.c:68 src/strings.c:70 src/strings.c:90
-#: src/strings.c:95 src/strings.c:128 src/strings.c:130 src/strings.c:132
-#: src/strings.c:134
-msgid "px"
-msgstr "px"
-
-#: src/strings.c:67
-msgid "Amount of resistance against other _windows:"
-msgstr "Amount of resistance against other _windows:"
-
-#: src/strings.c:69
-msgid "Amount of resistance against screen _edges:"
-msgstr "Amount of resistance against screen _edges:"
-
-#: src/strings.c:71
-msgid "_Switch desktops when moving a window past the screen edge"
-msgstr "_Switch desktops when moving a window past the screen edge"
-
-#: src/strings.c:73
-msgid "_Amount of time to wait before switching:"
-msgstr "_Amount of time to wait before switching:"
-
-#: src/strings.c:74 src/strings.c:105 src/strings.c:112 src/strings.c:120
-#: src/strings.c:166 src/strings.c:169
-msgid "ms"
-msgstr "ms"
-
-#: src/strings.c:75
-msgid "<span weight=\"bold\">Information Dialog</span>"
-msgstr "<span weight=“[1mbold[0m”>Information Dialog</span>"
-
-#: src/strings.c:76
-msgid "Show _information dialog:"
-msgstr "Show _information dialog:"
-
-#: src/strings.c:77
-msgid "When resizing terminal windows"
-msgstr "When resizing terminal windows"
-
-#: src/strings.c:78
-msgid "Always"
-msgstr "Always"
-
-#: src/strings.c:79
-msgid "Never"
-msgstr "Never"
-
-#: src/strings.c:81
-msgid "Information dialog's _position:"
-msgstr "Information dialog's _position:"
-
-#: src/strings.c:82
-msgid "Centered on the window"
-msgstr "Centered on the window"
-
-#: src/strings.c:83
-msgid "Above the window"
-msgstr "Above the window"
-
-#: src/strings.c:84
-msgid "Fixed position on screen"
-msgstr "Fixed position on screen"
-
-#: src/strings.c:86
-msgid "Fixed _x position:"
-msgstr "Fixed _x position:"
-
-#: src/strings.c:87 src/strings.c:92
-msgid "Centered"
-msgstr "Centered"
-
-#: src/strings.c:88 src/strings.c:93
-msgid "From left edge"
-msgstr "From left edge"
-
-#: src/strings.c:89 src/strings.c:94
-msgid "From right edge"
-msgstr "From right edge"
-
-#: src/strings.c:91
-msgid "Fixed _y position:"
-msgstr "Fixed _y position:"
-
-#: src/strings.c:96
-msgid "Move & Resize"
-msgstr "Move & Resize"
-
-#: src/strings.c:99
-msgid "_Focus windows when the mouse pointer moves over them"
-msgstr "_Focus windows when the mouse pointer moves over them"
-
-#: src/strings.c:101
-msgid "Move focus under the mouse when _switching desktops"
-msgstr "Move focus under the mouse when _switching desktops"
-
-#: src/strings.c:102
-msgid "Move focus _under the mouse when the mouse is not moving"
-msgstr "Move focus _under the mouse when the mouse is not moving"
-
-#: src/strings.c:103
-msgid "_Raise windows when the mouse pointer moves over them"
-msgstr "_Raise windows when the mouse pointer moves over them"
-
-#: src/strings.c:104
-msgid "_Delay before focusing and raising windows:"
-msgstr "_Delay before focusing and raising windows:"
-
-#: src/strings.c:106
-msgid "<span weight=\"bold\">Titlebar</span>"
-msgstr "<span weight=“[1mbold[0m”>Titlebar</span>"
-
-#: src/strings.c:108
-msgid "Double click on the _titlebar:"
-msgstr "Double click on the _titlebar:"
-
-#: src/strings.c:109
-msgid "Maximizes the window"
-msgstr "Maximizes the window"
-
-#: src/strings.c:110
-msgid "Shades the window"
-msgstr "Shades the window"
-
-#: src/strings.c:111
-msgid "Double click ti_me:"
-msgstr "Double click ti_me:"
-
-#: src/strings.c:114
-msgid "Mouse"
-msgstr "Mouse"
-
-#: src/strings.c:115
-msgid "<span weight=\"bold\">Desktops</span>"
-msgstr "<span weight=“[1mbold[0m”>Desktops</span>"
-
-#: src/strings.c:117
-msgid "_Show a notification when switching desktops"
-msgstr "_Show a notification when switching desktops"
-
-#: src/strings.c:119
-msgid "_Amount of time to show the notification for:"
-msgstr "_Amount of time to show the notification for:"
-
-#: src/strings.c:121
-msgid "_Number of desktops: "
-msgstr "_Number of desktops: "
-
-#: src/strings.c:122
-msgid "_Desktop names:"
-msgstr "_Desktop names:"
-
-#: src/strings.c:123
-msgid "Desktops"
-msgstr "Desktops"
-
-#: src/strings.c:124
-msgid "<span weight=\"bold\">Desktop Margins</span>"
-msgstr "<span weight=“[1mbold[0m”>Desktop Margins</span>"
-
-#: src/strings.c:126
-msgid ""
-"Desktop margins are reserved areas on the edge of your screen.  New windows "
-"will not be placed within a margin, and maximized windows will not cover "
-"them."
-msgstr ""
-"Desktop margins are reserved areas on the edge of your screen.  New windows "
-"will not be placed within a margin, and maximized windows will not cover "
-"them."
-
-#: src/strings.c:127
-msgid "_Top"
-msgstr "_Top"
-
-#: src/strings.c:129
-msgid "_Left"
-msgstr "_Left"
-
-#: src/strings.c:131
-msgid "_Right"
-msgstr "_Right"
-
-#: src/strings.c:133
-msgid "_Bottom"
-msgstr "_Bottom"
-
-#: src/strings.c:135
-msgid "Margins"
-msgstr "Margins"
-
-#: src/strings.c:136
-msgid "<span weight=\"bold\">Position</span>"
-msgstr "<span weight=“[1mbold[0m”>Position</span>"
-
-#: src/strings.c:138
-msgid "_Position:"
-msgstr "_Position:"
-
-#: src/strings.c:139
-msgid "Top Left"
-msgstr "Top Left"
-
-#: src/strings.c:140
-msgid "Top"
-msgstr "Top"
-
-#: src/strings.c:141
-msgid "Top Right"
-msgstr "Top Right"
-
-#: src/strings.c:142
-msgid "Left"
-msgstr "Left"
-
-#: src/strings.c:143
-msgid "Right"
-msgstr "Right"
-
-#: src/strings.c:144
-msgid "Bottom Left"
-msgstr "Bottom Left"
-
-#: src/strings.c:145
-msgid "Bottom"
-msgstr "Bottom"
-
-#: src/strings.c:146
-msgid "Bottom Right"
-msgstr "Bottom Right"
-
-#: src/strings.c:147
-msgid "Floating"
-msgstr "Floating"
-
-#: src/strings.c:149
-msgid "_Floating position:"
-msgstr "_Floating position:"
-
-#: src/strings.c:150
-msgid "x"
-msgstr "x"
-
-#: src/strings.c:152
-msgid "Allow _windows to be placed within the dock's area"
-msgstr "Allow _windows to be placed within the dock's area"
-
-#: src/strings.c:153
-msgid "_Orientation: "
-msgstr "_Orientation: "
-
-#: src/strings.c:154
-msgid "Vertical"
-msgstr "Vertical"
-
-#: src/strings.c:155
-msgid "Horizontal"
-msgstr "Horizontal"
-
-#: src/strings.c:156
-msgid "<span weight=\"bold\">Stacking</span>"
-msgstr "<span weight=“[1mbold[0m”>Stacking</span>"
-
-#: src/strings.c:158
-msgid "Keep dock _above other windows"
-msgstr "Keep dock _above other windows"
-
-#: src/strings.c:159
-msgid "A_llow dock to be both above and below windows"
-msgstr "A_llow dock to be both above and below windows"
-
-#: src/strings.c:160
-msgid "Keep dock _below other windows"
-msgstr "Keep dock _below other windows"
-
-#: src/strings.c:161
-msgid "<span weight=\"bold\">Hiding</span>"
-msgstr "<span weight=“[1mbold[0m”>Hiding</span>"
-
-#: src/strings.c:163
-msgid "_Hide off screen"
-msgstr "_Hide off screen"
-
-#: src/strings.c:165
-msgid "_Delay before hiding:"
-msgstr "_Delay before hiding:"
-
-#: src/strings.c:168
-msgid "Delay before _showing:"
-msgstr "Delay before _showing:"
-
-#: src/strings.c:170
-msgid "Dock"
-msgstr "Dock"
-
-#: src/strings.c:171
-msgid "Abo_ut"
-msgstr "Abo_ut"
-
-#: src/strings.c:172
-msgid "About ObConf"
-msgstr "About ObConf"
-
-#: src/strings.c:173
-msgid "<span weight=\"bold\" size=\"xx-large\">ObConf VERSION</span>"
-msgstr "<span weight=“[1mbold[0m” size=“[1mxx-large[0m”>ObConf VERSION</span>"
-
-#: src/strings.c:174
-msgid "A preferences manager for Openbox"
-msgstr "A preferences manager for Openbox"
-
-#: src/strings.c:175
-msgid ""
-"Copyright (c) 2003-2008\n"
-"Dana Jansens <danakj@orodu.net>\n"
-"Tim Riley <tr@slackzone.org>\n"
-"Javeed Shaikh <syscrash2k@gmail.com>"
-msgstr ""
-"Copyright (c) 2003-2008\n"
-"Dana Jansens <danakj@orodu.net>\n"
-"Tim Riley <tr@slackzone.org>\n"
-"Javeed Shaikh <syscrash2k@gmail.com>"
-
-#: src/strings.c:179
-msgid "window1"
-msgstr "window1"
-
-#: src/strings.c:180
-msgid "<span weight=\"bold\">Press the key you wish to bind...</span>"
-msgstr "<span weight=“[1mbold[0m”>Press the key you wish to bind...</span>"
-
-#: src/main.c:72 src/main.c:74 src/main.c:76
+#: ../src/main.c:71 ../src/main.c:73 ../src/main.c:75
+#, c-format
 msgid "Copyright (c)"
 msgstr "Copyright (c)"
 
-#: src/main.c:87
+#: ../src/main.c:86
+#, c-format
 msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
 msgstr "Syntax: obconf [options] [ARCHIVE.obt]\n"
 
-#: src/main.c:88
+#: ../src/main.c:87
+#, c-format
 msgid ""
 "\n"
 "Options:\n"
@@ -578,20 +60,24 @@ msgstr ""
 "\n"
 "Options:\n"
 
-#: src/main.c:89
+#: ../src/main.c:88
+#, c-format
 msgid "  --help                Display this help and exit\n"
 msgstr "  --help                Display this help and exit\n"
 
-#: src/main.c:90
+#: ../src/main.c:89
+#, c-format
 msgid "  --version             Display the version and exit\n"
 msgstr "  --version             Display the version and exit\n"
 
-#: src/main.c:91
+#: ../src/main.c:90
+#, c-format
 msgid "  --install ARCHIVE.obt Install the given theme archive and select it\n"
 msgstr ""
 "  --install ARCHIVE.obt Install the given theme archive and select it\n"
 
-#: src/main.c:92
+#: ../src/main.c:91
+#, c-format
 msgid ""
 "  --archive THEME       Create a theme archive from the given theme "
 "directory\n"
@@ -599,11 +85,12 @@ msgstr ""
 "  --archive THEME       Create a theme archive from the given theme "
 "directory\n"
 
-#: src/main.c:93
+#: ../src/main.c:92
+#, c-format
 msgid "  --config-file FILE    Specify the path to the config file to use\n"
 msgstr "  --config-file FILE    Specify the path to the config file to use\n"
 
-#: src/main.c:94
+#: ../src/main.c:93
 #, c-format
 msgid ""
 "\n"
@@ -614,19 +101,7 @@ msgstr ""
 "Please report bugs at %s\n"
 "\n"
 
-#: src/main.c:110
-msgid "--install requires an argument\n"
-msgstr "--install requires an argument\n"
-
-#: src/main.c:116
-msgid "--archive requires an argument\n"
-msgstr "--archive requires an argument\n"
-
-#: src/main.c:122
-msgid "--config-file requires an argument\n"
-msgstr "--config-file requires an argument\n"
-
-#: src/main.c:213
+#: ../src/main.c:181
 msgid ""
 "Failed to load the obconf.glade interface file. You have probably failed to "
 "install ObConf properly."
@@ -634,7 +109,7 @@ msgstr ""
 "Failed to load the obconf.glade interface file. You have probably failed to "
 "install ObConf properly."
 
-#: src/main.c:234
+#: ../src/main.c:202
 msgid ""
 "Failed to load an rc.xml. You have probably failed to install Openbox "
 "properly."
@@ -642,7 +117,7 @@ msgstr ""
 "Failed to load an rc.xml. You have probably failed to install Openbox "
 "properly."
 
-#: src/main.c:243
+#: ../src/main.c:211
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file.  Your configuration file "
@@ -655,29 +130,25 @@ msgstr ""
 "\n"
 "Message: %s"
 
-#: src/desktops.c:134 src/desktops.c:165 src/desktops.c:181
-msgid "(Unnamed desktop)"
-msgstr "(Unnamed desktop)"
-
-#: src/theme.c:109 src/theme.c:141
+#: ../src/theme.c:109 ../src/theme.c:141
 msgid "Choose an Openbox theme"
 msgstr "Choose an Openbox theme"
 
-#: src/theme.c:118
+#: ../src/theme.c:118
 msgid "Openbox theme archives"
 msgstr "Openbox theme archives"
 
-#: src/archive.c:40
+#: ../src/archive.c:40
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "“[1m%s[0m” was installed to %s"
 
-#: src/archive.c:65
+#: ../src/archive.c:65
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "“[1m%s[0m” was successfully created"
 
-#: src/archive.c:101
+#: ../src/archive.c:101
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -688,27 +159,27 @@ msgstr ""
 "The following errors were reported:\n"
 "%s"
 
-#: src/archive.c:106 src/archive.c:190
+#: ../src/archive.c:106 ../src/archive.c:190
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Unable to run the “[1mtar[0m” command: %s"
 
-#: src/archive.c:126
+#: ../src/archive.c:126
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "Unable to create directory “[1m%s[0m”: %s"
 
-#: src/archive.c:148
+#: ../src/archive.c:148
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "“[1m%s[0m” does not appear to be a valid Openbox theme directory"
 
-#: src/archive.c:158
+#: ../src/archive.c:158
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
 msgstr "Unable to move to directory “[1m%s[0m”: %s"
 
-#: src/archive.c:197
+#: ../src/archive.c:197
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -723,6 +194,416 @@ msgstr ""
 "The following errors were reported:\n"
 "%s"
 
-#: src/mouse.c:72
-msgid "Custom actions"
-msgstr "Custom actions"
+#~ msgid "Openbox Configuration Manager"
+#~ msgstr "Openbox Configuration Manager"
+
+#~ msgid "<span weight=\"bold\">Theme</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Theme</span>"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "_Install a new theme..."
+#~ msgstr "_Install a new theme..."
+
+#~ msgid "Create a theme _archive (.obt)..."
+#~ msgstr "Create a theme _archive (.obt)..."
+
+#~ msgid "Theme"
+#~ msgstr "Theme"
+
+#~ msgid "<span weight=\"bold\">Windows</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Windows</span>"
+
+#~ msgid "_Windows retain a border when undecorated"
+#~ msgstr "_Windows retain a border when undecorated"
+
+#~ msgid "A_nimate iconify and restore"
+#~ msgstr "A_nimate iconify and restore"
+
+#~ msgid "<span weight=\"bold\">Window Titles</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Window Titles</span>"
+
+#~ msgid "_Button order:"
+#~ msgstr "_Button order:"
+
+#~ msgid ""
+#~ "N - The window's icon\n"
+#~ "D - The all-desktops (sticky) button\n"
+#~ "S - The shade (roll up) button\n"
+#~ "L - The label (window title)\n"
+#~ "I - The iconify (minimize) button\n"
+#~ "M - The maximize button\n"
+#~ "C - The close button"
+#~ msgstr ""
+#~ "N - The window's icon\n"
+#~ "D - The all-desktops (sticky) button\n"
+#~ "S - The shade (roll up) button\n"
+#~ "L - The label (window title)\n"
+#~ "I - The iconify (minimize) button\n"
+#~ "M - The maximize button\n"
+#~ "C - The close button"
+
+#~ msgid ""
+#~ "N:\n"
+#~ "L:\n"
+#~ "I:\n"
+#~ "M:"
+#~ msgstr ""
+#~ "N:\n"
+#~ "L:\n"
+#~ "I:\n"
+#~ "M:"
+
+#~ msgid ""
+#~ "Window icon\n"
+#~ "Window label (Title)\n"
+#~ "Iconify (Minimize)\n"
+#~ "Maximize"
+#~ msgstr ""
+#~ "Window icon\n"
+#~ "Window label (Title)\n"
+#~ "Iconify (Minimize)\n"
+#~ "Maximize"
+
+#~ msgid ""
+#~ "C:\n"
+#~ "S:\n"
+#~ "D:"
+#~ msgstr ""
+#~ "C:\n"
+#~ "S:\n"
+#~ "D:"
+
+#~ msgid ""
+#~ "Close\n"
+#~ "Shade (Roll up)\n"
+#~ "Omnipresent (On all desktops)"
+#~ msgstr ""
+#~ "Close\n"
+#~ "Shade (Roll up)\n"
+#~ "Omnipresent (On all desktops)"
+
+#~ msgid "<span weight=\"bold\">Fonts</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Fonts</span>"
+
+#~ msgid "_Active window title: "
+#~ msgstr "_Active window title: "
+
+#~ msgid "_Inactive window title: "
+#~ msgstr "_Inactive window title: "
+
+#~ msgid "Menu _header: "
+#~ msgstr "Menu _header: "
+
+#~ msgid "_Menu Item: "
+#~ msgstr "_Menu Item: "
+
+#~ msgid "_On-screen display: "
+#~ msgstr "_On-screen display: "
+
+#~ msgid "Appearance"
+#~ msgstr "Appearance"
+
+#~ msgid "<span weight=\"bold\">Focusing Windows</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Focusing Windows</span>"
+
+#~ msgid "Focus _new windows when they appear"
+#~ msgstr "Focus _new windows when they appear"
+
+#~ msgid "<span weight=\"bold\">Placing Windows</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Placing Windows</span>"
+
+#~ msgid "_Place new windows under the mouse pointer"
+#~ msgstr "_Place new windows under the mouse pointer"
+
+#~ msgid "_Center new windows when they are placed"
+#~ msgstr "_Center new windows when they are placed"
+
+#~ msgid "Prefer to place new windows _on:"
+#~ msgstr "Prefer to place new windows _on:"
+
+#~ msgid "All monitors"
+#~ msgstr "All monitors"
+
+#~ msgid "The active monitor"
+#~ msgstr "The active monitor"
+
+#~ msgid "The monitor with the mouse"
+#~ msgstr "The monitor with the mouse"
+
+#~ msgid "Windows"
+#~ msgstr "Windows"
+
+#~ msgid "<span weight=\"bold\">Moving and Resizing Windows</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Moving and Resizing Windows</span>"
+
+#~ msgid "Update the window contents while _resizing"
+#~ msgstr "Update the window contents while _resizing"
+
+#~ msgid "Drag _threshold distance:"
+#~ msgstr "Drag _threshold distance:"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid "Amount of resistance against other _windows:"
+#~ msgstr "Amount of resistance against other _windows:"
+
+#~ msgid "Amount of resistance against screen _edges:"
+#~ msgstr "Amount of resistance against screen _edges:"
+
+#~ msgid "_Switch desktops when moving a window past the screen edge"
+#~ msgstr "_Switch desktops when moving a window past the screen edge"
+
+#~ msgid "_Amount of time to wait before switching:"
+#~ msgstr "_Amount of time to wait before switching:"
+
+#~ msgid "ms"
+#~ msgstr "ms"
+
+#~ msgid "<span weight=\"bold\">Information Dialog</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Information Dialog</span>"
+
+#~ msgid "Show _information dialog:"
+#~ msgstr "Show _information dialog:"
+
+#~ msgid "When resizing terminal windows"
+#~ msgstr "When resizing terminal windows"
+
+#~ msgid "Always"
+#~ msgstr "Always"
+
+#~ msgid "Never"
+#~ msgstr "Never"
+
+#~ msgid "Information dialog's _position:"
+#~ msgstr "Information dialog's _position:"
+
+#~ msgid "Centered on the window"
+#~ msgstr "Centered on the window"
+
+#~ msgid "Above the window"
+#~ msgstr "Above the window"
+
+#~ msgid "Fixed position on screen"
+#~ msgstr "Fixed position on screen"
+
+#~ msgid "Fixed _x position:"
+#~ msgstr "Fixed _x position:"
+
+#~ msgid "Centered"
+#~ msgstr "Centered"
+
+#~ msgid "From left edge"
+#~ msgstr "From left edge"
+
+#~ msgid "From right edge"
+#~ msgstr "From right edge"
+
+#~ msgid "Fixed _y position:"
+#~ msgstr "Fixed _y position:"
+
+#~ msgid "Move & Resize"
+#~ msgstr "Move & Resize"
+
+#~ msgid "_Focus windows when the mouse pointer moves over them"
+#~ msgstr "_Focus windows when the mouse pointer moves over them"
+
+#~ msgid "Move focus under the mouse when _switching desktops"
+#~ msgstr "Move focus under the mouse when _switching desktops"
+
+#~ msgid "Move focus _under the mouse when the mouse is not moving"
+#~ msgstr "Move focus _under the mouse when the mouse is not moving"
+
+#~ msgid "_Raise windows when the mouse pointer moves over them"
+#~ msgstr "_Raise windows when the mouse pointer moves over them"
+
+#~ msgid "_Delay before focusing and raising windows:"
+#~ msgstr "_Delay before focusing and raising windows:"
+
+#~ msgid "<span weight=\"bold\">Titlebar</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Titlebar</span>"
+
+#~ msgid "Double click on the _titlebar:"
+#~ msgstr "Double click on the _titlebar:"
+
+#~ msgid "Maximizes the window"
+#~ msgstr "Maximizes the window"
+
+#~ msgid "Shades the window"
+#~ msgstr "Shades the window"
+
+#~ msgid "Double click ti_me:"
+#~ msgstr "Double click ti_me:"
+
+#~ msgid "Mouse"
+#~ msgstr "Mouse"
+
+#~ msgid "<span weight=\"bold\">Desktops</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Desktops</span>"
+
+#~ msgid "_Show a notification when switching desktops"
+#~ msgstr "_Show a notification when switching desktops"
+
+#~ msgid "_Amount of time to show the notification for:"
+#~ msgstr "_Amount of time to show the notification for:"
+
+#~ msgid "_Number of desktops: "
+#~ msgstr "_Number of desktops: "
+
+#~ msgid "_Desktop names:"
+#~ msgstr "_Desktop names:"
+
+#~ msgid "Desktops"
+#~ msgstr "Desktops"
+
+#~ msgid "<span weight=\"bold\">Desktop Margins</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Desktop Margins</span>"
+
+#~ msgid ""
+#~ "Desktop margins are reserved areas on the edge of your screen.  New "
+#~ "windows will not be placed within a margin, and maximized windows will "
+#~ "not cover them."
+#~ msgstr ""
+#~ "Desktop margins are reserved areas on the edge of your screen.  New "
+#~ "windows will not be placed within a margin, and maximized windows will "
+#~ "not cover them."
+
+#~ msgid "_Top"
+#~ msgstr "_Top"
+
+#~ msgid "_Left"
+#~ msgstr "_Left"
+
+#~ msgid "_Right"
+#~ msgstr "_Right"
+
+#~ msgid "_Bottom"
+#~ msgstr "_Bottom"
+
+#~ msgid "Margins"
+#~ msgstr "Margins"
+
+#~ msgid "<span weight=\"bold\">Position</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Position</span>"
+
+#~ msgid "_Position:"
+#~ msgstr "_Position:"
+
+#~ msgid "Top Left"
+#~ msgstr "Top Left"
+
+#~ msgid "Top"
+#~ msgstr "Top"
+
+#~ msgid "Top Right"
+#~ msgstr "Top Right"
+
+#~ msgid "Left"
+#~ msgstr "Left"
+
+#~ msgid "Right"
+#~ msgstr "Right"
+
+#~ msgid "Bottom Left"
+#~ msgstr "Bottom Left"
+
+#~ msgid "Bottom"
+#~ msgstr "Bottom"
+
+#~ msgid "Bottom Right"
+#~ msgstr "Bottom Right"
+
+#~ msgid "Floating"
+#~ msgstr "Floating"
+
+#~ msgid "_Floating position:"
+#~ msgstr "_Floating position:"
+
+#~ msgid "x"
+#~ msgstr "x"
+
+#~ msgid "Allow _windows to be placed within the dock's area"
+#~ msgstr "Allow _windows to be placed within the dock's area"
+
+#~ msgid "_Orientation: "
+#~ msgstr "_Orientation: "
+
+#~ msgid "Vertical"
+#~ msgstr "Vertical"
+
+#~ msgid "Horizontal"
+#~ msgstr "Horizontal"
+
+#~ msgid "<span weight=\"bold\">Stacking</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Stacking</span>"
+
+#~ msgid "Keep dock _above other windows"
+#~ msgstr "Keep dock _above other windows"
+
+#~ msgid "A_llow dock to be both above and below windows"
+#~ msgstr "A_llow dock to be both above and below windows"
+
+#~ msgid "Keep dock _below other windows"
+#~ msgstr "Keep dock _below other windows"
+
+#~ msgid "<span weight=\"bold\">Hiding</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Hiding</span>"
+
+#~ msgid "_Hide off screen"
+#~ msgstr "_Hide off screen"
+
+#~ msgid "_Delay before hiding:"
+#~ msgstr "_Delay before hiding:"
+
+#~ msgid "Delay before _showing:"
+#~ msgstr "Delay before _showing:"
+
+#~ msgid "Dock"
+#~ msgstr "Dock"
+
+#~ msgid "Abo_ut"
+#~ msgstr "Abo_ut"
+
+#~ msgid "About ObConf"
+#~ msgstr "About ObConf"
+
+#~ msgid "<span weight=\"bold\" size=\"xx-large\">ObConf VERSION</span>"
+#~ msgstr ""
+#~ "<span weight=“[1mbold[0m” size=“[1mxx-large[0m”>ObConf VERSION</span>"
+
+#~ msgid "A preferences manager for Openbox"
+#~ msgstr "A preferences manager for Openbox"
+
+#~ msgid ""
+#~ "Copyright (c) 2003-2008\n"
+#~ "Dana Jansens <danakj@orodu.net>\n"
+#~ "Tim Riley <tr@slackzone.org>\n"
+#~ "Javeed Shaikh <syscrash2k@gmail.com>"
+#~ msgstr ""
+#~ "Copyright (c) 2003-2008\n"
+#~ "Dana Jansens <danakj@orodu.net>\n"
+#~ "Tim Riley <tr@slackzone.org>\n"
+#~ "Javeed Shaikh <syscrash2k@gmail.com>"
+
+#~ msgid "window1"
+#~ msgstr "window1"
+
+#~ msgid "<span weight=\"bold\">Press the key you wish to bind...</span>"
+#~ msgstr "<span weight=“[1mbold[0m”>Press the key you wish to bind...</span>"
+
+#~ msgid "--install requires an argument\n"
+#~ msgstr "--install requires an argument\n"
+
+#~ msgid "--archive requires an argument\n"
+#~ msgstr "--archive requires an argument\n"
+
+#~ msgid "--config-file requires an argument\n"
+#~ msgstr "--config-file requires an argument\n"
+
+#~ msgid "(Unnamed desktop)"
+#~ msgstr "(Unnamed desktop)"
+
+#~ msgid "Custom actions"
+#~ msgstr "Custom actions"

@@ -17,15 +17,14 @@
    See the COPYING file for a copy of the GNU General Public License.
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "main.h"
 #include "archive.h"
 #include "theme.h"
 #include "appearance.h"
-#include "windows.h"
-#include "margins.h"
-#include "mouse.h"
-#include "desktops.h"
-#include "dock.h"
 #include "preview_update.h"
 #include "gettext.h"
 
@@ -92,40 +91,10 @@ static void print_help()
     g_print(_("  --archive THEME       Create a theme archive from the given theme directory\n"));
     g_print(_("  --config-file FILE    Specify the path to the config file to use\n"));
     g_print(_("\nPlease report bugs at %s\n\n"), PACKAGE_BUGREPORT);
-    
+
     exit(EXIT_SUCCESS);
 }
 
-static void parse_args(int argc, char **argv)
-{
-    int i;
-
-    for (i = 1; i < argc; ++i) {
-        if (!strcmp(argv[i], "--help"))
-            print_help();
-        if (!strcmp(argv[i], "--version"))
-            print_version();
-        else if (!strcmp(argv[i], "--install")) {
-            if (i == argc - 1) /* no args left */
-                g_printerr(_("--install requires an argument\n"));
-            else
-                obc_theme_install = argv[++i];
-        }
-        else if (!strcmp(argv[i], "--archive")) {
-            if (i == argc - 1) /* no args left */
-                g_printerr(_("--archive requires an argument\n"));
-            else
-                obc_theme_archive = argv[++i];
-        }
-        else if (!strcmp(argv[i], "--config-file")) {
-            if (i == argc - 1) /* no args left */
-                g_printerr(_("--config-file requires an argument\n"));
-            else
-                obc_config_file = argv[++i];
-        } else
-            obc_theme_install = argv[i];
-    }
-}
 
 static gboolean get_all(Window win, Atom prop, Atom type, gint size,
                         guchar **data, guint *num)
@@ -198,7 +167,6 @@ int main(int argc, char **argv)
     textdomain(PACKAGE_NAME);
 
     gtk_init(&argc, &argv);
-    parse_args(argc, argv);
 
     if (obc_theme_archive) {
         archive_create(obc_theme_archive);
@@ -263,12 +231,6 @@ int main(int argc, char **argv)
 
         theme_setup_tab();
         appearance_setup_tab();
-        windows_setup_tab();
-        moveresize_setup_tab();
-        mouse_setup_tab();
-        desktops_setup_tab();
-        margins_setup_tab();
-        dock_setup_tab();
 
         mainwin = get_widget("main_window");
 

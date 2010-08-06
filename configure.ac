@@ -1,7 +1,8 @@
 AC_PREREQ([2.54])
-AC_INIT([obconf], [2.0.3], [http://bugzilla.icculus.org])
+AC_INIT([lxappearance-obconf], [0.0.1], [http://lxde.org])
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/main.c])
+AC_CONFIG_HEADERS([config.h])
 
 AC_PREFIX_DEFAULT([/usr/local])
 test "$prefix" = "NONE" && prefix=$ac_default_prefix
@@ -13,8 +14,11 @@ AC_C_INLINE
 
 AC_PROG_INSTALL
 
-CHECK_EXPORT_DYNAMIC
-LDFLAGS="$LDFLAGS $EXPORT_DYNAMIC_FLAGS"
+# CHECK_EXPORT_DYNAMIC
+# LDFLAGS="$LDFLAGS $EXPORT_DYNAMIC_FLAGS"
+
+# intltool
+IT_PROG_INTLTOOL([0.40.0])
 
 ALL_LINGUAS=""
 AM_GNU_GETTEXT_VERSION(0.15)
@@ -24,10 +28,6 @@ PKG_CHECK_MODULES(OPENBOX, [obrender-3.0 >= 3.4.2 obparser-3.0 >= 3.4.2])
 AC_SUBST(OPENBOX_CFLAGS)
 AC_SUBST(OPENBOX_LIBS)
 
-PKG_CHECK_MODULES(LIBSTARTUPNOTIFICATION, [libstartup-notification-1.0])
-AC_SUBST(LIBSTARTUPNOTIFICATION_CFLAGS)
-AC_SUBST(LIBSTARTUPNOTIFICATION_LIBS)
-
 PKG_CHECK_MODULES(GTK, [gtk+-2.0])
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
@@ -36,24 +36,13 @@ PKG_CHECK_MODULES(GDK_PIXBUF, [gdk-pixbuf-2.0])
 AC_SUBST(GDK_PIXBUF_CFLAGS)
 AC_SUBST(GDK_PIXBUF_LIBS)
 
-PKG_CHECK_MODULES(GLADE, [libglade-2.0])
+PKG_CHECK_MODULES(GLADE, [libglade-2.0 gmodule-2.0])
 AC_SUBST(GLADE_CFLAGS)
 AC_SUBST(GLADE_LIBS)
 
-AC_CHECK_PROG(TAR, [tar], [yes], [no])
-if test "$TAR" = "no"; then
-  AC_MSG_ERROR([Unable to find the tar command.])
-fi
-
-AC_CHECK_PROG(GZIP, [gzip], [yes], [no])
-if test "$GZIP" = "no"; then
-  AC_MSG_ERROR([Unable to find the gzip command.])
-fi
-
-AC_CHECK_PROG(GUNZIP, [gunzip], [yes], [no])
-if test "$GUNZIP" = "no"; then
-  AC_MSG_ERROR([Unable to find the gunzip command.])
-fi
+PKG_CHECK_MODULES(LIBSTARTUPNOTIFICATION, [libstartup-notification-1.0])
+AC_SUBST(LIBSTARTUPNOTIFICATION_CFLAGS)
+AC_SUBST(LIBSTARTUPNOTIFICATION_LIBS)
 
 AC_CONFIG_FILES([
   Makefile

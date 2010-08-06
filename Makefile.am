@@ -1,7 +1,7 @@
 SUBDIRS = po
 
 localedir       = $(datadir)/locale
-gladedir        = $(datadir)/obconf
+gladedir        = $(datadir)/lxappearance/obconf
 pixmapdir       = $(datadir)/pixmaps
 themedir        = $(datadir)/openbox/themes
 desktopdir      = $(datadir)/applications
@@ -13,46 +13,32 @@ AUTOMAKE_OPTIONS = subdir-objects foreign
 ACLOCAL_AMFLAGS = -I m4
 
 bin_PROGRAMS = \
-	src/obconf
+	src/lxappearance-obconf
 
-src_obconf_CPPFLAGS = \
+src_lxappearance_obconf_CPPFLAGS = \
 	$(OPENBOX_CFLAGS) \
-	$(LIBSTARTUPNOTIFICATION_CFLAGS) \
 	$(GTK_CFLAGS) \
 	$(GLADE_CFLAGS) \
 	$(GDK_PIXBUF_CFLAGS) \
 	$(XML_CFLAGS) \
+	$(LIBSTARTUPNOTIFICATION_CFLAGS) \
 	-DLOCALEDIR=\"$(localedir)\" \
 	-DPIXMAPDIR=\"$(pixmapdir)\" \
 	-DGLADEDIR=\"$(gladedir)\" \
 	-DTHEMEDIR=\"$(themedir)\" \
 	-DG_LOG_DOMAIN=\"Obconf\"
-src_obconf_LDADD = \
+src_lxappearance_obconf_LDADD = \
 	$(OPENBOX_LIBS) \
-	$(LIBSTARTUPNOTIFICATION_LIBS) \
 	$(GTK_LIBS) \
 	$(GLADE_LIBS) \
 	$(GDK_PIXBUF_LIBS) \
 	$(LIBINTL) \
-	$(ZLIB_LIBS) \
-	$(LIBTAR_LIBS)
-src_obconf_SOURCES = \
+	$(LIBSTARTUPNOTIFICATION_LIBS)
+src_lxappearance_obconf_SOURCES = \
 	src/gettext.h \
 	src/about.c \
 	src/archive.c \
 	src/archive.h \
-	src/windows.c \
-	src/windows.h \
-	src/moveresize.c \
-	src/moveresize.h \
-	src/margins.c \
-	src/margins.h \
-	src/mouse.c \
-	src/mouse.h \
-	src/desktops.c \
-	src/desktops.h \
-	src/dock.h \
-	src/dock.c \
 	src/main.c \
 	src/main.h \
 	src/appearance.c \
@@ -91,38 +77,7 @@ EXTRA_DIST = \
 	CHANGELOG \
 	COPYING \
 	AUTHORS \
-	m4/codeset.m4 \
-	m4/gettext.m4 \
-	m4/glibc21.m4 \
-	m4/glibc2.m4 \
-	m4/iconv.m4 \
-	m4/intdiv0.m4 \
-	m4/intmax.m4 \
-	m4/inttypes_h.m4 \
-	m4/inttypes-h.m4 \
-	m4/inttypes-pri.m4 \
-	m4/lcmessage.m4 \
-	m4/lib-ld.m4 \
-	m4/lib-link.m4 \
-	m4/lib-prefix.m4 \
-	m4/lock.m4 \
-	m4/longdouble.m4 \
-	m4/longlong.m4 \
-	m4/nls.m4 \
-	m4/po.m4 \
-	m4/printf-posix.m4 \
-	m4/progtest.m4 \
-	m4/signed.m4 \
-	m4/size_max.m4 \
-	m4/stdint_h.m4 \
-	m4/uintmax_t.m4 \
-	m4/ulonglong.m4 \
-	m4/visibility.m4 \
-	m4/wchar_t.m4 \
-	m4/wint_t.m4 \
-	m4/xsize.m4 \
-	data/video-display.svg \
-	config.rpath
+	data/video-display.svg
 
 # Packages need to run these...
 
