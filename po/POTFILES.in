@@ -1,0 +1,6 @@
+src/strings.c
+src/main.c
+src/desktops.c
+src/theme.c
+src/archive.c
+src/mouse.c
