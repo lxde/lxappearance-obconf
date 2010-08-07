@@ -26,7 +26,11 @@
 #include "theme.h"
 #include "appearance.h"
 #include "preview_update.h"
-#include "gettext.h"
+#include "tree.h"
+#define GETTEXT_PACKAGE PACKAGE_NAME
+#include <glib/gi18n-lib.h>
+
+#include "lxappearance/lxappearance.h"
 
 #include <gdk/gdkx.h>
 #define SN_API_NOT_YET_FROZEN
@@ -157,34 +161,41 @@ static gboolean prop_get_string_utf8(Window win, Atom prop, gchar **ret)
     return FALSE;
 }
 
-int main(int argc, char **argv)
+static void on_response(GtkDialog* dlg, int res, LXAppearance* app)
+{
+    if(res == GTK_RESPONSE_APPLY)
+    {
+        tree_apply();
+    }
+}
+
+/* int main(int argc, char **argv) */
+extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
 {
     gchar *p;
     gboolean exit_with_error = FALSE;
 
-    bindtextdomain(PACKAGE_NAME, LOCALEDIR);
-    bind_textdomain_codeset(PACKAGE_NAME, "UTF-8");
-    textdomain(PACKAGE_NAME);
+#ifdef ENABLE_NLS
+    bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR);
+    bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
+#endif
 
-    gtk_init(&argc, &argv);
-
-    if (obc_theme_archive) {
-        archive_create(obc_theme_archive);
-        return;
-    }
-
-    p = g_build_filename(GLADEDIR, "obconf.glade", NULL);
+    mainwin = app->dlg;
 
     builder = gtk_builder_new();
-    if(!gtk_builder_add_from_file(builder, p, NULL))
+    g_debug(GLADEDIR"/obconf.glade");
+    if(!gtk_builder_add_from_file(builder, GLADEDIR"/obconf.glade", NULL))
     {
         obconf_error(_("Failed to load the obconf.glade interface file. You have probably failed to install ObConf properly."), TRUE);
         exit_with_error = TRUE;
     }
-    g_free(p);
+    gtk_builder_connect_signals(builder, NULL);
+    gtk_box_pack_start(app->wm_page, get_widget("obconf_vbox"), TRUE, TRUE, 0);
+    gtk_widget_show_all(app->wm_page);
+
+    g_signal_connect(app->dlg, "response", G_CALLBACK(on_response), app);
 
     parse_paths_startup();
-    rrinst = RrInstanceNew(GDK_DISPLAY(), gdk_x11_get_default_screen());
 
     if (!obc_config_file) {
         gchar *p;
@@ -217,51 +228,30 @@ int main(int argc, char **argv)
         }
     }
 
+    rrinst = RrInstanceNew(GDK_DISPLAY(), gdk_x11_get_default_screen());
     if (!exit_with_error) {
-        gtk_builder_connect_signals(builder, NULL);
-        {
-            gchar *s = g_strdup_printf
-                ("<span weight=\"bold\" size=\"xx-large\">ObConf %s</span>",
-                 PACKAGE_VERSION);
-            gtk_label_set_markup(GTK_LABEL
-                                 (get_widget("title_label")),
-                                 s);
-            g_free(s);
-        }
-
         theme_setup_tab();
         appearance_setup_tab();
-
-        mainwin = get_widget("main_window");
-
-        if (obc_theme_install)
-            theme_install(obc_theme_install);
-        else
-            theme_load_all();
-
-        /* the main window is not shown here ! it is shown when the theme
-           previews are completed */
-        gtk_main();
-
-        preview_update_set_active_font(NULL);
-        preview_update_set_inactive_font(NULL);
-        preview_update_set_menu_header_font(NULL);
-        preview_update_set_menu_item_font(NULL);
-        preview_update_set_osd_font(NULL);
-        preview_update_set_title_layout(NULL);
+        theme_load_all();
     }
+    return !exit_with_error;
+}
+
+extern void plugin_unload(LXAppearance* app)
+{
+/*
+    preview_update_set_active_font(NULL);
+    preview_update_set_inactive_font(NULL);
+    preview_update_set_menu_header_font(NULL);
+    preview_update_set_menu_item_font(NULL);
+    preview_update_set_osd_font(NULL);
+    preview_update_set_title_layout(NULL);
+*/
 
     RrInstanceFree(rrinst);
     parse_paths_shutdown();
 
     xmlFreeDoc(doc);
-    return 0;
-}
-
-gboolean on_main_window_delete_event(GtkWidget *w, GdkEvent *e, gpointer d)
-{
-    gtk_main_quit();
-    return FALSE;
 }
 
 void obconf_show_main()
@@ -291,3 +281,5 @@ void obconf_show_main()
         sn_launchee_context_unref(sn_cx);
     sn_display_unref(sn_d);
 }
+
+

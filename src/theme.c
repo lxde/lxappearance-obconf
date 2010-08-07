@@ -46,15 +46,11 @@ void theme_setup_tab()
     w = get_widget("theme_names");
 
     /* widget setup */
-    theme_store = gtk_list_store_new(3,
-                                     /* the theme name */
-                                     G_TYPE_STRING,
-                                     /* the theme preview */
-                                     GDK_TYPE_PIXBUF,
-                                     /* alignment of the preview */
-                                     G_TYPE_FLOAT);
+    theme_store = gtk_list_store_new(1, /* the theme name */ G_TYPE_STRING);
     gtk_tree_view_set_model(GTK_TREE_VIEW(w), GTK_TREE_MODEL(theme_store));
+
     preview_update_set_tree_view(GTK_TREE_VIEW(w), theme_store);
+
     g_object_unref (theme_store);
 
     gtk_tree_selection_set_mode(gtk_tree_view_get_selection(GTK_TREE_VIEW(w)),
@@ -64,12 +60,6 @@ void theme_setup_tab()
     render = gtk_cell_renderer_text_new();
     column = gtk_tree_view_column_new_with_attributes
         ("Name", render, "text", 0, NULL);
-    gtk_tree_view_append_column(GTK_TREE_VIEW(w), column);
-
-    /* pixbuf column, for theme previews */
-    render = gtk_cell_renderer_pixbuf_new();
-    column = gtk_tree_view_column_new_with_attributes
-        ("Preview", render, "pixbuf", 1, "xalign", 2, NULL);
     gtk_tree_view_append_column(GTK_TREE_VIEW(w), column);
 
     /* setup the selection handler */
@@ -97,6 +87,8 @@ static void on_theme_names_selection_changed(GtkTreeSelection *sel,
 
     if(name)
       tree_set_string("theme/name", name);
+
+    preview_update_all();
 }
 
 void on_install_theme_clicked(GtkButton *w, gpointer data)
@@ -223,8 +215,6 @@ void theme_load_all()
         gtk_list_store_append(theme_store, &iter);
         gtk_list_store_set(theme_store, &iter,
                            0, it->data, /* the theme's name */
-                           1, NULL,     /* the preview is set later */
-                           2, 1.0,      /* all previews are right-aligned */
                            -1);
 
         if(!strcmp(name, it->data)) {
@@ -232,6 +222,7 @@ void theme_load_all()
 
             path = gtk_tree_path_new_from_indices(i, -1);
             gtk_tree_view_set_cursor(GTK_TREE_VIEW(w), path, NULL, FALSE);
+            gtk_tree_view_scroll_to_cell(GTK_TREE_VIEW(w), path, NULL, FALSE, 0.0, 0.0);
             gtk_tree_path_free(path);
         }
 

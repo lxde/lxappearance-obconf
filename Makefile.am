@@ -1,7 +1,7 @@
 SUBDIRS = po
 
 localedir       = $(datadir)/locale
-gladedir        = $(datadir)/lxappearance/obconf
+gladedir        = $(LXAPPEARANCE_DATADIR)/obconf
 pixmapdir       = $(datadir)/pixmaps
 themedir        = $(datadir)/openbox/themes
 desktopdir      = $(datadir)/applications
@@ -12,12 +12,13 @@ kdemimedir      = $(datadir)/mimelnk/application
 AUTOMAKE_OPTIONS = subdir-objects foreign
 ACLOCAL_AMFLAGS = -I m4
 
-bin_PROGRAMS = \
-	src/lxappearance-obconf
+module_LTLIBRARIES = src/obconf.la
+moduledir = $(libdir)/lxappearance/plugins
 
-src_lxappearance_obconf_CPPFLAGS = \
+src_obconf_la_CPPFLAGS = \
 	$(OPENBOX_CFLAGS) \
 	$(GTK_CFLAGS) \
+	$(LXAPPEARANCE_CFLAGS) \
 	$(GMODULE_CFLAGS) \
 	$(GDK_PIXBUF_CFLAGS) \
 	$(XML_CFLAGS) \
@@ -27,14 +28,21 @@ src_lxappearance_obconf_CPPFLAGS = \
 	-DGLADEDIR=\"$(gladedir)\" \
 	-DTHEMEDIR=\"$(themedir)\" \
 	-DG_LOG_DOMAIN=\"Obconf\"
-src_lxappearance_obconf_LDADD = \
+
+src_obconf_la_LIBADD = \
 	$(OPENBOX_LIBS) \
 	$(GTK_LIBS) \
+	$(LXAPPEARANCE_LIBS) \
 	$(GMODULE_LIBS) \
 	$(GDK_PIXBUF_LIBS) \
 	$(LIBINTL) \
 	$(LIBSTARTUPNOTIFICATION_LIBS)
-src_lxappearance_obconf_SOURCES = \
+
+src_obconf_la_LDFLAGS = \
+	-module \
+	@LXAPPEARANCE_MODULE@
+
+src_obconf_la_SOURCES = \
 	src/gettext.h \
 	src/archive.c \
 	src/archive.h \

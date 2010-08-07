@@ -21,6 +21,7 @@
 
 #include <openbox/parse.h>
 #include <gdk/gdkx.h>
+#include <lxappearance/lxappearance.h>
 
 xmlNodePtr tree_get_node(const gchar *path, const gchar *def)
 {
@@ -127,7 +128,7 @@ void tree_set_string(const gchar *node, const gchar *value)
     n = tree_get_node(node, NULL);
     xmlNodeSetContent(n, (const xmlChar*) value);
 
-    tree_apply();
+    lxappearance_changed();
 }
 
 void tree_set_int(const gchar *node, const gint value)
@@ -140,7 +141,7 @@ void tree_set_int(const gchar *node, const gint value)
     xmlNodeSetContent(n, (const xmlChar*) s);
     g_free(s);
 
-    tree_apply();
+    lxappearance_changed();
 }
 
 void tree_set_bool(const gchar *node, const gboolean value)
@@ -150,7 +151,7 @@ void tree_set_bool(const gchar *node, const gboolean value)
     n = tree_get_node(node, NULL);
     xmlNodeSetContent(n, (const xmlChar*) (value ? "yes" : "no"));
 
-    tree_apply();
+    lxappearance_changed();
 }
 
 gchar* tree_get_string(const gchar *node, const gchar *def)

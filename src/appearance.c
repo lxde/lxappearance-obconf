@@ -33,7 +33,7 @@ void appearance_setup_tab()
     RrFont *f;
 
     mapping = TRUE;
-
+/*
     w = get_widget("window_border");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(w),
                                  tree_get_bool("theme/keepBorder", TRUE));
@@ -41,7 +41,7 @@ void appearance_setup_tab()
     w = get_widget("animate_iconify");
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(w),
                                  tree_get_bool("theme/animateIconify", TRUE));
-
+*/
     w = get_widget("title_layout");
     layout = tree_get_string("theme/titleLayout", "NLIMC");
     gtk_entry_set_text(GTK_ENTRY(w), layout);

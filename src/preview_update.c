@@ -12,22 +12,28 @@ static RrFont       *menu_title_font      = NULL;
 static RrFont       *menu_item_font       = NULL;
 static RrFont       *osd_font             = NULL;
 
-static gboolean update_theme_preview_iterate(gpointer data);
 
 void preview_update_all()
 {
     if (!list_store) return;
 
-    g_idle_remove_by_data(list_store);
-
     if (!(title_layout && active_window_font && inactive_window_font &&
           menu_title_font && menu_item_font && osd_font))
         return; /* not set up */
 
-    restart_theme_preview_update = TRUE;
-    g_idle_add_full(G_PRIORITY_LOW,
-                    update_theme_preview_iterate,
-                    list_store, NULL);
+    char* name;
+    GtkTreeIter it;
+    GtkTreeSelection* sel = gtk_tree_view_get_selection(tree_view);
+    if(gtk_tree_selection_get_selected(sel, NULL, &it))
+    {
+        gtk_tree_model_get(list_store, &it, 0, &name, -1);
+        GdkPixbuf* pix = preview_theme(name, title_layout, active_window_font,
+                                         inactive_window_font, menu_title_font,
+                                         menu_item_font, osd_font);
+        GtkWidget* preview = get_widget("preview");
+        gtk_image_set_from_pixbuf(preview, pix);
+        g_object_unref(pix);
+    }
 }
 
 void preview_update_set_tree_view(GtkTreeView *tr, GtkListStore *ls)
@@ -82,49 +88,4 @@ void preview_update_set_title_layout(const gchar *layout)
     g_free(title_layout);
     title_layout = g_strdup(layout);
     preview_update_all();
-}
-
-static gboolean update_theme_preview_iterate(gpointer data)
-{
-    GtkListStore *ls = data;
-    static GtkTreeIter iter;
-    gchar *name;
-
-    if (restart_theme_preview_update) {
-        /* get the first iterator position if there is such a thing */
-        if (!gtk_tree_model_get_iter_first(GTK_TREE_MODEL(ls), &iter)) {
-            /* nothing to show */
-            obconf_show_main();
-            return FALSE;
-        }
-        restart_theme_preview_update = FALSE;
-    } else {
-        /* get the next iterator position if there is such a thing */
-        if (!gtk_tree_model_iter_next(GTK_TREE_MODEL(ls), &iter)) {
-            GtkTreePath *path;
-
-            restart_theme_preview_update = TRUE;
-
-            gtk_tree_view_get_cursor(tree_view, &path, NULL);
-            if (path) {
-                gtk_tree_view_scroll_to_cell(tree_view, path, NULL,
-                                             FALSE, 0, 0);
-                gtk_tree_path_free(path);
-            }
-
-            obconf_show_main();
-
-            return FALSE;
-        }
-    }
-
-    gtk_tree_model_get(GTK_TREE_MODEL(ls), &iter, 0, &name, -1);
-
-    gtk_list_store_set(GTK_LIST_STORE(ls), &iter, 1,
-                       preview_theme(name, title_layout, active_window_font,
-                                     inactive_window_font, menu_title_font,
-                                     menu_item_font, osd_font),
-                       -1);
-
-    return TRUE;
 }

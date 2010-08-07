@@ -14,6 +14,8 @@ AC_C_INLINE
 
 AC_PROG_INSTALL
 
+AC_PROG_LIBTOOL
+
 # CHECK_EXPORT_DYNAMIC
 # LDFLAGS="$LDFLAGS $EXPORT_DYNAMIC_FLAGS"
 
@@ -43,6 +45,21 @@ AC_SUBST(GMODULE_LIBS)
 PKG_CHECK_MODULES(LIBSTARTUPNOTIFICATION, [libstartup-notification-1.0])
 AC_SUBST(LIBSTARTUPNOTIFICATION_CFLAGS)
 AC_SUBST(LIBSTARTUPNOTIFICATION_LIBS)
+
+PKG_CHECK_MODULES(LXAPPEARANCE, [lxappearance])
+AC_SUBST(LXAPPEARANCE_CFLAGS)
+AC_SUBST(LXAPPEARANCE_LIBS)
+
+# Make it an lxappearance plugin.
+prefix=$(pkg-config --variable=prefix lxappearance)
+LXAPPEARANCE_LIBDIR=$(pkg-config --variable=libdir lxappearance)/lxappearance
+LXAPPEARANCE_DATADIR=$(pkg-config --variable=datadir lxappearance)/lxappearance
+AC_SUBST(LXAPPEARANCE_LIBDIR)
+AC_SUBST(LXAPPEARANCE_DATADIR)
+
+LXAPPEARANCE_MODULE="-avoid-version \
+    -no-undefined "'-export-symbols-regex "^[[^_]].*"'
+AC_SUBST(LXAPPEARANCE_MODULE)
 
 AC_CONFIG_FILES([
   Makefile
