@@ -1,0 +1,285 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+	  
+	    Transifex
+	   | User sign in
+	</title>	
+	
+	<link media="screen" href="http://sw.transifex.net/2/static/userprofile/css/django-profile.css" type="text/css" rel="stylesheet"  />
+	<link media="screen" href="http://sw.transifex.net/2/static/userprofile/css/tx.css" type="text/css" rel="stylesheet" />
+	<link media="screen" href="http://sw.transifex.net/2/static/css/base.css" type="text/css" rel="stylesheet" />
+	<link media="screen" href="http://sw.transifex.net/2/static/css/global.css" type="text/css" rel="stylesheet" />
+	<link media="screen" href="http://sw.transifex.net/2/static/css/txn.css" type="text/css" rel="stylesheet" />
+    <link media="screen" href="http://sw.transifex.net/2/static/css/jquery.fancybox-1.3.0.css" type="text/css" rel="stylesheet" />
+	
+	
+	
+  <script type="text/javascript">
+    var STATIC_URL = "http://sw.transifex.net/2/static/"
+  </script>
+  <script type="text/javascript" src="http://sw.transifex.net/2/static/js/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="http://sw.transifex.net/2/static/js/json2.min.js"></script>
+  <script type="text/javascript" src="http://sw.transifex.net/2/static/js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="http://sw.transifex.net/2/static/js/base.js"></script>
+  <script type="text/javascript" src="http://sw.transifex.net/2/static/js/jquery.fancybox-1.3.0.pack.js"></script> 
+  <script type="text/javascript" src="http://sw.transifex.net/2/static/js/jquery.placeholder-1.0.1.js"></script> 
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $("#search_input").placeholder();
+    });
+  </script>
+
+	
+	
+  <link rel="shortcut icon" href="http://sw.transifex.net/2/static/images/favicon.ico" type="image/x-icon" />
+
+	
+	
+<script type="text/javascript">
+	$(function() {
+		$("input[type='text'], input[type='password']").addClass("text");
+		$("#id_username").focus();
+	});
+</script>
+
+	
+  <link type="text/css" rel="stylesheet" href="http://sw.transifex.net/2/static/css/ui.tabs.css" />
+  <script type="text/javascript" src="http://sw.transifex.net/2/static/js/ui.core.min.js"></script>
+  <script type="text/javascript" src="http://sw.transifex.net/2/static/js/ui.tabs.min.js"></script>
+
+        
+
+	
+	<!--[if IE]>
+	<link type="text/css" rel="stylesheet" media="screen" href="http://sw.transifex.net/2/static/css/ie.css" />
+	<![endif]-->
+	
+        
+<link media="screen" href="http://sw.transifex.net/2/static/forum/css/threads.css" type="text/css" rel="stylesheet" />
+
+  <link media="screen" href="http://sw.transifex.net/2/static/locks/css/icons.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+<div id="global-container">
+    <div id="global-content-wrapper">
+
+        <div id="global-header">
+        	<div class="wrapper">
+        		<a id="transifex-logo" class="col-6" href="/" title="Go to start page">
+        			<img src="http://sw.transifex.net/2/static/images/tx-logo-compact.png" alt="Transifex logo" />
+        			<img src="http://sw.transifex.net/2/static/images/beta-tag.png" alt="Beta" width="30" height="8" id="beta-tag" />
+        		</a>
+        		
+        		
+        		<ul id="global-nav" class="col-12">
+        			<li><a href="/" title="Transifex Home">Home</a></li>
+        			<li><a href="/projects/recent/" title="The projects being served">Projects</a></li>
+        			<li><a href="/languages/" title="The languages our service serves">Languages</a></li>
+        			<li><a href="/help/" title="Get some help" class="last">Help</a></li>
+        		</ul>
+        		
+        	
+        		<form id="global-search-form" class="col-6 last" action="/search/" method="get">
+        			<input class="small" id="search_input" type="text" placeholder="search project, component ..." name="q" value="" />
+        			<button type="submit">Search</button>
+        		</form>
+        		<div id="global-usernav">
+        			<div class="wrap">
+        				
+                                            <a href="/accounts/login/?next=/projects/p/lxde/c/lxappearance-obconf/token/">Sign in</a>
+                                            
+                                            
+                                                    &nbsp; | &nbsp; <a href="/accounts/register/">Register</a>
+                                            
+        				
+        				
+        				
+        				&nbsp; | &nbsp;
+        				
+        				
+        				<form id="global-language-chooser" action="/i18n/setlang/" method="post"><div style='display:none;'><input type='hidden' id='csrfmiddlewaretoken' name='csrfmiddlewaretoken' value='e8e6850f2b1267510c136f05d3f9c30b' /></div>
+        					<input name="next" type="hidden" value="/accounts/login/" />
+        					<select id="language_switch" name="language">
+        					
+        						<option value="en-us" >en-us</option>
+        					
+        						<option value="fa" >fa</option>
+        					
+        						<option value="hu" >hu</option>
+        					
+        						<option value="pl" >pl</option>
+        					
+        						<option value="sk" >sk</option>
+        					
+        					</select>
+        				</form>
+        			</div>
+        		</div>
+        		
+        	</div>
+        </div>
+
+
+
+
+
+    <div class="wrapper clearfix">
+    
+    	<div id="breadcrumb">
+<a href="/" title="Go to the start page">Home</a>
+ &raquo; Profile</div>
+        
+        
+        
+        
+		
+		    
+	    
+    	<div id="content_title" class="col-16"></div>
+    	<div id="content_header_sec" class="col-8 last"> </div>
+    
+    </div>
+
+<div id="content-main" class="wrapper clearfix">
+
+
+
+
+<div id="userprofile" style="border-top: 1px solid #ccc">
+	<div id="content_related">
+		
+	<div class="box-4-right">
+		<h3>Utilities:</h3>
+    
+		<a href="/accounts/password/reset/">Lost your password?</a>
+		<br />
+		<a href="/accounts/email/validation/reset/">Resend validation e-mail</a>
+    <br />
+		<a href="/accounts/register/">Sign up!</a>
+		<br />
+	</div>
+
+	</div><!-- END content-related -->
+	<div id="content-main">
+		
+  <h2>Sign in</h2>
+  <p>Enter your username and password to sign in.</p>
+    
+  <div class="generic_form">
+    <form action="?next=/projects/p/lxde/c/lxappearance-obconf/token/" method="post" accept-charset="utf-8"><div style='display:none;'><input type='hidden'  name='csrfmiddlewaretoken' value='e8e6850f2b1267510c136f05d3f9c30b' /></div>
+    <fieldset>
+    <table><tbody>
+      
+
+
+    
+    
+        
+            <tr>
+            <th>Username: <span class="required">*</span></th>
+            <td>
+                <p class="fieldp"><input id="id_username" type="text" name="username" maxlength="30" /></p>
+                
+            </td>
+            <td><p class="helptext"></p></td>
+            </tr>
+        
+    
+        
+            <tr>
+            <th>Password: <span class="required">*</span></th>
+            <td>
+                <p class="fieldp"><input type="password" name="password" id="id_password" /></p>
+                
+            </td>
+            <td><p class="helptext"></p></td>
+            </tr>
+        
+    
+
+
+    </tbody></table>
+    <p class="submit"><input type="submit" class="i16 submit" value="Sign in" /></p>
+    </fieldset>
+    </form>
+  </div>
+
+
+	</div><!-- END content-main -->
+</div>
+
+
+<div id="content_footer" class="col-24"></div>
+
+</div>
+
+
+</div>
+</div>
+<div id="footer">
+	<div class="wrapper clearfix">
+	
+	<div id="footer-nav" class="col-24">
+		
+			<a href="/about/" title="About Transifex">About</a>
+			&bull; <a href="/tour/" title="Take a closer look of Transifex">Tour</a>
+			&bull; <a href="/help/faq" title="Frequently asked questions!">FAQ</a>
+			&bull; <a href="http://blog.transifex.net/" title="Read about news and updates on our blog">Weblog</a>
+			&bull; <a href="http://www.indifex.com/contact/" title="Get in contact!">Contact</a>
+			&bull; <a href="http://www.indifex.com/jobs/" title="Joining the Indifex team">Jobs</a>
+			&bull; <a href="http://transifex.org/" title="Self-hosted, self-managed version">Transifex.org</a>
+		
+		<p id="footer-sub">
+			Transifex v0.9.0devel
+			&bull; An <a href="http://www.indifex.com/" title="Information craftsmen.">Indifex</a> joint
+		</p>
+	</div>
+
+	</div>
+</div>
+
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-4362397-3");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+
+
+
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "indifex";
+  feedback_widget_options.product = "transifex";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#4477A9";
+  feedback_widget_options.style = "idea";
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</body>
+</html>
