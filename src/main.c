@@ -33,10 +33,6 @@
 #include "lxappearance/lxappearance.h"
 
 #include <gdk/gdkx.h>
-#define SN_API_NOT_YET_FROZEN
-#include <libsn/sn.h>
-#undef SN_API_NOT_YET_FROZEN
-#include <stdlib.h>
 
 GtkWidget *mainwin = NULL;
 
@@ -84,21 +80,6 @@ static void print_version()
 
     exit(EXIT_SUCCESS);
 }
-
-static void print_help()
-{
-    g_print(_("Syntax: obconf [options] [ARCHIVE.obt]\n"));
-    g_print(_("\nOptions:\n"));
-    g_print(_("  --help                Display this help and exit\n"));
-    g_print(_("  --version             Display the version and exit\n"));
-    g_print(_("  --install ARCHIVE.obt Install the given theme archive and select it\n"));
-    g_print(_("  --archive THEME       Create a theme archive from the given theme directory\n"));
-    g_print(_("  --config-file FILE    Specify the path to the config file to use\n"));
-    g_print(_("\nPlease report bugs at %s\n\n"), PACKAGE_BUGREPORT);
-
-    exit(EXIT_SUCCESS);
-}
-
 
 static gboolean get_all(Window win, Atom prop, Atom type, gint size,
                         guchar **data, guint *num)
@@ -175,6 +156,13 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
     gchar *p;
     gboolean exit_with_error = FALSE;
 
+    /* FIXME: add ABI compatibility check. */
+
+    /* detect openbox */
+    const char* wm_name = gdk_x11_screen_get_window_manager_name(gtk_widget_get_screen(app->dlg));
+    if(g_strcmp0(wm_name, "Openbox"))
+        return FALSE; /* don't load the plugin if openbox is not in use. */
+
 #ifdef ENABLE_NLS
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR);
     bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
@@ -239,47 +227,15 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
 
 extern void plugin_unload(LXAppearance* app)
 {
-/*
     preview_update_set_active_font(NULL);
     preview_update_set_inactive_font(NULL);
     preview_update_set_menu_header_font(NULL);
     preview_update_set_menu_item_font(NULL);
     preview_update_set_osd_font(NULL);
     preview_update_set_title_layout(NULL);
-*/
 
     RrInstanceFree(rrinst);
     parse_paths_shutdown();
 
     xmlFreeDoc(doc);
 }
-
-void obconf_show_main()
-{
-    SnDisplay *sn_d;
-    SnLauncheeContext *sn_cx;
-
-    if (GTK_WIDGET_VISIBLE(mainwin)) return;
-
-    gtk_widget_show_all(mainwin);
-
-    sn_d = sn_display_new(GDK_DISPLAY_XDISPLAY(gdk_display_get_default()),
-                          NULL, NULL);
-
-    sn_cx = sn_launchee_context_new_from_environment
-        (sn_d, gdk_screen_get_number(gdk_display_get_default_screen
-                                     (gdk_display_get_default())));
-
-    if (sn_cx)
-        sn_launchee_context_setup_window
-            (sn_cx, GDK_WINDOW_XWINDOW(GDK_WINDOW(mainwin->window)));
-
-    if (sn_cx)
-        sn_launchee_context_complete(sn_cx);
-
-    if (sn_cx)
-        sn_launchee_context_unref(sn_cx);
-    sn_display_unref(sn_d);
-}
-
-

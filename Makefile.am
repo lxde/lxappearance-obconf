@@ -22,7 +22,6 @@ src_obconf_la_CPPFLAGS = \
 	$(GMODULE_CFLAGS) \
 	$(GDK_PIXBUF_CFLAGS) \
 	$(XML_CFLAGS) \
-	$(LIBSTARTUPNOTIFICATION_CFLAGS) \
 	-DLOCALEDIR=\"$(localedir)\" \
 	-DPIXMAPDIR=\"$(pixmapdir)\" \
 	-DGLADEDIR=\"$(gladedir)\" \
@@ -35,8 +34,7 @@ src_obconf_la_LIBADD = \
 	$(LXAPPEARANCE_LIBS) \
 	$(GMODULE_LIBS) \
 	$(GDK_PIXBUF_LIBS) \
-	$(LIBINTL) \
-	$(LIBSTARTUPNOTIFICATION_LIBS)
+	$(LIBINTL)
 
 src_obconf_la_LDFLAGS = \
 	-module \
