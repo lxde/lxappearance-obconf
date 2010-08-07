@@ -145,7 +145,9 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
     gchar *p;
     gboolean exit_with_error = FALSE;
 
-    /* FIXME: add ABI compatibility check. */
+    /* ABI compatibility check. */
+    if(app->abi_version > LXAPPEARANCE_ABI_VERSION)
+        return FALSE;
 
     /* detect openbox */
     const char* wm_name = gdk_x11_screen_get_window_manager_name(gtk_widget_get_screen(app->dlg));
