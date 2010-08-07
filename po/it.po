@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: http://bugzilla.icculus.org/\n"
-"POT-Creation-Date: 2010-08-06 16:59+0800\n"
+"POT-Creation-Date: 2010-08-08 01:18+0800\n"
 "PO-Revision-Date: 2007-08-05 13:02+0200\n"
 "Last-Translator: Davide Truffa <davide@catoblepa.org>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -17,79 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/main.c:71 ../src/main.c:73 ../src/main.c:75
-#, c-format
-msgid "Copyright (c)"
-msgstr "Copyright (c)"
-
-#: ../src/main.c:86
-#, c-format
-msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
-msgstr "Sintassi: obconf [opzioni] [ARCHIVIO.obt]\n"
-
-#: ../src/main.c:87
-#, c-format
-msgid ""
-"\n"
-"Options:\n"
-msgstr ""
-"\n"
-"Opzioni:\n"
-
-#: ../src/main.c:88
-#, c-format
-msgid "  --help                Display this help and exit\n"
-msgstr "  --help                 Mostra questo aiuto ed esce\n"
-
-#: ../src/main.c:89
-#, c-format
-msgid "  --version             Display the version and exit\n"
-msgstr "  --version              Mostra la versione ed esce\n"
-
-#: ../src/main.c:90
-#, c-format
-msgid "  --install ARCHIVE.obt Install the given theme archive and select it\n"
-msgstr ""
-"  --install ARCHIVIO.obt Installa e seleziona l'archivio-tema specificato\n"
-
-#: ../src/main.c:91
-#, c-format
-msgid ""
-"  --archive THEME       Create a theme archive from the given theme "
-"directory\n"
-msgstr ""
-"  --archive TEMA         Crea un archivio contenente il tema dalla directory "
-"tema specificata\n"
-
-#: ../src/main.c:92
-#, c-format
-msgid "  --config-file FILE    Specify the path to the config file to use\n"
-msgstr ""
-
-#: ../src/main.c:93
-#, c-format
-msgid ""
-"\n"
-"Please report bugs at %s\n"
-"\n"
-msgstr ""
-"\n"
-"Segnalate eventuali bug a %s\n"
-"\n"
-
-#: ../src/main.c:181
+#: ../src/main.c:167
 msgid ""
 "Failed to load the obconf.glade interface file. You have probably failed to "
 "install ObConf properly."
 msgstr ""
 
-#: ../src/main.c:202
+#: ../src/main.c:192
 msgid ""
 "Failed to load an rc.xml. You have probably failed to install Openbox "
 "properly."
 msgstr ""
 
-#: ../src/main.c:211
+#: ../src/main.c:201
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file.  Your configuration file "
@@ -98,25 +38,25 @@ msgid ""
 "Message: %s"
 msgstr ""
 
-#: ../src/theme.c:109 ../src/theme.c:141
+#: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
 msgstr "Scegli un tema per Openbox"
 
-#: ../src/theme.c:118
+#: ../src/theme.c:116
 msgid "Openbox theme archives"
 msgstr "Archivio tema Openbox"
 
-#: ../src/archive.c:40
+#: ../src/archive.c:44
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" è stato installato in %s"
 
-#: ../src/archive.c:65
+#: ../src/archive.c:69
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" è stato creato con successo"
 
-#: ../src/archive.c:101
+#: ../src/archive.c:105
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -127,27 +67,27 @@ msgstr ""
 "Sono stati riscontrati i seguenti errori:\n"
 "%s"
 
-#: ../src/archive.c:106 ../src/archive.c:190
+#: ../src/archive.c:110 ../src/archive.c:194
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Impossibile eseguire il comando \"tar\": %s"
 
-#: ../src/archive.c:126
+#: ../src/archive.c:130
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "Impossibile creare la directory \"%s\": %s"
 
-#: ../src/archive.c:148
+#: ../src/archive.c:152
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" non sembra contenere un tema per Openbox"
 
-#: ../src/archive.c:158
+#: ../src/archive.c:162
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
 msgstr "Impossibile posizionarsi nella directory \"%s\": %s"
 
-#: ../src/archive.c:197
+#: ../src/archive.c:201
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -162,23 +102,115 @@ msgstr ""
 "Sono stati riscontrati i seguenti errori:\n"
 "%s"
 
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Tema</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "Crea un archivio-tema (.obt)..."
+
+#: ../src/obconf.glade.h:3
+#, fuzzy
+msgid "Font for active window title:"
+msgstr "Titolo finestra _inattiva: "
+
+#: ../src/obconf.glade.h:4
+#, fuzzy
+msgid "Font for inactive window title:"
+msgstr "Titolo finestra _inattiva: "
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr ""
+
+#: ../src/obconf.glade.h:6
+#, fuzzy
+msgid "Font for menu header:"
+msgstr "Intestazione _menù: "
+
+#: ../src/obconf.glade.h:7
+#, fuzzy
+msgid "Font for on-screen display:"
+msgstr "_On-screen display: "
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr ""
+
+#: ../src/obconf.glade.h:9
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr ""
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "Ordine dei _Pulsanti:"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "_Installa un nuovo tema..."
+
+#~ msgid "Copyright (c)"
+#~ msgstr "Copyright (c)"
+
+#~ msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
+#~ msgstr "Sintassi: obconf [opzioni] [ARCHIVIO.obt]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Options:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Opzioni:\n"
+
+#~ msgid "  --help                Display this help and exit\n"
+#~ msgstr "  --help                 Mostra questo aiuto ed esce\n"
+
+#~ msgid "  --version             Display the version and exit\n"
+#~ msgstr "  --version              Mostra la versione ed esce\n"
+
+#~ msgid ""
+#~ "  --install ARCHIVE.obt Install the given theme archive and select it\n"
+#~ msgstr ""
+#~ "  --install ARCHIVIO.obt Installa e seleziona l'archivio-tema "
+#~ "specificato\n"
+
+#~ msgid ""
+#~ "  --archive THEME       Create a theme archive from the given theme "
+#~ "directory\n"
+#~ msgstr ""
+#~ "  --archive TEMA         Crea un archivio contenente il tema dalla "
+#~ "directory tema specificata\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Please report bugs at %s\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Segnalate eventuali bug a %s\n"
+#~ "\n"
+
 #~ msgid "Openbox Configuration Manager"
 #~ msgstr "Gestore Configurazione di Openbox"
 
-#~ msgid "<span weight=\"bold\">Theme</span>"
-#~ msgstr "<span weight=\"bold\">Tema</span>"
-
 #~ msgid "    "
 #~ msgstr "    "
-
-#~ msgid "_Install a new theme..."
-#~ msgstr "_Installa un nuovo tema..."
-
-#~ msgid "Create a theme _archive (.obt)..."
-#~ msgstr "Crea un archivio-tema (.obt)..."
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
 
 #~ msgid "<span weight=\"bold\">Windows</span>"
 #~ msgstr "<span weight=\"bold\">Finestre</span>"
@@ -191,9 +223,6 @@ msgstr ""
 
 #~ msgid "<span weight=\"bold\">Window Titles</span>"
 #~ msgstr "<span weight=\"bold\">Barra del Titolo</span>"
-
-#~ msgid "_Button order:"
-#~ msgstr "Ordine dei _Pulsanti:"
 
 #~ msgid ""
 #~ "N - The window's icon\n"
@@ -218,17 +247,8 @@ msgstr ""
 #~ msgid "_Active window title: "
 #~ msgstr "Titolo finestra _attiva:"
 
-#~ msgid "_Inactive window title: "
-#~ msgstr "Titolo finestra _inattiva: "
-
-#~ msgid "Menu _header: "
-#~ msgstr "Intestazione _menù: "
-
 #~ msgid "_Menu Item: "
 #~ msgstr "_Voci menù: "
-
-#~ msgid "_On-screen display: "
-#~ msgstr "_On-screen display: "
 
 #~ msgid "Appearance"
 #~ msgstr "Aspetto"

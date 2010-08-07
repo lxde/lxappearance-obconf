@@ -41,7 +41,6 @@ src_obconf_la_LDFLAGS = \
 	@LXAPPEARANCE_MODULE@
 
 src_obconf_la_SOURCES = \
-	src/gettext.h \
 	src/archive.c \
 	src/archive.h \
 	src/main.c \

@@ -4,7 +4,6 @@
 
 #include "theme.h"
 #include "main.h"
-#define GETTEXT_PACKAGE PACKAGE_NAME
 #include <glib/gi18n.h>
 
 #include <string.h>

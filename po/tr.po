@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.2\n"
 "Report-Msgid-Bugs-To: http://bugzilla.icculus.org/\n"
-"POT-Creation-Date: 2010-08-06 16:59+0800\n"
+"POT-Creation-Date: 2010-08-08 01:18+0800\n"
 "PO-Revision-Date: 2008-02-01 20:18+0200\n"
 "Last-Translator: Tutku Dalmaz <mektup@tutkudalmaz.org>\n"
 "Language-Team: Turkish\n"
@@ -18,77 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../src/main.c:71 ../src/main.c:73 ../src/main.c:75
-#, c-format
-msgid "Copyright (c)"
-msgstr "Telif Hakkı (c)"
-
-#: ../src/main.c:86
-#, c-format
-msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
-msgstr "Sözdizimi: obconf [seçenekler] [ARŞİV.obt]\n"
-
-#: ../src/main.c:87
-#, c-format
-msgid ""
-"\n"
-"Options:\n"
-msgstr ""
-"\n"
-"Seçenekler:\n"
-
-#: ../src/main.c:88
-#, c-format
-msgid "  --help                Display this help and exit\n"
-msgstr "  --help              Yardımı görüntüle ve çık\n"
-
-#: ../src/main.c:89
-#, c-format
-msgid "  --version             Display the version and exit\n"
-msgstr "  --version              Sürümü görüntüle ve çık\n"
-
-#: ../src/main.c:90
-#, c-format
-msgid "  --install ARCHIVE.obt Install the given theme archive and select it\n"
-msgstr "  --install ARCHIVE.obt Belirlenen tema arşivini kurar ve kullanır\n"
-
-#: ../src/main.c:91
-#, c-format
-msgid ""
-"  --archive THEME       Create a theme archive from the given theme "
-"directory\n"
-msgstr ""
-"  --archive THEME          Verilen tema dizininden tema arşivi oluşturur\n"
-
-#: ../src/main.c:92
-#, c-format
-msgid "  --config-file FILE    Specify the path to the config file to use\n"
-msgstr ""
-
-#: ../src/main.c:93
-#, c-format
-msgid ""
-"\n"
-"Please report bugs at %s\n"
-"\n"
-msgstr ""
-"\n"
-"Lütfen hataları %s'e bildiriniz\n"
-"\n"
-
-#: ../src/main.c:181
+#: ../src/main.c:167
 msgid ""
 "Failed to load the obconf.glade interface file. You have probably failed to "
 "install ObConf properly."
 msgstr ""
 
-#: ../src/main.c:202
+#: ../src/main.c:192
 msgid ""
 "Failed to load an rc.xml. You have probably failed to install Openbox "
 "properly."
 msgstr ""
 
-#: ../src/main.c:211
+#: ../src/main.c:201
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file.  Your configuration file "
@@ -97,25 +39,25 @@ msgid ""
 "Message: %s"
 msgstr ""
 
-#: ../src/theme.c:109 ../src/theme.c:141
+#: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
 msgstr "Bir Openbox teması seçin"
 
-#: ../src/theme.c:118
+#: ../src/theme.c:116
 msgid "Openbox theme archives"
 msgstr "Openbox tema arşivi"
 
-#: ../src/archive.c:40
+#: ../src/archive.c:44
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" %s'e yüklendi"
 
-#: ../src/archive.c:65
+#: ../src/archive.c:69
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" başarıyla oluşturuldu"
 
-#: ../src/archive.c:101
+#: ../src/archive.c:105
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -126,27 +68,27 @@ msgstr ""
 "Şu hatalar bildirildi:\n"
 "%s"
 
-#: ../src/archive.c:106 ../src/archive.c:190
+#: ../src/archive.c:110 ../src/archive.c:194
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "\"tar\"komutu çalıştırılamadı: %s"
 
-#: ../src/archive.c:126
+#: ../src/archive.c:130
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "\"%s\" dizini oluşturulamadı: %s"
 
-#: ../src/archive.c:148
+#: ../src/archive.c:152
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" geçerli bir Openbox tema arşivi gibi görünmüyor"
 
-#: ../src/archive.c:158
+#: ../src/archive.c:162
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
 msgstr "Dizin \"%s\"e taşınamadı: %s"
 
-#: ../src/archive.c:197
+#: ../src/archive.c:201
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -156,23 +98,117 @@ msgid ""
 "%s"
 msgstr ""
 
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span·weight=\"bold\">Tema</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "Yeni bir tema arşivi (.obt) oluştur..."
+
+#: ../src/obconf.glade.h:3
+#, fuzzy
+msgid "Font for active window title:"
+msgstr "_Etkisiz pencere başlığı: "
+
+#: ../src/obconf.glade.h:4
+#, fuzzy
+msgid "Font for inactive window title:"
+msgstr "_Etkisiz pencere başlığı: "
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr ""
+
+#: ../src/obconf.glade.h:6
+#, fuzzy
+msgid "Font for menu header:"
+msgstr "Menü _başlığı: "
+
+#: ../src/obconf.glade.h:7
+msgid "Font for on-screen display:"
+msgstr ""
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr ""
+
+#: ../src/obconf.glade.h:9
+#, fuzzy
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+"Pencere simgesi\n"
+"Pencere etiketi (Başlık)\n"
+"Simge durumuna küçült\n"
+"Ekranı kapla"
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr ""
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "_Düğme düzeni:"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "_Yeni tema kur"
+
+#~ msgid "Copyright (c)"
+#~ msgstr "Telif Hakkı (c)"
+
+#~ msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
+#~ msgstr "Sözdizimi: obconf [seçenekler] [ARŞİV.obt]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Options:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Seçenekler:\n"
+
+#~ msgid "  --help                Display this help and exit\n"
+#~ msgstr "  --help              Yardımı görüntüle ve çık\n"
+
+#~ msgid "  --version             Display the version and exit\n"
+#~ msgstr "  --version              Sürümü görüntüle ve çık\n"
+
+#~ msgid ""
+#~ "  --install ARCHIVE.obt Install the given theme archive and select it\n"
+#~ msgstr ""
+#~ "  --install ARCHIVE.obt Belirlenen tema arşivini kurar ve kullanır\n"
+
+#~ msgid ""
+#~ "  --archive THEME       Create a theme archive from the given theme "
+#~ "directory\n"
+#~ msgstr ""
+#~ "  --archive THEME          Verilen tema dizininden tema arşivi oluşturur\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Please report bugs at %s\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Lütfen hataları %s'e bildiriniz\n"
+#~ "\n"
+
 #~ msgid "Openbox Configuration Manager"
 #~ msgstr "Openbox Yapılandırma Yöneticisi"
 
-#~ msgid "<span weight=\"bold\">Theme</span>"
-#~ msgstr "<span·weight=\"bold\">Tema</span>"
-
 #~ msgid "    "
 #~ msgstr "    "
-
-#~ msgid "_Install a new theme..."
-#~ msgstr "_Yeni tema kur"
-
-#~ msgid "Create a theme _archive (.obt)..."
-#~ msgstr "Yeni bir tema arşivi (.obt) oluştur..."
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
 
 #~ msgid "<span weight=\"bold\">Windows</span>"
 #~ msgstr "<span·weight=\"bold\">Pencereler</span>"
@@ -180,9 +216,6 @@ msgstr ""
 #~ msgid "<span weight=\"bold\">Window Titles</span>"
 #~ msgstr "<span·weight=\"bold\">Pencere Başlıkları</span>"
 
-#~ msgid "_Button order:"
-#~ msgstr "_Düğme düzeni:"
-
 #~ msgid ""
 #~ "N:\n"
 #~ "L:\n"
@@ -193,17 +226,6 @@ msgstr ""
 #~ "L:\n"
 #~ "I:\n"
 #~ "M:"
-
-#~ msgid ""
-#~ "Window icon\n"
-#~ "Window label (Title)\n"
-#~ "Iconify (Minimize)\n"
-#~ "Maximize"
-#~ msgstr ""
-#~ "Pencere simgesi\n"
-#~ "Pencere etiketi (Başlık)\n"
-#~ "Simge durumuna küçült\n"
-#~ "Ekranı kapla"
 
 #~ msgid ""
 #~ "C:\n"
@@ -219,12 +241,6 @@ msgstr ""
 
 #~ msgid "_Active window title: "
 #~ msgstr "_Etkin pencere başlığı"
-
-#~ msgid "_Inactive window title: "
-#~ msgstr "_Etkisiz pencere başlığı: "
-
-#~ msgid "Menu _header: "
-#~ msgstr "Menü _başlığı: "
 
 #~ msgid "_Menu Item: "
 #~ msgstr "_Menü Öğesi"

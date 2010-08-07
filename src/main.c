@@ -33,7 +33,6 @@
 #include "appearance.h"
 #include "preview_update.h"
 #include "tree.h"
-#define GETTEXT_PACKAGE PACKAGE_NAME
 #include <glib/gi18n-lib.h>
 
 #include "lxappearance/lxappearance.h"
@@ -69,22 +68,6 @@ void obconf_error(gchar *msg, gboolean modal)
                                  GTK_OBJECT(d));
         gtk_widget_show(d);
     }
-}
-
-static void print_version()
-{
-    g_print("ObConf %s\n", PACKAGE_VERSION);
-    g_print(_("Copyright (c)"));
-    g_print(" 2003-2008   Dana Jansens\n");
-    g_print(_("Copyright (c)"));
-    g_print(" 2003        Tim Riley\n");
-    g_print(_("Copyright (c)"));
-    g_print(" 2007        Javeed Shaikh\n\n");
-    g_print("This program comes with ABSOLUTELY NO WARRANTY.\n");
-    g_print("This is free software, and you are welcome to redistribute it\n");
-    g_print("under certain conditions. See the file COPYING for details.\n\n");
-
-    exit(EXIT_SUCCESS);
 }
 
 static gboolean get_all(Window win, Atom prop, Atom type, gint size,
@@ -177,6 +160,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
     mainwin = app->dlg;
 
     builder = gtk_builder_new();
+    gtk_builder_set_translation_domain(builder, GETTEXT_PACKAGE);
     g_debug(GLADEDIR"/obconf.glade");
     if(!gtk_builder_add_from_file(builder, GLADEDIR"/obconf.glade", NULL))
     {

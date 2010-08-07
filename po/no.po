@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: http://bugzilla.icculus.org/\n"
-"POT-Creation-Date: 2010-08-06 16:59+0800\n"
+"POT-Creation-Date: 2010-08-08 01:18+0800\n"
 "PO-Revision-Date: 2007-07-30 15:43+0200\n"
 "Last-Translator: Michael Kjelbergvik Thung <postlogic@switch-case.org>\n"
 "Language-Team: Norwegian\n"
@@ -15,77 +15,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/main.c:71 ../src/main.c:73 ../src/main.c:75
-#, c-format
-msgid "Copyright (c)"
-msgstr ""
-
-#: ../src/main.c:86
-#, c-format
-msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
-msgstr "Syntaks: obconf [alternativer] [ARKIV.obt]\n"
-
-#: ../src/main.c:87
-#, c-format
-msgid ""
-"\n"
-"Options:\n"
-msgstr ""
-"\n"
-"Alternativer:\n"
-
-#: ../src/main.c:88
-#, c-format
-msgid "  --help                Display this help and exit\n"
-msgstr "  --help                Vis denne teksten og avslutt\n"
-
-#: ../src/main.c:89
-#, c-format
-msgid "  --version             Display the version and exit\n"
-msgstr "  --version             Vis versjonsnummeret og avslutt\n"
-
-#: ../src/main.c:90
-#, c-format
-msgid "  --install ARCHIVE.obt Install the given theme archive and select it\n"
-msgstr "  --install ARKIV.obt   Installér valgt tema-arkiv og velg det\n"
-
-#: ../src/main.c:91
-#, c-format
-msgid ""
-"  --archive THEME       Create a theme archive from the given theme "
-"directory\n"
-msgstr ""
-"  --archive TEMA        Opprett et tema-arkiv fra oppgitt tema-katalog\n"
-
-#: ../src/main.c:92
-#, c-format
-msgid "  --config-file FILE    Specify the path to the config file to use\n"
-msgstr ""
-
-#: ../src/main.c:93
-#, c-format
-msgid ""
-"\n"
-"Please report bugs at %s\n"
-"\n"
-msgstr ""
-"\n"
-"Vennligst rapporter feil til %s\n"
-"\n"
-
-#: ../src/main.c:181
+#: ../src/main.c:167
 msgid ""
 "Failed to load the obconf.glade interface file. You have probably failed to "
 "install ObConf properly."
 msgstr ""
 
-#: ../src/main.c:202
+#: ../src/main.c:192
 msgid ""
 "Failed to load an rc.xml. You have probably failed to install Openbox "
 "properly."
 msgstr ""
 
-#: ../src/main.c:211
+#: ../src/main.c:201
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file.  Your configuration file "
@@ -94,25 +36,25 @@ msgid ""
 "Message: %s"
 msgstr ""
 
-#: ../src/theme.c:109 ../src/theme.c:141
+#: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
 msgstr "Velg et Openbox-tema"
 
-#: ../src/theme.c:118
+#: ../src/theme.c:116
 msgid "Openbox theme archives"
 msgstr "Openbox tema-arkiver"
 
-#: ../src/archive.c:40
+#: ../src/archive.c:44
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" ble installert i %s"
 
-#: ../src/archive.c:65
+#: ../src/archive.c:69
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" ble opprettet"
 
-#: ../src/archive.c:101
+#: ../src/archive.c:105
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -123,27 +65,27 @@ msgstr ""
 "Følgende feil ble rapportert:\n"
 "%s"
 
-#: ../src/archive.c:106 ../src/archive.c:190
+#: ../src/archive.c:110 ../src/archive.c:194
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Kan ikke finne \"tar\"-kommandoen: %s"
 
-#: ../src/archive.c:126
+#: ../src/archive.c:130
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "Kan ikke lage katalog \"%s\": %s"
 
-#: ../src/archive.c:148
+#: ../src/archive.c:152
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" ser ikke ut til å være en gyldig katalog for Openbox-temaer"
 
-#: ../src/archive.c:158
+#: ../src/archive.c:162
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
 msgstr "Kan ikke flytte til katalog \"%s\": %s"
 
-#: ../src/archive.c:197
+#: ../src/archive.c:201
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -158,23 +100,109 @@ msgstr ""
 "Følgende feil ble rapportert:\n"
 "%s"
 
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Tema</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "Opprett et tema-_arkiv (.obt)..."
+
+#: ../src/obconf.glade.h:3
+#, fuzzy
+msgid "Font for active window title:"
+msgstr "_Inaktiv vindustittel: "
+
+#: ../src/obconf.glade.h:4
+#, fuzzy
+msgid "Font for inactive window title:"
+msgstr "_Inaktiv vindustittel: "
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr ""
+
+#: ../src/obconf.glade.h:6
+#, fuzzy
+msgid "Font for menu header:"
+msgstr "Vindus_overskrift: "
+
+#: ../src/obconf.glade.h:7
+#, fuzzy
+msgid "Font for on-screen display:"
+msgstr "_Popup-vindu: "
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr ""
+
+#: ../src/obconf.glade.h:9
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr ""
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "_Knapp-rekkefølge"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "_Installér et nytt tema..."
+
+#~ msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
+#~ msgstr "Syntaks: obconf [alternativer] [ARKIV.obt]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Options:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Alternativer:\n"
+
+#~ msgid "  --help                Display this help and exit\n"
+#~ msgstr "  --help                Vis denne teksten og avslutt\n"
+
+#~ msgid "  --version             Display the version and exit\n"
+#~ msgstr "  --version             Vis versjonsnummeret og avslutt\n"
+
+#~ msgid ""
+#~ "  --install ARCHIVE.obt Install the given theme archive and select it\n"
+#~ msgstr "  --install ARKIV.obt   Installér valgt tema-arkiv og velg det\n"
+
+#~ msgid ""
+#~ "  --archive THEME       Create a theme archive from the given theme "
+#~ "directory\n"
+#~ msgstr ""
+#~ "  --archive TEMA        Opprett et tema-arkiv fra oppgitt tema-katalog\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Please report bugs at %s\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Vennligst rapporter feil til %s\n"
+#~ "\n"
+
 #~ msgid "Openbox Configuration Manager"
 #~ msgstr "Openbox Konfigurasjonsbehandler"
 
-#~ msgid "<span weight=\"bold\">Theme</span>"
-#~ msgstr "<span weight=\"bold\">Tema</span>"
-
 #~ msgid "    "
 #~ msgstr "    "
-
-#~ msgid "_Install a new theme..."
-#~ msgstr "_Installér et nytt tema..."
-
-#~ msgid "Create a theme _archive (.obt)..."
-#~ msgstr "Opprett et tema-_arkiv (.obt)..."
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
 
 #~ msgid "<span weight=\"bold\">Windows</span>"
 #~ msgstr "<span weight=\"bold\">Vinduer</span>"
@@ -187,9 +215,6 @@ msgstr ""
 
 #~ msgid "<span weight=\"bold\">Window Titles</span>"
 #~ msgstr "<span weight=\"bold\">Vindustitler</span>"
-
-#~ msgid "_Button order:"
-#~ msgstr "_Knapp-rekkefølge"
 
 #~ msgid ""
 #~ "N - The window's icon\n"
@@ -214,17 +239,8 @@ msgstr ""
 #~ msgid "_Active window title: "
 #~ msgstr "_Aktiv vindustittel: "
 
-#~ msgid "_Inactive window title: "
-#~ msgstr "_Inaktiv vindustittel: "
-
-#~ msgid "Menu _header: "
-#~ msgstr "Vindus_overskrift: "
-
 #~ msgid "_Menu Item: "
 #~ msgstr "_Menyalternativ: "
-
-#~ msgid "_On-screen display: "
-#~ msgstr "_Popup-vindu: "
 
 #~ msgid "Appearance"
 #~ msgstr "Utseende"

@@ -26,7 +26,6 @@
 #include "main.h"
 #include "tree.h"
 #include "preview_update.h"
-#define GETTEXT_PACKAGE PACKAGE_NAME
 #include <glib/gi18n.h>
 #include "archive.h"
 #include "theme.h"
