@@ -1,5 +1,19 @@
-ObConf
-Copyright (C) 2003-2007  Dana Jansens, Tim Riley, Javeed Shaikh
+LXAppearance ObConf plugin.
+
+LXAppearance plugin developer:
+  Copyright (C) 2010       Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+
+Original authors of ObConf:
+  Copyright (C) 2003-2007  Dana Jansens, Tim Riley, Javeed Shaikh
+
+ObConf is a program used to configure OpenBox window manager developed
+by Dana Jansens, Tim Riley, and Javeed Shaikh. LXAppearance is a tool
+used to configure look and feels of the desktop written by Hong Jen Yee
+for LXDE project. This plugin is derived from ObConf as an attempt to
+integrate obconf with LXAppearance to provide a better user experience.
+Most of the source code are taken from ObConf written by its authors
+with some modifications added by LXAppearance developers to make it a
+plugin.
 
 ----
 

@@ -1,3 +1,5 @@
+This LXAppearance plugin is derived from ObConf.
+
 ObConf is written by:
 
  - Dana Jansens (danakj@orodu.net)
@@ -10,3 +12,7 @@ ObConf is written by:
    - Theme previews
  - Myles Green (rmg57@telus.net)
    - Icon
+
+LXAppearance plugin integration is done by:
+
+ - Hong Jen Yee (PCMan) (pcman.tw@gmail.com)

@@ -1,6 +1,11 @@
+/* This file is part of ObConf. It's taken by Hong Jen Yee on
+ * 2010-08-07 and some modifications were done to make it a loadable
+ * module of LXAppearance. */
+
 #include "theme.h"
 #include "main.h"
-#include "gettext.h"
+#define GETTEXT_PACKAGE PACKAGE_NAME
+#include <glib/gi18n.h>
 
 #include <string.h>
 #include <errno.h>

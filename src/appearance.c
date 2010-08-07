@@ -4,6 +4,8 @@
    Copyright (c) 2003-2007   Dana Jansens
    Copyright (c) 2003        Tim Riley
 
+   Copyright (C) 2010        Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
    the Free Software Foundation; either version 2 of the License, or
@@ -16,6 +18,10 @@
 
    See the COPYING file for a copy of the GNU General Public License.
 */
+
+/* This file is part of ObConf. It's taken by Hong Jen Yee on
+ * 2010-08-07 and some modifications were done to make it a loadable
+ * module of LXAppearance. */
 
 #include "main.h"
 #include "tree.h"
