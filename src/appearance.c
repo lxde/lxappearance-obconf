@@ -26,6 +26,7 @@
 #include "main.h"
 #include "tree.h"
 #include "preview_update.h"
+#include <ctype.h> /* toupper */
 
 static gboolean mapping = FALSE;
 

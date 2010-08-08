@@ -23,6 +23,7 @@
  * 2010-08-07 and some modifications were done to make it a loadable
  * module of LXAppearance. */
 
+#include "preview.h" /* preview_theme */
 #include "preview_update.h"
 #include "main.h"
 
