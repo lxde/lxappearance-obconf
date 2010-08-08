@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lxappearance-obconf\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-08 05:40+0000\n"
+"PO-Revision-Date: 2010-08-08 13:22+0300\n"
+"Last-Translator: Alexander Kazancev <kazancas@mandriva.ru>\n"
+"Language-Team: Edumandriva <info@edumandriva.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+
+#: ../src/main.c:169
+msgid "Failed to load the obconf.glade interface file. You have probably failed to install ObConf properly."
+msgstr "Ошибка загрузки интерфейса obconf.glade. Возможно у вас не установлен ObConf."
+
+#: ../src/main.c:194
+msgid "Failed to load an rc.xml. You have probably failed to install Openbox properly."
+msgstr "Ошибка загрузки rc.xml. Возможно у вас не установлен Openbox."
+
+#: ../src/main.c:203
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+"Ошибка обработки файла конфигурации Openbox. У вас неверный файл конфигурации.\n"
+"\n"
+"Сообщение: %s"
+
+#: ../src/theme.c:107
+#: ../src/theme.c:139
+msgid "Choose an Openbox theme"
+msgstr "Выбор темы Openbox"
+
+#: ../src/theme.c:116
+msgid "Openbox theme archives"
+msgstr "Архивирование темы Openbox"
+
+#: ../src/archive.c:44
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr "\"%s\" установлен в %s"
+
+#: ../src/archive.c:69
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr "\"%s\" успешно создан"
+
+#: ../src/archive.c:105
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Невозможно создать архив темы \"%s\".\n"
+"Была получена следующая ошибка:\n"
+"%s"
+
+#: ../src/archive.c:110
+#: ../src/archive.c:194
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr "Невозможно запустить команду \"tar\": %s"
+
+#: ../src/archive.c:130
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr "Невозможно создать директорию \"%s\": %s"
+
+#: ../src/archive.c:152
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr "\"%s\" не может быть верной директорией тем Openbox"
+
+#: ../src/archive.c:162
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Невозможно переместить директорию \"%s\": %s"
+
+#: ../src/archive.c:201
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Невозможно извлечь файл \"%s\".\n"
+"Убедитесь, что \"%s\" доступен для чтения и является архивом тем Openbox.\n"
+"Была получена следующая ошибка:\n"
+"%s"
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Тема</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "Создание _архива темы (.obt)..."
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr "Шрифт для заголовка активного окна:"
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive window title:"
+msgstr "Шрифт для заголовка неактивного окна:"
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr "Шрифт для элемента меню:"
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu header:"
+msgstr "Шрифт для заголовка меню:"
+
+#: ../src/obconf.glade.h:7
+msgid "Font for on-screen display:"
+msgstr "Шрифт для отображения:"
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr "Разное"
+
+#: ../src/obconf.glade.h:9
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+"N: Значок окна\n"
+"L: Метка окна (Заголовок)\n"
+"I: В значок (Свернуть)\n"
+"M: Развернуть\n"
+"C: Закрыть\n"
+"S: Скрыть (Скрутить)\n"
+"D: Везде (на всех раб. столах)"
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Тема"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr "Строка заголовка"
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "_Порядок кнопок:"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "_Установка новой темы..."
+
