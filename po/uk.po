@@ -32,6 +32,9 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
+"Помилка аналізу конфігураційного файлу Openbox. Ваш конфігураційний файл має помилку XML.\n"
+"\n"
+"Повідомлення: %s"
 
 #: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
@@ -58,6 +61,9 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
+"Не можу створити архів теми \"%s\".\n"
+"Помилка:\n"
+"%s"
 
 #: ../src/archive.c:110 ../src/archive.c:194
 #, c-format
@@ -87,6 +93,10 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
+"Не можу розпакувати файл \"%s\".\n"
+"Впевніться, що  \"%s\" доступна для запису і що це є файл архіву теми Openbox.\n"
+"Помилка:\n"
+"%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
