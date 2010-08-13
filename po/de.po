@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lxappearance-obconf 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-12 05:39+0000\n"
+"PO-Revision-Date: 2010-08-13 03:13+0100\n"
+"Last-Translator: Christoph Wickert <cwickert@fedoraproject.org>\n"
+"Language-Team: German <translation@mailinglist.lxde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/main.c:169
+msgid "Failed to load the obconf.glade interface file. You have probably failed to install ObConf properly."
+msgstr "Fehler beim Laden der Oberflächendatei obconf.glade. Vermutlich wurde ObConf nicht richtig installiert."
+
+#: ../src/main.c:194
+msgid "Failed to load an rc.xml. You have probably failed to install Openbox properly."
+msgstr "Fehler beim Laden einer rc.xml. Vermutlich wurde Openbox nicht richtig installiert."
+
+#: ../src/main.c:203
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+"Fehler beim Parsen der Openbox Konfigurationsdatei. Ihre Konfigurationsdatei ist kein gültiges XML.\n"
+"\n"
+"Meldung: %s"
+
+#: ../src/theme.c:107
+#: ../src/theme.c:139
+msgid "Choose an Openbox theme"
+msgstr "Openbox Thema auswählen"
+
+#: ../src/theme.c:116
+msgid "Openbox theme archives"
+msgstr "Openbox Themenarchive"
+
+#: ../src/archive.c:44
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr "»%s« wurde nach %s installiert"
+
+#: ../src/archive.c:69
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr "»%s« wurde erfolgreich angelegt"
+
+#: ../src/archive.c:105
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Themenarchiv »%s« konnte nicht angelegt werden.\n"
+"Die folgenden Fehler traten auf:\n"
+"%s"
+
+#: ../src/archive.c:110
+#: ../src/archive.c:194
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr "Befehl »tar« konnte nicht ausgeführt werden: %s"
+
+#: ../src/archive.c:130
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr "Verzeichnis »%s« konnte nicht angelegt werden: %s"
+
+#: ../src/archive.c:152
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr "»%s« scheint kein gültiges Verzeichnis für Openbox Themen zu sein"
+
+#: ../src/archive.c:162
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Fehler beim Verschieben des Verzeichnisses »%s«: %s"
+
+#: ../src/archive.c:201
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Die Datei »%s« konnte nicht entpackt werden.\n"
+"Bitte stellen Sie sicher, dass »%s« schreibbar und die Datei ein gültiges Openbox-Themenarchiv ist.\n"
+"Die folgenden Fehler wurden traten auf:\n"
+"%s"
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Thema</span>"
+
+#: ../src/obconf.glade.h:2
+#, fuzzy
+msgid "Create a theme _archive (.obt)..."
+msgstr "Themen_archiv (.obt) erzeigen…"
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr "Schriftart für aktiven Fenstertitel:"
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive window title:"
+msgstr "Schriftart für inaktiven Fenstertitel:"
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr "Schriftart für Menüeinträge:"
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu header:"
+msgstr "Schriftart für Menükopfzeilen:"
+
+#: ../src/obconf.glade.h:7
+#, fuzzy
+msgid "Font for on-screen display:"
+msgstr "Schriftart für On-Screen Display:"
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr "Verschiedenes"
+
+#: ../src/obconf.glade.h:9
+#, fuzzy
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+"N: Fenstersymbol\n"
+"L: Fenstertitel\n"
+"I: Minimieren\n"
+"M: Maximieren\n"
+"C: Schließen\n"
+"S: Aufrollen\n"
+"D: Auf allen Arbeitsflächen"
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Thema"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr "Titelleiste"
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "Anordnung der Knöpfe:"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "Neues Thema _installieren…"
+
