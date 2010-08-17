@@ -1,0 +1,167 @@
+# Serbian translation for LXAppearance ObConf plugin
+# Copyright (C) 2010 Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
+# This file is distributed under the same license as the LXAppearance ObConf plugin.
+# Jay A. Fleming <tito.nehru.naser@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lxappearance-obconf\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-17 05:37+0000\n"
+"PO-Revision-Date: 2010-08-17 14:40+0100\n"
+"Last-Translator: Jay Alexander Fleming <tito.nehru.naser@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../src/main.c:169
+msgid "Failed to load the obconf.glade interface file. You have probably failed to install ObConf properly."
+msgstr "Nije uspelo učitavanje obconf.glade datoteke. Najverovatnije niste ispravno instalirali Obkonf."
+
+#: ../src/main.c:194
+msgid "Failed to load an rc.xml. You have probably failed to install Openbox properly."
+msgstr "Nije uspelo učitavanje rc.xml datoteke. Najverovatnije niste ispravno instalirali Openboks."
+
+#: ../src/main.c:203
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+"Pojavila se greška prilikom obrade datoke sa podešavanjima Openboksa.  Vaša datoteka nije ispravna XML datoteka.\n"
+"\n"
+"Poruka: %s"
+
+#: ../src/theme.c:107
+#: ../src/theme.c:139
+msgid "Choose an Openbox theme"
+msgstr "Izaberite temu za Openboks"
+
+#: ../src/theme.c:116
+msgid "Openbox theme archives"
+msgstr "Arhive Openboks teme"
+
+#: ../src/archive.c:44
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr "\"%s\" je instalirano u %s"
+
+#: ../src/archive.c:69
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr "\"%s\" je uspešno napravljen."
+
+#: ../src/archive.c:105
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Ne mogu napraviti arhivu teme \"%s\".\n"
+"Prijavljene su sledeće greške:\n"
+"%s"
+
+#: ../src/archive.c:110
+#: ../src/archive.c:194
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr "Ne mogu pokrenuti \"tar\" komandu: %s"
+
+#: ../src/archive.c:130
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr "Ne mogu da napravim direktorijum \"%s\": %s"
+
+#: ../src/archive.c:152
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr "\"%s\" ne izgleda kao ispravan direktorijum teme za Openboks"
+
+#: ../src/archive.c:162
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Ne mogu se premestiti u direktorijum \"%s\": %s"
+
+#: ../src/archive.c:201
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Ne mogu raspakovati datoteku \"%s\".\n"
+"Obezbedite dozvole za pisanje datoteci \"%s\" i uverite se da je ona ispravna arhiva teme za Openboks.\n"
+"Prijavljene su sledeće greške:\n"
+"%s"
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Tema</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "Napravite _arhivu teme (.obt)..."
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr "Font za naslov aktivog prozora:"
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive window title:"
+msgstr "Font za naslov neaktivog prozora:"
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr "Font stavki menija:"
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu header:"
+msgstr "Font zaglavlja menija:"
+
+#: ../src/obconf.glade.h:7
+msgid "Font for on-screen display:"
+msgstr "Font za OSD prikaz:"
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr "Razno"
+
+#: ../src/obconf.glade.h:9
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+"N: Ikona prozora\n"
+"L: Natpis (Naslov prozora)\n"
+"I: Dugme za umanjivanje\n"
+"M: Dugme za uvećevanje\n"
+"C: Dugme za zatvaranje\n"
+"S: Dugme za zamotavanje\n"
+"D: Dugme svih radnih površina (sticky)"
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr "Naslovna linija"
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "_Redosled dugmadi:"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "_Instalirajte novu temu..."
+
