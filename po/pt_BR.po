@@ -84,7 +84,7 @@ msgid "Unable to move to directory \"%s\": %s"
 msgstr "Não é possível mover para o diretório \"%s\": %s"
 
 #: ../src/archive.c:201
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
 "Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
@@ -155,7 +155,6 @@ msgid "Title Bar"
 msgstr "Barra de título"
 
 #: ../src/obconf.glade.h:18
-#, fuzzy
 msgid "_Button order:"
 msgstr "Ordem dos _botões:"
 
