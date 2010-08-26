@@ -28,33 +28,34 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
-"Report-Msgid-Bugs-To: http://bugzilla.icculus.org/\n"
-"POT-Creation-Date: 2010-08-08 01:18+0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-26 14:04+0200\n"
 "PO-Revision-Date: 2008-02-02 11:51-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/main.c:167
+#: ../src/main.c:169
+#, fuzzy
 msgid ""
-"Failed to load the obconf.glade interface file. You have probably failed to "
-"install ObConf properly."
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"properly installed."
 msgstr ""
 "Failed to load the obconf.glade interface file. You have probably failed to "
 "install ObConf properly."
 
-#: ../src/main.c:192
-msgid ""
-"Failed to load an rc.xml. You have probably failed to install Openbox "
-"properly."
+#: ../src/main.c:194
+#, fuzzy
+msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
 msgstr ""
 "Failed to load an rc.xml. You have probably failed to install Openbox "
 "properly."
 
-#: ../src/main.c:201
+#: ../src/main.c:203
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file.  Your configuration file "

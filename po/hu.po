@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-08 05:40+0000\n"
+"POT-Creation-Date: 2010-08-26 14:04+0200\n"
 "PO-Revision-Date: 2010-08-08 17:47+0200\n"
 "Last-Translator: Laszlo Dvornik <dvornik@gnome.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/main.c:169
+#, fuzzy
 msgid ""
-"Failed to load the obconf.glade interface file. You have probably failed to "
-"install ObConf properly."
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"properly installed."
 msgstr ""
 "Nem sikerült betölteni az obconf.glade felületfájlt. Valószínűleg nem "
 "sikerült megfelelően telepítened az ObConf-ot."
 
 #: ../src/main.c:194
-msgid ""
-"Failed to load an rc.xml. You have probably failed to install Openbox "
-"properly."
+#, fuzzy
+msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
 msgstr ""
 "Nem sikerült betölteni az rc.xml fájlt. Valószínűleg nem sikerült "
 "megfelelően telepítened az ObConf-ot."

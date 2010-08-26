@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
-"Report-Msgid-Bugs-To: http://bugzilla.icculus.org/\n"
-"POT-Creation-Date: 2010-08-08 01:18+0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-26 14:04+0200\n"
 "PO-Revision-Date: 2010-08-24 12:34+0200\n"
 "Last-Translator: Martin <brother@bsnet.se>\n"
 "Language-Team: Swedish\n"
@@ -19,23 +19,23 @@ msgstr ""
 "X-Generator: Pootle 2.0.5\n"
 
 # fixa engelska originalet? Vi vet inte vilken användare det är som installerar programmen.
-#: ../src/main.c:167
+#: ../src/main.c:169
+#, fuzzy
 msgid ""
-"Failed to load the obconf.glade interface file. You have probably failed to "
-"install ObConf properly."
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"properly installed."
 msgstr ""
 "Kunde inte läsa in gränssnittsfilen obconf.glade. ObConf är förmodligen inte "
 "installerat korrekt."
 
 # Fixa engelska originalet? Vi vet inte vilken användare som installerar programmen.
-#: ../src/main.c:192
-msgid ""
-"Failed to load an rc.xml. You have probably failed to install Openbox "
-"properly."
+#: ../src/main.c:194
+#, fuzzy
+msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
 msgstr ""
 "Kunde inte läsa in rc.xml. Openbox är förmodligen inte korrekt installerat."
 
-#: ../src/main.c:201
+#: ../src/main.c:203
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file.  Your configuration file "
