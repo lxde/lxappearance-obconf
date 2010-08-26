@@ -166,7 +166,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
     g_debug(GLADEDIR"/obconf.glade");
     if(!gtk_builder_add_from_file(builder, GLADEDIR"/obconf.glade", NULL))
     {
-        obconf_error(_("Failed to load the obconf.glade interface file. You have probably failed to install ObConf properly."), TRUE);
+        obconf_error(_("Failed to load the obconf.glade interface file. ObConf is probably not properly installed."), TRUE);
         exit_with_error = TRUE;
     }
     gtk_builder_connect_signals(builder, NULL);
@@ -191,7 +191,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
 
     xmlIndentTreeOutput = 1;
     if (!parse_load_rc(obc_config_file, &doc, &root)) {
-        obconf_error(_("Failed to load an rc.xml. You have probably failed to install Openbox properly."), TRUE);
+        obconf_error(_("Failed to load an rc.xml. Openbox is probably not properly installed."), TRUE);
         exit_with_error = TRUE;
     }
 
