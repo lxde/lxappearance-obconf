@@ -2,48 +2,38 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2010-08-27 04:37+0000\n"
 "PO-Revision-Date: 2009-09-20 01:29+0200\n"
 "Last-Translator: Y P <yupadmin@gmail.com>\n"
 "Language-Team: Ukrainian\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 1.1.0\n"
 
 #: ../src/main.c:169
-#, fuzzy
-msgid ""
-"Failed to load the obconf.glade interface file. ObConf is probably not "
-"properly installed."
-msgstr ""
-"Не можу завантажити файл інтерфейсу obconf.glade. Можливо Ви не встановили "
-"правильно ObConf."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not properly installed."
+msgstr "Не можу завантажити файл інтерфейсу obconf.glade. Можливо Ви не встановили правильно ObConf."
 
 #: ../src/main.c:194
-#, fuzzy
 msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
-msgstr ""
-"Не можу завантажити файл rc.xml. Можливо Ви не встановили правильно Openbox."
+msgstr "Не можу завантажити rc.xml. Можливо Ви не встановили правильно Openbox."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Помилка аналізу конфігураційного файлу Openbox. Ваш конфігураційний файл має "
-"помилку XML.\n"
+"Помилка аналізу конфігураційного файлу Openbox. Ваш конфігураційний файл має помилку XML.\n"
 "\n"
 "Повідомлення: %s"
 
@@ -100,14 +90,12 @@ msgstr "Не можу перемістити до теки \"%s\": %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Не можу розпакувати файл \"%s\".\n"
-"Впевніться, що  \"%s\" доступна для запису і що це є файл архіву теми "
-"Openbox.\n"
+"Впевніться, що  \"%s\" доступна для запису і що це є файл архіву теми Openbox.\n"
 "Помилка:\n"
 "%s"
 
