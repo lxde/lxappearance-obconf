@@ -2,48 +2,38 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2010-08-27 04:37+0000\n"
 "PO-Revision-Date: 2010-08-13 03:13+0100\n"
 "Last-Translator: Christoph Wickert <cwickert@fedoraproject.org>\n"
 "Language-Team: German <translation@mailinglist.lxde.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: German\n"
 
 #: ../src/main.c:169
-#, fuzzy
-msgid ""
-"Failed to load the obconf.glade interface file. ObConf is probably not "
-"properly installed."
-msgstr ""
-"Fehler beim Laden der Oberflächendatei obconf.glade. Vermutlich wurde ObConf "
-"nicht richtig installiert."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not properly installed."
+msgstr "Fehler beim Laden der Oberflächendatei obconf.glade. Vermutlich ist ObConf nicht richtig installiert."
 
 #: ../src/main.c:194
-#, fuzzy
 msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
-msgstr ""
-"Fehler beim Laden einer rc.xml. Vermutlich wurde Openbox nicht richtig "
-"installiert."
+msgstr "Fehler beim Laden einer rc.xml. Vermutlich ist Openbox nicht richtig installiert."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Fehler beim Parsen der Openbox Konfigurationsdatei. Ihre Konfigurationsdatei "
-"ist kein gültiges XML.\n"
+"Fehler beim Parsen der Openbox Konfigurationsdatei. Ihre Konfigurationsdatei ist kein gültiges XML.\n"
 "\n"
 "Meldung: %s"
 
@@ -100,14 +90,12 @@ msgstr "Fehler beim Verschieben des Verzeichnisses »%s«: %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Die Datei »%s« konnte nicht entpackt werden.\n"
-"Bitte stellen Sie sicher, dass »%s« schreibbar und die Datei ein gültiges "
-"Openbox-Themenarchiv ist.\n"
+"Bitte stellen Sie sicher, dass »%s« schreibbar und die Datei ein gültiges Openbox-Themenarchiv ist.\n"
 "Die folgenden Fehler wurden traten auf:\n"
 "%s"
 
@@ -116,9 +104,8 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Thema</span>"
 
 #: ../src/obconf.glade.h:2
-#, fuzzy
 msgid "Create a theme _archive (.obt)..."
-msgstr "Themen_archiv (.obt) erzeigen…"
+msgstr "Themen_archiv (.obt) erzeugen…"
 
 #: ../src/obconf.glade.h:3
 msgid "Font for active window title:"
@@ -146,7 +133,6 @@ msgid "Misc."
 msgstr "Verschiedenes"
 
 #: ../src/obconf.glade.h:9
-#, fuzzy
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -161,7 +147,7 @@ msgstr ""
 "I: Minimieren\n"
 "M: Maximieren\n"
 "C: Schließen\n"
-"S: Aufrollen\n"
+"S: Einrollen\n"
 "D: Auf allen Arbeitsflächen"
 
 #: ../src/obconf.glade.h:16
