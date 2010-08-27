@@ -2,46 +2,36 @@
 # Copyright (C) 2010 The creators of LXAPPEARANCE-OBCONF.
 # This file is distributed under the same license as the LXAPPEARANCE-OBCONF package.
 # Henrique P. Machado <hpmachado@gnome.org>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2010-08-27 04:37+0000\n"
 "PO-Revision-Date: 2010-08-10 00:46-03:00\n"
 "Last-Translator: Henrique P. Machado <hpmachado@gnome.org>\n"
 "Language-Team: Brazilian Porguese <ldp-br@bazar.conectiva.com.br>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: ../src/main.c:169
-#, fuzzy
-msgid ""
-"Failed to load the obconf.glade interface file. ObConf is probably not "
-"properly installed."
-msgstr ""
-"Falhou ao carregar o arquivo de interface obconf.glade. Você provavelmente "
-"falhou ao instalar corretamente o ObConf."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not properly installed."
+msgstr "Falhou ao carregar o arquivo de interface obconf.glade. O ObConf provavelmente não está instalado corretamente."
 
 #: ../src/main.c:194
-#, fuzzy
 msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
-msgstr ""
-"Falhou ao carregar um rc.xml. Você provavelmente falhou ao instalar "
-"corretamente o Openbox."
+msgstr "Falhou ao carregar um rc.xml. O Openbox provavelmente não está instalado corretamente."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Erro ao analisar o arquivo de configuração do Openbox. Seu arquivo de "
-"configuração não é um arquivo XML válido.\n"
+"Erro ao analisar o arquivo de configuração do Openbox. Seu arquivo de configuração não é um arquivo XML válido.\n"
 "\n"
 "Mensagem: %s"
 
@@ -98,14 +88,12 @@ msgstr "Não é possível mover para o diretório \"%s\": %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Não é possível extrair o arquivo \"%s\".\n"
-"Por favor, esteja certo de que \"%s\" tem permissão de escrita e que o "
-"arquivo é um arquivo de temas válido do Openbox.\n"
+"Por favor, esteja certo de que \"%s\" tem permissão de escrita e que o arquivo é um arquivo de temas válido do Openbox.\n"
 "Os seguintes erros foram relatados:\n"
 "%s"
 
