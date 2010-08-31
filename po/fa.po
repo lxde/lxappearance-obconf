@@ -2,47 +2,38 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2010-08-30 05:40+0000\n"
 "PO-Revision-Date: 2010-08-16 16:51+0330\n"
 "Last-Translator: Mostafa <info@mostafadaneshvar.com>\n"
 "Language-Team: Persian <trans-fa@lists.fedoraproject.org>\n"
-"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
 "X-Poedit-Language: Persian\n"
 "X-Poedit-Country: Iran\n"
 
 #: ../src/main.c:169
-#, fuzzy
-msgid ""
-"Failed to load the obconf.glade interface file. ObConf is probably not "
-"properly installed."
-msgstr ""
-"خطا در بارگذاری فایل میانگر obconf.glade. شما احتمالا به درستی ObConf را نصب "
-"نکرده اید."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not properly installed."
+msgstr "خطا در بارگذاری فایل میانگر obconf.glade. شما احتمالا به درستی ObConf را نصب نکرده اید."
 
 #: ../src/main.c:194
-#, fuzzy
 msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
-msgstr ""
-"خطا در بارگذاری rc.xml. شما احتمالا در نصب درست اوپن باکس دچار اشکال شده اید."
+msgstr "خطا در بارگذاری rc.xml. شما احتمالا در نصب درست اوپن باکس دچار اشکال شده اید."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"خطا در تحلیل فایل پیکره بندی اوپن باکس. فایل پیکره بندی شما XML معتبری "
-"نیست.\n"
+"خطا در تحلیل فایل پیکره بندی اوپن باکس. فایل پیکره بندی شما XML معتبری نیست.\n"
 "\n"
 "پیام: %s"
 
@@ -99,8 +90,7 @@ msgstr "قادر نیست به جا به جایی شاخه به \"%s\": %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
