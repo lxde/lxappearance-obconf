@@ -8,50 +8,56 @@ msgstr ""
 "Project-Id-Version: obconf 2.0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-26 14:04+0200\n"
-"PO-Revision-Date: 2007-07-22 15:36+0200\n"
-"Last-Translator: Cyrille Bagard <nocbos@gmail.com>\n"
+"PO-Revision-Date: 2010-09-03 16:22+0200\n"
+"Last-Translator: Cilyan <gaknar@gmail.com>\n"
 "Language-Team: French\n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
 
 #: ../src/main.c:169
-msgid ""
-"Failed to load the obconf.glade interface file. ObConf is probably not "
-"properly installed."
-msgstr ""
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not properly installed."
+msgstr "Impossible de charger le fichier d'interface obconf.glade. ObConf est probablement mal installé."
 
 #: ../src/main.c:194
 msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
-msgstr ""
+msgstr "Impossible de charger un fichier rc.xml. Openbox est probablement mal installé."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
+"Erreur lors de la décomposition du fichier de configuration d'Openbox.  "
+"Votre fichier de configuration n'est pas du XML valide.\n"
+"\n"
+"Message : %s"
 
-#: ../src/theme.c:107 ../src/theme.c:139
+#: ../src/theme.c:107
+#: ../src/theme.c:139
 msgid "Choose an Openbox theme"
-msgstr "Choisir un th�me Openbox"
+msgstr "Choisir un thème Openbox"
 
 #: ../src/theme.c:116
 msgid "Openbox theme archives"
-msgstr "Archives de th�me Openbox"
+msgstr "Archives de thème Openbox"
 
 #: ../src/archive.c:44
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "\"%s\" a �t� install� dans %s"
+msgstr "« %s » a été installé dans %s"
 
 #: ../src/archive.c:69
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "\"%s\" a �t� cr�� avec succ�s"
+msgstr "« %s » a été créé avec succès"
 
 #: ../src/archive.c:105
 #, c-format
@@ -60,80 +66,76 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Impossible de cr�er l'archive de th�me \"%s\".\n"
-"Les erreurs suivantes ont �t� rapport�es :\n"
+"Impossible de créer l'archive de thème « %s ».\n"
+"Les erreurs suivantes ont été rapportées :\n"
 "%s"
 
-#: ../src/archive.c:110 ../src/archive.c:194
+#: ../src/archive.c:110
+#: ../src/archive.c:194
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
-msgstr "Impossible de lancer la commande \"tar\" : %s"
+msgstr "Impossible de lancer la commande « tar » : %s"
 
 #: ../src/archive.c:130
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr "Impossible de cr�er le r�pertoire \"%s\" : %s"
+msgstr "Impossible de créer le répertoire « %s » : %s"
 
 #: ../src/archive.c:152
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "\"%s\" n'a pas l'air d'�tre un r�pertoire de th�me Openbox valide"
+msgstr "« %s » n'a pas l'air d'être un répertoire de thème Openbox valide"
 
 #: ../src/archive.c:162
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "Impossible de d�placer le r�pertoire \"%s\" : %s"
+msgstr "Impossible de déplacer le répertoire « %s » : %s"
 
 #: ../src/archive.c:201
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Impossible d'extraire le fichier \"%s\".\n"
-"Veuillez vous assurer que \"%s\" est disponible en �criture et que le "
-"fichier est une archive de th�me Openbox valide.\n"
-"Les erreurs suivantes ont �t� rapport�es :\n"
+"Impossible d'extraire le fichier « %s ».\n"
+"Veuillez vous assurer que « %s » est disponible en écriture et que le "
+"fichier est une archive de thème Openbox valide.\n"
+"Les erreurs suivantes ont été rapportées :\n"
 "%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
-msgstr "<span weight=\"bold\">Th�me</span>"
+msgstr "<span weight=\"bold\">Thème</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "Create a theme _archive (.obt)..."
-msgstr "Cr�er une _archive de th�me (.obt)..."
+msgstr "Créer une _archive de thème (.obt)..."
 
 #: ../src/obconf.glade.h:3
-#, fuzzy
 msgid "Font for active window title:"
-msgstr "Titre de fen�tre _inactive : "
+msgstr "Titre de fenêtre active :"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive window title:"
-msgstr "Titre de fen�tre _inactive : "
+msgstr "Titre de fenêtre inactive :"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for menu Item:"
-msgstr ""
+msgstr "Élément de menu :"
 
 #: ../src/obconf.glade.h:6
-#, fuzzy
 msgid "Font for menu header:"
-msgstr "_En-t�te de menu : "
+msgstr "En-tête de menu :"
 
 #: ../src/obconf.glade.h:7
-#, fuzzy
 msgid "Font for on-screen display:"
-msgstr "_Affichage � l'�cran : "
+msgstr "Affichage à l'écran :"
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
-msgstr ""
+msgstr "Autre"
 
 #: ../src/obconf.glade.h:9
 msgid ""
@@ -145,22 +147,29 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
+"N - Icône de la fenêtre\n"
+"L - Titre de la fenêtre\n"
+"I - Réduire\n"
+"M - Maximiser\n"
+"C - Fermer\n"
+"S - Enrouler/Dérouler\n"
+"D - Omniprésent (Sur tous les bureaux)"
 
 #: ../src/obconf.glade.h:16
 msgid "Theme"
-msgstr "Th�me"
+msgstr "Thème"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr ""
+msgstr "Barre de titre"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
-msgstr "Ordre des _boutons : "
+msgstr "Ordre des _boutons :"
 
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
-msgstr "_Installer un nouveau th�me..."
+msgstr "_Installer un nouveau thème..."
 
 #~ msgid "Copyright (c)"
 #~ msgstr "Copyright (c)"
@@ -184,15 +193,15 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgid ""
 #~ "  --install ARCHIVE.obt Install the given theme archive and select it\n"
 #~ msgstr ""
-#~ "  --install ARCHIVE.obt Installer l'archive de th�me donn�e et la "
-#~ "s�lectionner\n"
+#~ "  --install ARCHIVE.obt Installer l'archive de thÃÂ¨me donnÃÂ©e et la "
+#~ "sÃÂ©lectionner\n"
 
 #~ msgid ""
 #~ "  --archive THEME       Create a theme archive from the given theme "
 #~ "directory\n"
 #~ msgstr ""
-#~ "  --archive THEME       Cr�er une archive de th�me � partir du r�pertoire "
-#~ "de th�me courant\n"
+#~ "  --archive THEME       CrÃÂ©er une archive de thÃÂ¨me ÃÂ  partir du rÃÂ©pertoire "
+#~ "de thÃÂ¨me courant\n"
 
 #~ msgid ""
 #~ "\n"
@@ -200,7 +209,7 @@ msgstr "_Installer un nouveau th�me..."
 #~ "\n"
 #~ msgstr ""
 #~ "\n"
-#~ "Veuillez soumettre les rapports de bogues � %s\n"
+#~ "Veuillez soumettre les rapports de bogues ÃÂ  %s\n"
 #~ "\n"
 
 #~ msgid "Openbox Configuration Manager"
@@ -210,16 +219,16 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "    "
 
 #~ msgid "<span weight=\"bold\">Windows</span>"
-#~ msgstr "<span weight=\"bold\">Fen�tres</span>"
+#~ msgstr "<span weight=\"bold\">FenÃÂªtres</span>"
 
 #~ msgid "_Windows retain a border when undecorated"
-#~ msgstr "Les fen�tres sans _d�coration conservent une bordure"
+#~ msgstr "Les fenÃÂªtres sans _dÃÂ©coration conservent une bordure"
 
 #~ msgid "A_nimate iconify and restore"
-#~ msgstr "A_nimer les r�ductions et les restaurations"
+#~ msgstr "A_nimer les rÃÂ©ductions et les restaurations"
 
 #~ msgid "<span weight=\"bold\">Window Titles</span>"
-#~ msgstr "<span weight=\"bold\">Titres de fen�tre</span>"
+#~ msgstr "<span weight=\"bold\">Titres de fenÃÂªtre</span>"
 
 #~ msgid ""
 #~ "N - The window's icon\n"
@@ -230,50 +239,50 @@ msgstr "_Installer un nouveau th�me..."
 #~ "M - The maximize button\n"
 #~ "C - The close button"
 #~ msgstr ""
-#~ "N - L'ic�ne de la fen�tre\n"
+#~ "N - L'icÃÂ´ne de la fenÃÂªtre\n"
 #~ "D - Le bouton de colle sur tous les bureaux\n"
-#~ "S - Le bouton d'enroulement/d�roulement\n"
-#~ "L - L'�tiquette (titre de fen�tre)\n"
-#~ "I - Le bouton de r�duction\n"
+#~ "S - Le bouton d'enroulement/dÃÂ©roulement\n"
+#~ "L - L'ÃÂ©tiquette (titre de fenÃÂªtre)\n"
+#~ "I - Le bouton de rÃÂ©duction\n"
 #~ "M - Le bouton de maximisation\n"
 #~ "C - Le bouton de fermeture"
 
 #~ msgid "<span weight=\"bold\">Fonts</span>"
-#~ msgstr "<span weight=\"bold\">Polices de caract�res</span>"
+#~ msgstr "<span weight=\"bold\">Polices de caractÃÂ¨res</span>"
 
 #~ msgid "_Active window title: "
-#~ msgstr "Titre de fen�tre a_ctive : "
+#~ msgstr "Titre de fenÃÂªtre a_ctive : "
 
 #~ msgid "_Menu Item: "
-#~ msgstr "El�ment de _menu : "
+#~ msgstr "ElÃÂ©ment de _menu : "
 
 #~ msgid "Appearance"
 #~ msgstr "Apparence"
 
 #~ msgid "<span weight=\"bold\">Focusing Windows</span>"
-#~ msgstr "<span weight=\"bold\">Focus des fen�tres</span>"
+#~ msgstr "<span weight=\"bold\">Focus des fenÃÂªtres</span>"
 
 #~ msgid "Focus _new windows when they appear"
-#~ msgstr "Donner le focus aux _nouvelles fen�tres quand elles apparaissent"
+#~ msgstr "Donner le focus aux _nouvelles fenÃÂªtres quand elles apparaissent"
 
 #~ msgid "<span weight=\"bold\">Placing Windows</span>"
-#~ msgstr "<span weight=\"bold\">Placement des fen�tres</span>"
+#~ msgstr "<span weight=\"bold\">Placement des fenÃÂªtres</span>"
 
 #~ msgid "_Place new windows under the mouse pointer"
-#~ msgstr "_Placer les nouvelles fen�tres sous le pointeur de la souris"
+#~ msgstr "_Placer les nouvelles fenÃÂªtres sous le pointeur de la souris"
 
 #~ msgid "_Center new windows when they are placed"
-#~ msgstr "_Centrer les nouvelles fen�tres quand elles sont plac�es"
+#~ msgstr "_Centrer les nouvelles fenÃÂªtres quand elles sont placÃÂ©es"
 
 #~ msgid "Windows"
-#~ msgstr "Fen�tres"
+#~ msgstr "FenÃÂªtres"
 
 #~ msgid "<span weight=\"bold\">Moving and Resizing Windows</span>"
 #~ msgstr ""
-#~ "<span weight=\"bold\">D�placer et redimensionner les fen�tres</span>"
+#~ "<span weight=\"bold\">DÃÂ©placer et redimensionner les fenÃÂªtres</span>"
 
 #~ msgid "Update the window contents while _resizing"
-#~ msgstr "Mettre � jour le contenu d'une fen�tre _redimensionn�e"
+#~ msgstr "Mettre ÃÂ  jour le contenu d'une fenÃÂªtre _redimensionnÃÂ©e"
 
 #~ msgid "Drag _threshold distance:"
 #~ msgstr "Distance de _seuil pour le Drag :"
@@ -282,16 +291,16 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "px"
 
 #~ msgid "Amount of resistance against other _windows:"
-#~ msgstr "Force de r�sistance contre les autres _fen�tres :"
+#~ msgstr "Force de rÃÂ©sistance contre les autres _fenÃÂªtres :"
 
 #~ msgid "Amount of resistance against screen _edges:"
-#~ msgstr "Force de r�sistance contre les b_ords de l'�cran :"
+#~ msgstr "Force de rÃÂ©sistance contre les b_ords de l'ÃÂ©cran :"
 
 #~ msgid "ms"
 #~ msgstr "ms"
 
 #~ msgid "When resizing terminal windows"
-#~ msgstr "Lors du redimensionnement d'une fen�tre de Terminal"
+#~ msgstr "Lors du redimensionnement d'une fenÃÂªtre de Terminal"
 
 #~ msgid "Always"
 #~ msgstr "Toujours"
@@ -300,13 +309,13 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "Jamais"
 
 #~ msgid "Centered on the window"
-#~ msgstr "Centr� sur la fen�tre"
+#~ msgstr "CentrÃÂ© sur la fenÃÂªtre"
 
 #~ msgid "Above the window"
-#~ msgstr "Au-dessus de la fen�tre"
+#~ msgstr "Au-dessus de la fenÃÂªtre"
 
 #~ msgid "_Focus windows when the mouse pointer moves over them"
-#~ msgstr "Donner le f_ocus aux fen�tres quand la souris les survole"
+#~ msgstr "Donner le f_ocus aux fenÃÂªtres quand la souris les survole"
 
 #~ msgid "Move focus under the mouse when _switching desktops"
 #~ msgstr ""
@@ -318,10 +327,10 @@ msgstr "_Installer un nouveau th�me..."
 
 #~ msgid "_Raise windows when the mouse pointer moves over them"
 #~ msgstr ""
-#~ "_R�hausser les fen�tres quand la souris se d�place au-dessus d'elles"
+#~ "_RÃÂ©hausser les fenÃÂªtres quand la souris se dÃÂ©place au-dessus d'elles"
 
 #~ msgid "_Delay before focusing and raising windows:"
-#~ msgstr "_D�lai avant de donner le focus et de r�hausser les fen�tres :"
+#~ msgstr "_DÃÂ©lai avant de donner le focus et de rÃÂ©hausser les fenÃÂªtres :"
 
 #~ msgid "<span weight=\"bold\">Titlebar</span>"
 #~ msgstr "<span weight=\"bold\">Barre de titre</span>"
@@ -330,13 +339,13 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "Double-clic sur la barre de _titre :"
 
 #~ msgid "Maximizes the window"
-#~ msgstr "Maximise la fen�tre"
+#~ msgstr "Maximise la fenÃÂªtre"
 
 #~ msgid "Shades the window"
-#~ msgstr "D�roule la fen�tre"
+#~ msgstr "DÃÂ©roule la fenÃÂªtre"
 
 #~ msgid "Double click ti_me:"
-#~ msgstr "D_ur�e d'un double-clic :"
+#~ msgstr "D_urÃÂ©e d'un double-clic :"
 
 #~ msgid "Mouse"
 #~ msgstr "Souris"
@@ -361,9 +370,9 @@ msgstr "_Installer un nouveau th�me..."
 #~ "windows will not be placed within a margin, and maximized windows will "
 #~ "not cover them."
 #~ msgstr ""
-#~ "Les marges de bureau sont des zones r�serv�es sur les bords de votre "
-#~ "�cran. Les nouvelles fen�tres n'y seront pas plac�es, et les fen�tres "
-#~ "maximis�es ne les recouvriront pas."
+#~ "Les marges de bureau sont des zones rÃÂ©servÃÂ©es sur les bords de votre "
+#~ "ÃÂ©cran. Les nouvelles fenÃÂªtres n'y seront pas placÃÂ©es, et les fenÃÂªtres "
+#~ "maximisÃÂ©es ne les recouvriront pas."
 
 #~ msgid "_Top"
 #~ msgstr "_Haut"
@@ -387,13 +396,13 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "_Position :"
 
 #~ msgid "Top Left"
-#~ msgstr "En haut � gauche"
+#~ msgstr "En haut ÃÂ  gauche"
 
 #~ msgid "Top"
 #~ msgstr "En haut"
 
 #~ msgid "Top Right"
-#~ msgstr "En haut � droite"
+#~ msgstr "En haut ÃÂ  droite"
 
 #~ msgid "Left"
 #~ msgstr "A gauche"
@@ -402,13 +411,13 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "A droite"
 
 #~ msgid "Bottom Left"
-#~ msgstr "En bas � gauche"
+#~ msgstr "En bas ÃÂ  gauche"
 
 #~ msgid "Bottom"
 #~ msgstr "En bas"
 
 #~ msgid "Bottom Right"
-#~ msgstr "En bas � droite"
+#~ msgstr "En bas ÃÂ  droite"
 
 #~ msgid "Floating"
 #~ msgstr "Flottante"
@@ -420,7 +429,7 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "x"
 
 #~ msgid "Allow _windows to be placed within the dock's area"
-#~ msgstr "Permettre aux fen�tres d'�tre plac�es dans la _zone de Dock"
+#~ msgstr "Permettre aux fenÃÂªtres d'ÃÂªtre placÃÂ©es dans la _zone de Dock"
 
 #~ msgid "_Orientation: "
 #~ msgstr "_Orientation :"
@@ -435,25 +444,25 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "<span weight=\"bold\">Emplilement</span>"
 
 #~ msgid "Keep dock _above other windows"
-#~ msgstr "Garder les Docks au-dess_us des autres fen�tres"
+#~ msgstr "Garder les Docks au-dess_us des autres fenÃÂªtres"
 
 #~ msgid "A_llow dock to be both above and below windows"
-#~ msgstr "Autoriser les Docks � �tre en-dessous _et au-dessus des fen�tres"
+#~ msgstr "Autoriser les Docks ÃÂ  ÃÂªtre en-dessous _et au-dessus des fenÃÂªtres"
 
 #~ msgid "Keep dock _below other windows"
-#~ msgstr "Garder les Docks en-des_sous des autres fen�tres"
+#~ msgstr "Garder les Docks en-des_sous des autres fenÃÂªtres"
 
 #~ msgid "<span weight=\"bold\">Hiding</span>"
 #~ msgstr "<span weight=\"bold\">Dissimulation</span>"
 
 #~ msgid "_Hide off screen"
-#~ msgstr "Cac_her de l'�cran"
+#~ msgstr "Cac_her de l'ÃÂ©cran"
 
 #~ msgid "_Delay before hiding:"
-#~ msgstr "_D�lai avant de cacher :"
+#~ msgstr "_DÃÂ©lai avant de cacher :"
 
 #~ msgid "Delay before _showing:"
-#~ msgstr "D�lai avant de _montrer :"
+#~ msgstr "DÃÂ©lai avant de _montrer :"
 
 #~ msgid "Dock"
 #~ msgstr "Dock"
@@ -468,7 +477,7 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "<span weight=\"bold\" size=\"xx-large\">ObConf VERSION</span>"
 
 #~ msgid "A preferences manager for Openbox"
-#~ msgstr "Un gestionnaire de pr�f�rences pour Openbox"
+#~ msgstr "Un gestionnaire de prÃÂ©fÃÂ©rences pour Openbox"
 
 #~ msgid "window1"
 #~ msgstr "window1"
@@ -492,4 +501,4 @@ msgstr "_Installer un nouveau th�me..."
 #~ msgstr "(bureau sans nom)"
 
 #~ msgid "Custom actions"
-#~ msgstr "Actions personnalis�es"
+#~ msgstr "Actions personnalisÃÂ©es"
