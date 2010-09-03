@@ -23,7 +23,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
-"properly installed."
+"installed correctly."
 msgstr ""
 "Kunde inte läsa in gränssnittsfilen obconf.glade. ObConf är förmodligen inte "
 "installerat korrekt."
@@ -31,14 +31,14 @@ msgstr ""
 # Fixa engelska originalet? Vi vet inte vilken användare som installerar programmen.
 #: ../src/main.c:194
 #, fuzzy
-msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 "Kunde inte läsa in rc.xml. Openbox är förmodligen inte korrekt installerat."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
+"Error while parsing the Openbox configuration file. Your configuration file "
 "is not valid XML.\n"
 "\n"
 "Message: %s"

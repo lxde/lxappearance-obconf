@@ -19,17 +19,17 @@ msgstr ""
 "X-Poedit-Country: Iran\n"
 
 #: ../src/main.c:169
-msgid "Failed to load the obconf.glade interface file. ObConf is probably not properly installed."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
 msgstr "خطا در بارگذاری فایل میانگر obconf.glade. شما احتمالا به درستی ObConf را نصب نکرده اید."
 
 #: ../src/main.c:194
-msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr "خطا در بارگذاری rc.xml. شما احتمالا در نصب درست اوپن باکس دچار اشکال شده اید."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""

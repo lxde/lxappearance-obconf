@@ -46,27 +46,25 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
-"properly installed."
+"installed correctly."
 msgstr ""
-"Failed to load the obconf.glade interface file. You have probably failed to "
-"install ObConf properly."
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
 
 #: ../src/main.c:194
 #, fuzzy
-msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
-msgstr ""
-"Failed to load an rc.xml. You have probably failed to install Openbox "
-"properly."
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr "Failed to load an rc.xml. Openbox is probably not installed correctly."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
+"Error while parsing the Openbox configuration file. Your configuration file "
 "is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
+"Error while parsing the Openbox configuration file. Your configuration file "
 "is not valid XML.\n"
 "\n"
 "Message: %s"

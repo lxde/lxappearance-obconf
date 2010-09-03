@@ -19,17 +19,17 @@ msgstr ""
 "X-Poedit-Language: German\n"
 
 #: ../src/main.c:169
-msgid "Failed to load the obconf.glade interface file. ObConf is probably not properly installed."
-msgstr "Fehler beim Laden der Oberflächendatei obconf.glade. Vermutlich ist ObConf nicht richtig installiert."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
+msgstr "Fehler beim Laden der Oberflächendatei obconf.glade. Vermutlich ist ObConf nicht korrekt installiert."
 
 #: ../src/main.c:194
-msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
-msgstr "Fehler beim Laden einer rc.xml. Vermutlich ist Openbox nicht richtig installiert."
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr "Fehler beim Laden einer rc.xml. Vermutlich ist Openbox nicht korrekt installiert."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""

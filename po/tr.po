@@ -22,17 +22,17 @@ msgstr ""
 #: ../src/main.c:169
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
-"properly installed."
+"installed correctly."
 msgstr ""
 
 #: ../src/main.c:194
-msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
+"Error while parsing the Openbox configuration file. Your configuration file "
 "is not valid XML.\n"
 "\n"
 "Message: %s"

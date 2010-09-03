@@ -166,7 +166,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
     g_debug(GLADEDIR"/obconf.glade");
     if(!gtk_builder_add_from_file(builder, GLADEDIR"/obconf.glade", NULL))
     {
-        obconf_error(_("Failed to load the obconf.glade interface file. ObConf is probably not properly installed."), TRUE);
+        obconf_error(_("Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."), TRUE);
         exit_with_error = TRUE;
     }
     gtk_builder_connect_signals(builder, NULL);
@@ -191,7 +191,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
 
     xmlIndentTreeOutput = 1;
     if (!parse_load_rc(obc_config_file, &doc, &root)) {
-        obconf_error(_("Failed to load an rc.xml. Openbox is probably not properly installed."), TRUE);
+        obconf_error(_("Failed to load an rc.xml. Openbox is probably not installed correctly."), TRUE);
         exit_with_error = TRUE;
     }
 
@@ -200,7 +200,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
         xmlErrorPtr e = xmlGetLastError();
         if (e) {
             char *a = g_strdup_printf
-                (_("Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n\nMessage: %s"),
+                (_("Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n\nMessage: %s"),
                  e->message);
             obconf_error(a, TRUE);
             g_free(a);

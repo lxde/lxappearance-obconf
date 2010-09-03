@@ -19,17 +19,17 @@ msgstr ""
 "X-Generator: Pootle 1.1.0\n"
 
 #: ../src/main.c:169
-msgid "Failed to load the obconf.glade interface file. ObConf is probably not properly installed."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
 msgstr "Не можу завантажити файл інтерфейсу obconf.glade. Можливо Ви не встановили правильно ObConf."
 
 #: ../src/main.c:194
-msgid "Failed to load an rc.xml. Openbox is probably not properly installed."
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr "Не можу завантажити rc.xml. Можливо Ви не встановили правильно Openbox."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
