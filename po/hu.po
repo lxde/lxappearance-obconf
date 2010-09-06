@@ -2,46 +2,36 @@
 # Copyright (C) 2010 The LXDE Team
 # This file is distributed under the same license as the lxappearance-obconf package.
 # Laszlo Dvornik <dvornik@gnome.hu>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2010-09-06 05:43+0000\n"
 "PO-Revision-Date: 2010-08-08 17:47+0200\n"
 "Last-Translator: Laszlo Dvornik <dvornik@gnome.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
 
 #: ../src/main.c:169
-#, fuzzy
-msgid ""
-"Failed to load the obconf.glade interface file. ObConf is probably not "
-"installed correctly."
-msgstr ""
-"Nem sikerült betölteni az obconf.glade felületfájlt. Valószínűleg nem "
-"sikerült megfelelően telepítened az ObConf-ot."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
+msgstr "Nem tudtam betölteni az obconf.glade felületfájlt. Az Az OpConf valószínűleg nincs helyesen telepítve."
 
 #: ../src/main.c:194
-#, fuzzy
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr ""
-"Nem sikerült betölteni az rc.xml fájlt. Valószínűleg nem sikerült "
-"megfelelően telepítened az ObConf-ot."
+msgstr "Nem tudtam betölteni egy rc.xml fájlt. Az Openbox valószínűleg nincs helyesen telepítve."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file. Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Hiba az Openbox beállítófájl feldolgozása közben. A beállítófájlod nem "
-"érvényes XML.\n"
+"Hiba az Openbox beállítófájl feldolgozása közben. A beállítófájlod nem érvényes XML.\n"
 "\n"
 "Üzenet: %s"
 
@@ -98,14 +88,12 @@ msgstr "\"%s\" könyvtárat nem lehet áthelyezni: %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Nem lehet kibontani a fájlt: \"%s\".\n"
-"Győződj meg róla, hogy \"%s\" írható és a fájl érvényes Openbox "
-"témaarchívum.\n"
+"Győződj meg róla, hogy \"%s\" írható és a fájl érvényes Openbox témaarchívum.\n"
 "A következő hibák történtek:\n"
 "%s"
 
