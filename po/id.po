@@ -2,12 +2,12 @@
 # Copyright (C) 2010 THE lxappearance-obconf'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the lxappearance-obconf package.
 # Andika Triwidada <andika@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-25 05:40+0000\n"
+"POT-Creation-Date: 2010-09-07 05:44+0000\n"
 "PO-Revision-Date: 2010-09-05 15:53+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
@@ -16,30 +16,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/main.c:169
-msgid ""
-"Failed to load the obconf.glade interface file. You have probably failed to "
-"install ObConf properly."
-msgstr ""
-"Gagal memuat berkas antarmuka obconf.glade. Anda mungkin telah gagal "
-"memasang ObConf dengan benar."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
+msgstr "Gagal memuat berkas antarmuka obconf.glade. ObConf mungkin tidak terpasang dengan benar."
 
 #: ../src/main.c:194
-msgid ""
-"Failed to load an rc.xml. You have probably failed to install Openbox "
-"properly."
-msgstr ""
-"Gagal memuat rc.xml. Anda mungkin telah gagal memasang Openbox dengan benar."
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr "Gagal memuat rc.xml. Openbox mungkin tidak terpasang dengan benar."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file.  Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Galat saat mengurai berkas konfigurasi Openbox. Berkas konfigurasi Anda "
-"bukan XML yang valid.\n"
+"Galat saat mengurai berkas konfigurasi Openbox. Berkas konfigurasi Anda bukan XML yang valid.\n"
 "\n"
 "Pesan: %s"
 
@@ -96,14 +87,12 @@ msgstr "Tak bisa memindah ke direktori \"%s\": %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Tak bisa mengekstrak berkas \"%s\".\n"
-"Pastikan bahwa \"%s\" dapat ditulisi dan berkas tersebut adalah arsip tema "
-"Openbox yang valid.\n"
+"Pastikan bahwa \"%s\" dapat ditulisi dan berkas tersebut adalah arsip tema Openbox yang valid.\n"
 "Galat berikut dilaporkan:\n"
 "%s"
 
