@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: LXAppearance ObConf Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 05:32+0000\n"
+"POT-Creation-Date: 2010-09-12 05:43+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vasilakos <forfolias@linuxteam.cs.teilar.gr>\n"
 "Language-Team: Greek\n"
@@ -11,16 +12,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Greek\n"
-"X-Poedit-Country: GREECE\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: GREECE\n"
 
 #: ../src/main.c:169
 msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
-msgstr ""
+msgstr "Απέτυχε η φόρτωση του αρχείου διεπαφής obconf.glade. Πιθανόν το ObConf να μην έχει εγκατασταθεί σωστά."
 
 #: ../src/main.c:194
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr ""
+msgstr "Απέτυχε η φόρτωση του rc.xml. Πιθανόν το OpenBox να μην έχει εγκατασταθεί σωστά."
 
 #: ../src/main.c:203
 #, c-format
@@ -29,25 +30,27 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
+"Σφάλμα κατά την ανάλυση του αρχείου ρύθμισης OpenBox. Το αρχείο ρυθμίσεων δεν έχει έγκυρη XML μορφή.\n"
+"\n"
+"Μήνυμα: %s"
 
-#: ../src/theme.c:107
-#: ../src/theme.c:139
+#: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
-msgstr ""
+msgstr "Επιλέξτε ένα θέμα OpenBox"
 
 #: ../src/theme.c:116
 msgid "Openbox theme archives"
-msgstr ""
+msgstr "Αρχεία θεμάτων OpenBox"
 
 #: ../src/archive.c:44
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr ""
+msgstr "\"%s\" εγκαταστάθηκε στο %s"
 
 #: ../src/archive.c:69
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr ""
+msgstr "\"%s\" δημιουργήθηκε επιτυχώς"
 
 #: ../src/archive.c:105
 #, c-format
@@ -56,27 +59,29 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
+"Αδύνατη η δημιουργία του αρχείου θέματος \"%s\".\n"
+"Τα ακόλουθα σφάλματα αναφέρθηκαν:\n"
+"%s"
 
-#: ../src/archive.c:110
-#: ../src/archive.c:194
+#: ../src/archive.c:110 ../src/archive.c:194
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
-msgstr ""
+msgstr "Αδύνατη η εκτέλεση της εντολής \"\tar\": %s"
 
 #: ../src/archive.c:130
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr ""
+msgstr "Αδύνατη η δημιουργία του κατάλογου \"%s\": %s"
 
 #: ../src/archive.c:152
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr ""
+msgstr "\"%s\" δεν είναι έγκυρος κατάλογος με θέματα του Openbox"
 
 #: ../src/archive.c:162
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr ""
+msgstr "Αδύνατη η μετακίνηση στον κατάλογο \"%s\": %s"
 
 #: ../src/archive.c:201
 #, c-format
@@ -86,38 +91,42 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
+"Αδύνατη η εξαγωγή του αρχείου \"%s\".\n"
+"Παρακαλώ διασφαλίστε ότι το \"%s\" είναι εγγράψιμο και ότι το αρχείο είναι έγκυρο αρχείο θέματος Openbox.\n"
+"Τα ακόλουθα σφάλματα αναφέρθηκαν:\n"
+"%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
-msgstr ""
+msgstr "<span weight=\"bold\">Θέμα</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "Create a theme _archive (.obt)..."
-msgstr ""
+msgstr "Δημιουργία ενός _αρχείου θέματος (.obt)..."
 
 #: ../src/obconf.glade.h:3
 msgid "Font for active window title:"
-msgstr ""
+msgstr "Γραμματοσειρά τίτλου για το ενεργό παράθυρο:"
 
 #: ../src/obconf.glade.h:4
 msgid "Font for inactive window title:"
-msgstr ""
+msgstr "Γραμματοσειρά τίτλου για το ανενεργό παράθυρο:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for menu Item:"
-msgstr ""
+msgstr "Γραμματοσειρά για τα αντικείμενα του μενού:"
 
 #: ../src/obconf.glade.h:6
 msgid "Font for menu header:"
-msgstr ""
+msgstr "Γραμματοσειρά για την κεφαλίδα του μενού:"
 
 #: ../src/obconf.glade.h:7
 msgid "Font for on-screen display:"
-msgstr ""
+msgstr "Γραμματοσειρά για την εμφάνιση μηνυμάτων στην οθόνη:"
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
-msgstr ""
+msgstr "Διάφορα"
 
 #: ../src/obconf.glade.h:9
 msgid ""
@@ -129,6 +138,13 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
+"N: Εικονίδιο παραθύρου\n"
+"L: Ετικέτα παραθύρου (Τίτλος)\n"
+"I: Εικονιδοποίηση (Ελαχιστοποίηση)\n"
+"M: Μεγιστοποίηση\n"
+"C: Κλείσιμο\n"
+"S: Τύλιγμα\n"
+"D: Εμφάνιση σε όλες τις επιφάνειες εργασίας"
 
 #: ../src/obconf.glade.h:16
 msgid "Theme"
@@ -136,13 +152,12 @@ msgstr "Θέμα"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr ""
+msgstr "Μπάρα τίτλου"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
-msgstr ""
+msgstr "_Σειρά κουμπιών:"
 
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
-msgstr ""
-
+msgstr "_Εγκατάσταση ενός νέου θέματος ..."
