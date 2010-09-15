@@ -2,13 +2,13 @@
 # Copyright (C) 2010 The LXAPPEARANCE-OBCONF Copyright Holder.
 # This file is distributed under the same license as the LXAPPEARANCE-OBCONF package.
 # Sérgio Marques <smarquespt@gmail.com>, 2010.
-#
+# Adaptado ao acordo ortográfico de 1990
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1\n"
+"Project-Id-Version: lxappearence-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-29 07:54+0000\n"
-"PO-Revision-Date: 2010-08-30 02:13-0000\n"
+"PO-Revision-Date: 2010-09-15 16:20-0000\n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../src/main.c:169
 msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
-msgstr "Falha ao carregar o ficheiro obconf.glade. É provável que o ObConf não esteja instalado correctamente."
+msgstr "Falha ao carregar o ficheiro obconf.glade. É provável que o ObConf não esteja instalado corretamente."
 
 #: ../src/main.c:194
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr "Falha ao carregar o ficheiro rc.xml. É provável que o Openbox não esteja instalado correctamente."
+msgstr "Falha ao carregar o ficheiro rc.xml. É provável que o Openbox não esteja instalado corretamente."
 
 #: ../src/main.c:203
 #, c-format
@@ -63,7 +63,7 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Incapaz de criar o arquivo de tema \"%s\".\n"
+"Incapaz de criar o arquivo \"%s\".\n"
 "Os seguintes erros foram relatados:\n"
 "%s"
 
@@ -76,17 +76,17 @@ msgstr "Incapaz de executar o comando \"tar\": %s"
 #: ../src/archive.c:130
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr "Incapaz de criar o directório \"%s\": %s"
+msgstr "Incapaz de criar o diretório \"%s\": %s"
 
 #: ../src/archive.c:152
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "\"%s\" não parece ser um directório válido do tema Openbox"
+msgstr "\"%s\" não parece ser um diretório válido do tema Openbox"
 
 #: ../src/archive.c:162
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "Incapaz de mover para o directório \"%s\": %s"
+msgstr "Incapaz de mover para o diretório \"%s\": %s"
 
 #: ../src/archive.c:201
 #, c-format
@@ -97,7 +97,7 @@ msgid ""
 "%s"
 msgstr ""
 "Incapaz de extrair o ficheiro \"%s\".\n"
-"Por favor, certifique-se que pode escrever em \"%s\" e que o ficheiro é um arquivo de tema válido do Openbox.\n"
+"Por favor, verifique se tem permissão de escrita em \"%s\" ou se o ficheiro é um arquivo de tema válido do Openbox.\n"
 "Os seguintes erros foram relatados:\n"
 "%s"
 
@@ -111,15 +111,15 @@ msgstr "Criar um _arquivo de tema (.obt)..."
 
 #: ../src/obconf.glade.h:3
 msgid "Font for active window title:"
-msgstr "Tipo de letra para o título da janela activa:"
+msgstr "Tipo de letra para o título da janela ativa:"
 
 #: ../src/obconf.glade.h:4
 msgid "Font for inactive window title:"
-msgstr "Tipo de letra para o título da janela inactiva:"
+msgstr "Tipo de letra para o título da janela inativa:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for menu Item:"
-msgstr "Tipo de letra para o Item de menu:"
+msgstr "Tipo de letra para o item do menu:"
 
 #: ../src/obconf.glade.h:6
 msgid "Font for menu header:"
@@ -144,11 +144,11 @@ msgid ""
 "D: Omnipresent (On all desktops)"
 msgstr ""
 "N: Ícone da janela\n"
-"L: Texto da janela (Título)\n"
-"I: Iconificar (Minimizar)\n"
+"L: Texto da janela (título)\n"
+"I: Iconificar (minimizar)\n"
 "M: Maximizar\n"
 "C: Fechar\n"
-"S: Cortina (Enrolar)\n"
+"S: Cortina (enrolar)\n"
 "D: Omnipresente (em todos os ambientes)"
 
 #: ../src/obconf.glade.h:16
@@ -157,11 +157,11 @@ msgstr "Tema"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr "Barra de Título"
+msgstr "Barra de título"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
-msgstr "Ordem dos _Botões:"
+msgstr "Ordem dos _botões:"
 
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
