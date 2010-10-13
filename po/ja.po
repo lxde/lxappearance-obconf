@@ -1,0 +1,175 @@
+# Japanese translations for PACKAGE package
+# PACKAGE パッケージに対する英訳.
+# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Hironao Komatsu <hironao@users.sourceforge.net>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lxappearance-obconf 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-10 13:08+0900\n"
+"PO-Revision-Date: 2010-10-10 13:07+0900\n"
+"Last-Translator: Hironao Komatsu <hironao@users.sourceforge.net>\n"
+"Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../src/main.c:169
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"インタフェースファイル obconf.glade の読み込みに失敗しました。おそらく "
+"ObConf は適切にインストールされていません。"
+
+#: ../src/main.c:194
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr ""
+"ファイル rc.xml の読み込みに失敗しました。おそらく Openbox は適切にインストー"
+"ルされていません。"
+
+#: ../src/main.c:203
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+"Openbox 設定ファイルのパース中にエラーがありました。あなたの設定ファイルは有"
+"効な XML ではありません。\n"
+"\n"
+"メッセージ: %s"
+
+#: ../src/theme.c:107 ../src/theme.c:139
+msgid "Choose an Openbox theme"
+msgstr "Openbox テーマを選んでください"
+
+#: ../src/theme.c:116
+msgid "Openbox theme archives"
+msgstr "Openbox テーマアーカイブ"
+
+#: ../src/archive.c:44
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr "\"%s\" は %s にインストールされていました"
+
+#: ../src/archive.c:69
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr "\"%s\" の作成に成功しました"
+
+#: ../src/archive.c:105
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"テーマアーカイブ \"%s\" が生成できません。\n"
+"以下のエラーが報告されました:\n"
+"%s"
+
+#: ../src/archive.c:110 ../src/archive.c:194
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr "\"tar\" コマンドが実行できません: %s"
+
+#: ../src/archive.c:130
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr "ディレクトリ \"%s\" が生成できません: %s"
+
+#: ../src/archive.c:152
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr "\"%s\" は有効な Openbox テーマのディレクトリではないようです"
+
+#: ../src/archive.c:162
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "ディレクトリ \"%s\" へ移動できません: %s"
+
+#: ../src/archive.c:201
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"ファイル \"%s\" が展開できません。\n"
+"\"%s\" が書き込み可能で、ファイルが有効な Openbox テーマアーカイブであること"
+"を確認してください。\n"
+"以下のエラーが報告されました:\n"
+"%s"
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">テーマ</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "テーマアーカイブ (.obt) を生成する(_A)..."
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr "アクティブウィンドウのタイトルのフォント:"
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive window title:"
+msgstr "非アクティブウィンドウのタイトルのフォント:"
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr "メニュー項目のフォント:"
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu header:"
+msgstr "メニューヘッダのフォント:"
+
+#: ../src/obconf.glade.h:7
+msgid "Font for on-screen display:"
+msgstr "オンスクリーンディスプレイのフォント:"
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr "その他"
+
+#: ../src/obconf.glade.h:9
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+"N: ウィンドウアイコン\n"
+"L: ウィンドウラベル (タイトル)\n"
+"I: アイコン化 (最小化)\n"
+"M: 最大化\n"
+"C: 閉じる\n"
+"S: シェード化 (ロールアップ)\n"
+"D: 居座る (すべてのデスクトップに)"
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "テーマ"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr "タイトルバー"
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "ボタンの並び順(_B):"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "新たにテーマをインストールする(_I)..."
