@@ -2,48 +2,37 @@
 # Copyright (C) 2010 Hong Jen Yee (PCMan) <pcman.tw@gmail.com>
 # This file is distributed under the same license as the LXAppearance ObConf plugin.
 # Jay A. Fleming <tito.nehru.naser@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2010-10-17 06:06+0000\n"
 "PO-Revision-Date: 2010-08-17 14:40+0100\n"
 "Last-Translator: Jay Alexander Fleming <tito.nehru.naser@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/main.c:169
-#, fuzzy
-msgid ""
-"Failed to load the obconf.glade interface file. ObConf is probably not "
-"installed correctly."
-msgstr ""
-"Nije uspelo učitavanje obconf.glade datoteke. Najverovatnije niste ispravno "
-"instalirali Obkonf."
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
+msgstr "Nije uspelo učitavanje obconf.glade datoteke. Najverovatnije niste ispravno instalirali Obkonf."
 
 #: ../src/main.c:194
-#, fuzzy
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr ""
-"Nije uspelo učitavanje rc.xml datoteke. Najverovatnije niste ispravno "
-"instalirali Openboks."
+msgstr "Nije uspelo učitavanje rc.xml datoteke. Najverovatnije niste ispravno instalirali Openboks."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file. Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Pojavila se greška prilikom obrade datoke sa podešavanjima Openboksa.  Vaša "
-"datoteka nije ispravna XML datoteka.\n"
+"Pojavila se greška prilikom obrade datoke sa podešavanjima Openboksa.  Vaša datoteka nije ispravna XML datoteka.\n"
 "\n"
 "Poruka: %s"
 
@@ -100,14 +89,12 @@ msgstr "Ne mogu se premestiti u direktorijum \"%s\": %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Ne mogu raspakovati datoteku \"%s\".\n"
-"Obezbedite dozvole za pisanje datoteci \"%s\" i uverite se da je ona "
-"ispravna arhiva teme za Openboks.\n"
+"Obezbedite dozvole za pisanje datoteci \"%s\" i uverite se da je ona ispravna arhiva teme za Openboks.\n"
 "Prijavljene su sledeće greške:\n"
 "%s"
 
