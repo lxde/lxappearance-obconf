@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-27 04:37+0000\n"
+"POT-Creation-Date: 2010-10-18 06:01+0000\n"
 "PO-Revision-Date: 2010-08-13 03:13+0100\n"
 "Last-Translator: Christoph Wickert <cwickert@fedoraproject.org>\n"
 "Language-Team: German <translation@mailinglist.lxde.org>\n"
@@ -124,9 +124,8 @@ msgid "Font for menu header:"
 msgstr "Schriftart für Menükopfzeilen:"
 
 #: ../src/obconf.glade.h:7
-#, fuzzy
 msgid "Font for on-screen display:"
-msgstr "Schriftart für On-Screen Display:"
+msgstr "Schrift für Bildschirmeinblendung:"
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
