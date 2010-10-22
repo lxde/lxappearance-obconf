@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-13 05:44+0000\n"
-"PO-Revision-Date: 2010-09-13 11:31+0200\n"
+"PO-Revision-Date: 2010-10-22 09:11+0200\n"
 "Last-Translator: Gunleif Joensen <gunleif@gmail.com>\n"
 "Language-Team: Føroyabólkurin\n"
 "Language: fo\n"
@@ -22,10 +22,12 @@ msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr ""
+"Miseydnaðist at løða obconf.glade markamótsfíluna. ObConf er helst ikki lagt "
+"inn rætt."
 
 #: ../src/main.c:194
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr ""
+msgstr "Miseydnaðist at løða eina rc.xml. Openbox er helst ikki rætt lagt inn."
 
 #: ../src/main.c:203
 #, c-format
@@ -35,6 +37,10 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
+"Villa meðan Openbox samansetingarfílan varð greinað. Tín samansetingarfíla "
+"er ikki gild XML.\n"
+"\n"
+"Boð: %s"
 
 #: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
@@ -94,6 +100,11 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
+"Ikki før fyri at úrdraga fíluna \"%s\".\n"
+"Vinarliga tryggja tær at \"%s\" er skrivifør, og at fílan er gildigt Openbox "
+"tema.\n"
+"Hesar villur vórðu fráboðaðar:\n"
+"%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
@@ -144,7 +155,7 @@ msgstr "Tema"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr ""
+msgstr "Heitisstong"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
