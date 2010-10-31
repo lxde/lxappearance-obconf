@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Piotr Sokół <psokol@jabster.pl>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lxappearance-obconf\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-31 06:04+0000\n"
+"PO-Revision-Date: 2010-10-31 19:47+0100\n"
+"Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
+"Language-Team: Polish <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/main.c:169
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"Nie udało się wczytać pliku interfejsu obconf.glade. Prawdopodobnie program "
+"Openbox nie został poprawnie zainstalowany."
+
+#: ../src/main.c:194
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr ""
+"Nie udało się wczytać pliku rc.xml. Prawdopodobnie program Openbox nie "
+"został poprawnie zainstalowany."
+
+#: ../src/main.c:203
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+"Wystąpił błąd podczas przetwarzania pliku konfiguracyjnego programu Openbox. "
+"Plik konfiguracyjny nie jest poprawnym plikiem w formacie XML.\n"
+"\n"
+"Wiadomość: %s"
+
+#: ../src/theme.c:107 ../src/theme.c:139
+msgid "Choose an Openbox theme"
+msgstr "Wybór pliku"
+
+#: ../src/theme.c:116
+msgid "Openbox theme archives"
+msgstr "Archiwa motywów Openbox"
+
+#: ../src/archive.c:44
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr ""
+
+#: ../src/archive.c:69
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr ""
+
+#: ../src/archive.c:105
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Nie można utworzyć archiwum motywu „%s”.\n"
+"Wykryto następujące błędy:\n"
+"%s"
+
+#: ../src/archive.c:110 ../src/archive.c:194
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr "Nie można uruchomić polecenia „tar”: %s"
+
+#: ../src/archive.c:130
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr "Nie można utworzyć katalogu „%s”: %s"
+
+#: ../src/archive.c:152
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr "Katalog „%s” nie jest poprawnym katalogiem motywu programu Openbox."
+
+#: ../src/archive.c:162
+#, fuzzy, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Nie można przenieść do katalogu „%s”: %s"
+
+#: ../src/archive.c:201
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Nie można rozpakować pliu  „%s”.\n"
+"Proszę upewnić się, że użytkownik posiada prawa do zapisywania w położeniu  "
+"„%s” i wskazany plik jest poprawnym archiwum motywu programu Openbox.\n"
+"Wykryto następujące błędy:\n"
+"%s"
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Motyw</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "Utwórz _archiwum motywu (.obt)..."
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr "Czcionka tytułu aktywnego okna:"
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive window title:"
+msgstr "Czcionka tytułu nieaktywnego okna:"
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr "Czcionka elementów menu:"
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu header:"
+msgstr "Czcionka nagłówka menu:"
+
+#: ../src/obconf.glade.h:7
+msgid "Font for on-screen display:"
+msgstr "Czcionka menu ekranowego:"
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr "Różne"
+
+#: ../src/obconf.glade.h:9
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+"N: ikona okna,\n"
+"L: etykieta (tytuł) okna,\n"
+"I: przycisk zminimalizowania okna,\n"
+"M: przycisk zmaksymalizowania okna,\n"
+"C: przycisk zamknięcia okna,\n"
+"S: przycisk zwinięcia okna,\n"
+"D: przycisk wyświetlania okna na wszystkich obszarach roboczych."
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Motyw"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr ""
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "_Kolejność przycisków:"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "_Zainstaluj motyw..."
