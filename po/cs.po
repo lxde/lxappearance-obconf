@@ -153,8 +153,9 @@ msgid "Theme"
 msgstr "Motiv"
 
 #: ../src/obconf.glade.h:17
+#, fuzzy
 msgid "Title Bar"
-msgstr ""
+msgstr "Záhlaví okna"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
