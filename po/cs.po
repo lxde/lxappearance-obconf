@@ -2,38 +2,38 @@
 # Copyright (C) 2007 Dana Jansens
 # This file is distributed under the same license as the ObConf package.
 # tezlo <tezlo@gmx.net>, 2007.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2010-11-01 10:38+0000\n"
 "PO-Revision-Date: 2008-01-24 04:20+0100\n"
 "Last-Translator: tezlo <tezlo@gmx.net>\n"
 "Language-Team: Czech <cs@li.org>\n"
-"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
 
 #: ../src/main.c:169
-msgid ""
-"Failed to load the obconf.glade interface file. ObConf is probably not "
-"installed correctly."
-msgstr ""
+msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
+msgstr "Nelze načíst soubor obconf.glade.  ObConf není správně nainstalován."
 
 #: ../src/main.c:194
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr ""
+msgstr "Nelze načíst soubor rc.xml.  Openbox není správně nainstalován."
 
 #: ../src/main.c:203
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file. Your configuration file "
-"is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
+"Chyba při zpracování konfiguračního souboru programu Openbox. Váš konfigurační soubor nemá správný XML formát.\n"
+"\n"
+"Zpráva: %s"
 
 #: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
@@ -88,14 +88,12 @@ msgstr "Nepodařilo se přesunout do adresáře \"%s\": %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Nepodařilo se rozbalit soubor \"%s\".\n"
-"Prosím ověřte, že \"%s\" má povolen zápis a že soubor je archiv motivu pro "
-"Openbox.\n"
+"Prosím ověřte, že \"%s\" má povolen zápis a že soubor je archiv motivu pro Openbox.\n"
 "Nahlášeny byly následující chyby:\n"
 "%s"
 
@@ -108,36 +106,31 @@ msgid "Create a theme _archive (.obt)..."
 msgstr "Vytvořit nový _archiv (.obt)..."
 
 #: ../src/obconf.glade.h:3
-#, fuzzy
 msgid "Font for active window title:"
-msgstr "Titulek _inaktivního okna: "
+msgstr "Písmo nadpisu aktivního okna: "
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive window title:"
-msgstr "Titulek _inaktivního okna: "
+msgstr "Písmo nadpisu neaktivního okna: "
 
 #: ../src/obconf.glade.h:5
 msgid "Font for menu Item:"
-msgstr ""
+msgstr "Písmo položky menu:"
 
 #: ../src/obconf.glade.h:6
-#, fuzzy
 msgid "Font for menu header:"
-msgstr "_Hlavička menu: "
+msgstr "Písmo hlavičky menu: "
 
 # XXX
 #: ../src/obconf.glade.h:7
-#, fuzzy
 msgid "Font for on-screen display:"
-msgstr "_OSD text: "
+msgstr "Písmo OSD textu: "
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
-msgstr ""
+msgstr "Různé"
 
 #: ../src/obconf.glade.h:9
-#, fuzzy
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -147,10 +140,13 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
-"Ikona okna\n"
-"Titulek okna\n"
-"Minimalizovat\n"
-"Maximalizovat"
+"N: Ikona okna\n"
+"L: Titulek okna\n"
+"I: Minimalizovat\n"
+"M:Maximalizovat\n"
+"C: Zavřít\n"
+"S: Zarolovat\n"
+"D: Na všechny plochy"
 
 #: ../src/obconf.glade.h:16
 msgid "Theme"
@@ -187,13 +183,10 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "  --version             Display the version and exit\n"
 #~ msgstr "  --version             Zobrazit verzi a skončit\n"
 
-#~ msgid ""
-#~ "  --install ARCHIVE.obt Install the given theme archive and select it\n"
+#~ msgid "  --install ARCHIVE.obt Install the given theme archive and select it\n"
 #~ msgstr "  --install ARCHIV.obt  Instalovat daný archiv a vybrat ho\n"
 
-#~ msgid ""
-#~ "  --archive THEME       Create a theme archive from the given theme "
-#~ "directory\n"
+#~ msgid "  --archive THEME       Create a theme archive from the given theme directory\n"
 #~ msgstr "  --archive MOTIV       Vytvořit archiv z daného motivu\n"
 
 #~ msgid ""
@@ -311,14 +304,12 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "Windows"
 #~ msgstr "Okna"
 
-# XXX
 #~ msgid "<span weight=\"bold\">Moving and Resizing Windows</span>"
 #~ msgstr "<span weight=\"bold\">Změna Pozice a Velikosti Oken</span>"
 
 #~ msgid "Update the window contents while _resizing"
 #~ msgstr "Aktualizovat obsah okna při změně _velikosti"
 
-# XXX
 #~ msgid "Drag _threshold distance:"
 #~ msgstr "Citlivost _tahu:"
 
@@ -340,11 +331,9 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "ms"
 #~ msgstr "ms"
 
-#, fuzzy
 #~ msgid "<span weight=\"bold\">Information Dialog</span>"
 #~ msgstr "<span weight=\"bold\">Pozice</span>"
 
-#, fuzzy
 #~ msgid "Show _information dialog:"
 #~ msgstr "_Zobrazit informační dialog:"
 
@@ -357,7 +346,6 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "Never"
 #~ msgstr "Nikdy"
 
-#, fuzzy
 #~ msgid "Information dialog's _position:"
 #~ msgstr "_Pozice informačního dialogu:"
 
@@ -370,7 +358,6 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "Fixed position on screen"
 #~ msgstr "Fixní pozice na obrazovce"
 
-#, fuzzy
 #~ msgid "Fixed _x position:"
 #~ msgstr "Fixní _x pozice:"
 
@@ -383,14 +370,12 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "From right edge"
 #~ msgstr "Z praváho okraje"
 
-#, fuzzy
 #~ msgid "Fixed _y position:"
 #~ msgstr "Fixní _y pozice:"
 
 #~ msgid "Move & Resize"
 #~ msgstr "Pohyb & Velikost"
 
-# XXX
 #~ msgid "_Focus windows when the mouse pointer moves over them"
 #~ msgstr "_Aktivovat okno pod kurzorem myši"
 
@@ -400,7 +385,6 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "Move focus _under the mouse when the mouse is not moving"
 #~ msgstr "Aktivovat okno pod kurzorem když se _myš nehýbe"
 
-# XXX
 #~ msgid "_Raise windows when the mouse pointer moves over them"
 #~ msgstr "_Zvednout okno při přejezdu kurzorem myši"
 
@@ -446,14 +430,8 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "<span weight=\"bold\">Desktop Margins</span>"
 #~ msgstr "<span weight=\"bold\">Okraje Plochy</span>"
 
-# XXX
-#~ msgid ""
-#~ "Desktop margins are reserved areas on the edge of your screen.  New "
-#~ "windows will not be placed within a margin, and maximized windows will "
-#~ "not cover them."
-#~ msgstr ""
-#~ "Okraje plochy je možné vyhranit jiným účelům. Nová okna budou umístěna "
-#~ "mimo rámec okrajů a maximalizovaná okna je nebudou krýt."
+#~ msgid "Desktop margins are reserved areas on the edge of your screen.  New windows will not be placed within a margin, and maximized windows will not cover them."
+#~ msgstr "Okraje plochy je možné vyhranit jiným účelům. Nová okna budou umístěna mimo rámec okrajů a maximalizovaná okna je nebudou krýt."
 
 #~ msgid "_Top"
 #~ msgstr "_Horní"
@@ -583,7 +561,6 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "--archive requires an argument\n"
 #~ msgstr "--archive vyžaduje argument\n"
 
-#, fuzzy
 #~ msgid "--config-file requires an argument\n"
 #~ msgstr "--archive vyžaduje argument\n"
 
@@ -593,9 +570,5 @@ msgstr "_Instalovat nový motiv..."
 #~ msgid "Custom actions"
 #~ msgstr "Uživatelské akce"
 
-#~ msgid ""
-#~ "Unable to determine the theme's name from \"%s\".  File name should be "
-#~ "ThemeName.obt."
-#~ msgstr ""
-#~ "Kunde inte avgöra temats namn från \"%s\". Filnamnet borde vara TemaNamn."
-#~ "obt."
+#~ msgid "Unable to determine the theme's name from \"%s\".  File name should be ThemeName.obt."
+#~ msgstr "Kunde inte avgöra temats namn från \"%s\". Filnamnet borde vara TemaNamn.obt."
