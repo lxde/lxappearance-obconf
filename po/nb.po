@@ -8,13 +8,15 @@ msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-26 14:04+0200\n"
-"PO-Revision-Date: 2007-07-30 15:43+0200\n"
-"Last-Translator: Michael Kjelbergvik Thung <postlogic@switch-case.org>\n"
+"PO-Revision-Date: 2010-11-04 10:16+0200\n"
+"Last-Translator: Sam <wilsonsamm@hotmail.com>\n"
 "Language-Team: Norwegian\n"
-"Language: \n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../src/main.c:169
 msgid ""
@@ -25,6 +27,8 @@ msgstr ""
 #: ../src/main.c:194
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
+"Klarte ikke lese inn noen rc.xml. Openbox er kanskje ikke ordentlig "
+"installert."
 
 #: ../src/main.c:203
 #, c-format
@@ -108,34 +112,31 @@ msgid "Create a theme _archive (.obt)..."
 msgstr "Opprett et tema-_arkiv (.obt)..."
 
 #: ../src/obconf.glade.h:3
-#, fuzzy
 msgid "Font for active window title:"
-msgstr "_Inaktiv vindustittel: "
+msgstr "Skrifttype i aktiv vindustittel: "
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive window title:"
-msgstr "_Inaktiv vindustittel: "
+msgstr "Skrifttype i _inaktiv vindustittel: "
 
 #: ../src/obconf.glade.h:5
 msgid "Font for menu Item:"
-msgstr ""
+msgstr "Skrifttype i menyen:"
 
 #: ../src/obconf.glade.h:6
-#, fuzzy
 msgid "Font for menu header:"
-msgstr "Vindus_overskrift: "
+msgstr "Skrifttype i meny_overskriften: "
 
 #: ../src/obconf.glade.h:7
-#, fuzzy
 msgid "Font for on-screen display:"
-msgstr "_Popup-vindu: "
+msgstr "Skrifttype i skjermmeldinger: "
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
-msgstr ""
+msgstr "Diverse"
 
 #: ../src/obconf.glade.h:9
+#, fuzzy
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -145,6 +146,12 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
+"N:Vindusikon\n"
+"L: Vindustittel\n"
+"I: Minimer\n"
+"M:C: Lukk\n"
+"S: Rull opp\n"
+"D: Vis på alle skrivebord"
 
 #: ../src/obconf.glade.h:16
 msgid "Theme"
@@ -152,7 +159,7 @@ msgstr "Tema"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr ""
+msgstr "Vindustittel"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
