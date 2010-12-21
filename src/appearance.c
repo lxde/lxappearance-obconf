@@ -26,12 +26,24 @@
 #include "main.h"
 #include "tree.h"
 #include "preview_update.h"
+#include "appearance.h"
 #include <ctype.h> /* toupper */
 
 static gboolean mapping = FALSE;
 
 static RrFont *read_font(GtkFontButton *w, const gchar *place);
 static RrFont *write_font(GtkFontButton *w, const gchar *place);
+
+/* Forwarded */
+
+void on_title_layout_changed(GtkEntry *w, gpointer data);
+void on_font_active_font_set(GtkFontButton *w, gpointer data);
+void on_font_inactive_font_set(GtkFontButton *w, gpointer data);
+void on_font_menu_header_font_set(GtkFontButton *w, gpointer data);
+void on_font_menu_item_font_set(GtkFontButton *w, gpointer data);
+void on_font_display_font_set(GtkFontButton *w, gpointer data);
+
+/* End of forwarded */
 
 void appearance_setup_tab()
 {
@@ -253,7 +265,7 @@ static RrFont *write_font(GtkFontButton *w, const gchar *place)
     RrFontWeight weight = RR_FONTWEIGHT_NORMAL;
     RrFontSlant slant = RR_FONTSLANT_NORMAL;
 
-    if (mapping) return;
+    if (mapping) return NULL;
 
     font = g_strdup(gtk_font_button_get_font_name(w));
     while ((c = strrchr(font, ' '))) {

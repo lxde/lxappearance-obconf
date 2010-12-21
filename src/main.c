@@ -47,8 +47,15 @@ xmlNodePtr root;
 RrInstance *rrinst;
 gchar *obc_config_file = NULL;
 
+/* Disable, not used
 static gchar *obc_theme_install = NULL;
 static gchar *obc_theme_archive = NULL;
+*/
+
+/* Forwarded */
+extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder);
+extern void plugin_unload(LXAppearance* app) ;
+/* End Forwarded */
 
 void obconf_error(gchar *msg, gboolean modal)
 {
@@ -142,7 +149,6 @@ static void on_response(GtkDialog* dlg, int res, LXAppearance* app)
 /* int main(int argc, char **argv) */
 extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
 {
-    gchar *p;
     gboolean exit_with_error = FALSE;
 
     /* ABI compatibility check. */

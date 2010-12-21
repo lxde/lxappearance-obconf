@@ -36,9 +36,14 @@ static gboolean mapping = FALSE;
 static GList *themes;
 static GtkListStore *theme_store;
 
+/* Forwarded */
 static void add_theme_dir(const gchar *dirname);
 static void on_theme_names_selection_changed(GtkTreeSelection *sel,
                                              gpointer data);
+void on_install_theme_clicked(GtkButton *w, gpointer data);
+void on_theme_archive_clicked(GtkButton *w, gpointer data);
+
+/* End Forwarded */
 
 void theme_setup_tab()
 {
@@ -173,7 +178,6 @@ void theme_load_all()
     GList *it, *next;
     gint i;
     GtkWidget *w;
-    RrFont *active, *inactive, *menu_t, *menu_i, *osd;
 
     mapping = TRUE;
 

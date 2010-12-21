@@ -4,6 +4,7 @@
 
 #include "theme.h"
 #include "main.h"
+#include "archive.h"
 #include <glib/gi18n.h>
 
 #include <string.h>
@@ -25,12 +26,14 @@
     gtk_widget_destroy(msgw);                                            \
 }
 
-static gchar *get_theme_dir();
-static gboolean change_dir(const gchar *dir);
-static gchar* name_from_dir(const gchar *dir);
-static gchar* install_theme_to(const gchar *file, const gchar *to);
 static gboolean create_theme_archive(const gchar *dir, const gchar *name,
                                      const gchar *to);
+static gchar *get_theme_dir();
+/* Disable not used
+static gboolean change_dir(const gchar *dir);
+*/
+static gchar* name_from_dir(const gchar *dir);
+static gchar* install_theme_to(const gchar *file, const gchar *to);
 
 gchar* archive_install(const gchar *path)
 {
@@ -156,6 +159,7 @@ static gchar* name_from_dir(const gchar *dir)
     return g_path_get_basename(dir);
 }
 
+/* Disable not used
 static gboolean change_dir(const gchar *dir)
 {
     if (chdir(dir) == -1) {
@@ -165,6 +169,7 @@ static gboolean change_dir(const gchar *dir)
     }
     return TRUE;
 }
+*/
 
 static gchar* install_theme_to(const gchar *file, const gchar *to)
 {
@@ -175,7 +180,7 @@ static gchar* install_theme_to(const gchar *file, const gchar *to)
     GError *e = NULL;
     gchar *name = NULL;
 
-    glob = g_strdup_printf("*/openbox-3/", name);
+    glob = g_strdup_printf("*/openbox-3/%s", name);
 
     argv = g_new(gchar*, 11);
     argv[0] = g_strdup("tar");

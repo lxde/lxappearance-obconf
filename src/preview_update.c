@@ -27,7 +27,9 @@
 #include "preview_update.h"
 #include "main.h"
 
+/* Disable not used
 static gboolean restart_theme_preview_update = TRUE;
+*/
 
 static GtkTreeView  *tree_view            = NULL;
 static GtkListStore *list_store           = NULL;

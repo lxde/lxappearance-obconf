@@ -64,12 +64,12 @@ xmlNodePtr tree_get_node(const gchar *path, const gchar *def)
         if (!c) {
             gint i;
 
-            c = xmlNewTextChild(n, NULL, attrs[0], *next ? NULL : def);
+            c = xmlNewTextChild(n, NULL, xmlCharStrdup(attrs[0]), *next ? NULL : xmlCharStrdup(def));
 
             for (i = 1; attrs[i]; ++i) {
                 gchar **eq = g_strsplit(attrs[i], "=", 2);
                 if (eq[1])
-                    xmlNewProp(c, eq[0], eq[1]);
+                    xmlNewProp(c, xmlCharStrdup(eq[0]), xmlCharStrdup(eq[1]));
                 g_strfreev(eq);
             }
         }
