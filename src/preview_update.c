@@ -52,12 +52,12 @@ void preview_update_all()
     GtkTreeSelection* sel = gtk_tree_view_get_selection(tree_view);
     if(gtk_tree_selection_get_selected(sel, NULL, &it))
     {
-        gtk_tree_model_get(list_store, &it, 0, &name, -1);
+        gtk_tree_model_get( GTK_TREE_MODEL(list_store), &it, 0, &name, -1);
         GdkPixbuf* pix = preview_theme(name, title_layout, active_window_font,
                                          inactive_window_font, menu_title_font,
                                          menu_item_font, osd_font);
         GtkWidget* preview = get_widget("preview");
-        gtk_image_set_from_pixbuf(preview, pix);
+        gtk_image_set_from_pixbuf( GTK_IMAGE(preview), pix);
         g_object_unref(pix);
     }
 }

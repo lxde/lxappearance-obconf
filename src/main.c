@@ -170,7 +170,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
         exit_with_error = TRUE;
     }
     gtk_builder_connect_signals(builder, NULL);
-    gtk_box_pack_start(app->wm_page, get_widget("obconf_vbox"), TRUE, TRUE, 0);
+    gtk_box_pack_start( GTK_BOX(app->wm_page), get_widget("obconf_vbox"), TRUE, TRUE, 0);
     gtk_widget_show_all(app->wm_page);
 
     g_signal_connect(app->dlg, "response", G_CALLBACK(on_response), app);
