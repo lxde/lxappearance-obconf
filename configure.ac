@@ -1,11 +1,17 @@
 AC_PREREQ([2.54])
 AC_INIT([lxappearance-obconf], [0.0.1], [http://lxde.org])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign])
 AC_CONFIG_SRCDIR([src/main.c])
 AC_CONFIG_HEADERS([config.h])
 
 AC_PREFIX_DEFAULT([/usr/local])
 test "$prefix" = "NONE" && prefix=$ac_default_prefix
+
+# Support silent build rules. Disable by either passing --disable-silent-rules
+# to configure or passing V=1 to make
+AM_SILENT_RULES([yes])
+
+AM_MAINTAINER_MODE
 
 # Pick compiler specific/build target flags, and set $CVS
 AM_PROG_CC_C_O
@@ -14,7 +20,9 @@ AC_C_INLINE
 
 AC_PROG_INSTALL
 
-AC_PROG_LIBTOOL
+#Initialize libtool
+LT_PREREQ([2.2])
+LT_INIT
 
 # CHECK_EXPORT_DYNAMIC
 # LDFLAGS="$LDFLAGS $EXPORT_DYNAMIC_FLAGS"
@@ -25,7 +33,16 @@ IT_PROG_INTLTOOL([0.40.0])
 GETTEXT_PACKAGE=lxappearance-obconf
 AC_SUBST(GETTEXT_PACKAGE)
 
-ALL_LINGUAS=""
+# Generate po/LINGUAS on the fly rather than relying on translators
+# to maintain it manually. This also overcome the problem that Transifex
+# cannot add a language to po/LINGUAS if a new po file is submitted.
+rm -f $srcdir/po/LINGUAS
+for po_file in `ls $srcdir/po/*.po | sort`;
+do
+    lang=`echo "$po_file" | sed "s|.*/po/\(.*\)\.po|\1|g"`
+    echo $lang >> $srcdir/po/LINGUAS
+done
+
 AM_GLIB_GNU_GETTEXT
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 
@@ -59,6 +76,12 @@ AC_SUBST(LXAPPEARANCE_DATADIR)
 LXAPPEARANCE_MODULE="-avoid-version \
     -no-undefined "'-export-symbols-regex "^[[^_]].*"'
 AC_SUBST(LXAPPEARANCE_MODULE)
+
+# Pass --enable-maintainer-mode to enable more CFLAGS
+if test "$USE_MAINTAINER_MODE" = "yes"; then
+  ADDITIONAL_FLAGS="-Wall -Werror=all -Werror=format -Werror=implicit-function-declaration -Werror=implicit-int -Werror=missing-braces -Werror=parentheses -Werror=return-type -Werror=strict-aliasing -Werror=switch -Wuninitialized -Werror=unused-label -Werror=unused-value -Wextra -Wno-missing-field-initializers -Wno-unused-parameter -Werror=missing-declarations -Wredundant-decls -Wmissing-noreturn -Wpointer-arith -Wcast-align -Wwrite-strings -Werror=inline -Werror=format-nonliteral -Wformat-nonliteral -Werror=format-security -Wformat-security -Winit-self -Werror=missing-include-dirs -Werror=undef -Werror=aggregate-return -Wmissing-format-attribute -Werror=nested-externs -fno-strict-aliasing -fmessage-length=0 -Wp,-D_FORTIFY_SOURCE=2 -DG_DISABLE_DEPRECATED -DG_DISABLE_SINGLE_INCLUDES -DGDK_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_SINGLE_INCLUDES -DGTK_DISABLE_DEPRECATED -DGTK_DISABLE_SINGLE_INCLUDES"
+fi
+AC_SUBST(ADDITIONAL_FLAGS)
 
 AC_CONFIG_FILES([
   Makefile

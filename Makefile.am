@@ -22,6 +22,7 @@ src_obconf_la_CPPFLAGS = \
 	$(GMODULE_CFLAGS) \
 	$(GDK_PIXBUF_CFLAGS) \
 	$(XML_CFLAGS) \
+	$(ADDITIONAL_FLAGS) \
 	-DLOCALEDIR=\"$(localedir)\" \
 	-DPIXMAPDIR=\"$(pixmapdir)\" \
 	-DGLADEDIR=\"$(gladedir)\" \
