@@ -80,7 +80,7 @@ static gboolean get_all(Window win, Atom prop, Atom type, gint size,
     gint ret_size;
     gulong ret_items, bytes_left;
 
-    res = XGetWindowProperty(GDK_DISPLAY(), win, prop, 0l, G_MAXLONG,
+    res = XGetWindowProperty(GDK_DISPLAY_XDISPLAY(gdk_display_get_default()), win, prop, 0l, G_MAXLONG,
                              FALSE, type, &ret_type, &ret_size,
                              &ret_items, &bytes_left, &xdata);
     if (res == Success) {
@@ -208,7 +208,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
         }
     }
 
-    rrinst = RrInstanceNew(GDK_DISPLAY(), gdk_x11_get_default_screen());
+    rrinst = RrInstanceNew(GDK_DISPLAY_XDISPLAY(gdk_display_get_default()), gdk_x11_get_default_screen());
     if (!exit_with_error) {
         theme_setup_tab();
         appearance_setup_tab();
