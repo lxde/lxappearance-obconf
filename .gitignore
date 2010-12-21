@@ -48,3 +48,4 @@ intltool-extract.in
 intltool-merge.in
 intltool-update.in
 src/xml-purge
+src/.dirstamp
