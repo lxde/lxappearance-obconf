@@ -1,23 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Piotr Sokół <psokol@jabster.pl>, 2010.
+# Polish translation for lxappearce-obconf package.
+# Copyright (C) 2011 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the lxappearce-obconf package.
+# Piotr Sokół <psokol@jabster.pl>, 2010, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: lxappearance-obconf\n"
+"Project-Id-Version: lxappearance-obconf 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-10-31 06:04+0000\n"
-"PO-Revision-Date: 2010-12-21 18:50+0200\n"
-"Last-Translator: Artur <mazdac@gmail.com>\n"
+"PO-Revision-Date: 2011-02-17 22:36+0100\n"
+"Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
 "Language-Team: Polish <>\n"
-"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.0.5\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n"
+"%100<10 || n%100>=20)) ? 1 : 2));\n"
 
 #: ../src/main.c:169
 msgid ""
@@ -57,12 +55,12 @@ msgstr "Archiwa motywów Openbox"
 #: ../src/archive.c:44
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "\"%s\" został zainstalowany w %s"
+msgstr "Motyw „%s” zainstalowano w położeniu %s"
 
 #: ../src/archive.c:69
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "pomyślnie utworzono \"%s\""
+msgstr "Utworzono motyw „%s”"
 
 #: ../src/archive.c:105
 #, c-format
@@ -93,7 +91,7 @@ msgstr "Katalog „%s” nie jest poprawnym katalogiem motywu programu Openbox."
 #: ../src/archive.c:162
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "Nie można przenieść do katalogu \"%s\": %s"
+msgstr "Nie można przenieść do katalogu „%s”: %s"
 
 #: ../src/archive.c:201
 #, c-format
@@ -104,7 +102,7 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Nie można rozpakować pliu  „%s”.\n"
+"Nie można rozpakować pliu „%s”.\n"
 "Proszę upewnić się, że użytkownik posiada prawa do zapisywania w położeniu  "
 "„%s” i wskazany plik jest poprawnym archiwum motywu programu Openbox.\n"
 "Wykryto następujące błędy:\n"
@@ -152,13 +150,13 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
-"N: ikona okna,\n"
-"L: etykieta (tytuł) okna,\n"
-"I: przycisk zminimalizowania okna,\n"
-"M: przycisk zmaksymalizowania okna,\n"
-"C: przycisk zamknięcia okna,\n"
-"S: przycisk zwinięcia okna,\n"
-"D: przycisk wyświetlania okna na wszystkich obszarach roboczych."
+"N: ikona,\n"
+"L: etykieta tytułu,\n"
+"I: przycisk minimalizowania,\n"
+"M: przycisk maksymalizowania,\n"
+"C: przycisk zamykania,\n"
+"S: przycisk zwijania,\n"
+"D: przycisk wyświetlania na wszystkich obszarach roboczych."
 
 #: ../src/obconf.glade.h:16
 msgid "Theme"
@@ -166,11 +164,11 @@ msgstr "Motyw"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr "Pasek tytułowy"
+msgstr "Pasek tytułu"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
-msgstr "_Kolejność przycisków:"
+msgstr "_Kolejność elementów:"
 
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
