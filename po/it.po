@@ -23,10 +23,14 @@ msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr ""
+"Caricamento del file di interfaccia obconf.glade fallito. Probabilmente "
+"ObConf non è installato correttamente."
 
 #: ../src/main.c:194
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
+"Impossibile caricare un file rc.xml. Probabilmente Openbox non è installato "
+"correttamente."
 
 #: ../src/main.c:203
 #, c-format
@@ -36,6 +40,10 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
+"Errori durante la lettura del file di configurazione di Openbox. Il tuo file "
+"di configurazione non è un XML valido.\n"
+"\n"
+"Messaggio: %s"
 
 #: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
@@ -110,32 +118,28 @@ msgid "Create a theme _archive (.obt)..."
 msgstr "Crea un archivio-tema (.obt)..."
 
 #: ../src/obconf.glade.h:3
-#, fuzzy
 msgid "Font for active window title:"
-msgstr "Titolo finestra _inattiva: "
+msgstr "Font per il titolo delle finestre attive: "
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive window title:"
-msgstr "Titolo finestra _inattiva: "
+msgstr "Font per il titolo delle finestre inattive:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for menu Item:"
-msgstr ""
+msgstr "Font per le voci di menu:"
 
 #: ../src/obconf.glade.h:6
-#, fuzzy
 msgid "Font for menu header:"
-msgstr "Intestazione _menù: "
+msgstr "Font per la barra dei menu"
 
 #: ../src/obconf.glade.h:7
-#, fuzzy
 msgid "Font for on-screen display:"
-msgstr "_On-screen display: "
+msgstr "Font per on-screen display:"
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
-msgstr ""
+msgstr "Varie"
 
 #: ../src/obconf.glade.h:9
 msgid ""
@@ -147,6 +151,13 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
+"N: Icona finestra\n"
+"L: Titolo della finestra\n"
+"I: Iconifica (minimizza)\n"
+"M: Massimizza\n"
+"C: Chiudi\n"
+"S: Shade (Arrotola)\n"
+"D: Onnipresente (su tutti gli spazi di lavoro)"
 
 #: ../src/obconf.glade.h:16
 msgid "Theme"
@@ -154,7 +165,7 @@ msgstr "Tema"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr ""
+msgstr "Barra del Titolo"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
