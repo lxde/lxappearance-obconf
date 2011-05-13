@@ -47,8 +47,15 @@ xmlNodePtr root;
 RrInstance *rrinst;
 gchar *obc_config_file = NULL;
 
+/* Disable, not used
 static gchar *obc_theme_install = NULL;
 static gchar *obc_theme_archive = NULL;
+*/
+
+/* Forwarded */
+extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder);
+extern void plugin_unload(LXAppearance* app) ;
+/* End Forwarded */
 
 void obconf_error(gchar *msg, gboolean modal)
 {
@@ -80,7 +87,7 @@ static gboolean get_all(Window win, Atom prop, Atom type, gint size,
     gint ret_size;
     gulong ret_items, bytes_left;
 
-    res = XGetWindowProperty(GDK_DISPLAY(), win, prop, 0l, G_MAXLONG,
+    res = XGetWindowProperty(GDK_DISPLAY_XDISPLAY(gdk_display_get_default()), win, prop, 0l, G_MAXLONG,
                              FALSE, type, &ret_type, &ret_size,
                              &ret_items, &bytes_left, &xdata);
     if (res == Success) {
@@ -142,7 +149,6 @@ static void on_response(GtkDialog* dlg, int res, LXAppearance* app)
 /* int main(int argc, char **argv) */
 extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
 {
-    gchar *p;
     gboolean exit_with_error = FALSE;
 
     /* ABI compatibility check. */
@@ -170,7 +176,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
         exit_with_error = TRUE;
     }
     gtk_builder_connect_signals(builder, NULL);
-    gtk_box_pack_start(app->wm_page, get_widget("obconf_vbox"), TRUE, TRUE, 0);
+    gtk_box_pack_start( GTK_BOX(app->wm_page), get_widget("obconf_vbox"), TRUE, TRUE, 0);
     gtk_widget_show_all(app->wm_page);
 
     g_signal_connect(app->dlg, "response", G_CALLBACK(on_response), app);
@@ -208,7 +214,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
         }
     }
 
-    rrinst = RrInstanceNew(GDK_DISPLAY(), gdk_x11_get_default_screen());
+    rrinst = RrInstanceNew(GDK_DISPLAY_XDISPLAY(gdk_display_get_default()), gdk_x11_get_default_screen());
     if (!exit_with_error) {
         theme_setup_tab();
         appearance_setup_tab();

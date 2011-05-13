@@ -27,6 +27,17 @@
 
 #define PADDING 2 /* openbox does it :/ */
 
+/* Forwarded */
+
+GdkPixbuf *preview_theme(const gchar *name, const gchar *titlelayout,
+                         RrFont *active_window_font,
+                         RrFont *inactive_window_font,
+                         RrFont *menu_title_font,
+                         RrFont *menu_item_font,
+                         RrFont *osd_font);
+
+/* End forwarded */
+
 static void theme_pixmap_paint(RrAppearance *a, gint w, gint h)
 {
     Pixmap out = RrPaintPixmap(a, w, h);
@@ -456,7 +467,6 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 
 static gint theme_label_width(RrTheme *theme, gboolean active)
 {
-    gint w, h;
     RrAppearance *label;
 
     if (active) {
