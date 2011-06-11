@@ -53,11 +53,26 @@ AC_ARG_ENABLE(more_warnings,
        [enable_more_warnings=no]
 )
 
+AC_ARG_ENABLE(gtk3,
+AC_HELP_STRING([--enable-gtk3],[enable to use gtk-3.0 instead of gtk-2.0]),
+[case "${enableval}" in
+  yes)  enable_gtk3=yes ;;
+  no)   enable_gtk3=no ;;
+  *) AC_MSG_ERROR([bad value "${enableval}" for --enable-gtk3, use "yes" (default) or "no".]) ;;
+esac],[])
+
 PKG_CHECK_MODULES(OPENBOX, [obrender-3.0 >= 3.4.2 obparser-3.0 >= 3.4.2])
 AC_SUBST(OPENBOX_CFLAGS)
 AC_SUBST(OPENBOX_LIBS)
 
-PKG_CHECK_MODULES(GTK, [gtk+-2.0])
+if test "x$enable_gtk3" = "xyes" ; then
+  CFLAGS="$CFLAGS -DENABLE_GTK3"
+  gtk_modules="gtk+-3.0 >= 3.0.0"
+else
+  gtk_modules="gtk+-2.0 >= 2.12.0 gthread-2.0"
+fi
+
+PKG_CHECK_MODULES(GTK, [$gtk_modules])
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
 
