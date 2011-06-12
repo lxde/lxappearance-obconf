@@ -1,29 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Dutch translation of the lxappearance-obconf package.
+# Copyright (C) the author of the lxappearance-obconf package.
+# This file is distributed under the same license as the 
+# lxappearance-obconf package.
+# Pjotr, 2011.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
-"PO-Revision-Date: 2011-06-02 23:30+0200\n"
-"Last-Translator: Pjotr <>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: nl\n"
+"POT-Creation-Date: 2011-05-27 04:04+0000\n"
+"PO-Revision-Date: 2011-05-25 11:34+0200\n"
+"Last-Translator: Pjotr\n"
+"Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
 
 #: ../src/main.c:169
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr ""
-"Kon het obconf.glade-bedieningsbestand niet laden. ObConf is waarschijnlijk "
+"Kon het obconf.glade bedieningsbestand niet laden. ObConf is waarschijnlijk "
 "niet correct geïnstalleerd."
 
 #: ../src/main.c:194
@@ -153,7 +153,7 @@ msgid ""
 "D: Omnipresent (On all desktops)"
 msgstr ""
 "N: Vensterpictogram\n"
-"L: Venster-etiket (Titel)\n"
+"L: Venster-etiket (Title)\n"
 "I: Pictogram van maken (Minimaliseren)\n"
 "M: Maximaliseren\n"
 "C: Sluiten\n"
