@@ -70,9 +70,9 @@ void obconf_error(gchar *msg, gboolean modal)
     if (modal)
         gtk_dialog_run(GTK_DIALOG(d));
     else {
-        g_signal_connect_swapped(GTK_OBJECT(d), "response",
+        g_signal_connect_swapped(GTK_WIDGET(d), "response",
                                  G_CALLBACK(gtk_widget_destroy),
-                                 GTK_OBJECT(d));
+                                 GTK_WIDGET(d));
         gtk_widget_show(d);
     }
 }
