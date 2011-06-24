@@ -76,7 +76,13 @@ PKG_CHECK_MODULES(GTK, [$gtk_modules])
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
 
-PKG_CHECK_MODULES(GDK_PIXBUF, [gdk-pixbuf-2.0])
+if test "x$enable_gtk3" = "xyes" ; then
+  gdk_modules="gdk-3.0 gdk-pixbuf-2.0"
+else
+  gdk_modules="gdk-pixbuf-2.0"
+fi
+
+PKG_CHECK_MODULES(GDK_PIXBUF, [$gdk_modules])
 AC_SUBST(GDK_PIXBUF_CFLAGS)
 AC_SUBST(GDK_PIXBUF_LIBS)
 
