@@ -1,0 +1,15 @@
+lxappearance-obconf (0.0.1~git20101112-0ubuntu2) natty; urgency=low
+
+  * debian/patches
+   - 80_translations.patch: Update translations from upstream git (2011-02-17)
+
+ -- Julien Lavergne <gilir@ubuntu.com>  Sun, 27 Feb 2011 01:25:59 +0100
+
+lxappearance-obconf (0.0.1~git20101112-0ubuntu1) natty; urgency=low
+
+  * Initial release (LP: #674610)
+  * debian/patches/
+   - 01_gtk3_migration.patch: Prepare for GTK3 migration.
+   - 99_translation_fix.patch: Include quilt generated files.
+
+ -- Julien Lavergne <gilir@ubuntu.com>  Sat, 13 Nov 2010 00:25:20 +0100

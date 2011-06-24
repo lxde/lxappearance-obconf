@@ -1,0 +1,57 @@
+This package was debianized by Julien Lavergne <gilir@ubuntu.com> on
+Sun, 26 Sep 2010 14:37:43 +0200.
+
+It was downloaded from http://lxde.sourceforge.net
+
+Upstream Author: 
+
+This LXAppearance plugin is derived from ObConf.
+
+ObConf is written by:
+
+ - Dana Jansens (danakj@orodu.net)
+   - Initial code.
+ - Tim Riley (tr@slackzone.org)
+   - HIG adherence changes.
+   - Interface improvements.
+   - Maintenance.
+ - Javeed Shaikh (syscrash2k@gmail.com)
+   - Theme previews
+ - Myles Green (rmg57@telus.net)
+   - Icon
+
+LXAppearance plugin integration is done by:
+
+ - Hong Jen Yee (PCMan) (pcman.tw@gmail.com)
+
+Copyright Holder: 
+
+    Copyright (C) 2010 Hong Jen Yee (PCMan)
+    Copyright (c) 2003-2008   Dana Jansens
+    Copyright (c) 2003        Tim Riley
+    Copyright (c) 2007        Javeed Shaikh
+
+
+License:
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+ 
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+ 
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  
+    02110-1301 USA.
+
+On Debian systems, the complete text of the GNU General
+Public License can be found in `/usr/share/common-licenses/GPL-2'.
+
+The Debian packaging is (C) 2010, Julien Lavergne <gilir@ubuntu.com> and
+is licensed under the GPL-2.
+
