@@ -1,35 +1,36 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Dutch translation for the lxappearance-obconf package.
+# Copyright (C) the author of the lxappearance-obconf package.
+# This file is distributed under the same license as the 
+# lxappearance-obconf package.
+# Pjotr, 2011.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
-"PO-Revision-Date: 2011-02-14 15:06+0200\n"
-"Last-Translator: Klemen <klemen.kosir@gmx.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: sl\n"
+"POT-Creation-Date: 2011-05-27 04:04+0000\n"
+"PO-Revision-Date: 2011-06-13 11:34+0200\n"
+"Last-Translator: Pjotr\n"
+"Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
-"X-Generator: Pootle 2.0.5\n"
+"Language: nl (Dutch)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../src/main.c:169
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr ""
-"Vmesniške datoteke obconf.glade ni mogoče naložiti. ObConf verjetno ni "
-"pravilno nameščen."
+"Kon het obconf.glade bedieningbestand niet laden. ObConf is waarschijnlijk "
+"niet correct geïnstalleerd."
 
 #: ../src/main.c:194
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
-"Datoteke rc.xml ni mogoče naložiti. Openbox verjetno ni pravilno nameščen."
+"Kon een rc.xml niet laden. Openbox is waarschijnlijk niet correct "
+"geïnstalleerd."
 
 #: ../src/main.c:203
 #, c-format
@@ -39,28 +40,29 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
-"Napaka pri razčlenjevanju nastavitvene datoteke Openbox. Nastavitvena "
-"datoteka ni veljaven XML.\n"
+"Fout bij het behandeling van het configuratiebestand\n"
+"van Openbox. Uw configuratiebestand is geen\n"
+"geldige XML.\n"
 "\n"
-"Sporočilo: %s"
+"Boodschap: %s"
 
 #: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
-msgstr "Izberite temo Openbox"
+msgstr "Kies een thema voor Openbox"
 
 #: ../src/theme.c:116
 msgid "Openbox theme archives"
-msgstr "Arhiv teme Openbox"
+msgstr "Archieven van Openbox-thema's"
 
 #: ../src/archive.c:44
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "Tema \"%s\" je bila nameščena v %s"
+msgstr "\"%s\" werd geïnstalleerd naar %s"
 
 #: ../src/archive.c:69
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "Tema \"%s\" je bila uspešno ustvarjena"
+msgstr "\"%s\" werd succesvol aangemaakt"
 
 #: ../src/archive.c:105
 #, c-format
@@ -69,29 +71,29 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Arhiva teme \"%s\" ni mogoče ustvariti.\n"
-"Sporočene so bile sledeče napake:\n"
+"Kon thema-archief \"%s\" niet aanmaken.\n"
+"De volgende fouten werden gemeld:\n"
 "%s"
 
 #: ../src/archive.c:110 ../src/archive.c:194
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
-msgstr "Ukaza \"tar\" ni mogoče zagnati: %s"
+msgstr "Kon de \"tar\"-opdracht niet uitvoeren: %s"
 
 #: ../src/archive.c:130
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr "Mape \"%s\" ni mogoče ustvariti: %s"
+msgstr "Kon de map \"%s\" niet aanmaken: %s"
 
 #: ../src/archive.c:152
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "\"%s\" ni veljavna mapa teme Openbox"
+msgstr "\"%s\" lijkt geen geldige map voor Openbox-thema's te zijn"
 
 #: ../src/archive.c:162
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "Mape \"%s\" ni mogoče premakniti: %s"
+msgstr "Kon map \"%s\" niet verplaatsen: %s"
 
 #: ../src/archive.c:201
 #, c-format
@@ -102,42 +104,43 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Datoteke \"%s\" ni mogoče razširiti.\n"
-"Prepričajte se, da je datoteka \"%s\" zapisljiva in je arhiv teme Openbox.\n"
-"Sporočene so bile sledeče napake:\n"
+"Kon het bestand \"%s\" niet uitpakken.\n"
+"Gelieve ervoor te zorgen dat \"%s\" beschrijfbaar is en dat het bestand een "
+"geldig archief is voor Openbox-\n"
+"thema's. De volgende fouten werden gemeld:\n"
 "%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
-msgstr "<span weight=\"bold\">Tema</span>"
+msgstr "<span weight=\"bold\">Thema</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "Create a theme _archive (.obt)..."
-msgstr "Ustvari _arhiv teme (.obt) ..."
+msgstr "Maak een thema-_archief aan (.obt)..."
 
 #: ../src/obconf.glade.h:3
 msgid "Font for active window title:"
-msgstr "Pisava za naziv dejavnega okna:"
+msgstr "Lettertype voor actieve venstertitel:"
 
 #: ../src/obconf.glade.h:4
 msgid "Font for inactive window title:"
-msgstr "Pisava za naziv nedejavnega okna:"
+msgstr "Lettertype voor inactieve venstertitel:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for menu Item:"
-msgstr "Pisava za predmete menija:"
+msgstr "Lettertype voor menu-onderdeel:"
 
 #: ../src/obconf.glade.h:6
 msgid "Font for menu header:"
-msgstr "Pisava za glavo menija:"
+msgstr "Lettertype voor menukop:"
 
 #: ../src/obconf.glade.h:7
 msgid "Font for on-screen display:"
-msgstr "Pisava za prikaz na zaslonu:"
+msgstr "Lettertype voor weergave op scherm:"
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
-msgstr "Razno"
+msgstr "Varia"
 
 #: ../src/obconf.glade.h:9
 msgid ""
@@ -149,26 +152,26 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
-"N: Ikona okna\n"
-"L: Naziv okna\n"
-"I: Skrči\n"
-"M: Razpni\n"
-"C: Zapri\n"
-"S: Zvij\n"
-"D: Vsenavzoč (na vseh namizjih)"
+"N: Vensterpictogram\n"
+"L: Venster-etiket (Title)\n"
+"I: Pictogram van maken (Minimaliseren)\n"
+"M: Maximaliseren\n"
+"C: Sluiten\n"
+"S: Oprollen\n"
+"D: Overal aanwezig (Op alle werkbladen)"
 
 #: ../src/obconf.glade.h:16
 msgid "Theme"
-msgstr "Tema"
+msgstr "Thema"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr "Nazivna vrstica"
+msgstr "Titelbalk"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
-msgstr "Vrstni red gum_bov:"
+msgstr "_Knopvolgorde:"
 
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
-msgstr "Namest_i novo temo ..."
+msgstr "Een nieuw thema _installeren..."

@@ -163,4 +163,3 @@ msgstr "_Thứ tự nút nhấn:"
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
 msgstr "_Cài đặt một đề tài mới..."
-
