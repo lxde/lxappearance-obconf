@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"PO-Revision-Date: 2011-06-27 16:08+0200\n"
+"Last-Translator: Kristian <kristian9k@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../src/main.c:169
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"Kunne ikke indlæse filen obconf.glade. ObConf er sandsynligvis ikke korrekt "
+"installeret."
+
+#: ../src/main.c:194
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr ""
+"Kunne ikke indlæse filen rc.xml. Openbox er sandsynligvis ikke korrekt "
+"installeret."
+
+#: ../src/main.c:203
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+
+#: ../src/theme.c:107 ../src/theme.c:139
+msgid "Choose an Openbox theme"
+msgstr "Vælg et Openbox-tema."
+
+#: ../src/theme.c:116
+msgid "Openbox theme archives"
+msgstr ""
+
+#: ../src/archive.c:44
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr "\"%s\" blev installeret til %s"
+
+#: ../src/archive.c:69
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr "\"%s\" blev oprettet"
+
+#: ../src/archive.c:105
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+
+#: ../src/archive.c:110 ../src/archive.c:194
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr "Kunne ikke køre kommandoen \"tar\" %s"
+
+#: ../src/archive.c:130
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr "Kunne ikke oprette mappen \"%s\": %s"
+
+#: ../src/archive.c:152
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr ""
+
+#: ../src/archive.c:162
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Kunne ikke flytte til mappen \"%s\": %s"
+
+#: ../src/archive.c:201
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Tema</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr ""
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr "Skrifttype for et aktivt vindues titel:"
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive window title:"
+msgstr "Skrifttype for et inaktivt vindue:"
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr ""
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu header:"
+msgstr ""
+
+#: ../src/obconf.glade.h:7
+msgid "Font for on-screen display:"
+msgstr ""
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr "Diverse"
+
+#: ../src/obconf.glade.h:9
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr ""
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr ""
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "_Installér et nyt tema..."
