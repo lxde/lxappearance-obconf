@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-26 14:04+0200\n"
-"PO-Revision-Date: 2011-06-27 16:08+0200\n"
+"PO-Revision-Date: 2011-07-02 16:01+0200\n"
 "Last-Translator: Kristian <kristian9k@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -40,6 +40,9 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
+"Kunne ikke indlæse Openbox' konfigurations-fil. Filen er ikke gyldig XML.\n"
+"\n"
+"Besked: %s"
 
 #: ../src/theme.c:107 ../src/theme.c:139
 msgid "Choose an Openbox theme"
@@ -66,6 +69,9 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
+"Kunne ikke skabe temaarkivet \"%s\".\n"
+"Følgende fejl blev rapporteret:\n"
+"%s"
 
 #: ../src/archive.c:110 ../src/archive.c:194
 #, c-format
@@ -80,7 +86,7 @@ msgstr "Kunne ikke oprette mappen \"%s\": %s"
 #: ../src/archive.c:152
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr ""
+msgstr "\"%s\" ser ikke ud til at være en gyldig Openbox-temamappe"
 
 #: ../src/archive.c:162
 #, c-format
@@ -96,6 +102,10 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
+"Kunne ikke udpakke filen \"%s\".\n"
+"Undersøg om \"%s\" er skrivbar og at filen er et gyldigt Openbox-tema.\n"
+"Følgende fejl blev rapporteret:\n"
+"%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
@@ -103,7 +113,7 @@ msgstr "<span weight=\"bold\">Tema</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "Create a theme _archive (.obt)..."
-msgstr ""
+msgstr "Skaber et tema_arkiv (.obt)..."
 
 #: ../src/obconf.glade.h:3
 msgid "Font for active window title:"
@@ -115,15 +125,15 @@ msgstr "Skrifttype for et inaktivt vindue:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for menu Item:"
-msgstr ""
+msgstr "Skrifttype for menupunkt:"
 
 #: ../src/obconf.glade.h:6
 msgid "Font for menu header:"
-msgstr ""
+msgstr "Skrifttype for menuheader:"
 
 #: ../src/obconf.glade.h:7
 msgid "Font for on-screen display:"
-msgstr ""
+msgstr "Skrifttype for on-screen-display:"
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
@@ -146,7 +156,7 @@ msgstr "Tema"
 
 #: ../src/obconf.glade.h:17
 msgid "Title Bar"
-msgstr ""
+msgstr "Titelbar"
 
 #: ../src/obconf.glade.h:18
 msgid "_Button order:"
