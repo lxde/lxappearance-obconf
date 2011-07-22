@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-04 05:43+0000\n"
+"POT-Creation-Date: 2011-07-22 21:04+0200\n"
 "PO-Revision-Date: 2011-03-11 17:48+0200\n"
 "Last-Translator: enginmanap <enginmanap@gmail.com>\n"
 "Language-Team: Turkish\n"
@@ -20,47 +20,52 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: ../src/main.c:169
-msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
-msgstr "obconf.glade arayüz dosyası yüklenemedi. Mumtemelen ObConf uygulaması düzgün biçimde yüklenmemiş."
+#: ../src/main.c:175
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"obconf.glade arayüz dosyası yüklenemedi. Mumtemelen ObConf uygulaması düzgün "
+"biçimde yüklenmemiş."
 
-#: ../src/main.c:194
+#: ../src/main.c:200
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 "Bir rc.xml dosyası yüklenemedi. Mumtemelen Openbox düzgün biçimde "
 "yüklenmemiş."
 
-#: ../src/main.c:203
+#: ../src/main.c:209
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Openbox yapılandırma dosyası ayrıştırılırken hata. Yapılandırma dosyanız geçerlibir XML dosyası değil.\n"
+"Openbox yapılandırma dosyası ayrıştırılırken hata. Yapılandırma dosyanız "
+"geçerlibir XML dosyası değil.\n"
 "\n"
 "Mesaj: %s"
 
-#: ../src/theme.c:107
-#: ../src/theme.c:139
+#: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
 msgstr "Bir Openbox teması seçin"
 
-#: ../src/theme.c:116
+#: ../src/theme.c:121
 msgid "Openbox theme archives"
 msgstr "Openbox tema arşivi"
 
-#: ../src/archive.c:44
+#: ../src/archive.c:47
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" %s'e yüklendi"
 
-#: ../src/archive.c:69
+#: ../src/archive.c:72
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" başarıyla oluşturuldu"
 
-#: ../src/archive.c:105
+#: ../src/archive.c:108
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -71,37 +76,32 @@ msgstr ""
 "Şu hatalar bildirildi:\n"
 "%s"
 
-#: ../src/archive.c:110
-#: ../src/archive.c:194
+#: ../src/archive.c:113 ../src/archive.c:199
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "\"tar\" komutu çalıştırılamadı: %s"
 
-#: ../src/archive.c:130
+#: ../src/archive.c:133
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "\"%s\" dizini oluşturulamadı: %s"
 
-#: ../src/archive.c:152
+#: ../src/archive.c:155
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" geçerli bir Openbox tema arşivi gibi görünmüyor"
 
-#: ../src/archive.c:162
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "Dizin \"%s\"e taşınamadı: %s"
-
-#: ../src/archive.c:201
+#: ../src/archive.c:206
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"\"%s\" dosyası çıkartılamadı.Lütfen \"%s\"'in yazılabilir ve geçerli bir Openbox "
-"tema arşivi olduğundan emin olun.Şu hatalar rapor edildi:%s"
+"\"%s\" dosyası çıkartılamadı.Lütfen \"%s\"'in yazılabilir ve geçerli bir "
+"Openbox tema arşivi olduğundan emin olun.Şu hatalar rapor edildi:%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
@@ -169,6 +169,9 @@ msgstr "_Düğme düzeni:"
 msgid "_Install a new theme..."
 msgstr "_Yeni tema kur..."
 
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "Dizin \"%s\"e taşınamadı: %s"
+
 #~ msgid "Copyright (c)"
 #~ msgstr "Telif Hakkı (c)"
 
@@ -190,8 +193,7 @@ msgstr "_Yeni tema kur..."
 
 #~ msgid ""
 #~ "  --install ARCHIVE.obt Install the given theme archive and select it\n"
-#~ msgstr ""
-#~ "  --install ARCHIVE.obt Belirlenen tema arşivini kur ve seç\n"
+#~ msgstr "  --install ARCHIVE.obt Belirlenen tema arşivini kur ve seç\n"
 
 #~ msgid ""
 #~ "  --archive THEME       Create a theme archive from the given theme "
@@ -271,7 +273,8 @@ msgstr "_Yeni tema kur..."
 #~ msgstr "Pencereler"
 
 #~ msgid "<span weight=\"bold\">Moving and Resizing Windows</span>"
-#~ msgstr "<span weight=\"bold\">Pencereleri Taşı ve Yeniden Boyutlandır</span>"
+#~ msgstr ""
+#~ "<span weight=\"bold\">Pencereleri Taşı ve Yeniden Boyutlandır</span>"
 
 #~ msgid "Update the window contents while _resizing"
 #~ msgstr "Pencere içeriğini _yeniden boyutlandırırken güncelle"

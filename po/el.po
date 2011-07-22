@@ -1,12 +1,13 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: LXAppearance ObConf Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-12 05:43+0000\n"
+"POT-Creation-Date: 2011-07-22 21:04+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vasilakos <forfolias@linuxteam.cs.teilar.gr>\n"
 "Language-Team: Greek\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,44 +16,52 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Country: GREECE\n"
 
-#: ../src/main.c:169
-msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
-msgstr "Απέτυχε η φόρτωση του αρχείου διεπαφής obconf.glade. Πιθανόν το ObConf να μην έχει εγκατασταθεί σωστά."
+#: ../src/main.c:175
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"Απέτυχε η φόρτωση του αρχείου διεπαφής obconf.glade. Πιθανόν το ObConf να "
+"μην έχει εγκατασταθεί σωστά."
 
-#: ../src/main.c:194
+#: ../src/main.c:200
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr "Απέτυχε η φόρτωση του rc.xml. Πιθανόν το OpenBox να μην έχει εγκατασταθεί σωστά."
+msgstr ""
+"Απέτυχε η φόρτωση του rc.xml. Πιθανόν το OpenBox να μην έχει εγκατασταθεί "
+"σωστά."
 
-#: ../src/main.c:203
+#: ../src/main.c:209
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Σφάλμα κατά την ανάλυση του αρχείου ρύθμισης OpenBox. Το αρχείο ρυθμίσεων δεν έχει έγκυρη XML μορφή.\n"
+"Σφάλμα κατά την ανάλυση του αρχείου ρύθμισης OpenBox. Το αρχείο ρυθμίσεων "
+"δεν έχει έγκυρη XML μορφή.\n"
 "\n"
 "Μήνυμα: %s"
 
-#: ../src/theme.c:107 ../src/theme.c:139
+#: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
 msgstr "Επιλέξτε ένα θέμα OpenBox"
 
-#: ../src/theme.c:116
+#: ../src/theme.c:121
 msgid "Openbox theme archives"
 msgstr "Αρχεία θεμάτων OpenBox"
 
-#: ../src/archive.c:44
+#: ../src/archive.c:47
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" εγκαταστάθηκε στο %s"
 
-#: ../src/archive.c:69
+#: ../src/archive.c:72
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" δημιουργήθηκε επιτυχώς"
 
-#: ../src/archive.c:105
+#: ../src/archive.c:108
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -63,36 +72,33 @@ msgstr ""
 "Τα ακόλουθα σφάλματα αναφέρθηκαν:\n"
 "%s"
 
-#: ../src/archive.c:110 ../src/archive.c:194
+#: ../src/archive.c:113 ../src/archive.c:199
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Αδύνατη η εκτέλεση της εντολής \"\tar\": %s"
 
-#: ../src/archive.c:130
+#: ../src/archive.c:133
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "Αδύνατη η δημιουργία του κατάλογου \"%s\": %s"
 
-#: ../src/archive.c:152
+#: ../src/archive.c:155
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" δεν είναι έγκυρος κατάλογος με θέματα του Openbox"
 
-#: ../src/archive.c:162
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "Αδύνατη η μετακίνηση στον κατάλογο \"%s\": %s"
-
-#: ../src/archive.c:201
+#: ../src/archive.c:206
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Αδύνατη η εξαγωγή του αρχείου \"%s\".\n"
-"Παρακαλώ διασφαλίστε ότι το \"%s\" είναι εγγράψιμο και ότι το αρχείο είναι έγκυρο αρχείο θέματος Openbox.\n"
+"Παρακαλώ διασφαλίστε ότι το \"%s\" είναι εγγράψιμο και ότι το αρχείο είναι "
+"έγκυρο αρχείο θέματος Openbox.\n"
 "Τα ακόλουθα σφάλματα αναφέρθηκαν:\n"
 "%s"
 
@@ -161,3 +167,6 @@ msgstr "_Σειρά κουμπιών:"
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
 msgstr "_Εγκατάσταση ενός νέου θέματος ..."
+
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "Αδύνατη η μετακίνηση στον κατάλογο \"%s\": %s"

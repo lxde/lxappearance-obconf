@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2011-07-22 21:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/main.c:169
+#: ../src/main.c:175
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr ""
 
-#: ../src/main.c:194
+#: ../src/main.c:200
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 
-#: ../src/main.c:203
+#: ../src/main.c:209
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -36,25 +36,25 @@ msgid ""
 "Message: %s"
 msgstr ""
 
-#: ../src/theme.c:107 ../src/theme.c:139
+#: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
 msgstr ""
 
-#: ../src/theme.c:116
+#: ../src/theme.c:121
 msgid "Openbox theme archives"
 msgstr ""
 
-#: ../src/archive.c:44
+#: ../src/archive.c:47
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr ""
 
-#: ../src/archive.c:69
+#: ../src/archive.c:72
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr ""
 
-#: ../src/archive.c:105
+#: ../src/archive.c:108
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -62,27 +62,22 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../src/archive.c:110 ../src/archive.c:194
+#: ../src/archive.c:113 ../src/archive.c:199
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr ""
 
-#: ../src/archive.c:130
+#: ../src/archive.c:133
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr ""
 
-#: ../src/archive.c:152
+#: ../src/archive.c:155
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr ""
 
-#: ../src/archive.c:162
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr ""
-
-#: ../src/archive.c:201
+#: ../src/archive.c:206
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"

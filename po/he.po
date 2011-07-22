@@ -6,29 +6,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-08 05:42+0000\n"
+"POT-Creation-Date: 2011-07-22 21:04+0200\n"
 "PO-Revision-Date: 2010-08-08 02:14+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Gezer (Hebrew)\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: he\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.6.1\n"
 
-#: ../src/main.c:169
-msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
-msgstr "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
+#: ../src/main.c:175
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
 
-#: ../src/main.c:194
+#: ../src/main.c:200
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr "Failed to load an rc.xml. Openbox is probably not installed correctly."
 
-#: ../src/main.c:203
+#: ../src/main.c:209
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
@@ -36,25 +41,25 @@ msgstr ""
 "\n"
 "הודעה: %s"
 
-#: ../src/theme.c:107 ../src/theme.c:139
+#: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
 msgstr "בחירה בערכת נושא של Openbox"
 
-#: ../src/theme.c:116
+#: ../src/theme.c:121
 msgid "Openbox theme archives"
 msgstr "אריזות ערכות נושא של Openbox"
 
-#: ../src/archive.c:44
+#: ../src/archive.c:47
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "״%s״ הותקנה אל %s"
 
-#: ../src/archive.c:69
+#: ../src/archive.c:72
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "״%s״ נוצרה בהצלחה"
 
-#: ../src/archive.c:105
+#: ../src/archive.c:108
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -65,36 +70,33 @@ msgstr ""
 "דווחו השגיאות הבאות:\n"
 "%s"
 
-#: ../src/archive.c:110 ../src/archive.c:194
+#: ../src/archive.c:113 ../src/archive.c:199
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "לא ניתן להפעיל את הפקודה ״tar״: %s"
 
-#: ../src/archive.c:130
+#: ../src/archive.c:133
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "לא ניתן ליצור את התיקייה: ״%s״: %s"
 
-#: ../src/archive.c:152
+#: ../src/archive.c:155
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "״%s״ איננה תיקייה תקנית של ערכת נושא של Openbox"
 
-#: ../src/archive.c:162
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "לא ניתן להעביר לתיקייה ״%s״: %s"
-
-#: ../src/archive.c:201
+#: ../src/archive.c:206
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "לא ניתן לחלץ את הקובץ ״%s״.\n"
-"נא לוודא כי ״%s״ פתוח לכתיבה ושהקובץ הוא אריזה תקנית של ערכת נושא של Openbox.\n"
+"נא לוודא כי ״%s״ פתוח לכתיבה ושהקובץ הוא אריזה תקנית של ערכת נושא של "
+"Openbox.\n"
 "דווחו השגיאות הבאות:\n"
 "%s"
 
@@ -163,3 +165,6 @@ msgstr "_סדר הלחצנים:"
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
 msgstr "ה_תקנת ערכת נושא חדשה..."
+
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "לא ניתן להעביר לתיקייה ״%s״: %s"

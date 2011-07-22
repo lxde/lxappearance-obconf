@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-26 14:04+0200\n"
+"POT-Creation-Date: 2011-07-22 21:04+0200\n"
 "PO-Revision-Date: 2010-08-08 01:11+0800\n"
 "Last-Translator: 洪任諭 <pcman.tw@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../src/main.c:169
+#: ../src/main.c:175
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr ""
 
-#: ../src/main.c:194
+#: ../src/main.c:200
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 
-#: ../src/main.c:203
+#: ../src/main.c:209
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -36,25 +36,25 @@ msgid ""
 "Message: %s"
 msgstr ""
 
-#: ../src/theme.c:107 ../src/theme.c:139
+#: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
 msgstr "選擇 Openbox 佈景主題"
 
-#: ../src/theme.c:116
+#: ../src/theme.c:121
 msgid "Openbox theme archives"
 msgstr "Openbox 佈景主題存檔"
 
-#: ../src/archive.c:44
+#: ../src/archive.c:47
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "「%s」已安裝到 %s"
 
-#: ../src/archive.c:69
+#: ../src/archive.c:72
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "「%s」已成功建立"
 
-#: ../src/archive.c:105
+#: ../src/archive.c:108
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -65,27 +65,22 @@ msgstr ""
 "下列的錯誤已經提報：\n"
 "%s"
 
-#: ../src/archive.c:110 ../src/archive.c:194
+#: ../src/archive.c:113 ../src/archive.c:199
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "無法執行「tar」命令：%s"
 
-#: ../src/archive.c:130
+#: ../src/archive.c:133
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "無法建立目錄「%s」：%s"
 
-#: ../src/archive.c:152
+#: ../src/archive.c:155
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "「%s」沒有出現有效的 Openbox 佈景主題目錄"
 
-#: ../src/archive.c:162
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "無法移動到目錄「%s」：%s"
-
-#: ../src/archive.c:201
+#: ../src/archive.c:206
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -164,6 +159,9 @@ msgstr "按鈕順序(_B)："
 #: ../src/obconf.glade.h:19
 msgid "_Install a new theme..."
 msgstr "安裝新的佈景主題(_I)…"
+
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "無法移動到目錄「%s」：%s"
 
 #~ msgid "Copyright (c)"
 #~ msgstr "著作權 ©"
