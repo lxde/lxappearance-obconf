@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-22 21:04+0200\n"
-"PO-Revision-Date: 2011-07-22 09:44+0200\n"
+"PO-Revision-Date: 2011-07-26 11:29+0200\n"
 "Last-Translator: Ainur <ainur.shakirov.tt@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tt_RU\n"
@@ -49,7 +49,7 @@ msgstr "Openbox тышын сайлау"
 
 #: ../src/theme.c:121
 msgid "Openbox theme archives"
-msgstr "Openbox тышын архивлау"
+msgstr "Openbox тыш архивы"
 
 #: ../src/archive.c:47
 #, c-format
