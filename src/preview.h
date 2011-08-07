@@ -21,7 +21,7 @@
 
 #include <glib.h>
 
-#include <openbox/font.h>
+#include <obrender/font.h>
 #include <gdk/gdk.h>
 
 GdkPixbuf *preview_theme(const gchar *name, const gchar *titlelayout,
@@ -29,6 +29,7 @@ GdkPixbuf *preview_theme(const gchar *name, const gchar *titlelayout,
                          RrFont *inactive_window_font,
                          RrFont *menu_title_font,
                          RrFont *menu_item_font,
-                         RrFont *osd_font);
+                         RrFont *active_osd_font,
+                         RrFont *inactive_osd_font);
 
 #endif

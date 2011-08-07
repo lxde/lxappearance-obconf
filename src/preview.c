@@ -23,7 +23,7 @@
 
 #include <string.h>
 
-#include <openbox/theme.h>
+#include <obrender/theme.h>
 
 #if GTK_CHECK_VERSION(3, 0, 0)
 #include <gdk/gdkx.h>
@@ -38,7 +38,8 @@ GdkPixbuf *preview_theme(const gchar *name, const gchar *titlelayout,
                          RrFont *inactive_window_font,
                          RrFont *menu_title_font,
                          RrFont *menu_item_font,
-                         RrFont *osd_font);
+                         RrFont *active_osd_font,
+                         RrFont *inactive_osd_font);
 
 /* End forwarded */
 
@@ -779,7 +780,8 @@ GdkPixbuf *preview_theme(const gchar *name, const gchar *titlelayout,
                          RrFont *inactive_window_font,
                          RrFont *menu_title_font,
                          RrFont *menu_item_font,
-                         RrFont *osd_font)
+                         RrFont *active_osd_font,
+                         RrFont *inactive_osd_font)
 {
 
     GdkPixbuf *preview;
@@ -793,7 +795,8 @@ GdkPixbuf *preview_theme(const gchar *name, const gchar *titlelayout,
 
     RrTheme *theme = RrThemeNew(rrinst, name, FALSE,
                                 active_window_font, inactive_window_font,
-                                menu_title_font, menu_item_font, osd_font);
+                                menu_title_font, menu_item_font,
+                                active_osd_font, inactive_osd_font);
     if (!theme)
         return NULL;
 

@@ -46,6 +46,8 @@ xmlDocPtr doc;
 xmlNodePtr root;
 RrInstance *rrinst;
 gchar *obc_config_file = NULL;
+ObtPaths *paths;
+ObtXmlInst *xml_i;
 
 /* Disable, not used
 static gchar *obc_theme_install = NULL;
@@ -181,7 +183,8 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
 
     g_signal_connect(app->dlg, "response", G_CALLBACK(on_response), app);
 
-    parse_paths_startup();
+    paths = obt_paths_new();
+    xml_i = obt_xml_instance_new();
 
     if (!obc_config_file) {
         gchar *p;
@@ -196,9 +199,18 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
     }
 
     xmlIndentTreeOutput = 1;
-    if (!parse_load_rc(obc_config_file, &doc, &root)) {
+    if (!obt_xml_load_config_file(xml_i,
+                                    "openbox",
+                                    (obc_config_file ?
+                                     obc_config_file : "rc.xml"),
+                                    "openbox_config"))
+    {
         obconf_error(_("Failed to load an rc.xml. Openbox is probably not installed correctly."), TRUE);
         exit_with_error = TRUE;
+    }
+    else {
+        doc = obt_xml_doc(xml_i);
+        root = obt_xml_root(xml_i);
     }
 
     /* look for parsing errors */
@@ -229,11 +241,13 @@ extern void plugin_unload(LXAppearance* app)
     preview_update_set_inactive_font(NULL);
     preview_update_set_menu_header_font(NULL);
     preview_update_set_menu_item_font(NULL);
-    preview_update_set_osd_font(NULL);
+    preview_update_set_active_osd_font(NULL);
+    preview_update_set_inactive_osd_font(NULL);
     preview_update_set_title_layout(NULL);
 
     RrInstanceFree(rrinst);
-    parse_paths_shutdown();
+    obt_xml_instance_unref(xml_i);
+    obt_paths_unref(paths);
 
     xmlFreeDoc(doc);
 }

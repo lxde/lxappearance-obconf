@@ -38,15 +38,15 @@ static RrFont       *active_window_font   = NULL;
 static RrFont       *inactive_window_font = NULL;
 static RrFont       *menu_title_font      = NULL;
 static RrFont       *menu_item_font       = NULL;
-static RrFont       *osd_font             = NULL;
-
+static RrFont       *active_osd_font      = NULL;
+static RrFont       *inactive_osd_font    = NULL;
 
 void preview_update_all()
 {
     if (!list_store) return;
 
     if (!(title_layout && active_window_font && inactive_window_font &&
-          menu_title_font && menu_item_font && osd_font))
+          menu_title_font && menu_item_font && active_osd_font && inactive_osd_font))
         return; /* not set up */
 
     char* name;
@@ -57,7 +57,7 @@ void preview_update_all()
         gtk_tree_model_get( GTK_TREE_MODEL(list_store), &it, 0, &name, -1);
         GdkPixbuf* pix = preview_theme(name, title_layout, active_window_font,
                                          inactive_window_font, menu_title_font,
-                                         menu_item_font, osd_font);
+                                         menu_item_font, active_osd_font, inactive_osd_font);
         GtkWidget* preview = get_widget("preview");
         gtk_image_set_from_pixbuf( GTK_IMAGE(preview), pix);
         g_object_unref(pix);
@@ -104,10 +104,17 @@ void preview_update_set_menu_item_font(RrFont *f)
     preview_update_all();
 }
 
-void preview_update_set_osd_font(RrFont *f)
+void preview_update_set_active_osd_font(RrFont *f)
 {
-    RrFontClose(osd_font);
-    osd_font = f;
+    RrFontClose(active_osd_font);
+    active_osd_font = f;
+    preview_update_all();
+}
+
+void preview_update_set_inactive_osd_font(RrFont *f)
+{
+    RrFontClose(active_osd_font);
+    inactive_osd_font = f;
     preview_update_all();
 }
 

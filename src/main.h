@@ -25,18 +25,19 @@
 #ifndef obconf__main_h
 #define obconf__main_h
 
-#include <openbox/render.h>
-#include <openbox/instance.h>
-#include <openbox/parse.h>
+#include <obrender/render.h>
+#include <obrender/instance.h>
+#include <obt/xml.h>
+#include <obt/paths.h>
 
 #include <gtk/gtk.h>
 
 extern GtkBuilder *builder;
-extern xmlDocPtr doc;
-extern xmlNodePtr root;
 extern RrInstance *rrinst;
 extern GtkWidget *mainwin;
 extern gchar *obc_config_file;
+extern ObtPaths *paths;
+extern ObtXmlInst *xml_i;
 
 #define get_widget(s) GTK_WIDGET(gtk_builder_get_object(builder, s))
 

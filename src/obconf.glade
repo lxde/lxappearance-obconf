@@ -400,12 +400,19 @@ D: Omnipresent (On all desktops)</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkFontButton" id="font_display">
+                      <object class="GtkFontButton" id="font_active_display">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="use_font">True</property>
-                        <signal name="font_set" handler="on_font_display_font_set"/>
+                        <signal name="font_set" handler="on_font_active_display_font_set"/>
+                      </object>
+                      <object class="GtkFontButton" id="font_inactive_display">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="use_font">True</property>
+                        <signal name="font_set" handler="on_font_inactive_display_font_set"/>
                       </object>
                       <packing>
                         <property name="position">5</property>
