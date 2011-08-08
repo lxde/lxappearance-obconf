@@ -199,11 +199,16 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
     }
 
     xmlIndentTreeOutput = 1;
-    if (!obt_xml_load_config_file(xml_i,
+
+    /* if (!obt_xml_load_config_file(xml_i,
                                     "openbox",
                                     (obc_config_file ?
                                      obc_config_file : "rc.xml"),
-                                    "openbox_config"))
+                                    "openbox_config")) */
+     if(!obt_xml_load_config_file(xml_i,
+			          "openbox",
+				  "rc.xml",
+				  "openbox_config"))
     {
         obconf_error(_("Failed to load an rc.xml. Openbox is probably not installed correctly."), TRUE);
         exit_with_error = TRUE;
