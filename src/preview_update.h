@@ -11,8 +11,8 @@ void preview_update_set_active_font      (RrFont *f);
 void preview_update_set_inactive_font    (RrFont *f);
 void preview_update_set_menu_header_font (RrFont *f);
 void preview_update_set_menu_item_font   (RrFont *f);
-void preview_update_set_active_osd_font  (RrFont *f);
-void preview_update_set_inactive_osd_font  (RrFont *f);
+void preview_update_set_osd_active_font  (RrFont *f);
+void preview_update_set_osd_inactive_font  (RrFont *f);
 void preview_update_set_title_layout     (const gchar *layout);
 
 #endif
