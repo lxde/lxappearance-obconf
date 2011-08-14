@@ -239,8 +239,8 @@ extern void plugin_unload(LXAppearance* app)
     preview_update_set_inactive_font(NULL);
     preview_update_set_menu_header_font(NULL);
     preview_update_set_menu_item_font(NULL);
-    preview_update_set_active_osd_font(NULL);
-    preview_update_set_inactive_osd_font(NULL);
+    preview_update_set_osd_active_font(NULL);
+    preview_update_set_osd_inactive_font(NULL);
     preview_update_set_title_layout(NULL);
 
     RrInstanceFree(rrinst);

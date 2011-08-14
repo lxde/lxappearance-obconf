@@ -86,11 +86,11 @@ void appearance_setup_tab()
 
     w = get_widget("font_active_display");
     f = read_font(GTK_FONT_BUTTON(w), "OnScreenActiveDisplay");
-    preview_update_set_active_osd_font(f);
+    preview_update_set_osd_active_font(f);
 
     w = get_widget("font_incative_display");
     f = read_font(GTK_FONT_BUTTON(w), "OnScreenIactiveDisplay");
-    preview_update_set_active_osd_font(f);
+    preview_update_set_osd_active_font(f);
 
     mapping = FALSE;
 }
@@ -193,14 +193,14 @@ void on_font_active_display_font_set(GtkFontButton *w, gpointer data)
 {
     if (mapping) return;
 
-    preview_update_set_active_osd_font(write_font(w, "OnScreenActiveDisplay"));
+    preview_update_set_osd_active_font(write_font(w, "OnScreenActiveDisplay"));
 }
 
 void on_font_inactive_display_font_set(GtkFontButton *w, gpointer data)
 {
     if (mapping) return;
 
-    preview_update_set_inactive_osd_font(write_font(w, "OnScreenInactiveDisplay"));
+    preview_update_set_osd_inactive_font(write_font(w, "OnScreenInactiveDisplay"));
 }
 
 static RrFont *read_font(GtkFontButton *w, const gchar *place)
