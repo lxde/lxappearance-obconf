@@ -97,7 +97,6 @@ void tree_delete_node(const gchar *path)
 void tree_apply()
 {
     gchar *p, *d;
-    gboolean err;
 
     if (obc_config_file)
         p = g_strdup(obc_config_file);
@@ -109,16 +108,7 @@ void tree_apply()
     obt_paths_mkdir_path(d,  0700);
     g_free(d);
 
-    if (!obt_xml_save_file(xml_i, p, TRUE)) {
-        gchar *s;
-        s = g_strdup_printf("An error occured while saving the "
-                            "config file '%s'", p);
-        obconf_error(s, FALSE);
-        g_free(s);
-    }
-    g_free(p);
-
-    if (!err) {
+    if (obt_xml_save_file(xml_i, p, TRUE)) {
         XEvent ce;
 
         ce.xclient.type = ClientMessage;
@@ -134,7 +124,14 @@ void tree_apply()
         XSendEvent(GDK_DISPLAY_XDISPLAY(gdk_display_get_default()), GDK_ROOT_WINDOW(), FALSE,
                    SubstructureNotifyMask | SubstructureRedirectMask,
                    &ce);
+    } else {
+        gchar *s;
+        s = g_strdup_printf("An error occured while saving the "
+                            "config file '%s'", p);
+        obconf_error(s, FALSE);
+        g_free(s);
     }
+    g_free(p);
 }
 
 void tree_set_string(const gchar *node, const gchar *value)
