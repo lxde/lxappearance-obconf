@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-22 21:04+0200\n"
+"PO-Revision-Date: 2011-09-06 19:23+0200\n"
+"Last-Translator: Anari <anari.jalakas@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../src/main.c:175
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"Liidese obconf.glade faili laadimine ebaõnnestus. ObConf ei ole ilmselt "
+"õigesti paigaldatud."
+
+#: ../src/main.c:200
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr ""
+"Laadimine ebaõnnestus: rc.xml. Openbox ei ole ilmselt õigesti paigaldatud."
+
+#: ../src/main.c:209
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+"Viga Openboxi konfiguratsioonifaili parsimisel. Teie konfiguratsioonifail ei "
+"ole korrektne XML.\n"
+"\n"
+"Teade: %s"
+
+#: ../src/theme.c:112 ../src/theme.c:144
+msgid "Choose an Openbox theme"
+msgstr "Vali Openbox teema"
+
+#: ../src/theme.c:121
+msgid "Openbox theme archives"
+msgstr "Openbox teemade arhiiv"
+
+#: ../src/archive.c:47
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr "\"%s\" on paigaldatud %s"
+
+#: ../src/archive.c:72
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr "\"%s\" on edukalt loodud"
+
+#: ../src/archive.c:108
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Ei suuda luua teemaarhiivi \"%s\".\n"
+"Esinesid järgmised vead:\n"
+"%s"
+
+#: ../src/archive.c:113 ../src/archive.c:199
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr "Pole võimalik käivitada \"tar\" käsku: %s"
+
+#: ../src/archive.c:133
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr "Ei suuda luua kataloog \"%s\": %s"
+
+#: ../src/archive.c:155
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr "\"%s\" ei paista olema kehtiv Openbox teema kataloog"
+
+#: ../src/archive.c:206
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Ei suuda lahti pakkida \"%s\".\n"
+"Palun veenduge, et \"%s\" on kirjutatav ja et fail on kehtiv Openbox teema "
+"arhiivi.\n"
+"Esinesid järgmised vead:\n"
+"%s"
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Teema</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "Teema _arhiivi loomine (.obt)..."
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr "Aktiivse akna pealkirja font:"
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive window title:"
+msgstr "Mitteaktiivse akna pealkirja font:"
+
+#: ../src/obconf.glade.h:5
+msgid "Font for menu Item:"
+msgstr "Menüü font:"
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu header:"
+msgstr "Menüü päise font:"
+
+#: ../src/obconf.glade.h:7
+msgid "Font for on-screen display:"
+msgstr "Ekraanil kuvamise font:"
+
+#: ../src/obconf.glade.h:8
+msgid "Misc."
+msgstr "Varia"
+
+#: ../src/obconf.glade.h:9
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+"N: Akna ikoon\n"
+"L: Akna nimi (Tiitel)\n"
+"I: Vähendamine (minimeerimine)\n"
+"M: Maksimeerimine\n"
+"C: Sulgemine \n"
+"S: Shade (Laiendama) \n"
+"D: Kõikjal (Igal ekraanil)"
+
+#: ../src/obconf.glade.h:16
+msgid "Theme"
+msgstr "Teema"
+
+#: ../src/obconf.glade.h:17
+msgid "Title Bar"
+msgstr "Tiitelriba"
+
+#: ../src/obconf.glade.h:18
+msgid "_Button order:"
+msgstr "_Nuppude järjekord:"
+
+#: ../src/obconf.glade.h:19
+msgid "_Install a new theme..."
+msgstr "Pa_igalda uus teema..."
