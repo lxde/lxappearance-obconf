@@ -1,4 +1,4 @@
-# Dutch translation for the lxappearance-obconf package.
+# Dutch translation of the lxappearance-obconf package.
 # Copyright (C) the author of the lxappearance-obconf package.
 # This file is distributed under the same license as the 
 # lxappearance-obconf package.
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-22 21:04+0200\n"
-"PO-Revision-Date: 2011-06-13 11:34+0200\n"
+"PO-Revision-Date: 2011-09-08 11:34+0200\n"
 "Last-Translator: Pjotr\n"
 "Language-Team: Dutch\n"
 "Language: nl (Dutch)\n"
@@ -149,11 +149,11 @@ msgid ""
 msgstr ""
 "N: Vensterpictogram\n"
 "L: Venster-etiket (Title)\n"
-"I: Pictogram van maken (Minimaliseren)\n"
+"I: Pictogram van maken (minimaliseren)\n"
 "M: Maximaliseren\n"
 "C: Sluiten\n"
 "S: Oprollen\n"
-"D: Overal aanwezig (Op alle werkbladen)"
+"D: Overal aanwezig (op alle werkbladen)"
 
 #: ../src/obconf.glade.h:16
 msgid "Theme"
