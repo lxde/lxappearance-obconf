@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxde.lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-22 21:04+0200\n"
-"PO-Revision-Date: 2011-12-02 16:14+0200\n"
+"PO-Revision-Date: 2011-12-24 13:52+0200\n"
 "Last-Translator: mbouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
@@ -131,7 +131,7 @@ msgstr "Tipo de letra para a cabeceira de menú:"
 
 #: ../src/obconf.glade.h:7
 msgid "Font for on-screen display:"
-msgstr "Tipo de letra para mostrar en pantalla:"
+msgstr "Tipo de letra para amosar na pantalla:"
 
 #: ../src/obconf.glade.h:8
 msgid "Misc."
