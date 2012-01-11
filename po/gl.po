@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxde.lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-22 21:04+0200\n"
-"PO-Revision-Date: 2011-12-24 13:52+0200\n"
+"PO-Revision-Date: 2012-01-11 19:33+0200\n"
 "Last-Translator: mbouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
@@ -25,12 +25,12 @@ msgid ""
 "installed correctly."
 msgstr ""
 "Produciuse un fallo ao cargar o ficheiro da interface obconf.glade. "
-"Probabelmente OBConf non estea instalado correctamente."
+"Probabelmente ObConf non estea instalado correctamente."
 
 #: ../src/main.c:200
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
-"Produciuse un fallo ao cargar un rc.xml. Probabelmente OBConf non estea "
+"Produciuse un fallo ao cargar un rc.xml. Probabelmente Openbox non estea "
 "instalado correctamente."
 
 #: ../src/main.c:209
