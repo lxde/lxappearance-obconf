@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-22 21:04+0200\n"
+"POT-Creation-Date: 2012-01-26 15:56+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/main.c:175
+#: ../src/main.c:177
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr ""
 
-#: ../src/main.c:200
+#: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 
-#: ../src/main.c:209
+#: ../src/main.c:219
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -100,26 +100,30 @@ msgid "Font for active window title:"
 msgstr ""
 
 #: ../src/obconf.glade.h:4
-msgid "Font for inactive window title:"
+msgid "Font for inactive on-screen display:"
 msgstr ""
 
 #: ../src/obconf.glade.h:5
-msgid "Font for menu Item:"
+msgid "Font for inactive window title:"
 msgstr ""
 
 #: ../src/obconf.glade.h:6
-msgid "Font for menu header:"
+msgid "Font for menu Item:"
 msgstr ""
 
 #: ../src/obconf.glade.h:7
-msgid "Font for on-screen display:"
+msgid "Font for menu header:"
 msgstr ""
 
 #: ../src/obconf.glade.h:8
-msgid "Misc."
+msgid "Font for on-screen display:"
 msgstr ""
 
 #: ../src/obconf.glade.h:9
+msgid "Misc."
+msgstr ""
+
+#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -130,18 +134,18 @@ msgid ""
 "D: Omnipresent (On all desktops)"
 msgstr ""
 
-#: ../src/obconf.glade.h:16
+#: ../src/obconf.glade.h:17
 msgid "Theme"
 msgstr ""
 
-#: ../src/obconf.glade.h:17
+#: ../src/obconf.glade.h:18
 msgid "Title Bar"
 msgstr ""
 
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:19
 msgid "_Button order:"
 msgstr ""
 
-#: ../src/obconf.glade.h:19
+#: ../src/obconf.glade.h:20
 msgid "_Install a new theme..."
 msgstr ""

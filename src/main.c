@@ -199,7 +199,7 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
     }
 
     xmlIndentTreeOutput = 1;
-if (!((obc_config_file &&
+    if (!((obc_config_file &&
        obt_xml_load_file(xml_i, obc_config_file, "openbox_config")) ||
        obt_xml_load_config_file(xml_i, "openbox", "rc.xml", "openbox_config")))
     {

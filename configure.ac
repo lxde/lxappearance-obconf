@@ -1,5 +1,5 @@
 AC_PREREQ([2.54])
-AC_INIT([lxappearance-obconf], [0.0.1], [http://lxde.org])
+AC_INIT([lxappearance-obconf], [0.2.0], [http://lxde.org])
 AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign])
 AC_CONFIG_SRCDIR([src/main.c])
 AC_CONFIG_HEADERS([config.h])

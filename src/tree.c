@@ -83,7 +83,6 @@ xmlNodePtr tree_get_node(const gchar *path, const gchar *def)
     return n;
 }
 
-/*
 void tree_delete_node(const gchar *path)
 {
     xmlNodePtr n;
@@ -92,7 +91,6 @@ void tree_delete_node(const gchar *path)
     xmlUnlinkNode(n);
     xmlFreeNode(n);
 }
-*/
 
 void tree_apply()
 {

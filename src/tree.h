@@ -23,7 +23,7 @@
 
 xmlNodePtr tree_get_node(const gchar *path, const gchar *def);
 
-/* void tree_delete_node(const gchar *path) */
+void tree_delete_node(const gchar *path);
 
 gchar* tree_get_string(const gchar *node, const gchar *def);
 gint tree_get_int(const gchar *node, gint def);

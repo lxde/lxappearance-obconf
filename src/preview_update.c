@@ -43,6 +43,7 @@ static RrFont       *osd_inactive_font    = NULL;
 
 void preview_update_all()
 {
+#if 0 /* this is useless fot lxappearance-obconf */
     if (!list_store) return;
     if (!RR_CHECK_VERSION(3,5,0)) return;
 
@@ -65,6 +66,7 @@ void preview_update_all()
         gtk_image_set_from_pixbuf( GTK_IMAGE(preview), pix);
         g_object_unref(pix);
     }
+#endif
 }
 
 void preview_update_set_tree_view(GtkTreeView *tr, GtkListStore *ls)

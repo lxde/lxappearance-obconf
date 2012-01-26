@@ -85,11 +85,14 @@ void appearance_setup_tab()
     preview_update_set_menu_item_font(f);
 
     w = get_widget("font_active_display");
-    f = read_font(GTK_FONT_BUTTON(w), "OnScreenActiveDisplay");
+    if (!(f = read_font(GTK_FONT_BUTTON(w), "ActiveOnScreenDisplay"))) {
+        f = read_font(GTK_FONT_BUTTON(w), "OnScreenDisplay");
+        tree_delete_node("theme/font:place=OnScreenDisplay");
+    }
     preview_update_set_osd_active_font(f);
 
-    w = get_widget("font_incative_display");
-    f = read_font(GTK_FONT_BUTTON(w), "OnScreenIactiveDisplay");
+    w = get_widget("font_inactive_display");
+    f = read_font(GTK_FONT_BUTTON(w), "InactiveOnScreenDisplay");
     preview_update_set_osd_active_font(f);
 
     mapping = FALSE;
@@ -192,15 +195,18 @@ void on_font_menu_item_font_set(GtkFontButton *w, gpointer data)
 void on_font_active_display_font_set(GtkFontButton *w, gpointer data)
 {
     if (mapping) return;
-
-    preview_update_set_osd_active_font(write_font(w, "OnScreenActiveDisplay"));
+#if RR_CHECK_VERSION(3, 5, 0)
+    preview_update_set_osd_active_font(write_font(w, "ActiveOnScreenDisplay"));
+#else /* for older versions of openbox */
+    preview_update_set_osd_active_font(write_font(w, "OnScreenDisplay"));
+#endif
 }
 
 void on_font_inactive_display_font_set(GtkFontButton *w, gpointer data)
 {
     if (mapping) return;
 
-    preview_update_set_osd_inactive_font(write_font(w, "OnScreenInactiveDisplay"));
+    preview_update_set_osd_inactive_font(write_font(w, "InactiveOnScreenDisplay"));
 }
 
 static RrFont *read_font(GtkFontButton *w, const gchar *place)
