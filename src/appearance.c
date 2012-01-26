@@ -93,7 +93,7 @@ void appearance_setup_tab()
 
     w = get_widget("font_inactive_display");
     f = read_font(GTK_FONT_BUTTON(w), "InactiveOnScreenDisplay");
-    preview_update_set_osd_active_font(f);
+    preview_update_set_osd_inactive_font(f);
 
     mapping = FALSE;
 }
