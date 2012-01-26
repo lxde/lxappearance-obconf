@@ -2,10 +2,14 @@
  * 2010-08-07 and some modifications were done to make it a loadable
  * module of LXAppearance. */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "theme.h"
 #include "main.h"
 #include "archive.h"
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 
 #include <string.h>
 #include <errno.h>
@@ -26,14 +30,12 @@
     gtk_widget_destroy(msgw);                                            \
 }
 
-static gboolean create_theme_archive(const gchar *dir, const gchar *name,
-                                     const gchar *to);
 static gchar *get_theme_dir();
-/* Disable not used
 static gboolean change_dir(const gchar *dir);
-*/
 static gchar* name_from_dir(const gchar *dir);
 static gchar* install_theme_to(const gchar *file, const gchar *to);
+static gboolean create_theme_archive(const gchar *dir, const gchar *name,
+                                     const gchar *to);
 
 gchar* archive_install(const gchar *path)
 {
@@ -159,7 +161,6 @@ static gchar* name_from_dir(const gchar *dir)
     return g_path_get_basename(dir);
 }
 
-/* Disable not used
 static gboolean change_dir(const gchar *dir)
 {
     if (chdir(dir) == -1) {
@@ -169,18 +170,14 @@ static gboolean change_dir(const gchar *dir)
     }
     return TRUE;
 }
-*/
 
 static gchar* install_theme_to(const gchar *file, const gchar *to)
 {
-    gchar *glob;
     gchar **argv;
     gchar *errtxt = NULL, *outtxt = NULL;
     gint exitcode;
     GError *e = NULL;
     gchar *name = NULL;
-
-    glob = g_strdup_printf("*/openbox-3/%s", name);
 
     argv = g_new(gchar*, 11);
     argv[0] = g_strdup("tar");
@@ -192,7 +189,7 @@ static gchar* install_theme_to(const gchar *file, const gchar *to)
     argv[6] = g_strdup(file);
     argv[7] = g_strdup("-C");
     argv[8] = g_strdup(to);
-    argv[9] = g_strdup(glob);
+    argv[9] = g_strdup("*/openbox-3/");
     argv[10] = NULL;
     if (!g_spawn_sync(NULL, argv, NULL, G_SPAWN_SEARCH_PATH, NULL, NULL,
                       &outtxt, &errtxt, &exitcode, &e))
@@ -231,6 +228,5 @@ static gchar* install_theme_to(const gchar *file, const gchar *to)
 
     g_free(outtxt);
     g_free(errtxt);
-    g_free(glob);
     return name;
 }
