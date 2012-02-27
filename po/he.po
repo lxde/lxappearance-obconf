@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-22 21:04+0200\n"
-"PO-Revision-Date: 2010-08-08 02:14+0300\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2011-11-13 15:43+0200\n"
+"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: Gezer (Hebrew)\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../src/main.c:175
 msgid ""
@@ -52,12 +52,12 @@ msgstr "אריזות ערכות נושא של Openbox"
 #: ../src/archive.c:47
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "״%s״ הותקנה אל %s"
+msgstr "„%s“ הותקנה אל %s"
 
 #: ../src/archive.c:72
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "״%s״ נוצרה בהצלחה"
+msgstr "„%s“ נוצרה בהצלחה"
 
 #: ../src/archive.c:108
 #, c-format
@@ -66,24 +66,24 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"לא ניתן ליצור את אריזת ערכת הנושא ״%s״.\n"
+"לא ניתן ליצור את אריזת ערכת הנושא „%s“.\n"
 "דווחו השגיאות הבאות:\n"
 "%s"
 
 #: ../src/archive.c:113 ../src/archive.c:199
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
-msgstr "לא ניתן להפעיל את הפקודה ״tar״: %s"
+msgstr "לא ניתן להפעיל את הפקודה „tar“: %s"
 
 #: ../src/archive.c:133
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr "לא ניתן ליצור את התיקייה: ״%s״: %s"
+msgstr "לא ניתן ליצור את התיקייה: „%s”: %s"
 
 #: ../src/archive.c:155
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "״%s״ איננה תיקייה תקנית של ערכת נושא של Openbox"
+msgstr "„%s“ איננה תיקייה תקנית של ערכת נושא של Openbox"
 
 #: ../src/archive.c:206
 #, c-format
@@ -94,8 +94,8 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"לא ניתן לחלץ את הקובץ ״%s״.\n"
-"נא לוודא כי ״%s״ פתוח לכתיבה ושהקובץ הוא אריזה תקנית של ערכת נושא של "
+"לא ניתן לחלץ את הקובץ „%s“.\n"
+"נא לוודא כי „%s“ פתוח לכתיבה ושהקובץ הוא אריזה תקנית של ערכת נושא של "
 "Openbox.\n"
 "דווחו השגיאות הבאות:\n"
 "%s"
