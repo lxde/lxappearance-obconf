@@ -170,5 +170,10 @@ msgstr "ボタンの並び順(_B):"
 msgid "_Install a new theme..."
 msgstr "新たにテーマをインストールする(_I)..."
 
+#, c-format
 #~ msgid "Unable to move to directory \"%s\": %s"
 #~ msgstr "ディレクトリ \"%s\" へ移動できません: %s"
+
+#: ../src/obconf.glade.h:19
+msgid "Font for inactive on-screen display:"
+msgstr "アクティブでないオンスクリーンディスプレイのフォント:"
