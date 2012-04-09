@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-22 21:04+0200\n"
+"POT-Creation-Date: 2012-04-09 17:47+0200\n"
 "PO-Revision-Date: 2011-03-28 11:52+0200\n"
 "Last-Translator: Sam <wilsonsamm@hotmail.com>\n"
 "Language-Team: Norwegian\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: ../src/main.c:175
+#: ../src/main.c:177
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
@@ -26,13 +26,13 @@ msgstr ""
 "Klarte ikke lese inn grensesnittfila obconf.glade. ObConf er kanskje ikke "
 "skikkelig installert."
 
-#: ../src/main.c:200
+#: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 "Klarte ikke lese inn noen rc.xml. Openbox er kanskje ikke ordentlig "
 "installert."
 
-#: ../src/main.c:209
+#: ../src/main.c:219
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -51,17 +51,17 @@ msgstr "Velg et Openbox-tema"
 msgid "Openbox theme archives"
 msgstr "Openbox tema-arkiver"
 
-#: ../src/archive.c:47
+#: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" ble installert i %s"
 
-#: ../src/archive.c:72
+#: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" ble opprettet"
 
-#: ../src/archive.c:108
+#: ../src/archive.c:110
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -72,22 +72,27 @@ msgstr ""
 "Følgende feil ble rapportert:\n"
 "%s"
 
-#: ../src/archive.c:113 ../src/archive.c:199
+#: ../src/archive.c:115 ../src/archive.c:196
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Kan ikke finne \"tar\"-kommandoen: %s"
 
-#: ../src/archive.c:133
+#: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "Kan ikke lage katalog \"%s\": %s"
 
-#: ../src/archive.c:155
+#: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" ser ikke ut til å være en gyldig katalog for Openbox-temaer"
 
-#: ../src/archive.c:206
+#: ../src/archive.c:167
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Kan ikke flytte til katalog \"%s\": %s"
+
+#: ../src/archive.c:203
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -115,26 +120,31 @@ msgid "Font for active window title:"
 msgstr "Skrifttype i aktiv vindustittel: "
 
 #: ../src/obconf.glade.h:4
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "Skrifttype i skjermmeldinger: "
+
+#: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
 msgstr "Skrifttype i _inaktiv vindustittel: "
 
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for menu Item:"
 msgstr "Skrifttype i menyen:"
 
-#: ../src/obconf.glade.h:6
+#: ../src/obconf.glade.h:7
 msgid "Font for menu header:"
 msgstr "Skrifttype i meny_overskriften: "
 
-#: ../src/obconf.glade.h:7
+#: ../src/obconf.glade.h:8
 msgid "Font for on-screen display:"
 msgstr "Skrifttype i skjermmeldinger: "
 
-#: ../src/obconf.glade.h:8
+#: ../src/obconf.glade.h:9
 msgid "Misc."
 msgstr "Diverse"
 
-#: ../src/obconf.glade.h:9
+#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -152,24 +162,21 @@ msgstr ""
 "S: Rull opp\n"
 "D: Vis på alle skrivebord"
 
-#: ../src/obconf.glade.h:16
+#: ../src/obconf.glade.h:17
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/obconf.glade.h:17
+#: ../src/obconf.glade.h:18
 msgid "Title Bar"
 msgstr "Vindustittel"
 
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:19
 msgid "_Button order:"
 msgstr "_Knapp-rekkefølge"
 
-#: ../src/obconf.glade.h:19
+#: ../src/obconf.glade.h:20
 msgid "_Install a new theme..."
 msgstr "_Installér et nytt tema..."
-
-#~ msgid "Unable to move to directory \"%s\": %s"
-#~ msgstr "Kan ikke flytte til katalog \"%s\": %s"
 
 #~ msgid "Syntax: obconf [options] [ARCHIVE.obt]\n"
 #~ msgstr "Syntaks: obconf [alternativer] [ARKIV.obt]\n"

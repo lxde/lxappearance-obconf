@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-22 21:04+0200\n"
+"POT-Creation-Date: 2012-04-09 17:47+0200\n"
 "PO-Revision-Date: 2010-10-22 09:11+0200\n"
 "Last-Translator: Gunleif Joensen <gunleif@gmail.com>\n"
 "Language-Team: Føroyabólkurin\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.6.1\n"
 
-#: ../src/main.c:175
+#: ../src/main.c:177
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
@@ -25,11 +25,11 @@ msgstr ""
 "Miseydnaðist at løða obconf.glade markamótsfíluna. ObConf er helst ikki lagt "
 "inn rætt."
 
-#: ../src/main.c:200
+#: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr "Miseydnaðist at løða eina rc.xml. Openbox er helst ikki rætt lagt inn."
 
-#: ../src/main.c:209
+#: ../src/main.c:219
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -50,17 +50,17 @@ msgstr "Vel eitt Openbox tema"
 msgid "Openbox theme archives"
 msgstr "Savn við Openbox-temum"
 
-#: ../src/archive.c:47
+#: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" varð lagt inn á %s"
 
-#: ../src/archive.c:72
+#: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" er stovnað"
 
-#: ../src/archive.c:108
+#: ../src/archive.c:110
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -71,22 +71,27 @@ msgstr ""
 "Hesar villurnar vórðu fráboðaðar:\n"
 "%s"
 
-#: ../src/archive.c:113 ../src/archive.c:199
+#: ../src/archive.c:115 ../src/archive.c:196
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Ikki før fyri at koyra \"tar\" stýriboðið: %s"
 
-#: ../src/archive.c:133
+#: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "Ikki før fyri at stovna fíluskránna \"%s\": %s"
 
-#: ../src/archive.c:155
+#: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" letur ikki til at vera ein gildug Openbox temafíluskrá"
 
-#: ../src/archive.c:206
+#: ../src/archive.c:167
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Ikki før fyri at flyta fíluskránna \"%s\": %s"
+
+#: ../src/archive.c:203
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -114,26 +119,31 @@ msgid "Font for active window title:"
 msgstr "Stavasnið á virknari gluggayvirskrift:"
 
 #: ../src/obconf.glade.h:4
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "Stavasnið til áskíggjasýning:"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
 msgstr "Stavasnið á óvirknari gluggayvirskrift:"
 
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for menu Item:"
 msgstr "Stavasnið á valmyndaliði:"
 
-#: ../src/obconf.glade.h:6
+#: ../src/obconf.glade.h:7
 msgid "Font for menu header:"
 msgstr "Stavasnið á valmyndayvirskrift:"
 
-#: ../src/obconf.glade.h:7
+#: ../src/obconf.glade.h:8
 msgid "Font for on-screen display:"
 msgstr "Stavasnið til áskíggjasýning:"
 
-#: ../src/obconf.glade.h:8
+#: ../src/obconf.glade.h:9
 msgid "Misc."
 msgstr "Ymiskt"
 
-#: ../src/obconf.glade.h:9
+#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -144,21 +154,18 @@ msgid ""
 "D: Omnipresent (On all desktops)"
 msgstr ""
 
-#: ../src/obconf.glade.h:16
+#: ../src/obconf.glade.h:17
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/obconf.glade.h:17
+#: ../src/obconf.glade.h:18
 msgid "Title Bar"
 msgstr "Heitisstong"
 
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:19
 msgid "_Button order:"
 msgstr "_Knapparað:"
 
-#: ../src/obconf.glade.h:19
+#: ../src/obconf.glade.h:20
 msgid "_Install a new theme..."
 msgstr "Legg _inn nýtt tema..."
-
-#~ msgid "Unable to move to directory \"%s\": %s"
-#~ msgstr "Ikki før fyri at flyta fíluskránna \"%s\": %s"

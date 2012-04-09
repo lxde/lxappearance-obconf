@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-22 21:04+0200\n"
+"POT-Creation-Date: 2012-04-09 17:47+0200\n"
 "PO-Revision-Date: 2010-10-28 09:02+0200\n"
 "Last-Translator: Радослав <Rec.ku@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
 
-#: ../src/main.c:175
+#: ../src/main.c:177
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
@@ -26,13 +26,13 @@ msgstr ""
 "Неуспех при зареждането на интерфейсния файл: obconf.glade. Вероятно ObConf "
 "не е инсталирана правилно."
 
-#: ../src/main.c:200
+#: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 "Неуспех при зареждането на rc.xml. Вероятно Openbox не е инсталирана "
 "правилно."
 
-#: ../src/main.c:209
+#: ../src/main.c:219
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -51,17 +51,17 @@ msgstr "Избор на Openbox тема."
 msgid "Openbox theme archives"
 msgstr "Архиви на Openbox теми."
 
-#: ../src/archive.c:47
+#: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "\"%s\" беше инсталиран в %s"
 
-#: ../src/archive.c:72
+#: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "\"%s\" беше успешно създаден"
 
-#: ../src/archive.c:108
+#: ../src/archive.c:110
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -72,22 +72,27 @@ msgstr ""
 "Следните грешки са отчетени:\n"
 "%s"
 
-#: ../src/archive.c:113 ../src/archive.c:199
+#: ../src/archive.c:115 ../src/archive.c:196
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Неуспех при изпълнението на \"tar\" командата: %s"
 
-#: ../src/archive.c:133
+#: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "Неуспех при създаването на директорията \"%s\": %s"
 
-#: ../src/archive.c:155
+#: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "Изглежда, че \"%s\" не е вярната директория за Openbox теми"
 
-#: ../src/archive.c:206
+#: ../src/archive.c:167
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Неуспех при преместването на директорията \"%s\": %s"
+
+#: ../src/archive.c:203
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -115,26 +120,31 @@ msgid "Font for active window title:"
 msgstr "Шрифт за заглавната лента на активния прозорец:"
 
 #: ../src/obconf.glade.h:4
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "Шрифт за изскачащ прозорец:"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
 msgstr "Шрифт за заглавната лента на неактивния прозорец:"
 
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for menu Item:"
 msgstr "Шрифт за елементите на менюто:"
 
-#: ../src/obconf.glade.h:6
+#: ../src/obconf.glade.h:7
 msgid "Font for menu header:"
 msgstr "Шрифт за разделите на менюто:"
 
-#: ../src/obconf.glade.h:7
+#: ../src/obconf.glade.h:8
 msgid "Font for on-screen display:"
 msgstr "Шрифт за изскачащ прозорец:"
 
-#: ../src/obconf.glade.h:8
+#: ../src/obconf.glade.h:9
 msgid "Misc."
 msgstr "Разни"
 
-#: ../src/obconf.glade.h:9
+#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -152,21 +162,18 @@ msgstr ""
 "S: Сянка (Свиване)\n"
 "D: На всички работни плотове"
 
-#: ../src/obconf.glade.h:16
+#: ../src/obconf.glade.h:17
 msgid "Theme"
 msgstr "Тема"
 
-#: ../src/obconf.glade.h:17
+#: ../src/obconf.glade.h:18
 msgid "Title Bar"
 msgstr "Заглавна лента"
 
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:19
 msgid "_Button order:"
 msgstr "_Подредба на бутони:"
 
-#: ../src/obconf.glade.h:19
+#: ../src/obconf.glade.h:20
 msgid "_Install a new theme..."
 msgstr "_Инсталиране на нова тема..."
-
-#~ msgid "Unable to move to directory \"%s\": %s"
-#~ msgstr "Неуспех при преместването на директорията \"%s\": %s"

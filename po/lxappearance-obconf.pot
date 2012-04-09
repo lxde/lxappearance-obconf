@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-26 15:56+0800\n"
+"POT-Creation-Date: 2012-04-09 17:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,17 +44,17 @@ msgstr ""
 msgid "Openbox theme archives"
 msgstr ""
 
-#: ../src/archive.c:47
+#: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr ""
 
-#: ../src/archive.c:72
+#: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr ""
 
-#: ../src/archive.c:108
+#: ../src/archive.c:110
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
@@ -62,22 +62,27 @@ msgid ""
 "%s"
 msgstr ""
 
-#: ../src/archive.c:113 ../src/archive.c:199
+#: ../src/archive.c:115 ../src/archive.c:196
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr ""
 
-#: ../src/archive.c:133
+#: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr ""
 
-#: ../src/archive.c:155
+#: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr ""
 
-#: ../src/archive.c:206
+#: ../src/archive.c:167
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr ""
+
+#: ../src/archive.c:203
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"

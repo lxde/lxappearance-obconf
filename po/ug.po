@@ -2,12 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Gheyret Kenji <gheyret@gmail.com>, 2011.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-22 21:04+0200\n"
+"POT-Creation-Date: 2012-04-09 17:47+0200\n"
 "PO-Revision-Date: 2011-11-09 16:10+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -16,24 +16,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/main.c:175
+#: ../src/main.c:177
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
-msgstr "ئارايۈز ھۆججىتى obconf.glade نى  ئوقۇش مەغلۇپ بولدى. ObConf نورمال ئورنىتىلمىغان بولۇشى مۇمكىن."
+msgstr ""
+"ئارايۈز ھۆججىتى obconf.glade نى  ئوقۇش مەغلۇپ بولدى. ObConf نورمال "
+"ئورنىتىلمىغان بولۇشى مۇمكىن."
 
-#: ../src/main.c:200
+#: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr "بىر rc.xml ھۆججىتىنى ئوقۇش مەغلۇپ بولدى. Openbox نورمال ئورنىتىلمىغان بولۇشى مۇمكىن."
+msgstr ""
+"بىر rc.xml ھۆججىتىنى ئوقۇش مەغلۇپ بولدى. Openbox نورمال ئورنىتىلمىغان بولۇشى "
+"مۇمكىن."
 
-#: ../src/main.c:209
+#: ../src/main.c:219
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
 "is not valid XML.\n"
 "\n"
 "Message: %s"
-msgstr "سەپلىمە ھۆججەت(Openbox نىڭ) نى تەھلىل قىلىشتا خاتالىق كۆرۈلدى. بۇ سەپلىمە ھۆججەت ئىناۋەتلىك XML ھۆججىتى ئەمەس ئىكەن.\n"
+msgstr ""
+"سەپلىمە ھۆججەت(Openbox نىڭ) نى تەھلىل قىلىشتا خاتالىق كۆرۈلدى. بۇ سەپلىمە "
+"ھۆججەت ئىناۋەتلىك XML ھۆججىتى ئەمەس ئىكەن.\n"
 "\n"
 "ئۇچۇر: %s"
 
@@ -45,42 +51,48 @@ msgstr "بىر Openbox ئۆرنىكىنى تاللاش"
 msgid "Openbox theme archives"
 msgstr "Openbox ئۆرنەكلىرى ئارخىپى"
 
-#: ../src/archive.c:47
+#: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
 msgstr "«%s» نىڭ ئورنىتىلغان يېرى %s"
 
-#: ../src/archive.c:72
+#: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "«%s» مۇۋەپپەقىيەتلىك قۇرۇلدى"
 
-#: ../src/archive.c:108
+#: ../src/archive.c:110
 #, c-format
 msgid ""
 "Unable to create the theme archive \"%s\".\n"
 "The following errors were reported:\n"
 "%s"
-msgstr "ئۆرنەك ئارخىپى «%s» نى قۇرغىلى بولمىدى.\n"
+msgstr ""
+"ئۆرنەك ئارخىپى «%s» نى قۇرغىلى بولمىدى.\n"
 "تۆۋەندىكىدەك خاتالىق كۆرۈلدى:\n"
 "%s"
 
-#: ../src/archive.c:113 ../src/archive.c:199
+#: ../src/archive.c:115 ../src/archive.c:196
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "بۇيرۇق «tar» نى ئىجرا قىلغىلى بولمىدى: %s"
 
-#: ../src/archive.c:133
+#: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
 msgstr "مۇندەرىجە «%s» نى قۇرغىلى بولمىدى: %s"
 
-#: ../src/archive.c:155
+#: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "قارىغاندا «%s» ئىناۋەتلىك Openbox ئۆرنەك مۇندەرىجىسى ئەمەستەك قىلىدۇ"
 
-#: ../src/archive.c:206
+#: ../src/archive.c:167
+#, fuzzy, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "مۇندەرىجە «%s» نى قۇرغىلى بولمىدى: %s"
+
+#: ../src/archive.c:203
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
@@ -88,8 +100,10 @@ msgid ""
 "theme archive.\n"
 "The following errors were reported:\n"
 "%s"
-msgstr "ھۆججەت «%s» نى يايغىلى بولمىدى.\n"
-"«%s» نى يازغىلى بولامدۇ ۋە شۇنداقلا ئىناۋەتلىك Openbox ئۆرنەك ئارخىپىمۇ تەكشۈرۈڭ.\n"
+msgstr ""
+"ھۆججەت «%s» نى يايغىلى بولمىدى.\n"
+"«%s» نى يازغىلى بولامدۇ ۋە شۇنداقلا ئىناۋەتلىك Openbox ئۆرنەك ئارخىپىمۇ "
+"تەكشۈرۈڭ.\n"
 "تۆۋەندىكىدەك خاتالىق كۆرۈلدى:\n"
 "%s"
 
@@ -106,26 +120,31 @@ msgid "Font for active window title:"
 msgstr "ئاكتىپ كۆزنەكنىڭ خەت نۇسخىسى:"
 
 #: ../src/obconf.glade.h:4
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "ئېكراننىڭ خەت نۇسخىسى:"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
 msgstr "پاسسىپ كۆزنەكنىڭ خەت نۇسخىسى:"
 
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for menu Item:"
 msgstr "تىزىملىك تۇرىنىڭ خەت نۇسخىسى:"
 
-#: ../src/obconf.glade.h:6
+#: ../src/obconf.glade.h:7
 msgid "Font for menu header:"
 msgstr "تىزىملىك بەشىنىڭ خەت نۇسخىسى:"
 
-#: ../src/obconf.glade.h:7
+#: ../src/obconf.glade.h:8
 msgid "Font for on-screen display:"
 msgstr "ئېكراننىڭ خەت نۇسخىسى:"
 
-#: ../src/obconf.glade.h:8
+#: ../src/obconf.glade.h:9
 msgid "Misc."
 msgstr "باشقىلار:"
 
-#: ../src/obconf.glade.h:9
+#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -134,7 +153,8 @@ msgid ""
 "C: Close\n"
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
-msgstr "N: كۆزنەك سىنبەلگىسى\n"
+msgstr ""
+"N: كۆزنەك سىنبەلگىسى\n"
 "L: كۆزنەك ئەنى (ماۋزۇسى)\n"
 "I: سىنبەلگىلەشتۈرۈش (كىچىكلىتىش)\n"
 "M: چوڭايتىش\n"
@@ -142,18 +162,18 @@ msgstr "N: كۆزنەك سىنبەلگىسى\n"
 "S: تۈرۈش (يۆگەش)\n"
 "D: Omnipresent (بارلىق ئۈستەلئۈستىدەn"
 
-#: ../src/obconf.glade.h:16
+#: ../src/obconf.glade.h:17
 msgid "Theme"
 msgstr "ئۆرنەك"
 
-#: ../src/obconf.glade.h:17
+#: ../src/obconf.glade.h:18
 msgid "Title Bar"
 msgstr "ماۋزۇ بالدىقى"
 
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:19
 msgid "_Button order:"
 msgstr "توپچا تەرتىپى(_B):"
 
-#: ../src/obconf.glade.h:19
+#: ../src/obconf.glade.h:20
 msgid "_Install a new theme..."
 msgstr "يېڭى ئۆرنەك ئورنىتىش(_I)…"
