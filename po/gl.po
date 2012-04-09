@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxde.lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2012-01-11 19:33+0200\n"
+"PO-Revision-Date: 2012-04-09 18:24+0200\n"
 "Last-Translator: mbouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
@@ -116,16 +116,15 @@ msgstr "<span weight=\"bold\">Tema</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "Create a theme _archive (.obt)..."
-msgstr "Cerado o _arquivo de tema (.obt)..."
+msgstr "Creado o _arquivo de tema (.obt)..."
 
 #: ../src/obconf.glade.h:3
 msgid "Font for active window title:"
 msgstr "Tipo de letra para o título da xanela activa:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "Tipo de letra para amosar na pantalla:"
+msgstr "Tipo de letra para amosar na pantalla inactiva:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
