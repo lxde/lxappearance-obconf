@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2012-01-22 18:44+0200\n"
+"PO-Revision-Date: 2012-04-09 18:13+0200\n"
 "Last-Translator: Anari <anari.jalakas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: et\n"
@@ -89,9 +89,9 @@ msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" ei paista olema kehtiv Openbox teema kataloog"
 
 #: ../src/archive.c:167
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "Ei suuda luua kataloog \"%s\": %s"
+msgstr "Ei õnnestu liikuda kataloogi \"%s\": %s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -121,9 +121,8 @@ msgid "Font for active window title:"
 msgstr "Aktiivse akna pealkirja font:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "Ekraanil kuvamise font:"
+msgstr "Mitteaktiivnse akna font:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
@@ -159,8 +158,8 @@ msgstr ""
 "L: Akna nimi (Tiitel)\n"
 "I: Vähendamine (minimeerimine)\n"
 "M: Maksimeerimine\n"
-"C: Sulgemine \n"
-"S: Shade (Laiendama) \n"
+"C: Sulgemine\n"
+"S: Shade (Laiendama)\n"
 "D: Kõikjal (Igal ekraanil)"
 
 #: ../src/obconf.glade.h:17
