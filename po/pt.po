@@ -8,13 +8,15 @@ msgstr ""
 "Project-Id-Version: lxappearence-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2010-09-15 16:20-0000\n"
-"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
+"PO-Revision-Date: 2012-04-13 11:50+0200\n"
+"Last-Translator: Sérgio <smarquespt@gmail.com>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: PORTUGAL\n"
 
@@ -122,9 +124,8 @@ msgid "Font for active window title:"
 msgstr "Tipo de letra para o título da janela ativa:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "Tipo de letra para exibição no ecrã:"
+msgstr "Tipo de letra para exibição no ecrã inativo:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
