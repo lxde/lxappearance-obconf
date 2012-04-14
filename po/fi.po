@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2012-03-10 20:21+0200\n"
+"PO-Revision-Date: 2012-04-14 09:42+0200\n"
 "Last-Translator: Juhani <juhaninumminen0@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fi\n"
@@ -122,9 +122,8 @@ msgid "Font for active window title:"
 msgstr "Aktiivisen ikkunan otsikkofontti:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "OSD:n fontti:"
+msgstr "Epäaktiivisen OSD:n fontti:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
