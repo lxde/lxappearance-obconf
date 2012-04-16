@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2011-11-13 15:43+0200\n"
+"PO-Revision-Date: 2012-04-13 22:28+0200\n"
 "Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: Gezer (Hebrew)\n"
 "Language: he\n"
@@ -118,9 +118,8 @@ msgid "Font for active window title:"
 msgstr "גופן לכותרת חלון פעיל:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "גופן לתצוגה על גבי המסך:"
+msgstr "גופן לתצוגה בלתי פעילה על גבי המסך:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"

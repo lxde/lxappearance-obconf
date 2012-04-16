@@ -88,9 +88,9 @@ msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\"은(는) 올바른 오픈박스 테마 디렉터리로 보이지 않습니다"
 
 #: ../src/archive.c:167
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "\"%s\" 디렉터리를 만들 수 없습니다: %s"
+msgstr "\"%s\" 디렉터리에 이동할 수 없습니다: %s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -120,9 +120,8 @@ msgid "Font for active window title:"
 msgstr "활성 창 제목 글꼴:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "화면 표시 글꼴:"
+msgstr "비활성 화면 표시 글꼴:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"

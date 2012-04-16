@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2011-09-25 18:35+0200\n"
+"PO-Revision-Date: 2012-04-09 18:13+0200\n"
 "Last-Translator: Pjotr <>\n"
 "Language-Team: Dutch\n"
 "Language: nl\n"
@@ -124,9 +124,8 @@ msgid "Font for active window title:"
 msgstr "Lettertype voor actieve venstertitel:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "Lettertype voor weergave op scherm:"
+msgstr "Lettertype voor inactiefweergave op beeldscherm:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
