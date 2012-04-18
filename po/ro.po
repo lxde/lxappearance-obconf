@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"PO-Revision-Date: 2012-04-18 15:39+0200\n"
+"Last-Translator: Mișu <dumol@l10n.ro>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../src/main.c:177
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"Nu s-a putut încărca fișierul de interfață obconf.glade. Probabil că ObConf "
+"nu este instalat corect."
+
+#: ../src/main.c:206
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr ""
+"Nu s-a putut încărca un fișier rc.xml. Probabil că Openbox nu este instalat "
+"corect."
+
+#: ../src/main.c:219
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+"Eroare la prelucrarea fișierului de configurare Openbox. Fișierul de "
+"configurare nu are o sintaxă XML validă.\n"
+"\n"
+"Mesaj: %s"
+
+#: ../src/theme.c:112 ../src/theme.c:144
+msgid "Choose an Openbox theme"
+msgstr "Alegeți o temă Openbox"
+
+#: ../src/theme.c:121
+msgid "Openbox theme archives"
+msgstr "Arhive cu teme Openbox"
+
+#: ../src/archive.c:49
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr "„%s” a fost instalată în %s"
+
+#: ../src/archive.c:74
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr "„%s” a fost creată cu succes"
+
+#: ../src/archive.c:110
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Nu s-a putut crea arhiva temei „%s”.\n"
+"Următoarele erori au fost raportate:\n"
+"%s"
+
+#: ../src/archive.c:115 ../src/archive.c:196
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr "Nu s-a putut executa comanda „tar”: %s"
+
+#: ../src/archive.c:135
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr "Nu s-a putut crea directorul „%s”: %s"
+
+#: ../src/archive.c:157
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr "„%s” nu pare să fie un director valid cu teme Openbox"
+
+#: ../src/archive.c:167
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr "Nu s-a putut face mutarea în directorul „%s”: %s"
+
+#: ../src/archive.c:203
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+"Nu s-a putut extrage fișierul „%s”.\n"
+"Asigurați-vă că aveți drepturi de scriere în „%s” și că fișierul este o "
+"arhivă cu o temă Openbox validă.\n"
+"Următoarele erori au fost raportate:\n"
+"%s"
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr "<span weight=\"bold\">Temă</span>"
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr "Creați o _arhivă cu tema (.obt)..."
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr "Font pentru titlul ferestrelor active:"
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive on-screen display:"
+msgstr "Font pentru afișarea inactivă pe ecran:"
+
+#: ../src/obconf.glade.h:5
+msgid "Font for inactive window title:"
+msgstr "Font pentru titlul ferestrelor inactive:"
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu Item:"
+msgstr "Font pentru elementele din meniu:"
+
+#: ../src/obconf.glade.h:7
+msgid "Font for menu header:"
+msgstr "Font pentru antetul meniului:"
+
+#: ../src/obconf.glade.h:8
+msgid "Font for on-screen display:"
+msgstr "Font pentru afișarea pe ecran:"
+
+#: ../src/obconf.glade.h:9
+msgid "Misc."
+msgstr "Altele"
+
+#: ../src/obconf.glade.h:10
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+"N: Iconița ferestrei\n"
+"L: Eticheta ferestrei (Titlu)\n"
+"I: Minimizare\n"
+"M: Maximizare\n"
+"C: Închidere\n"
+"S: Strângere (în sus)\n"
+"D: Omniprezență (În toate spațiile)"
+
+#: ../src/obconf.glade.h:17
+msgid "Theme"
+msgstr "Temă"
+
+#: ../src/obconf.glade.h:18
+msgid "Title Bar"
+msgstr "Bara de titlu"
+
+#: ../src/obconf.glade.h:19
+msgid "_Button order:"
+msgstr "Ordine pentru _butoane:"
+
+#: ../src/obconf.glade.h:20
+msgid "_Install a new theme..."
+msgstr "_Instalați o nouă temă..."
