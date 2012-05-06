@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2012-04-11 11:32+0200\n"
+"PO-Revision-Date: 2012-05-06 11:59+0200\n"
 "Last-Translator: zvacet <ikoli@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hr\n"
@@ -24,7 +24,7 @@ msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr ""
-"Neuspjelo učitavanje obconf.glade datoteke sučelja.ObConf vjerojatno nije "
+"Neuspjelo učitavanje obconf.glade datoteke sučelja. ObConf vjerojatno nije "
 "ispravno instaliran."
 
 #: ../src/main.c:206
@@ -138,7 +138,7 @@ msgstr "Font za prikaz na zaslonu:"
 
 #: ../src/obconf.glade.h:9
 msgid "Misc."
-msgstr "Ostalo"
+msgstr "Ostalo."
 
 #: ../src/obconf.glade.h:10
 msgid ""
