@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2012-04-09 18:13+0200\n"
-"Last-Translator: Pjotr <>\n"
+"PO-Revision-Date: 2012-05-15 13:29+0200\n"
+"Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -58,125 +58,9 @@ msgstr "Archieven van Openbox-thema's"
 #: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "\"%s\" werd geïnstalleerd naar %s"
+msgstr "'%s' werd geïnstalleerd op %s"
 
 #: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "\"%s\" werd succesvol aangemaakt"
-
-#: ../src/archive.c:110
-#, c-format
-msgid ""
-"Unable to create the theme archive \"%s\".\n"
-"The following errors were reported:\n"
-"%s"
-msgstr ""
-"Kon thema-archief \"%s\" niet aanmaken.\n"
-"De volgende fouten werden gemeld:\n"
-"%s"
-
-#: ../src/archive.c:115 ../src/archive.c:196
-#, c-format
-msgid "Unable to run the \"tar\" command: %s"
-msgstr "Kon de \"tar\"-opdracht niet uitvoeren: %s"
-
-#: ../src/archive.c:135
-#, c-format
-msgid "Unable to create directory \"%s\": %s"
-msgstr "Kon de map \"%s\" niet aanmaken: %s"
-
-#: ../src/archive.c:157
-#, c-format
-msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "\"%s\" lijkt geen geldige map voor Openbox-thema's te zijn"
-
-#: ../src/archive.c:167
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "Kon map \"%s\" niet verplaatsen: %s"
-
-#: ../src/archive.c:203
-#, c-format
-msgid ""
-"Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
-"theme archive.\n"
-"The following errors were reported:\n"
-"%s"
-msgstr ""
-"Kon het bestand \"%s\" niet uitpakken.\n"
-"Gelieve ervoor te zorgen dat \"%s\" beschrijfbaar is en dat het bestand een "
-"geldig archief is voor Openbox-\n"
-"thema's. De volgende fouten werden gemeld:\n"
-"%s"
-
-#: ../src/obconf.glade.h:1
-msgid "<span weight=\"bold\">Theme</span>"
-msgstr "<span weight=\"bold\">Thema</span>"
-
-#: ../src/obconf.glade.h:2
-msgid "Create a theme _archive (.obt)..."
-msgstr "Maak een thema-_archief aan (.obt)..."
-
-#: ../src/obconf.glade.h:3
-msgid "Font for active window title:"
-msgstr "Lettertype voor actieve venstertitel:"
-
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Lettertype voor inactiefweergave op beeldscherm:"
-
-#: ../src/obconf.glade.h:5
-msgid "Font for inactive window title:"
-msgstr "Lettertype voor inactieve venstertitel:"
-
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Lettertype voor menu-onderdeel:"
-
-#: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Lettertype voor menukop:"
-
-#: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Lettertype voor weergave op scherm:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Varia"
-
-#: ../src/obconf.glade.h:10
-msgid ""
-"N: Window icon\n"
-"L: Window label (Title)\n"
-"I: Iconify (Minimize)\n"
-"M: Maximize\n"
-"C: Close\n"
-"S: Shade (Roll up)\n"
-"D: Omnipresent (On all desktops)"
-msgstr ""
-"N: Vensterpictogram\n"
-"L: Venster-etiket (Titel)\n"
-"I: Pictogram van maken (minimaliseren)\n"
-"M: Maximaliseren\n"
-"C: Sluiten\n"
-"S: Oprollen\n"
-"D: Overal aanwezig (op alle werkbladen)"
-
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Thema"
-
-#: ../src/obconf.glade.h:18
-msgid "Title Bar"
-msgstr "Titelbalk"
-
-#: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Knopvolgorde:"
-
-#: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "Een nieuw thema _installeren..."
+msgstr "'%' werd met succes aangemaakt"
