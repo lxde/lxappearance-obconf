@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2011-02-17 22:36+0100\n"
-"Last-Translator: Piotr Sokół <psokol@jabster.pl>\n"
+"PO-Revision-Date: 2012-05-19 17:30+0200\n"
+"Last-Translator: Piotr <psokol@jabster.pl>\n"
 "Language-Team: Polish <>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : ((n%10>=2 && n%10<=4 && (n"
-"%100<10 || n%100>=20)) ? 1 : 2));\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -24,7 +25,7 @@ msgid ""
 "installed correctly."
 msgstr ""
 "Nie udało się wczytać pliku interfejsu obconf.glade. Prawdopodobnie program "
-"Openbox nie został poprawnie zainstalowany."
+"ObConf nie został poprawnie zainstalowany."
 
 #: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
@@ -51,17 +52,17 @@ msgstr "Wybór pliku"
 
 #: ../src/theme.c:121
 msgid "Openbox theme archives"
-msgstr "Archiwa motywów Openbox"
+msgstr "Archiwa stylów Openbox"
 
 #: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "Motyw „%s” zainstalowano w położeniu %s"
+msgstr "Styl „%s” zainstalowano w położeniu %s"
 
 #: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "Utworzono motyw „%s”"
+msgstr "Utworzono styl „%s”"
 
 #: ../src/archive.c:110
 #, c-format
@@ -70,7 +71,7 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Nie można utworzyć archiwum motywu „%s”.\n"
+"Nie można utworzyć archiwum stylu „%s”.\n"
 "Wykryto następujące błędy:\n"
 "%s"
 
@@ -87,7 +88,7 @@ msgstr "Nie można utworzyć katalogu „%s”: %s"
 #: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "Katalog „%s” nie jest poprawnym katalogiem motywu programu Openbox."
+msgstr "Katalog „%s” nie jest poprawnym katalogiem stylu programu Openbox."
 
 #: ../src/archive.c:167
 #, c-format
@@ -105,26 +106,25 @@ msgid ""
 msgstr ""
 "Nie można rozpakować pliu „%s”.\n"
 "Proszę upewnić się, że użytkownik posiada prawa do zapisywania w położeniu  "
-"„%s” i wskazany plik jest poprawnym archiwum motywu programu Openbox.\n"
+"„%s” i wskazany plik jest prawidłowym archiwum stylu programu Openbox.\n"
 "Wykryto następujące błędy:\n"
 "%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
-msgstr "<span weight=\"bold\">Motyw</span>"
+msgstr "<span weight=\"bold\">Styl</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "Create a theme _archive (.obt)..."
-msgstr "Utwórz _archiwum motywu (.obt)..."
+msgstr "Utwórz _archiwum stylu (.obt)..."
 
 #: ../src/obconf.glade.h:3
 msgid "Font for active window title:"
 msgstr "Czcionka tytułu aktywnego okna:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "Czcionka menu ekranowego:"
+msgstr "Czcionka nieaktywnego menu ekranowego:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
@@ -166,7 +166,7 @@ msgstr ""
 
 #: ../src/obconf.glade.h:17
 msgid "Theme"
-msgstr "Motyw"
+msgstr "Styl"
 
 #: ../src/obconf.glade.h:18
 msgid "Title Bar"
@@ -178,4 +178,4 @@ msgstr "_Kolejność elementów:"
 
 #: ../src/obconf.glade.h:20
 msgid "_Install a new theme..."
-msgstr "_Zainstaluj motyw..."
+msgstr "_Zainstaluj styl..."
