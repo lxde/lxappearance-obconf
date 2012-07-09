@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2010-08-13 03:13+0100\n"
-"Last-Translator: Christoph Wickert <cwickert@fedoraproject.org>\n"
+"PO-Revision-Date: 2012-04-17 22:06+0200\n"
+"Last-Translator: Christoph <christoph.wickert@googlemail.com>\n"
 "Language-Team: German <translation@mailinglist.lxde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 "X-Poedit-Language: German\n"
 
 #: ../src/main.c:177
@@ -122,9 +123,8 @@ msgid "Font for active window title:"
 msgstr "Schriftart für aktiven Fenstertitel:"
 
 #: ../src/obconf.glade.h:4
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "Schrift für Bildschirmeinblendung:"
+msgstr "Schrift für inaktive Bildschirmeinblendung:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
