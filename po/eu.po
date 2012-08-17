@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-04-09 17:47+0200\n"
-"PO-Revision-Date: 2012-07-09 21:59+0200\n"
+"PO-Revision-Date: 2012-08-17 02:24+0200\n"
 "Last-Translator: Asier_Iturralde_Sarasola <asier.iturralde@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: eu\n"
@@ -123,7 +123,7 @@ msgstr "Leiho aktiboaren izenburuaren letra-tipoa:"
 
 #: ../src/obconf.glade.h:4
 msgid "Font for inactive on-screen display:"
-msgstr ""
+msgstr "Pantailan inaktibo bistaratzeko letra-tipoa:"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for inactive window title:"
@@ -139,7 +139,7 @@ msgstr "Menu goiburuen letra-tipoa:"
 
 #: ../src/obconf.glade.h:8
 msgid "Font for on-screen display:"
-msgstr ""
+msgstr "Pantailan bistaratzeko letra-tipoa:"
 
 #: ../src/obconf.glade.h:9
 msgid "Misc."
