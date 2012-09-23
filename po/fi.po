@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-14 09:42+0200\n"
 "Last-Translator: Juhani <juhaninumminen0@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,38 +114,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Teema</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Asenna uusi teema..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Luo teema_paketti (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Teema"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Aktiivisen ikkunan otsikkofontti:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Epäaktiivisen OSD:n fontti:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Epäaktiivisen ikkunan otsikkofontti:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Valikkokohteiden fontti:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Valikon otsikoiden fontti:"
+msgid "_Button order:"
+msgstr "_Painikkeiden järjestys:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "OSD:n fontti:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Muut"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -163,18 +155,26 @@ msgstr ""
 "S: Häivytä (rullaa ylös)\n"
 "D: Näytä kaikkialla (joka työpöydällä)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Teema"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Otsikkopalkki"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Valikon otsikoiden fontti:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Valikkokohteiden fontti:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "OSD:n fontti:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Painikkeiden järjestys:"
+msgid "Font for inactive on-screen display:"
+msgstr "Epäaktiivisen OSD:n fontti:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Asenna uusi teema..."
+msgid "Misc."
+msgstr "Muut"

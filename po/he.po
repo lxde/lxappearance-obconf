@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-13 22:28+0200\n"
 "Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: Gezer (Hebrew)\n"
@@ -110,38 +110,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">ערכת נושא</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "ה_תקנת ערכת נושא חדשה..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "יצירת _אריזת ערכת נושא (‎.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "ערכת נושא"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "גופן לכותרת חלון פעיל:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "גופן לתצוגה בלתי פעילה על גבי המסך:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "גופן לכותרת חלון בלתי פעיל:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "גופן לפריט בתפריט:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "גופן לכותרת התפריט:"
+msgid "_Button order:"
+msgstr "_סדר הלחצנים:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "גופן לתצוגה על גבי המסך:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "שונות"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -159,18 +151,26 @@ msgstr ""
 "S: גלילה\n"
 "D: נוכחות נרחבת (בכול שולחנות העבודה)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "ערכת נושא"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "פס הכותרת"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "גופן לכותרת התפריט:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "גופן לפריט בתפריט:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "גופן לתצוגה על גבי המסך:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_סדר הלחצנים:"
+msgid "Font for inactive on-screen display:"
+msgstr "גופן לתצוגה בלתי פעילה על גבי המסך:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "ה_תקנת ערכת נושא חדשה..."
+msgid "Misc."
+msgstr "שונות"

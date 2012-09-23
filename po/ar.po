@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,39 +108,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">سمة</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "ثبت س_مة جديدة..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "أنشئ _أرشيف سمة (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "السمة"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "خط عنوان النافذة النشطة:"
 
-#: ../src/obconf.glade.h:4
-#, fuzzy
-msgid "Font for inactive on-screen display:"
-msgstr "خط العرض على الشاشة:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "خط عنوان النافذة الغير نشطة:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "خط عناصر القائمة:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "خط رأس القائمة:"
+msgid "_Button order:"
+msgstr "_ترتيب الأزرار:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "خط العرض على الشاشة:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "متفرقات."
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -158,18 +149,27 @@ msgstr ""
 "S: ظل (لف)\n"
 "D: متواجدة دائما (في جميع أسطح المكاتب)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "السمة"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "شريط العنوان"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "خط رأس القائمة:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "خط عناصر القائمة:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "خط العرض على الشاشة:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_ترتيب الأزرار:"
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "خط العرض على الشاشة:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "ثبت س_مة جديدة..."
+msgid "Misc."
+msgstr "متفرقات."

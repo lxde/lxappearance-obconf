@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2011-12-27 10:15+0200\n"
 "Last-Translator: mjjzf <mjjzf@syntaktisk.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,39 +112,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Tema</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Installér et nyt tema..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Skaber et tema_arkiv (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Skrifttype for et aktivt vindues titel:"
 
-#: ../src/obconf.glade.h:4
-#, fuzzy
-msgid "Font for inactive on-screen display:"
-msgstr "Skrifttype for on-screen-display:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Skrifttype for et inaktivt vindue:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Skrifttype for menupunkt:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Skrifttype for menuheader:"
+msgid "_Button order:"
+msgstr "_Knappernes rækkefølge"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Skrifttype for on-screen-display:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Diverse"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -162,18 +153,27 @@ msgstr ""
 "S: Shade (Rul op)\n"
 "D: Alle steder (På alle skriveborde)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Titelbar"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Skrifttype for menuheader:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Skrifttype for menupunkt:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Skrifttype for on-screen-display:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Knappernes rækkefølge"
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "Skrifttype for on-screen-display:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Installér et nyt tema..."
+msgid "Misc."
+msgstr "Diverse"

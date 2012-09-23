@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-09 20:55+0200\n"
 "Last-Translator: andika <andika@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
@@ -112,38 +112,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Tema</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Pasang tema baru:"
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Buat _arsip tema (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Fonta bagi judul jendela aktif:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Fonta bagi tampilan tak aktif di layar:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Fonta bagi judul jendela tak aktif:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Fonta bagi butir menu:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Fonta bagi header menu:"
+msgid "_Button order:"
+msgstr "Urutan tom_bol:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Fonta bagi tampilan di layar:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Rupa-rupa"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -161,18 +153,26 @@ msgstr ""
 "S: Berbayang (Gulung ke atas)\n"
 "D: Selalu ada (Pada semua desktop)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Bilah Judul"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Fonta bagi header menu:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Fonta bagi butir menu:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Fonta bagi tampilan di layar:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "Urutan tom_bol:"
+msgid "Font for inactive on-screen display:"
+msgstr "Fonta bagi tampilan tak aktif di layar:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Pasang tema baru:"
+msgid "Misc."
+msgstr "Rupa-rupa"

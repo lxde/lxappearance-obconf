@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LXAppearance ObConf Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Tran Duy Hung <nguyentieuhau@gmail.com>\n"
 "Language-Team: Vi <nguyentieuhau@gmail.com>\n"
@@ -16,26 +16,32 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../src/main.c:177
-msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
-msgstr "Không thể mở tập tin giao diện obconf.glade. ObConf có thể đã không được cài đặt đúng."
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"Không thể mở tập tin giao diện obconf.glade. ObConf có thể đã không được cài "
+"đặt đúng."
 
 #: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr "Không thể mở tập tin rc.xml. Openbox có thể đã không được cài đặt đúng."
+msgstr ""
+"Không thể mở tập tin rc.xml. Openbox có thể đã không được cài đặt đúng."
 
 #: ../src/main.c:219
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Có lỗi khi phân tích tập tin cấu hình của Openbox. Tập tin cấu hình của bạn không phải là một tập tin XML hợp lệ.\n"
+"Có lỗi khi phân tích tập tin cấu hình của Openbox. Tập tin cấu hình của bạn "
+"không phải là một tập tin XML hợp lệ.\n"
 "\n"
 "Thông báo: %s"
 
-#: ../src/theme.c:112
-#: ../src/theme.c:144
+#: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
 msgstr "Chọn một đề tài Openbox"
 
@@ -64,8 +70,7 @@ msgstr ""
 "Những lỗi sau đây đã được báo cáo:\n"
 "%s"
 
-#: ../src/archive.c:115
-#: ../src/archive.c:196
+#: ../src/archive.c:115 ../src/archive.c:196
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Không thể chạy lệnh \"tar\": %s"
@@ -89,12 +94,14 @@ msgstr "Không thể di chuyển đến thư mục \"%s\": %s"
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Không thể tách tập tin \"%s\".\n"
-"Xin chắc rằng \"%s\" có thể được ghi và đó là kho trữ đề tài Openbox hợp lệ.\n"
+"Xin chắc rằng \"%s\" có thể được ghi và đó là kho trữ đề tài Openbox hợp "
+"lệ.\n"
 "Những lỗi sau đã được báo cáo:\n"
 "%s"
 
@@ -103,38 +110,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Đề tài</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Cài đặt một đề tài mới..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Tạo một _kho trữ đề tài (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Đề tài"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Phông của tiêu đề cửa sổ đang hoạt động:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Phông hiển thị trên màn hình lúc không hoạt động:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Phông của tiêu đề cửa sổ không hoạt động:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Phông của hạng mục trình đơn:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Phông của đầu trình đơn:"
+msgid "_Button order:"
+msgstr "_Thứ tự nút nhấn:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Phông hiển thị trên màn hình:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Linh tinh"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -152,19 +151,26 @@ msgstr ""
 "S: Cuộn lên\n"
 "D: Hiển thị ở tất cả vùng làm việc"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Đề tài"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Thanh tiêu đề"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Phông của đầu trình đơn:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Phông của hạng mục trình đơn:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Phông hiển thị trên màn hình:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Thứ tự nút nhấn:"
+msgid "Font for inactive on-screen display:"
+msgstr "Phông hiển thị trên màn hình lúc không hoạt động:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Cài đặt một đề tài mới..."
-
+msgid "Misc."
+msgstr "Linh tinh"

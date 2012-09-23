@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2010-08-16 16:51+0330\n"
 "Last-Translator: Mostafa <info@mostafadaneshvar.com>\n"
 "Language-Team: Persian <trans-fa@lists.fedoraproject.org>\n"
@@ -112,39 +112,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">تم</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "نصب تم جدید..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "ساخت یک آرشیو تم (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "تم"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "قلم عنوان پنجره ی فعال:"
 
-#: ../src/obconf.glade.h:4
-#, fuzzy
-msgid "Font for inactive on-screen display:"
-msgstr "قلم نمایش بر صفحه:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "قلم برای عنوان پنجره ی غیرفعال:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "قلم ایتم منو:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "قلم منو هدر:"
+msgid "_Button order:"
+msgstr "ترتیب دکمه:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "قلم نمایش بر صفحه:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "غیره"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -162,18 +153,27 @@ msgstr ""
 "S: محو (جمع کردن)\n"
 "D: حاضر در همه جا (در همه رومیزی ها)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "تم"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "نوار عنوان"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "قلم منو هدر:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "قلم ایتم منو:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "قلم نمایش بر صفحه:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "ترتیب دکمه:"
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "قلم نمایش بر صفحه:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "نصب تم جدید..."
+msgid "Misc."
+msgstr "غیره"

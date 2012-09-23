@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2010-10-10 13:07+0900\n"
 "Last-Translator: Hironao Komatsu <hironao@users.sourceforge.net>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
@@ -114,38 +114,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">テーマ</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "新たにテーマをインストールする(_I)..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "テーマアーカイブ (.obt) を生成する(_A)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "テーマ"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "アクティブウィンドウのタイトルのフォント:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "アクティブでないオンスクリーンディスプレイのフォント:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "非アクティブウィンドウのタイトルのフォント:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "メニュー項目のフォント:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "メニューヘッダのフォント:"
+msgid "_Button order:"
+msgstr "ボタンの並び順(_B):"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "オンスクリーンディスプレイのフォント:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "その他"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -163,18 +155,26 @@ msgstr ""
 "S: シェード化 (ロールアップ)\n"
 "D: 居座る (すべてのデスクトップに)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "テーマ"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "タイトルバー"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "メニューヘッダのフォント:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "メニュー項目のフォント:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "オンスクリーンディスプレイのフォント:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "ボタンの並び順(_B):"
+msgid "Font for inactive on-screen display:"
+msgstr "アクティブでないオンスクリーンディスプレイのフォント:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "新たにテーマをインストールする(_I)..."
+msgid "Misc."
+msgstr "その他"

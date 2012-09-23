@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-18 01:37+0200\n"
 "Last-Translator: Gheyret <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -114,38 +114,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">ئۆرنەك</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "يېڭى ئۆرنەك ئورنىتىش(_I)…"
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "بىر ئۆرنەك ئارخىپى قۇرىدۇ(.obt)(_A)…"
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "ئۆرنەك"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "ئاكتىپ كۆزنەكنىڭ خەت نۇسخىسى:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "ئاكتىپ بولمىغان ئېكراننىڭ خەت نۇسخىسى::"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "پاسسىپ كۆزنەكنىڭ خەت نۇسخىسى:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "تىزىملىك تۇرىنىڭ خەت نۇسخىسى:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "تىزىملىك بەشىنىڭ خەت نۇسخىسى:"
+msgid "_Button order:"
+msgstr "توپچا تەرتىپى(_B):"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "ئېكراننىڭ خەت نۇسخىسى:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "باشقىلار:"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -163,18 +155,26 @@ msgstr ""
 "S: تۈرۈش (يۆگەش)\n"
 "D: Omnipresent (بارلىق ئۈستەلئۈستىدەn"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "ئۆرنەك"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "ماۋزۇ بالدىقى"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "تىزىملىك بەشىنىڭ خەت نۇسخىسى:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "تىزىملىك تۇرىنىڭ خەت نۇسخىسى:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "ئېكراننىڭ خەت نۇسخىسى:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "توپچا تەرتىپى(_B):"
+msgid "Font for inactive on-screen display:"
+msgstr "ئاكتىپ بولمىغان ئېكراننىڭ خەت نۇسخىسى::"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "يېڭى ئۆرنەك ئورنىتىش(_I)…"
+msgid "Misc."
+msgstr "باشقىلار:"

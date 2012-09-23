@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2008-02-02 11:51-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -135,43 +135,32 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=“bold”>Theme</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Install a new theme..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Create a theme _archive (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Theme"
+
+#: ../src/obconf.glade.h:5
 #, fuzzy
 msgid "Font for active window title:"
 msgstr "_Inactive window title: "
 
-#: ../src/obconf.glade.h:4
-#, fuzzy
-msgid "Font for inactive on-screen display:"
-msgstr "_On-screen display: "
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 #, fuzzy
 msgid "Font for inactive window title:"
 msgstr "_Inactive window title: "
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr ""
-
 #: ../src/obconf.glade.h:7
-#, fuzzy
-msgid "Font for menu header:"
-msgstr "Menu _header: "
+msgid "_Button order:"
+msgstr "_Button order:"
 
 #: ../src/obconf.glade.h:8
-#, fuzzy
-msgid "Font for on-screen display:"
-msgstr "_On-screen display: "
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr ""
-
-#: ../src/obconf.glade.h:10
 #, fuzzy
 msgid ""
 "N: Window icon\n"
@@ -187,21 +176,32 @@ msgstr ""
 "Iconify (Minimize)\n"
 "Maximize"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Theme"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr ""
 
+#: ../src/obconf.glade.h:16
+#, fuzzy
+msgid "Font for menu header:"
+msgstr "Menu _header: "
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr ""
+
+#: ../src/obconf.glade.h:18
+#, fuzzy
+msgid "Font for on-screen display:"
+msgstr "_On-screen display: "
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Button order:"
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "_On-screen display: "
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Install a new theme..."
+msgid "Misc."
+msgstr ""
 
 #~ msgid "Copyright (c)"
 #~ msgstr "Copyright (c)"

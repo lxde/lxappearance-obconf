@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-14 08:04+0200\n"
 "Last-Translator: Walter <wwycheuk@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -107,38 +107,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">佈景主題</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "安裝新的佈景主題(_I)…"
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "建立佈景主題存檔(.obt)(_A)…"
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "佈景主題"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "作用中視窗標題字型："
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "非作用中螢幕顯示字型："
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "非作用中視窗標題字型："
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "選單項目字型："
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "選單標頭字型："
+msgid "_Button order:"
+msgstr "按鈕順序(_B)："
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "螢幕顯示字型："
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "雜項"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -156,21 +148,29 @@ msgstr ""
 "S: 折疊 (捲起)\n"
 "D: 顯示在所有桌面"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "佈景主題"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "標題列"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "選單標頭字型："
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "選單項目字型："
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "螢幕顯示字型："
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "按鈕順序(_B)："
+msgid "Font for inactive on-screen display:"
+msgstr "非作用中螢幕顯示字型："
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "安裝新的佈景主題(_I)…"
+msgid "Misc."
+msgstr "雜項"
 
 #~ msgid "Copyright (c)"
 #~ msgstr "著作權 ©"

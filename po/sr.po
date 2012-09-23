@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-08-30 11:04+0100\n"
 "Last-Translator: Jay A.Fleming <tito.nehru.naser@gmail.com>\n"
 "Language-Team: \n"
@@ -15,29 +15,37 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/main.c:177
-msgid "Failed to load the obconf.glade interface file. ObConf is probably not installed correctly."
-msgstr "Није успело учитавање obconf.glade датотеке. Највероватније нисте исправно инсталирали Обконф."
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"Није успело учитавање obconf.glade датотеке. Највероватније нисте исправно "
+"инсталирали Обконф."
 
 #: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr "Није успело учитавање rc.xml датотеке. Највероватније нисте исправно инсталирали Опенбокс."
+msgstr ""
+"Није успело учитавање rc.xml датотеке. Највероватније нисте исправно "
+"инсталирали Опенбокс."
 
 #: ../src/main.c:219
 #, c-format
 msgid ""
-"Error while parsing the Openbox configuration file. Your configuration file is not valid XML.\n"
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
 "\n"
 "Message: %s"
 msgstr ""
-"Појавила се грешка приликом обраде датоке са подешавањима Опенбокса.  Ваша датотека није исправна XML датотека.\n"
+"Појавила се грешка приликом обраде датоке са подешавањима Опенбокса.  Ваша "
+"датотека није исправна XML датотека.\n"
 "\n"
 "Порука: %s"
 
-#: ../src/theme.c:112
-#: ../src/theme.c:144
+#: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
 msgstr "Изаберите тему за Опенбокс"
 
@@ -66,8 +74,7 @@ msgstr ""
 "Пријављене су следеће грешке:\n"
 "%s"
 
-#: ../src/archive.c:115
-#: ../src/archive.c:196
+#: ../src/archive.c:115 ../src/archive.c:196
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
 msgstr "Не могу покренути \"tar\" команду: %s"
@@ -91,12 +98,14 @@ msgstr "Не могу се преместити у директоријум \"%s
 #, c-format
 msgid ""
 "Unable to extract the file \"%s\".\n"
-"Please ensure that \"%s\" is writable and that the file is a valid Openbox theme archive.\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
 "The following errors were reported:\n"
 "%s"
 msgstr ""
 "Не могу распаковати датотеку \"%s\".\n"
-"Обезбедите дозволе за писање датотеци \"%s\" и уверите се да је она исправна архива теме за Опенбокс.\n"
+"Обезбедите дозволе за писање датотеци \"%s\" и уверите се да је она исправна "
+"архива теме за Опенбокс.\n"
 "Пријављене су следеће грешке:\n"
 "%s"
 
@@ -105,38 +114,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Тема</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Инсталирајте нову тему..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Направите _архиву теме (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Тема"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Словни лик у наслову активог прозора:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Словни лик на неактивном екранском приказу (OSD):"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Словни лик у наслову неактивог прозора:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Словни лик у ставкама менија:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Словни лик у заглављу менија:"
+msgid "_Button order:"
+msgstr "_Редослед дугмади:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Словни лик на екранском приказу (OSD):"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Разно"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -154,19 +155,26 @@ msgstr ""
 "S: Дугме за замотавање\n"
 "D: Дугме свих радних површина (sticky)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Тема"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Насловна линија"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Словни лик у заглављу менија:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Словни лик у ставкама менија:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Словни лик на екранском приказу (OSD):"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Редослед дугмади:"
+msgid "Font for inactive on-screen display:"
+msgstr "Словни лик на неактивном екранском приказу (OSD):"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Инсталирајте нову тему..."
-
+msgid "Misc."
+msgstr "Разно"

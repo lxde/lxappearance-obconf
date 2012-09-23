@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-09 18:33+0200\n"
 "Last-Translator: Alexander <kazancas@gmail.com>\n"
 "Language-Team: Edumandriva <info@edumandriva.ru>\n"
@@ -115,38 +115,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Тема</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Установка новой темы..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Создание _архива темы (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Тема"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Шрифт для заголовка активного окна:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Шрифт для неактивного экранного отображения:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Шрифт для заголовка неактивного окна:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Шрифт для элемента меню:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Шрифт для заголовка меню:"
+msgid "_Button order:"
+msgstr "_Порядок кнопок:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Шрифт для отображения:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Разное"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -164,18 +156,26 @@ msgstr ""
 "S: Скрыть (Скрутить)\n"
 "D: Везде (на всех раб. столах)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Тема"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Строка заголовка"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Шрифт для заголовка меню:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Шрифт для элемента меню:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Шрифт для отображения:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Порядок кнопок:"
+msgid "Font for inactive on-screen display:"
+msgstr "Шрифт для неактивного экранного отображения:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Установка новой темы..."
+msgid "Misc."
+msgstr "Разное"

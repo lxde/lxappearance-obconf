@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-05-15 13:29+0200\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch\n"
@@ -64,3 +64,104 @@ msgstr "'%s' werd geïnstalleerd op %s"
 #, c-format
 msgid "\"%s\" was successfully created"
 msgstr "'%' werd met succes aangemaakt"
+
+#: ../src/archive.c:110
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+
+#: ../src/archive.c:115 ../src/archive.c:196
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr ""
+
+#: ../src/archive.c:135
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr ""
+
+#: ../src/archive.c:157
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr ""
+
+#: ../src/archive.c:167
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr ""
+
+#: ../src/archive.c:203
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr ""
+
+#: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr ""
+
+#: ../src/obconf.glade.h:3
+msgid "Create a theme _archive (.obt)..."
+msgstr ""
+
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr ""
+
+#: ../src/obconf.glade.h:5
+msgid "Font for active window title:"
+msgstr ""
+
+#: ../src/obconf.glade.h:6
+msgid "Font for inactive window title:"
+msgstr ""
+
+#: ../src/obconf.glade.h:7
+msgid "_Button order:"
+msgstr ""
+
+#: ../src/obconf.glade.h:8
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+
+#: ../src/obconf.glade.h:15
+msgid "Title Bar"
+msgstr ""
+
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr ""
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr ""
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr ""
+
+#: ../src/obconf.glade.h:19
+msgid "Font for inactive on-screen display:"
+msgstr ""
+
+#: ../src/obconf.glade.h:20
+msgid "Misc."
+msgstr ""

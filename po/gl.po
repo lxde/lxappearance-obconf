@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxde.lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-09 18:24+0200\n"
 "Last-Translator: mbouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -115,38 +115,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Tema</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Instalar un novo tema"
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Creado o _arquivo de tema (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Tipo de letra para o título da xanela activa:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Tipo de letra para amosar na pantalla inactiva:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Tipo de letra para o título da xanela inactiva:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Tipo de letra para o elemento de menú:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Tipo de letra para a cabeceira de menú:"
+msgid "_Button order:"
+msgstr "_Orden dos botóns:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Tipo de letra para amosar na pantalla:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Varios"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -164,18 +156,26 @@ msgstr ""
 "S: Sombra (enrolar)\n"
 "D: Omnipresente (en todos os escritorios)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Barra de título"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Tipo de letra para a cabeceira de menú:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Tipo de letra para o elemento de menú:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Tipo de letra para amosar na pantalla:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Orden dos botóns:"
+msgid "Font for inactive on-screen display:"
+msgstr "Tipo de letra para amosar na pantalla inactiva:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Instalar un novo tema"
+msgid "Misc."
+msgstr "Varios"

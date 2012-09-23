@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-21 21:34+0200\n"
 "Last-Translator: Sérgio <ikisham@gmail.com>\n"
 "Language-Team: Brazilian Porguese <ldp-br@bazar.conectiva.com.br>\n"
@@ -115,38 +115,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Tema</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Instalar um novo tema..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Criar um _arquivo de tema (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Fonte para o título da janela ativa:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Fonte inativa para o mostrador:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Fonte para o título da janela inativa:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Fonte para itens do menu:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Fonte para o cabeçalho do menu:"
+msgid "_Button order:"
+msgstr "Ordem dos _botões:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Fonte para exibição em tela:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Misc."
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -164,18 +156,26 @@ msgstr ""
 "S: Cortina (enrolar)\n"
 "D: Onipresente (em todas as áreas de trabalho)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Barra de título"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Fonte para o cabeçalho do menu:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Fonte para itens do menu:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Fonte para exibição em tela:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "Ordem dos _botões:"
+msgid "Font for inactive on-screen display:"
+msgstr "Fonte inativa para o mostrador:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Instalar um novo tema..."
+msgid "Misc."
+msgstr "Misc."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-05-16 09:04+0200\n"
 "Last-Translator: Algimantas <gymka@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
-"100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.0.5\n"
 
 #: ../src/main.c:177
@@ -113,38 +113,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Tema</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Diegti naują temą...."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Sukurti temos _archyvą (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Šriftas aktyvaus lango pavadinimui:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Šriftas neaktyviam „on-screen“ atvaizdavimui."
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Šriftas neaktyvaus lango pavadinimui:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Šriftas meniu punkto pavadinimui:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Šriftas meniu antraštei:"
+msgid "_Button order:"
+msgstr "_Mygtukų tvarka:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Šriftas \"on-screen\" rodymui:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Kita"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -162,18 +154,26 @@ msgstr ""
 "S: Suskleisti\n"
 "D: Rodyti visuose darbalaukiuose"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Pavadinimo juosta"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Šriftas meniu antraštei:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Šriftas meniu punkto pavadinimui:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Šriftas \"on-screen\" rodymui:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Mygtukų tvarka:"
+msgid "Font for inactive on-screen display:"
+msgstr "Šriftas neaktyviam „on-screen“ atvaizdavimui."
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Diegti naują temą...."
+msgid "Misc."
+msgstr "Kita"

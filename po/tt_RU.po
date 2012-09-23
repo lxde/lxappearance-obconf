@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2011-08-18 01:49+0400\n"
 "Last-Translator: Ainur Shakirov <ainur.shakirov.tt@gmail.com>\n"
 "Language-Team: Tatar <>\n"
@@ -110,39 +110,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Тыш</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Яңа тыш урнаштыру..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Тыш архивын төзү (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Тыш"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Эшлекле тәрәзәнең баш исем хәрефе:"
 
-#: ../src/obconf.glade.h:4
-#, fuzzy
-msgid "Font for inactive on-screen display:"
-msgstr "Чагылдыру өчен хәреф:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Эшлексез тәрәзәнең баш исем хәрефе:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Меню юллары өчен хәреф:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Менюның баш исем хәрефе:"
+msgid "_Button order:"
+msgstr "_Төймәләр тәртибе:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Чагылдыру өчен хәреф:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Башкалар"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -160,18 +151,27 @@ msgstr ""
 "S: Яшерү (ишү)\n"
 "D: Бөтен җирдә (барлык эш өстәлләрендә)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Тыш"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Баш исем юлы"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Менюның баш исем хәрефе:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Меню юллары өчен хәреф:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Чагылдыру өчен хәреф:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Төймәләр тәртибе:"
+#, fuzzy
+msgid "Font for inactive on-screen display:"
+msgstr "Чагылдыру өчен хәреф:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Яңа тыш урнаштыру..."
+msgid "Misc."
+msgstr "Башкалар"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-09 18:13+0200\n"
 "Last-Translator: Anari <anari.jalakas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,38 +113,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Teema</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "Pa_igalda uus teema..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Teema _arhiivi loomine (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Teema"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Aktiivse akna pealkirja font:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Mitteaktiivnse akna font:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Mitteaktiivse akna pealkirja font:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Menüü font:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Menüü päise font:"
+msgid "_Button order:"
+msgstr "_Nuppude järjekord:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Ekraanil kuvamise font:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Varia"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -162,18 +154,26 @@ msgstr ""
 "S: Shade (Laiendama)\n"
 "D: Kõikjal (Igal ekraanil)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Teema"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Tiitelriba"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Menüü päise font:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Menüü font:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Ekraanil kuvamise font:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Nuppude järjekord:"
+msgid "Font for inactive on-screen display:"
+msgstr "Mitteaktiivnse akna font:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "Pa_igalda uus teema..."
+msgid "Misc."
+msgstr "Varia"

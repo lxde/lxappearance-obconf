@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LXAppearance ObConf Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-09 21:36+0200\n"
 "Last-Translator: George <forfolias@gmail.com>\n"
 "Language-Team: Greek\n"
@@ -113,38 +113,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Θέμα</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Εγκατάσταση ενός νέου θέματος ..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Δημιουργία ενός _αρχείου θέματος (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Θέμα"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Γραμματοσειρά τίτλου για το ενεργό παράθυρο:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Γραμματοσειρά για τις ανενεργές ενδείξεις στην οθόνη:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Γραμματοσειρά τίτλου για το ανενεργό παράθυρο:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Γραμματοσειρά για τα αντικείμενα του μενού:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Γραμματοσειρά για την κεφαλίδα του μενού:"
+msgid "_Button order:"
+msgstr "_Σειρά κουμπιών:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Γραμματοσειρά για την εμφάνιση μηνυμάτων στην οθόνη:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Διάφορα"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -162,18 +154,26 @@ msgstr ""
 "S: Τύλιγμα\n"
 "D: Εμφάνιση σε όλες τις επιφάνειες εργασίας"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Θέμα"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Μπάρα τίτλου"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Γραμματοσειρά για την κεφαλίδα του μενού:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Γραμματοσειρά για τα αντικείμενα του μενού:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Γραμματοσειρά για την εμφάνιση μηνυμάτων στην οθόνη:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Σειρά κουμπιών:"
+msgid "Font for inactive on-screen display:"
+msgstr "Γραμματοσειρά για τις ανενεργές ενδείξεις στην οθόνη:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Εγκατάσταση ενός νέου θέματος ..."
+msgid "Misc."
+msgstr "Διάφορα"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: \n"
@@ -112,38 +112,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">테마</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "새 테마 설치(_I)..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "테마 아카이브(.obt) 만들기(_A)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "테마"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "활성 창 제목 글꼴:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "비활성 화면 표시 글꼴:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "비활성 창 제목 글꼴:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "메뉴 항목 글꼴:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "메뉴 헤더 글꼴:"
+msgid "_Button order:"
+msgstr "단추 순서(_B):"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "화면 표시 글꼴:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "기타."
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -161,18 +153,26 @@ msgstr ""
 "S: 가리기 (말아 올리기)\n"
 "D: 모든 공간에 보이기 (모든 데스크톱에)"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "테마"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "제목 막대"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "메뉴 헤더 글꼴:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "메뉴 항목 글꼴:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "화면 표시 글꼴:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "단추 순서(_B):"
+msgid "Font for inactive on-screen display:"
+msgstr "비활성 화면 표시 글꼴:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "새 테마 설치(_I)..."
+msgid "Misc."
+msgstr "기타."

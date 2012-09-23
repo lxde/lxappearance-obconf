@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-07-07 21:15+0200\n"
 "Last-Translator: kizito <kbirabwa@yahoo.co.uk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,38 +115,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Lulyo</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "_Nona olulyo lw'endabika olupya..."
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Kol_awo ekipakire ky'olulyo lw'endabika (.obt)..."
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Lulyo"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Enkula y'ennukuta ez'oku ddirisa erizuukufu:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Enkula y'ennukuta ez'omu madirisa agatakozesebwa:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Enkula y'ennukuta ez'oku ddirisa ery'ebase:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Enkula y'ennukuta ez'oku biri mu menyu:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Enkula y'ennukuta ez'omu mutwe gwa menyu:"
+msgid "_Button order:"
+msgstr "_Engobereragana y'amapeesa:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Enkula y'ennukuta ez'oku lutimbe kwennyini:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Bitalibimu"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -164,18 +156,26 @@ msgstr ""
 "S: Zingako\n"
 "D: Labikira ku awakolerwa zonna"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Lulyo"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Kabaawo okuwandikibwa omutwe gw'eddirisa"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Enkula y'ennukuta ez'omu mutwe gwa menyu:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Enkula y'ennukuta ez'oku biri mu menyu:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Enkula y'ennukuta ez'oku lutimbe kwennyini:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "_Engobereragana y'amapeesa:"
+msgid "Font for inactive on-screen display:"
+msgstr "Enkula y'ennukuta ez'omu madirisa agatakozesebwa:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "_Nona olulyo lw'endabika olupya..."
+msgid "Misc."
+msgstr "Bitalibimu"

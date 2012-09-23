@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"POT-Creation-Date: 2012-09-23 14:59+0200\n"
 "PO-Revision-Date: 2012-04-17 22:06+0200\n"
 "Last-Translator: Christoph <christoph.wickert@googlemail.com>\n"
 "Language-Team: German <translation@mailinglist.lxde.org>\n"
@@ -115,38 +115,30 @@ msgid "<span weight=\"bold\">Theme</span>"
 msgstr "<span weight=\"bold\">Thema</span>"
 
 #: ../src/obconf.glade.h:2
+msgid "_Install a new theme..."
+msgstr "Neues Thema _installieren…"
+
+#: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
 msgstr "Themen_archiv (.obt) erzeugen…"
 
-#: ../src/obconf.glade.h:3
+#: ../src/obconf.glade.h:4
+msgid "Theme"
+msgstr "Thema"
+
+#: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
 msgstr "Schriftart für aktiven Fenstertitel:"
 
-#: ../src/obconf.glade.h:4
-msgid "Font for inactive on-screen display:"
-msgstr "Schrift für inaktive Bildschirmeinblendung:"
-
-#: ../src/obconf.glade.h:5
+#: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
 msgstr "Schriftart für inaktiven Fenstertitel:"
 
-#: ../src/obconf.glade.h:6
-msgid "Font for menu Item:"
-msgstr "Schriftart für Menüeinträge:"
-
 #: ../src/obconf.glade.h:7
-msgid "Font for menu header:"
-msgstr "Schriftart für Menükopfzeilen:"
+msgid "_Button order:"
+msgstr "Anordnung der Knöpfe:"
 
 #: ../src/obconf.glade.h:8
-msgid "Font for on-screen display:"
-msgstr "Schrift für Bildschirmeinblendung:"
-
-#: ../src/obconf.glade.h:9
-msgid "Misc."
-msgstr "Verschiedenes"
-
-#: ../src/obconf.glade.h:10
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -164,18 +156,26 @@ msgstr ""
 "S: Einrollen\n"
 "D: Auf allen Arbeitsflächen"
 
-#: ../src/obconf.glade.h:17
-msgid "Theme"
-msgstr "Thema"
-
-#: ../src/obconf.glade.h:18
+#: ../src/obconf.glade.h:15
 msgid "Title Bar"
 msgstr "Titelleiste"
 
+#: ../src/obconf.glade.h:16
+msgid "Font for menu header:"
+msgstr "Schriftart für Menükopfzeilen:"
+
+#: ../src/obconf.glade.h:17
+msgid "Font for menu Item:"
+msgstr "Schriftart für Menüeinträge:"
+
+#: ../src/obconf.glade.h:18
+msgid "Font for on-screen display:"
+msgstr "Schrift für Bildschirmeinblendung:"
+
 #: ../src/obconf.glade.h:19
-msgid "_Button order:"
-msgstr "Anordnung der Knöpfe:"
+msgid "Font for inactive on-screen display:"
+msgstr "Schrift für inaktive Bildschirmeinblendung:"
 
 #: ../src/obconf.glade.h:20
-msgid "_Install a new theme..."
-msgstr "Neues Thema _installieren…"
+msgid "Misc."
+msgstr "Verschiedenes"
