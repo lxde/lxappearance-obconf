@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-09 17:47+0200\n"
+"PO-Revision-Date: 2012-04-10 07:30+0200\n"
+"Last-Translator: Sankarshan <sankarshan.mukhopadhyay@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: bn_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../src/main.c:177
+msgid ""
+"Failed to load the obconf.glade interface file. ObConf is probably not "
+"installed correctly."
+msgstr ""
+"obconf.glade interface ফাইলটি লোড করা যায়নি। ObConf সঠিক ভাবে ইনস্টল করা "
+"হয়নি।"
+
+#: ../src/main.c:206
+msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
+msgstr "একটি rc.xml ফাইল লোড করা যায়নি। Openbox সঠিক ভাবে ইনস্টল করা হয়নি।"
+
+#: ../src/main.c:219
+#, c-format
+msgid ""
+"Error while parsing the Openbox configuration file. Your configuration file "
+"is not valid XML.\n"
+"\n"
+"Message: %s"
+msgstr ""
+
+#: ../src/theme.c:112 ../src/theme.c:144
+msgid "Choose an Openbox theme"
+msgstr "একটি Openbox থীম নির্বাচন করুন"
+
+#: ../src/theme.c:121
+msgid "Openbox theme archives"
+msgstr "Openbox থীম সংগ্রহ"
+
+#: ../src/archive.c:49
+#, c-format
+msgid "\"%s\" was installed to %s"
+msgstr "\"%s\" %s - তে ইনস্টল করা হয়েছে"
+
+#: ../src/archive.c:74
+#, c-format
+msgid "\"%s\" was successfully created"
+msgstr "\"%s\" তৈরী করা সক্ষম হয়েছে"
+
+#: ../src/archive.c:110
+#, c-format
+msgid ""
+"Unable to create the theme archive \"%s\".\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+
+#: ../src/archive.c:115 ../src/archive.c:196
+#, c-format
+msgid "Unable to run the \"tar\" command: %s"
+msgstr ""
+
+#: ../src/archive.c:135
+#, c-format
+msgid "Unable to create directory \"%s\": %s"
+msgstr ""
+
+#: ../src/archive.c:157
+#, c-format
+msgid "\"%s\" does not appear to be a valid Openbox theme directory"
+msgstr ""
+
+#: ../src/archive.c:167
+#, c-format
+msgid "Unable to move to directory \"%s\": %s"
+msgstr ""
+
+#: ../src/archive.c:203
+#, c-format
+msgid ""
+"Unable to extract the file \"%s\".\n"
+"Please ensure that \"%s\" is writable and that the file is a valid Openbox "
+"theme archive.\n"
+"The following errors were reported:\n"
+"%s"
+msgstr ""
+
+#: ../src/obconf.glade.h:1
+msgid "<span weight=\"bold\">Theme</span>"
+msgstr ""
+
+#: ../src/obconf.glade.h:2
+msgid "Create a theme _archive (.obt)..."
+msgstr ""
+
+#: ../src/obconf.glade.h:3
+msgid "Font for active window title:"
+msgstr ""
+
+#: ../src/obconf.glade.h:4
+msgid "Font for inactive on-screen display:"
+msgstr ""
+
+#: ../src/obconf.glade.h:5
+msgid "Font for inactive window title:"
+msgstr ""
+
+#: ../src/obconf.glade.h:6
+msgid "Font for menu Item:"
+msgstr ""
+
+#: ../src/obconf.glade.h:7
+msgid "Font for menu header:"
+msgstr ""
+
+#: ../src/obconf.glade.h:8
+msgid "Font for on-screen display:"
+msgstr ""
+
+#: ../src/obconf.glade.h:9
+msgid "Misc."
+msgstr ""
+
+#: ../src/obconf.glade.h:10
+msgid ""
+"N: Window icon\n"
+"L: Window label (Title)\n"
+"I: Iconify (Minimize)\n"
+"M: Maximize\n"
+"C: Close\n"
+"S: Shade (Roll up)\n"
+"D: Omnipresent (On all desktops)"
+msgstr ""
+
+#: ../src/obconf.glade.h:17
+msgid "Theme"
+msgstr ""
+
+#: ../src/obconf.glade.h:18
+msgid "Title Bar"
+msgstr ""
+
+#: ../src/obconf.glade.h:19
+msgid "_Button order:"
+msgstr ""
+
+#: ../src/obconf.glade.h:20
+msgid "_Install a new theme..."
+msgstr ""
