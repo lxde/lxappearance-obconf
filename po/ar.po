@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 14:59+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-10-04 20:33+0200\n"
+"Last-Translator: mohsen <linuxer9@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -85,9 +87,9 @@ msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "لا يبدو أن \"%s\" دليل سمة أوبن بوكس سليم"
 
 #: ../src/archive.c:167
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "غير قادر على إنشاء الدليل \"%s\": %s"
+msgstr "لا يمكن النقل إلى الدليل  \"%s\": %s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -166,9 +168,8 @@ msgid "Font for on-screen display:"
 msgstr "خط العرض على الشاشة:"
 
 #: ../src/obconf.glade.h:19
-#, fuzzy
 msgid "Font for inactive on-screen display:"
-msgstr "خط العرض على الشاشة:"
+msgstr "خط العرض على الشاشة"
 
 #: ../src/obconf.glade.h:20
 msgid "Misc."
