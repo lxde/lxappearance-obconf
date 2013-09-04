@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 14:59+0200\n"
-"PO-Revision-Date: 2013-09-04 13:02+0000\n"
+"PO-Revision-Date: 2013-09-04 13:03+0000\n"
 "Last-Translator: Piotr <strebski@o2.pl>\n"
 "Language-Team: Polish <>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1378299740.0\n"
+"X-POOTLE-MTIME: 1378299831.0\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -58,12 +58,12 @@ msgstr "Archiwa motywów Openbox"
 #: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "Styl \"%s\" zainstalowano w położeniu %s"
+msgstr "Motyw \"%s\" zainstalowano w położeniu %s"
 
 #: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "Utworzono styl „%s”"
+msgstr "Utworzono motyw \"%s\""
 
 #: ../src/archive.c:110
 #, c-format
@@ -72,7 +72,7 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Nie można utworzyć archiwum stylu „%s”.\n"
+"Nie można utworzyć archiwum motywu \"%s\".\n"
 "Wykryto następujące błędy:\n"
 "%s"
 
