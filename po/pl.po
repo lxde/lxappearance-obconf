@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 14:59+0200\n"
-"PO-Revision-Date: 2012-05-19 17:30+0200\n"
-"Last-Translator: Piotr <psokol@jabster.pl>\n"
+"PO-Revision-Date: 2013-09-04 13:02+0000\n"
+"Last-Translator: Piotr <strebski@o2.pl>\n"
 "Language-Team: Polish <>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1378299740.0\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -48,16 +49,16 @@ msgstr ""
 
 #: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
-msgstr "Wybór pliku"
+msgstr "Wybór motywu Openbox"
 
 #: ../src/theme.c:121
 msgid "Openbox theme archives"
-msgstr "Archiwa stylów Openbox"
+msgstr "Archiwa motywów Openbox"
 
 #: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "Styl „%s” zainstalowano w położeniu %s"
+msgstr "Styl \"%s\" zainstalowano w położeniu %s"
 
 #: ../src/archive.c:74
 #, c-format
@@ -83,17 +84,17 @@ msgstr "Nie można uruchomić polecenia „tar”: %s"
 #: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr "Nie można utworzyć katalogu „%s”: %s"
+msgstr "Nie można utworzyć katalogu \"%s\": %s"
 
 #: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "Katalog „%s” nie jest poprawnym katalogiem stylu programu Openbox."
+msgstr "Katalog \"%s\" nie jest poprawnym katalogiem motywu programu Openbox."
 
 #: ../src/archive.c:167
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "Nie można przenieść do katalogu „%s”: %s"
+msgstr "Nie można przenieść do katalogu \"%s\": %s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -104,27 +105,27 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Nie można rozpakować pliu „%s”.\n"
-"Proszę upewnić się, że użytkownik posiada prawa do zapisywania w położeniu  "
-"„%s” i wskazany plik jest prawidłowym archiwum stylu programu Openbox.\n"
+"Nie można rozpakować pliku \"%s\".\n"
+"Proszę upewnić się, że użytkownik posiada prawa do zapisywania w położeniu \""
+"%s\" i wskazany plik jest prawidłowym archiwum motywu programu Openbox.\n"
 "Wykryto następujące błędy:\n"
 "%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
-msgstr "<span weight=\"bold\">Styl</span>"
+msgstr "<span weight=\"bold\">Motyw</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "_Install a new theme..."
-msgstr "_Zainstaluj styl..."
+msgstr "_Zainstaluj nowy motyw..."
 
 #: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
-msgstr "Utwórz _archiwum stylu (.obt)..."
+msgstr "Utwórz _archiwum motywu (.obt)..."
 
 #: ../src/obconf.glade.h:4
 msgid "Theme"
-msgstr "Styl"
+msgstr "Motyw"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
@@ -136,7 +137,7 @@ msgstr "Czcionka tytułu nieaktywnego okna:"
 
 #: ../src/obconf.glade.h:7
 msgid "_Button order:"
-msgstr "_Kolejność elementów:"
+msgstr "_Kolejność przycisków:"
 
 #: ../src/obconf.glade.h:8
 msgid ""
@@ -148,13 +149,13 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
-"N: ikona,\n"
-"L: etykieta tytułu,\n"
-"I: przycisk minimalizowania,\n"
-"M: przycisk maksymalizowania,\n"
-"C: przycisk zamykania,\n"
-"S: przycisk zwijania,\n"
-"D: przycisk wyświetlania na wszystkich obszarach roboczych."
+"N: ikona okna\n"
+"L: etykieta okna (tytuł)\n"
+"I: przycisk minimalizowania\n"
+"M: przycisk maksymalizowania\n"
+"C: przycisk zamykania\n"
+"S: przycisk zwijania\n"
+"D: przycisk wyświetlania na wszystkich obszarach roboczych"
 
 #: ../src/obconf.glade.h:15
 msgid "Title Bar"
