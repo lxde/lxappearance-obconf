@@ -61,7 +61,7 @@ AC_HELP_STRING([--enable-gtk3],[enable to use gtk-3.0 instead of gtk-2.0]),
   *) AC_MSG_ERROR([bad value "${enableval}" for --enable-gtk3, use "yes" (default) or "no".]) ;;
 esac],[])
 
-PKG_CHECK_MODULES(OPENBOX, [obrender-3.5 >= 3.5 obt-3.5 >= 3.5])
+PKG_CHECK_MODULES(OPENBOX, [obrender-3.5 >= 3.5.2 obt-3.5 >= 3.5.2])
 AC_SUBST(OPENBOX_CFLAGS)
 AC_SUBST(OPENBOX_LIBS)
 
