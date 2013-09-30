@@ -10,15 +10,16 @@ msgstr ""
 "Project-Id-Version: obconf 2.0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 14:59+0200\n"
-"PO-Revision-Date: 2012-05-09 23:07+0200\n"
-"Last-Translator: Hugo <sysadmin@cips.cu>\n"
+"PO-Revision-Date: 2013-09-30 01:28+0000\n"
+"Last-Translator: Adolfo <fitoschido@ubuntu.com>\n"
 "Language-Team: spanish\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1380504523.0\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -49,7 +50,7 @@ msgstr ""
 
 #: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
-msgstr "Seleccionar un tema de Openbox"
+msgstr "Seleccione un tema de Openbox"
 
 #: ../src/theme.c:121
 msgid "Openbox theme archives"
@@ -58,12 +59,12 @@ msgstr "Archivos de temas de Openbox"
 #: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "\"%s\" se instaló en %s"
+msgstr "«%s» se instaló en %s"
 
 #: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "\"%s\" se creó exitosamente"
+msgstr "Se ha creado «%s» correctamente"
 
 #: ../src/archive.c:110
 #, c-format
@@ -72,29 +73,29 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Imposible crear el archivo de tema \"%s\".\n"
-"Los errores siguientes fueron reportados:\n"
+"No se pudo crear el archivo de tema «%s».\n"
+"Se informó de los errores siguientes:\n"
 "%s"
 
 #: ../src/archive.c:115 ../src/archive.c:196
 #, c-format
 msgid "Unable to run the \"tar\" command: %s"
-msgstr "Imposible ejecutar el comando \"tar\": %s"
+msgstr "No se pudo ejecutar la orden «tar»: %s"
 
 #: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr "Imposible crear el directorio \"%s\": %s"
+msgstr "No se pudo crear la carpeta «%s»: %s"
 
 #: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "\"%s\" no parece ser un directorio válido de temas de Openbox"
+msgstr "«%s» no parece ser una carpeta de temas de Openbox válida"
 
 #: ../src/archive.c:167
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "Imposible mover al directorio \"%s\": %s"
+msgstr "No se pudo mover al directorio «%s»: %s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -105,10 +106,10 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Imposible extraer el archivo \"%s\".\n"
-"Por favor asegúrese de que \"%s\" permite la escritura y que el archivo es "
-"un tema válido de Openbox.\n"
-"Se reportaron los siguientes errores:\n"
+"No se pudo extraer el archivo «%s».\n"
+"Asegúrese de que «%s» es escribible y de que el archivo es un tema de "
+"Openbox válido.\n"
+"Se informó de los errores siguientes:\n"
 "%s"
 
 #: ../src/obconf.glade.h:1
@@ -117,11 +118,11 @@ msgstr "<span weight=\"bold\">Tema</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "_Install a new theme..."
-msgstr "_Instalar un nuevo tema..."
+msgstr "_Instalar un tema nuevo…"
 
 #: ../src/obconf.glade.h:3
 msgid "Create a theme _archive (.obt)..."
-msgstr "Crear un archivo de tema (.obt)..."
+msgstr "Crear un _archivo de tema (.obt)…"
 
 #: ../src/obconf.glade.h:4
 msgid "Theme"
@@ -179,7 +180,7 @@ msgstr "Fuente para las pantallas inactivas:"
 
 #: ../src/obconf.glade.h:20
 msgid "Misc."
-msgstr "Misc."
+msgstr "Varias"
 
 #~ msgid "Copyright (c)"
 #~ msgstr "Copyright (c)"
