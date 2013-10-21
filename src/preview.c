@@ -549,28 +549,53 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
             switch (*layout) {
             case 'D':
                 a = focus ?
+#ifdef HAVE_OPENBOX_3_5_2
                     theme->btn_desk->a_focused_unpressed :
                     theme->btn_desk->a_unfocused_unpressed;
+#else
+                    theme->a_focused_unpressed_desk :
+                    theme->a_unfocused_unpressed_desk;
+#endif
                 break;
             case 'S':
                 a = focus ?
+#ifdef HAVE_OPENBOX_3_5_2
                     theme->btn_shade->a_focused_unpressed :
                     theme->btn_shade->a_unfocused_unpressed;
+#else
+                    theme->a_focused_unpressed_shade :
+                    theme->a_unfocused_unpressed_shade;
+#endif
                 break;
             case 'I':
                 a = focus ?
+#ifdef HAVE_OPENBOX_3_5_2
                     theme->btn_iconify->a_focused_unpressed :
                     theme->btn_iconify->a_unfocused_unpressed;
+#else
+                    theme->a_focused_unpressed_iconify :
+                    theme->a_unfocused_unpressed_iconify;
+#endif
                 break;
             case 'M':
                 a = focus ?
+#ifdef HAVE_OPENBOX_3_5_2
                     theme->btn_max->a_focused_unpressed :
                     theme->btn_max->a_unfocused_unpressed;
+#else
+                    theme->a_focused_unpressed_max :
+                    theme->a_unfocused_unpressed_max;
+#endif
                 break;
             case 'C':
                 a = focus ?
+#ifdef HAVE_OPENBOX_3_5_2
                     theme->btn_close->a_focused_unpressed :
                     theme->btn_close->a_unfocused_unpressed;
+#else
+                    theme->a_focused_unpressed_close :
+                    theme->a_unfocused_unpressed_close;
+#endif
                 break;
             default:
                 continue;

@@ -65,6 +65,13 @@ PKG_CHECK_MODULES(OPENBOX, [obrender-3.5 >= 3.5 obt-3.5 >= 3.5])
 AC_SUBST(OPENBOX_CFLAGS)
 AC_SUBST(OPENBOX_LIBS)
 
+save_CFLAFS="$CFLAGS"
+CFLAGS="$CFLAGS $pkg_cv_OPENBOX_CFLAGS"
+AC_CHECK_MEMBER(RrTheme.btn_desk,
+  AC_DEFINE(HAVE_OPENBOX_3_5_2,[],[Openbox version is 3.5.2]),,
+  [#include <obrender/theme.h>])
+CFLAGS="$save_CFLAFS"
+
 if test "x$enable_gtk3" = "xyes" ; then
   CFLAGS="$CFLAGS -DENABLE_GTK3"
   gtk_modules="gtk+-3.0 >= 3.0.0"
