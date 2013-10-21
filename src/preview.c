@@ -17,6 +17,10 @@
    See the COPYING file for a copy of the GNU General Public License.
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "theme.h"
 #include "main.h"
 #include "tree.h"
