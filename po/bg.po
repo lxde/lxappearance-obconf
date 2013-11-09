@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-23 14:59+0200\n"
-"PO-Revision-Date: 2013-11-09 13:39+0000\n"
+"PO-Revision-Date: 2013-11-09 13:41+0000\n"
 "Last-Translator: Радослав <reckku@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
-"X-POOTLE-MTIME: 1384004354.0\n"
+"X-POOTLE-MTIME: 1384004492.0\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -52,7 +52,7 @@ msgstr "Избор на Openbox тема."
 
 #: ../src/theme.c:121
 msgid "Openbox theme archives"
-msgstr "Архиви на Openbox теми."
+msgstr "Архиви с Openbox теми"
 
 #: ../src/archive.c:49
 #, c-format
@@ -88,7 +88,7 @@ msgstr "Неуспех при създаването на директорият
 #: ../src/archive.c:157
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
-msgstr "Изглежда, че \"%s\" не е вярната директория за Openbox теми"
+msgstr "Изглежда, че „%s“ не е вярната директория за теми на Openbox"
 
 #: ../src/archive.c:167
 #, c-format
