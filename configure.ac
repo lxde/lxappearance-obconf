@@ -1,6 +1,6 @@
 AC_PREREQ([2.54])
 AC_INIT([lxappearance-obconf], [0.2.1], [http://lxde.org])
-AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign])
+AM_INIT_AUTOMAKE([1.11 -Wall -Werror foreign no-dist-gzip dist-xz])
 AC_CONFIG_SRCDIR([src/main.c])
 AC_CONFIG_HEADERS([config.h])
 
