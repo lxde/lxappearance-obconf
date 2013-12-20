@@ -2,21 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 23:54+0100\n"
-"PO-Revision-Date: 2012-04-09 18:13+0200\n"
-"Last-Translator: Anari <anari.jalakas@gmail.com>\n"
+"PO-Revision-Date: 2013-12-20 09:39+0000\n"
+"Last-Translator: mahfiaz <mahfiaz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1387532364.0\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -39,8 +39,8 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
-"Viga Openboxi konfiguratsioonifaili parsimisel. Teie konfiguratsioonifail ei "
-"ole korrektne XML.\n"
+"Viga Openboxi konfiguratsioonifaili parsimisel. Sinu konfiguratsioonifail ei "
+"sisalda korrektset XMLi.\n"
 "\n"
 "Teade: %s"
 
@@ -81,7 +81,7 @@ msgstr "Pole võimalik käivitada \"tar\" käsku: %s"
 #: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr "Ei suuda luua kataloog \"%s\": %s"
+msgstr "Ei suuda luua kataloogi \"%s\": %s"
 
 #: ../src/archive.c:157
 #, c-format
@@ -102,8 +102,8 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"Ei suuda lahti pakkida \"%s\".\n"
-"Palun veenduge, et \"%s\" on kirjutatav ja et fail on kehtiv Openbox teema "
+"Faili \"%s\" pole võimalik lahti pakkida.\n"
+"Palun veendu, et \"%s\" on kirjutatav ja et fail on korrektne Openbox teema "
 "arhiivi.\n"
 "Esinesid järgmised vead:\n"
 "%s"
@@ -148,11 +148,11 @@ msgid ""
 msgstr ""
 "N: Akna ikoon\n"
 "L: Akna nimi (Tiitel)\n"
-"I: Vähendamine (minimeerimine)\n"
+"I: Minimeerimine\n"
 "M: Maksimeerimine\n"
 "C: Sulgemine\n"
-"S: Shade (Laiendama)\n"
-"D: Kõikjal (Igal ekraanil)"
+"S: Kokku kerimine\n"
+"D: Kõikjal (Igal tööalal)"
 
 #: ../src/obconf.glade.h:15
 msgid "Title Bar"
@@ -172,7 +172,7 @@ msgstr "Ekraanil kuvamise font:"
 
 #: ../src/obconf.glade.h:19
 msgid "Font for inactive on-screen display:"
-msgstr "Mitteaktiivnse akna font:"
+msgstr "Mitteaktiivse akna font:"
 
 #: ../src/obconf.glade.h:20
 msgid "Misc."
