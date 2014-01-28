@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the 
 # lxappearance-obconf package.
 # Pjotr, 2011.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 23:54+0100\n"
-"PO-Revision-Date: 2012-09-26 11:59+0200\n"
+"PO-Revision-Date: 2014-01-28 14:01+0000\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch\n"
 "Language: nl\n"
@@ -17,7 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1390917683.0\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -41,9 +41,8 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
-"Fout bij het behandeling van het configuratiebestand\n"
-"van Openbox. Uw configuratiebestand is geen\n"
-"geldige XML.\n"
+"Fout bij het lezen van het configuratiebestand van Openbox.\n"
+"Uw configuratiebestand is geen geldige XML.\n"
 "\n"
 "Boodschap: %s"
 
@@ -63,7 +62,7 @@ msgstr "'%s' werd geïnstalleerd op %s"
 #: ../src/archive.c:74
 #, c-format
 msgid "\"%s\" was successfully created"
-msgstr "'%' werd met succes aangemaakt"
+msgstr "'%s' werd met succes aangemaakt"
 
 #: ../src/archive.c:110
 #, c-format
@@ -106,9 +105,8 @@ msgid ""
 "%s"
 msgstr ""
 "Kon het bestand '%s' niet uitpakken.\n"
-"Verzeker u er a.u.b. van, dat '%s' beschrijfbaar is en dat het bestand een "
-"geldig thema-archief is voor Openbox.\n"
-"De volgende fouten werden gemeld:\n"
+"Zorg er a.u.b. voor, dat '%s' beschrijfbaar is en dat het bestand een geldig\n"
+"thema-archief is voor Openbox. De volgende fouten werden gemeld:\n"
 "%s"
 
 #: ../src/obconf.glade.h:1
