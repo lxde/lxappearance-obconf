@@ -11,7 +11,7 @@ test "$prefix" = "NONE" && prefix=$ac_default_prefix
 # to configure or passing V=1 to make
 AM_SILENT_RULES([yes])
 
-AM_MAINTAINER_MODE
+AM_MAINTAINER_MODE([enable])
 
 # Pick compiler specific/build target flags, and set $CVS
 AM_PROG_CC_C_O
