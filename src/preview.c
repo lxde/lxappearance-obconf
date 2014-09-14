@@ -740,12 +740,15 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     w = width - 2*theme->fbwidth;
     h = theme->fbwidth;
 
-    scratch = gdk_pixbuf_new(GDK_COLORSPACE_RGB, TRUE, 8, w, h);
-    gdk_pixbuf_fill(scratch, rr_color_pixel(focus ?
-                                            theme->title_separator_focused_color :
-                                            theme->title_separator_unfocused_color));
+    if (h > 0)
+    {
+        scratch = gdk_pixbuf_new(GDK_COLORSPACE_RGB, TRUE, 8, w, h);
+        gdk_pixbuf_fill(scratch, rr_color_pixel(focus ?
+                                                theme->title_separator_focused_color :
+                                                theme->title_separator_unfocused_color));
 
-    gdk_pixbuf_copy_area(scratch, 0, 0, w, h, pixbuf, x, y);
+        gdk_pixbuf_copy_area(scratch, 0, 0, w, h, pixbuf, x, y);
+    }
 
     /* retarded way of adding client colour */
     x = theme->fbwidth;
