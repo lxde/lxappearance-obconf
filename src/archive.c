@@ -31,7 +31,7 @@
 }
 
 static gchar *get_theme_dir();
-static gboolean change_dir(const gchar *dir);
+/* static gboolean change_dir(const gchar *dir); */
 static gchar* name_from_dir(const gchar *dir);
 static gchar* install_theme_to(const gchar *file, const gchar *to);
 static gboolean create_theme_archive(const gchar *dir, const gchar *name,
@@ -161,7 +161,7 @@ static gchar* name_from_dir(const gchar *dir)
     return g_path_get_basename(dir);
 }
 
-static gboolean change_dir(const gchar *dir)
+/* static gboolean change_dir(const gchar *dir)
 {
     if (chdir(dir) == -1) {
         gtk_msg(GTK_MESSAGE_ERROR, _("Unable to move to directory \"%s\": %s"),
@@ -169,7 +169,7 @@ static gboolean change_dir(const gchar *dir)
         return FALSE;
     }
     return TRUE;
-}
+} */
 
 static gchar* install_theme_to(const gchar *file, const gchar *to)
 {

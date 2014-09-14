@@ -204,7 +204,7 @@ void theme_load_all()
 
     add_theme_dir(THEMEDIR);
 
-    themes = g_list_sort(themes, (GCompareFunc) strcasecmp);
+    themes = g_list_sort(themes, (GCompareFunc) g_ascii_strcasecmp);
 
     gtk_list_store_clear(theme_store);
 
