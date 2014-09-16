@@ -61,6 +61,7 @@ dist_glade_DATA = \
 	src/obconf.glade
 
 EXTRA_DIST = \
+	autogen.sh \
 	README \
 	CHANGELOG \
 	COPYING \
