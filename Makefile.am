@@ -61,7 +61,6 @@ dist_glade_DATA = \
 	src/obconf.glade
 
 EXTRA_DIST = \
-	config.rpath \
 	README \
 	CHANGELOG \
 	COPYING \
