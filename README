@@ -15,6 +15,10 @@ Most of the source code are taken from ObConf written by its authors
 with some modifications added by LXAppearance developers to make it a
 plugin.
 
+Notes for compilation:
+  it requires libtool 2.2, intltool 0.40, GTK+ 2.12, Openbox development
+  headers 3.5.0, lxappearance 0.5.2 or newer.
+
 ----
 
     This software is OSI Certified Open Source Software.
