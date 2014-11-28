@@ -7,26 +7,28 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 23:54+0100\n"
-"PO-Revision-Date: 2014-07-11 11:50+0300\n"
-"Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
+"PO-Revision-Date: 2014-11-28 05:40+0000\n"
+"Last-Translator: <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 1.5\n"
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Pootle 2.6.0-rc2\n"
+"X-POOTLE-MTIME: 1417153216.000000\n"
 
 #: ../src/main.c:177
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
-msgstr "فشل تحميل ملف الواجهة obconf.glade. ربما لم يثبّت ObConf بشكل صحيح."
+msgstr ""
+"فشل تحميل ملفّ الواجهة obconf.glade. ربما لم يثبّت ObConf تثبيتًا صحيحًا."
 
 #: ../src/main.c:206
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
-msgstr "فشل تحميل rc.xml. ربما لم يثبّت أوبن‌بوكس بشكل صحيح."
+msgstr "فشل تحميل rc.xml. ربما لم يثبّت أوبن‌بوكس تثبيتًا صحيحًا."
 
 #: ../src/main.c:219
 #, c-format
@@ -36,9 +38,9 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
-"خطأ أثناء تحليل ملف تضبيط أوبن‌بوكس. ملف التضبيط ليس ملف XML صالح.\n"
+"خطأ أثناء تحليل ملفّ تضبيط أوبن‌بوكس. ملفّ التّضبيط ليس ملفّ XML صالح.\n"
 "\n"
-"الرسالة: %s"
+"الرّسالة: %s"
 
 #: ../src/theme.c:112 ../src/theme.c:144
 msgid "Choose an Openbox theme"
@@ -65,8 +67,8 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"تعذّر إنشاء أرشيف السمة \"%s\".\n"
-"أُبلغَ عن الأخطاء التالية:\n"
+"تعذّر إنشاء أرشيف السّمة \"%s\".\n"
+"أُبلغَ عن الأخطاء التّالية:\n"
 "%s"
 
 #: ../src/archive.c:115 ../src/archive.c:196
@@ -77,7 +79,7 @@ msgstr "تعذّر تشغيل الأمر \"tar\":‏ %s"
 #: ../src/archive.c:135
 #, c-format
 msgid "Unable to create directory \"%s\": %s"
-msgstr "تعذّر إنشاء الدليل \"%s\":‏ %s"
+msgstr "تعذّر إنشاء الدّليل \"%s\": ‏%s"
 
 #: ../src/archive.c:157
 #, c-format
@@ -87,7 +89,7 @@ msgstr "لا يبدو أن \"%s\" دليل سمة أوبن‌بوكس صالح"
 #: ../src/archive.c:167
 #, c-format
 msgid "Unable to move to directory \"%s\": %s"
-msgstr "تعذّر النقل إلى الدليل  \"%s\":‏ %s"
+msgstr "تعذّر النّقل إلى الدّليل \"%s\": ‏%s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -98,14 +100,14 @@ msgid ""
 "The following errors were reported:\n"
 "%s"
 msgstr ""
-"تعذّر استخراج الملف \"%s\".\n"
-"فضلًا تأكّد من أن \"%s\" قابل للقراءة وأنه أرشيف سمة أوبن‌بوكس صالح.\n"
-"أُبلغَ عن الأخطاء التالية:\n"
+"تعذّر استخراج الملفّ \"%s\".\n"
+"فضلًا تأكّد من أنّ \"%s\" قابل للقراءة وأنّه أرشيف سمة أوبن‌بوكس صالح.\n"
+"أُبلغَ عن الأخطاء التّالية:\n"
 "%s"
 
 #: ../src/obconf.glade.h:1
 msgid "<span weight=\"bold\">Theme</span>"
-msgstr "<span weight=\"bold\">السمة</span>"
+msgstr "<span weight=\"bold\">السّمة</span>"
 
 #: ../src/obconf.glade.h:2
 msgid "_Install a new theme..."
@@ -117,22 +119,21 @@ msgstr "أن_شئ أرشيف سمة (‎.obt)..."
 
 #: ../src/obconf.glade.h:4
 msgid "Theme"
-msgstr "سمة"
+msgstr "السّمة"
 
 #: ../src/obconf.glade.h:5
 msgid "Font for active window title:"
-msgstr "خط عنوان النافذة النشطة:"
+msgstr "خطّ عنوان النّافذة النّشطة:"
 
 #: ../src/obconf.glade.h:6
 msgid "Font for inactive window title:"
-msgstr "خط عنوان النافذة غير النشطة:"
+msgstr "خطّ عنوان النّافذة غير النّشطة:"
 
 #: ../src/obconf.glade.h:7
 msgid "_Button order:"
 msgstr "_ترتيب الأزرار:"
 
 #: ../src/obconf.glade.h:8
-#, fuzzy
 msgid ""
 "N: Window icon\n"
 "L: Window label (Title)\n"
@@ -142,13 +143,13 @@ msgid ""
 "S: Shade (Roll up)\n"
 "D: Omnipresent (On all desktops)"
 msgstr ""
-"N: أيقونة النافذة\n"
-"L: لصيقة النافذة (العنوان)\n"
-"I: Iconify (تصغير)\n"
+"N: أيقونة النّافذة\n"
+"L: لصيقة النّافذة (العنوان)\n"
+"I: تصغير\n"
 "M: تكبير\n"
 "C: إغلاق\n"
-"S: ظل (لف)\n"
-"D: متواجدة دائما (في جميع أسطح المكاتب)"
+"S: ظلّ (لفّ)\n"
+"D: موجودة دائمًا (على كلّ أسطح المكتب)"
 
 #: ../src/obconf.glade.h:15
 msgid "Title Bar"
@@ -156,22 +157,20 @@ msgstr "شريط العنوان"
 
 #: ../src/obconf.glade.h:16
 msgid "Font for menu header:"
-msgstr "خط ترويسة القائمة:"
+msgstr "خطّ ترويسة القائمة:"
 
 #: ../src/obconf.glade.h:17
 msgid "Font for menu Item:"
-msgstr "خط عنصر القائمة:"
+msgstr "خطّ عنصر القائمة:"
 
 #: ../src/obconf.glade.h:18
 msgid "Font for on-screen display:"
-msgstr "خط العرض على الشاشة:"
+msgstr "خطّ العرض على الشّاشة:"
 
 #: ../src/obconf.glade.h:19
 msgid "Font for inactive on-screen display:"
-msgstr "خط العرض على الشاشة غير النشط:"
+msgstr "خطّ العرض على الشّاشة غير النّشط:"
 
 #: ../src/obconf.glade.h:20
 msgid "Misc."
 msgstr "متنوّع"
-
-
