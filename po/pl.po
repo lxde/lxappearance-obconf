@@ -19,6 +19,8 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1378299831.0\n"
+"X-Pootle-Path: /pl/lxappearance-obconf/po/pl.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../src/main.c:177
 msgid ""

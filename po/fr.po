@@ -2,7 +2,6 @@
 # Copyright (C) 2007 Dana Jansens
 # This file is distributed under the same license as the obconf package.
 # Cyrille Bagard <nocbos@gmail.com>, 2007.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.2\n"
@@ -18,6 +17,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "X-POOTLE-MTIME: 1376337042.0\n"
+"X-Pootle-Path: /fr/lxappearance-obconf/po/fr.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../src/main.c:177
 msgid ""

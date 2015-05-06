@@ -18,6 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.6.0-rc1\n"
 "X-POOTLE-MTIME: 1409068024.000000\n"
+"X-Pootle-Path: /nl/lxappearance-obconf/po/nl.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../src/main.c:177
 msgid ""

@@ -16,6 +16,8 @@ msgstr ""
 "X-Poedit-Country: UNITED KINGDOM\n"
 "X-Poedit-Language: English\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Pootle-Path: /en_GB/lxappearance-obconf/po/en_GB.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../src/main.c:177
 msgid ""

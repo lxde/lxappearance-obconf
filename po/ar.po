@@ -1,14 +1,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 23:54+0100\n"
-"PO-Revision-Date: 2014-11-28 05:40+0000\n"
-"Last-Translator: <safa1996alfulaij@gmail.com>\n"
+"PO-Revision-Date: 2015-04-10 15:47+0000\n"
+"Last-Translator: صفا الفليج <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +15,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Pootle 2.6.0-rc2\n"
-"X-POOTLE-MTIME: 1417153216.000000\n"
+"X-Generator: Pootle 2.7.0-alpha1\n"
+"X-POOTLE-MTIME: 1428680867.000000\n"
+"X-Pootle-Path: /ar/lxappearance-obconf/po/ar.po\n"
+"X-Pootle-Revision: 586\n"
 
 #: ../src/main.c:177
 msgid ""
@@ -38,7 +39,7 @@ msgid ""
 "\n"
 "Message: %s"
 msgstr ""
-"خطأ أثناء تحليل ملفّ تضبيط أوبن‌بوكس. ملفّ التّضبيط ليس ملفّ XML صالح.\n"
+"خطأ أثناء تحليل ملفّ ضبط أوبن‌بوكس. ملفّ الضّبط ليس ملفّ XML صالح.\n"
 "\n"
 "الرّسالة: %s"
 
@@ -53,7 +54,7 @@ msgstr "أرشيفات سمات أوبن‌بوكس"
 #: ../src/archive.c:49
 #, c-format
 msgid "\"%s\" was installed to %s"
-msgstr "ثُبِّت \"%s\" إلى %s"
+msgstr "ثُبّت \"%s\" إلى %s"
 
 #: ../src/archive.c:74
 #, c-format
@@ -68,7 +69,7 @@ msgid ""
 "%s"
 msgstr ""
 "تعذّر إنشاء أرشيف السّمة \"%s\".\n"
-"أُبلغَ عن الأخطاء التّالية:\n"
+"أُبلغ عن الأخطاء التّالية:\n"
 "%s"
 
 #: ../src/archive.c:115 ../src/archive.c:196
@@ -102,7 +103,7 @@ msgid ""
 msgstr ""
 "تعذّر استخراج الملفّ \"%s\".\n"
 "فضلًا تأكّد من أنّ \"%s\" قابل للقراءة وأنّه أرشيف سمة أوبن‌بوكس صالح.\n"
-"أُبلغَ عن الأخطاء التّالية:\n"
+"أُبلغ عن الأخطاء التّالية:\n"
 "%s"
 
 #: ../src/obconf.glade.h:1

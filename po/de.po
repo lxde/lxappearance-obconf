@@ -2,7 +2,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf 0.1.0\n"
@@ -17,7 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.5\n"
-"X-Poedit-Language: German\n"
+"X-Pootle-Path: /de/lxappearance-obconf/po/de.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../src/main.c:177
 msgid ""

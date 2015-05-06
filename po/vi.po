@@ -14,6 +14,8 @@ msgstr ""
 "X-Poedit-Country: Viet Nam\n"
 "X-Poedit-Language: Vietnamese\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Pootle-Path: /vi/lxappearance-obconf/po/vi.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../src/main.c:177
 msgid ""
