@@ -43,8 +43,8 @@ static RrFont       *osd_inactive_font    = NULL;
 
 void preview_update_all()
 {
+#if RR_CHECK_VERSION(3, 5, 0)
     if (!list_store) return;
-    if (!RR_CHECK_VERSION(3,5,0)) return;
 
     if (!(title_layout && active_window_font && inactive_window_font &&
           menu_title_font && menu_item_font &&
@@ -65,6 +65,7 @@ void preview_update_all()
         gtk_image_set_from_pixbuf( GTK_IMAGE(preview), pix);
         g_object_unref(pix);
     }
+#endif
 }
 
 void preview_update_set_tree_view(GtkTreeView *tr, GtkListStore *ls)
