@@ -195,7 +195,7 @@ void on_font_menu_item_font_set(GtkFontButton *w, gpointer data)
 void on_font_active_display_font_set(GtkFontButton *w, gpointer data)
 {
     if (mapping) return;
-#if RR_CHECK_VERSION(3, 5, 0)
+#if RR_CHECK_VERSION(3, 5, 29)
     preview_update_set_osd_active_font(write_font(w, "ActiveOnScreenDisplay"));
 #else /* for older versions of openbox */
     preview_update_set_osd_active_font(write_font(w, "OnScreenDisplay"));

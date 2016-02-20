@@ -553,7 +553,7 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
             switch (*layout) {
             case 'D':
                 a = focus ?
-#if RR_CHECK_VERSION(3, 5, 2)
+#if RR_CHECK_VERSION(3, 5, 28)
                     theme->btn_desk->a_focused_unpressed :
                     theme->btn_desk->a_unfocused_unpressed;
 #else
@@ -563,7 +563,7 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
                 break;
             case 'S':
                 a = focus ?
-#if RR_CHECK_VERSION(3, 5, 2)
+#if RR_CHECK_VERSION(3, 5, 28)
                     theme->btn_shade->a_focused_unpressed :
                     theme->btn_shade->a_unfocused_unpressed;
 #else
@@ -573,7 +573,7 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
                 break;
             case 'I':
                 a = focus ?
-#if RR_CHECK_VERSION(3, 5, 2)
+#if RR_CHECK_VERSION(3, 5, 28)
                     theme->btn_iconify->a_focused_unpressed :
                     theme->btn_iconify->a_unfocused_unpressed;
 #else
@@ -583,7 +583,7 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
                 break;
             case 'M':
                 a = focus ?
-#if RR_CHECK_VERSION(3, 5, 2)
+#if RR_CHECK_VERSION(3, 5, 28)
                     theme->btn_max->a_focused_unpressed :
                     theme->btn_max->a_unfocused_unpressed;
 #else
@@ -593,7 +593,7 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
                 break;
             case 'C':
                 a = focus ?
-#if RR_CHECK_VERSION(3, 5, 2)
+#if RR_CHECK_VERSION(3, 5, 28)
                     theme->btn_close->a_focused_unpressed :
                     theme->btn_close->a_unfocused_unpressed;
 #else
