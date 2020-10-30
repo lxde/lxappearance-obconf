@@ -31,6 +31,7 @@
 #include <obrender/theme.h>
 
 #if GTK_CHECK_VERSION(3, 0, 0)
+#include <cairo/cairo-xlib.h>
 #include <gdk/gdkx.h>
 #endif
 
