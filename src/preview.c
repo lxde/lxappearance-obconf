@@ -72,7 +72,7 @@ static void theme_pixmap_paint(RrAppearance *a, gint w, gint h)
 static guint32 rr_color_pixel(const RrColor *c)
 {
     return (guint32)((RrColorRed(c) << 24) + (RrColorGreen(c) << 16) +
-                     + (RrColorBlue(c) << 8) + 0xff);
+                     (RrColorBlue(c) << 8) + 0xff);
 }
 
 /*! Initialize a Cairo context and surface
@@ -236,7 +236,6 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     title_text->surface.parenty = 0;
 
     theme_pixmap_paint(title_text, bw, title_h);
-
 #if GTK_CHECK_VERSION(3, 0, 0)
     compose_surface(&compose_params, title_text, x, y, bw, title_h);
 #else
@@ -245,6 +244,7 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
                                           gdk_colormap_get_system(),
                                           0, 0, x, y, bw, title_h);
 #endif
+
     /* menu appears after title */
     y += theme->mbwidth + title_h;
 
@@ -252,7 +252,6 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     menu = theme->a_menu;
     th = height - 3*theme->mbwidth - title_h;
     theme_pixmap_paint(menu, bw, th);
-
 #if GTK_CHECK_VERSION(3, 0, 0)
     compose_surface(&compose_params, menu, x, y, bw, th);
 #else
@@ -311,9 +310,9 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
                                           0, 0, width - theme->mbwidth - th, y,
                                           th, th);
 #endif
-    y += th + 2*PADDING;
 
     /* draw background for disabled entry */
+    y += th + 2*PADDING;
     background->surface.parenty = bh;
     theme_pixmap_paint(background, bw, bh);
 #if GTK_CHECK_VERSION(3, 0, 0)
@@ -326,6 +325,7 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
                                           0, 0, x - PADDING, y - PADDING,
                                           bw, bh);
 #endif
+
     /* draw disabled entry */
     RrMinSize(disabled, &tw, &th);
     disabled->surface.parent = background;
@@ -340,13 +340,12 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
                                           gdk_colormap_get_system(),
                                           0, 0, x, y, tw, th);
 #endif
-    y += th + 2*PADDING;
 
     /* draw background for selected entry */
+    y += th + 2*PADDING;
     background = theme->a_menu_selected;
     background->surface.parent = menu;
     background->surface.parentx = 2*bh;
-
     theme_pixmap_paint(background, bw, bh);
 #if GTK_CHECK_VERSION(3, 0, 0)
     compose_surface(&compose_params, background,
@@ -431,6 +430,7 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
                                           gdk_colormap_get_system(),
                                           0, 0, x, y, w, h);
 #endif
+
     /* calculate label width */
     label_w = width - (theme->paddingx + theme->fbwidth + 1) * 2;
 
@@ -454,10 +454,9 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     x = theme->paddingx + theme->fbwidth + 1;
     y += theme->paddingy;
     for (layout = titlelayout; *layout; layout++) {
-        /* icon */
         if (*layout == 'N') {
+            /* icon */
             a = theme->a_icon;
-            /* set default icon */
             a->texture[0].type = RR_TEXTURE_RGBA;
             a->texture[0].data.rgba.width = 48;
             a->texture[0].data.rgba.height = 48;
@@ -481,7 +480,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 #endif
 
             x += theme->button_size + 2 + theme->paddingx + 1;
-        } else if (*layout == 'L') { /* label */
+        } else if (*layout == 'L') {
+            /* label */
             a = focus ? theme->a_focused_label : theme->a_unfocused_label;
             a->texture[0].data.text.string = focus ? "Active" : "Inactive";
 
@@ -571,8 +571,7 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
             compose_surface(&compose_params, a, x, y + 1, w, h);
 #else
             pixmap = gdk_pixmap_foreign_new(a->pixmap);
-            /* use y + 1 because these buttons should be centered wrt the label
-             */
+            /* use y + 1 so that these buttons are centered wrt the label */
             pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
                                                   gdk_colormap_get_system(),
                                                   0, 0, x, y + 1, w, h);
@@ -611,8 +610,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
         a = focus ? theme->a_focused_grip : theme->a_unfocused_grip;
         a->surface.parent = handle;
 
+        /* same y and h as the preceding 'handle' */
         x = theme->fbwidth;
-        /* same y and h as handle */
         w = theme->grip_width;
 
         theme_pixmap_paint(a, w, h);
@@ -724,7 +723,6 @@ GdkPixbuf *preview_theme(const gchar *name, const gchar *titlelayout,
                          RrFont *osd_active_font,
                          RrFont *osd_inactive_font)
 {
-
     GdkPixbuf *preview;
     GdkPixbuf *menu;
     GdkPixbuf *window;
@@ -742,14 +740,13 @@ GdkPixbuf *preview_theme(const gchar *name, const gchar *titlelayout,
         return NULL;
 
     menu = preview_menu(theme);
-  
+
     window_w = theme_window_min_width(theme, titlelayout);
 
     menu_w = gdk_pixbuf_get_width(menu);
     h = gdk_pixbuf_get_height(menu);
-
     w = MAX(window_w, menu_w) + 20;
-  
+
     /* we don't want windows disappearing on us */
     if (!window_w) window_w = menu_w;
 
