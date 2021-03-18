@@ -112,8 +112,14 @@ void on_install_theme_clicked(GtkButton *w, gpointer data)
     d = gtk_file_chooser_dialog_new(_("Choose an Openbox theme"),
                                     GTK_WINDOW(mainwin),
                                     GTK_FILE_CHOOSER_ACTION_OPEN,
+
+#if GTK_CHECK_VERSION(3, 10, 0)
+                                    "_OK", GTK_RESPONSE_OK,
+                                    "_Cancel", GTK_RESPONSE_NONE,
+#else
                                     GTK_STOCK_OK, GTK_RESPONSE_OK,
                                     GTK_STOCK_CANCEL, GTK_RESPONSE_NONE,
+#endif
                                     NULL);
 
     gtk_file_chooser_set_show_hidden(GTK_FILE_CHOOSER(d), FALSE);
@@ -144,8 +150,13 @@ void on_theme_archive_clicked(GtkButton *w, gpointer data)
     d = gtk_file_chooser_dialog_new(_("Choose an Openbox theme"),
                                     GTK_WINDOW(mainwin),
                                     GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER,
+#if GTK_CHECK_VERSION(3, 10, 0)
+                                    "_OK", GTK_RESPONSE_OK,
+                                    "_Cancel", GTK_RESPONSE_NONE,
+#else
                                     GTK_STOCK_OK, GTK_RESPONSE_OK,
                                     GTK_STOCK_CANCEL, GTK_RESPONSE_NONE,
+#endif
                                     NULL);
 
     gtk_file_chooser_set_show_hidden(GTK_FILE_CHOOSER(d), TRUE);
