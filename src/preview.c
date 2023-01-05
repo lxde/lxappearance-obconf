@@ -89,7 +89,10 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     gint unused;
 
     /* set up appearances */
+    menu = theme->a_menu;
     title = theme->a_menu_title;
+    if (title->surface.grad == RR_SURFACE_PARENTREL)
+        title->surface.parent = menu;
 
     title_text = theme->a_menu_text_title;
     title_text->surface.parent = title;
@@ -142,32 +145,33 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
 
     theme_pixmap_paint(title_text, bw, title_h);
 
+    if (title_text->pixmap != None) {
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
+        surface = cairo_xlib_surface_create(dpy,
                                                    title_text->pixmap,
                                                    DefaultVisual(dpy, 0),
                                                    x,
                                                    y);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+        pixbuf = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         bw,
                                         title_h);
 
-   cairo_surface_destroy(surface);
+        cairo_surface_destroy(surface);
 
 #else
-    pixmap = gdk_pixmap_foreign_new(title_text->pixmap);
-    pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
+        pixmap = gdk_pixmap_foreign_new(title_text->pixmap);
+        pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
                                           gdk_colormap_get_system(),
                                           0, 0, x, y, bw, title_h);
 #endif
+    }
     /* menu appears after title */
     y += theme->mbwidth + title_h;
 
     /* fill in menu appearance, used as the parent to every menu item's bg */
-    menu = theme->a_menu;
     th = height - 3*theme->mbwidth - title_h;
     theme_pixmap_paint(menu, bw, th);
 
