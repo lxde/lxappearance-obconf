@@ -3,6 +3,7 @@
    preview.c for ObConf, the configuration tool for Openbox
    Copyright (c) 2007        Javeed Shaikh
    Copyright (c) 2007        Dana Jansens
+   Copyright (C) 2023        Ingo Brückl
 
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -75,6 +76,7 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
 #if GTK_CHECK_VERSION(3, 0, 0)
     cairo_surface_t *surface;
     Display *dpy = GDK_DISPLAY_XDISPLAY(gdk_display_get_default());
+    GdkPixbuf *pixfce;
 #else
     GdkPixmap *pixmap;
 #endif
@@ -146,15 +148,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    title_text->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   bw,
+                                                   title_h);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         bw,
                                         title_h);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, title_h, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -175,15 +179,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    menu->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   bw,
+                                                   th);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         bw,
                                         th);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, th, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -205,15 +211,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    background->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   bw,
+                                                   bh);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         bw,
                                         bh);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, bh, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -235,15 +243,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    normal->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   tw,
+                                                   th);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         tw,
                                         th);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, tw, th, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -263,15 +273,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    bullet->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   width - theme->mbwidth - th,
-                                                   y);
+                                                   th,
+                                                   th);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         th,
                                         th);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, th, th, pixbuf, width - theme->mbwidth - th, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -290,15 +302,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    background->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x - PADDING,
-                                                   y - PADDING);
+                                                   bw,
+                                                   bh);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         bw,
                                         bh);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, bh, pixbuf, x - PADDING, y - PADDING);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -318,15 +332,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    disabled->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   tw,
+                                                   th);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         tw,
                                         th);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, tw, th, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -347,15 +363,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    background->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x - PADDING,
-                                                   y - PADDING);
+                                                   bw,
+                                                   bh);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         bw,
                                         bh);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, bh, pixbuf, x - PADDING, y - PADDING);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -376,15 +394,17 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     surface = cairo_xlib_surface_create(dpy,
                                                    selected->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   tw,
+                                                   th);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         tw,
                                         th);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, tw, th, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -405,6 +425,7 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 #if GTK_CHECK_VERSION(3, 0, 0)
     cairo_surface_t *surface;
     Display *dpy = GDK_DISPLAY_XDISPLAY(gdk_display_get_default());
+    GdkPixbuf *pixfce;
 #else
     GdkPixmap *pixmap;
 #endif
@@ -434,15 +455,17 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     surface = cairo_xlib_surface_create(dpy,
                                                    title->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   w,
+                                                   h);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         w,
                                         h);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -495,15 +518,17 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     surface = cairo_xlib_surface_create(dpy,
                                                    a->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   w,
+                                                   h);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         w,
                                         h);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -529,15 +554,17 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     surface = cairo_xlib_surface_create(dpy,
                                                    a->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   w,
+                                                   h);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         w,
                                         h);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -617,15 +644,17 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     surface = cairo_xlib_surface_create(dpy,
                                                    a->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y + 1);
+                                                   w,
+                                                   h);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         w,
                                         h);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y + 1);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -654,15 +683,17 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     surface = cairo_xlib_surface_create(dpy,
                                                    handle->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   w,
+                                                   h);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         w,
                                         h);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -692,15 +723,17 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     surface = cairo_xlib_surface_create(dpy,
                                                    a->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   w,
+                                                   h);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         w,
                                         h);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
@@ -716,15 +749,17 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     surface = cairo_xlib_surface_create(dpy,
                                                    a->pixmap,
                                                    DefaultVisual(dpy, 0),
-                                                   x,
-                                                   y);
+                                                   w,
+                                                   h);
 
-    pixbuf = gdk_pixbuf_get_from_surface(surface,
+    pixfce = gdk_pixbuf_get_from_surface(surface,
                                         0,
                                         0,
                                         w,
                                         h);
 
+    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
+    g_object_unref(pixfce);
    cairo_surface_destroy(surface);
 
 #else
