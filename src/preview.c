@@ -60,6 +60,26 @@ static guint32 rr_color_pixel(const RrColor *c)
                      + (RrColorBlue(c) << 8) + 0xff);
 }
 
+#if GTK_CHECK_VERSION(3, 0, 0)
+static GdkPixbuf *pixbuf_get_from_pixmap (GdkPixbuf *dest, Drawable src,
+                                          int dest_x, int dest_y,
+                                          int width, int height)
+{
+    Display *dpy;
+    cairo_surface_t *surface;
+    GdkPixbuf *pixbuf;
+
+    dpy = GDK_DISPLAY_XDISPLAY(gdk_display_get_default());
+    surface = cairo_xlib_surface_create(dpy, src, DefaultVisual(dpy, 0), width, height);
+    pixbuf = gdk_pixbuf_get_from_surface(surface, 0, 0, width, height);
+    gdk_pixbuf_copy_area(pixbuf, 0, 0, width, height, dest, dest_x, dest_y);
+    g_object_unref(pixbuf);
+    cairo_surface_destroy(surface);
+
+    return dest;
+}
+#endif
+
 /* XXX: Make this more general */
 static GdkPixbuf* preview_menu(RrTheme *theme)
 {
@@ -74,9 +94,6 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     RrAppearance *selected;
     RrAppearance *bullet; /* for submenu */
 #if GTK_CHECK_VERSION(3, 0, 0)
-    cairo_surface_t *surface;
-    Display *dpy = GDK_DISPLAY_XDISPLAY(gdk_display_get_default());
-    GdkPixbuf *pixfce;
 #else
     GdkPixmap *pixmap;
 #endif
@@ -145,22 +162,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     theme_pixmap_paint(title_text, bw, title_h);
 
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   title_text->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   bw,
-                                                   title_h);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        bw,
-                                        title_h);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, title_h, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, title_text->pixmap,
+                                    x, y, bw, title_h);
 #else
     pixmap = gdk_pixmap_foreign_new(title_text->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -176,22 +179,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     theme_pixmap_paint(menu, bw, th);
 
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   menu->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   bw,
-                                                   th);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        bw,
-                                        th);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, th, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, menu->pixmap,
+                                    x, y, bw, th);
 #else
     pixmap = gdk_pixmap_foreign_new(menu->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -208,22 +197,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     /* draw background for normal entry */
     theme_pixmap_paint(background, bw, bh);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   background->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   bw,
-                                                   bh);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        bw,
-                                        bh);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, bh, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, background->pixmap,
+                                    x, y, bw, bh);
 #else
     pixmap = gdk_pixmap_foreign_new(background->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -240,22 +215,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     RrMinSize(normal, &tw, &th);
     theme_pixmap_paint(normal, tw, th);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   normal->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   tw,
-                                                   th);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        tw,
-                                        th);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, tw, th, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, normal->pixmap,
+                                    x, y, tw, th);
 #else
     pixmap = gdk_pixmap_foreign_new(normal->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -270,22 +231,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     bullet->surface.parenty = PADDING;
     theme_pixmap_paint(bullet, th, th);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   bullet->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   th,
-                                                   th);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        th,
-                                        th);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, th, th, pixbuf, width - theme->mbwidth - th, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, bullet->pixmap,
+                                    width - theme->mbwidth - th, y, th, th);
 #else
     pixmap = gdk_pixmap_foreign_new(bullet->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -299,22 +246,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     background->surface.parenty = bh;
     theme_pixmap_paint(background, bw, bh);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   background->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   bw,
-                                                   bh);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        bw,
-                                        bh);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, bh, pixbuf, x - PADDING, y - PADDING);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, background->pixmap,
+                                    x - PADDING, y - PADDING, bw, bh);
 #else
     pixmap = gdk_pixmap_foreign_new(background->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -329,22 +262,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     disabled->surface.parenty = PADDING;
     theme_pixmap_paint(disabled, tw, th);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   disabled->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   tw,
-                                                   th);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        tw,
-                                        th);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, tw, th, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, disabled->pixmap,
+                                    x, y, tw, th);
 #else
     pixmap = gdk_pixmap_foreign_new(disabled->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -360,22 +279,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
 
     theme_pixmap_paint(background, bw, bh);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   background->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   bw,
-                                                   bh);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        bw,
-                                        bh);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, bw, bh, pixbuf, x - PADDING, y - PADDING);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, background->pixmap,
+                                    x - PADDING, y - PADDING, bw, bh);
 #else
     pixmap = gdk_pixmap_foreign_new(background->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -391,22 +296,8 @@ static GdkPixbuf* preview_menu(RrTheme *theme)
     selected->surface.parenty = PADDING;
     theme_pixmap_paint(selected, tw, th);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   selected->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   tw,
-                                                   th);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        tw,
-                                        th);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, tw, th, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, selected->pixmap,
+                                    x, y, tw, th);
 #else
     pixmap = gdk_pixmap_foreign_new(selected->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -423,9 +314,6 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
     RrAppearance *handle;
     RrAppearance *a;
 #if GTK_CHECK_VERSION(3, 0, 0)
-    cairo_surface_t *surface;
-    Display *dpy = GDK_DISPLAY_XDISPLAY(gdk_display_get_default());
-    GdkPixbuf *pixfce;
 #else
     GdkPixmap *pixmap;
 #endif
@@ -452,22 +340,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 
     x = y = theme->fbwidth;
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   title->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   w,
-                                                   h);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        w,
-                                        h);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+    pixbuf = pixbuf_get_from_pixmap(pixbuf, title->pixmap,
+                                    x, y, w, h);
 #else
     pixmap = gdk_pixmap_foreign_new(title->pixmap);
     pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -515,22 +389,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 
             theme_pixmap_paint(a, w, h);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   a->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   w,
-                                                   h);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        w,
-                                        h);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+            pixbuf = pixbuf_get_from_pixmap(pixbuf, a->pixmap,
+                                            x, y, w, h);
 #else
             pixmap = gdk_pixmap_foreign_new(a->pixmap);
             pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -551,22 +411,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 
             theme_pixmap_paint(a, w, h);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   a->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   w,
-                                                   h);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        w,
-                                        h);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+            pixbuf = pixbuf_get_from_pixmap(pixbuf, a->pixmap,
+                                            x, y, w, h);
 #else
             pixmap = gdk_pixmap_foreign_new(a->pixmap);
             pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -641,22 +487,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 
             theme_pixmap_paint(a, w, h);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   a->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   w,
-                                                   h);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        w,
-                                        h);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y + 1);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+            pixbuf = pixbuf_get_from_pixmap(pixbuf, a->pixmap,
+                                            x, y + 1, w, h);
 #else
             pixmap = gdk_pixmap_foreign_new(a->pixmap);
             /* use y + 1 because these buttons should be centered wrt the label
@@ -680,22 +512,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 
         theme_pixmap_paint(handle, w, h);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   handle->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   w,
-                                                   h);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        w,
-                                        h);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+        pixbuf = pixbuf_get_from_pixmap(pixbuf, handle->pixmap,
+                                        x, y, w, h);
 #else
         pixmap = gdk_pixmap_foreign_new(handle->pixmap);
         pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -720,22 +538,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
 
         theme_pixmap_paint(a, w, h);
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   a->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   w,
-                                                   h);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        w,
-                                        h);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+        pixbuf = pixbuf_get_from_pixmap(pixbuf, a->pixmap,
+                                        x, y, w, h);
 #else
         pixmap = gdk_pixmap_foreign_new(a->pixmap);
         pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
@@ -746,22 +550,8 @@ static GdkPixbuf* preview_window(RrTheme *theme, const gchar *titlelayout,
         /* right grip */
         x = width - theme->fbwidth - theme->grip_width;
 #if GTK_CHECK_VERSION(3, 0, 0)
-    surface = cairo_xlib_surface_create(dpy,
-                                                   a->pixmap,
-                                                   DefaultVisual(dpy, 0),
-                                                   w,
-                                                   h);
-
-    pixfce = gdk_pixbuf_get_from_surface(surface,
-                                        0,
-                                        0,
-                                        w,
-                                        h);
-
-    gdk_pixbuf_copy_area(pixfce, 0, 0, w, h, pixbuf, x, y);
-    g_object_unref(pixfce);
-   cairo_surface_destroy(surface);
-
+        pixbuf = pixbuf_get_from_pixmap(pixbuf, a->pixmap,
+                                        x, y, w, h);
 #else
         pixbuf = gdk_pixbuf_get_from_drawable(pixbuf, pixmap,
                                               gdk_colormap_get_system(),
