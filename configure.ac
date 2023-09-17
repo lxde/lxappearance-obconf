@@ -90,7 +90,7 @@ AC_SUBST(OPENBOX_CFLAGS)
 AC_SUBST(OPENBOX_LIBS)
 
 if test "x$enable_gtk3" = "xyes" ; then
-  CFLAGS="$CFLAGS -DENABLE_GTK3"
+  CFLAGS="$CFLAGS -DENABLE_GTK3 -Wno-deprecated-declarations"
   gtk_modules="gtk+-3.0 >= 3.0.0"
 else
   gtk_modules="gtk+-2.0 >= 2.12.0 gthread-2.0"
