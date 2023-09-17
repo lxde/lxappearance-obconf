@@ -158,8 +158,11 @@ extern gboolean plugin_load(LXAppearance* app, GtkBuilder* lxappearance_builder)
         return FALSE;
 
     GdkScreen *screen = gtk_widget_get_screen(app->dlg);
+
+#if GTK_CHECK_VERSION(3, 0, 0)
     if(!GDK_IS_X11_SCREEN(screen))
         return FALSE;
+#endif
 
     /* detect openbox */
     const char* wm_name = gdk_x11_screen_get_window_manager_name(screen);
