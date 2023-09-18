@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: obconf 2.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:54+0100\n"
+"POT-Creation-Date: 2023-09-18 11:02+0200\n"
 "PO-Revision-Date: 2015-03-21 00:15+0000\n"
 "Last-Translator: wwycheuk <wwycheuk@gmail.com>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -19,17 +19,17 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1426896918.000000\n"
 
-#: ../src/main.c:177
+#: ../src/main.c:185
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
 msgstr "未能載入 obconf.glade 介面檔案。可能 ObConf 未安裝妥當。"
 
-#: ../src/main.c:206
+#: ../src/main.c:214
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr "未能載入 rc.xml 檔案。Openbox 可能未安裝妥當。"
 
-#: ../src/main.c:219
+#: ../src/main.c:227
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -84,11 +84,6 @@ msgstr "無法建立目錄「%s」：%s"
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "「%s」沒有出現有效的 Openbox 佈景主題目錄"
-
-#: ../src/archive.c:167
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "無法移動到目錄「%s」：%s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -173,6 +168,10 @@ msgstr "非作用中螢幕顯示字型："
 #: ../src/obconf.glade.h:20
 msgid "Misc."
 msgstr "雜項"
+
+#, c-format
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "無法移動到目錄「%s」：%s"
 
 #~ msgid "Copyright (c)"
 #~ msgstr "著作權 ©"

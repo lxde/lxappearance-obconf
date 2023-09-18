@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:54+0100\n"
+"POT-Creation-Date: 2023-09-18 11:02+0200\n"
 "PO-Revision-Date: 2015-08-17 01:28+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439774917.715011\n"
 
-#: ../src/main.c:177
+#: ../src/main.c:185
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
@@ -27,13 +27,13 @@ msgstr ""
 "Kunne ikke indlæse filen obconf.glade. ObConf er sandsynligvis ikke korrekt "
 "installeret."
 
-#: ../src/main.c:206
+#: ../src/main.c:214
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 "Kunne ikke indlæse filen rc.xml. Openbox er sandsynligvis ikke korrekt "
 "installeret."
 
-#: ../src/main.c:219
+#: ../src/main.c:227
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -88,11 +88,6 @@ msgstr "Kunne ikke oprette mappen \"%s\": %s"
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" ser ikke ud til at være en gyldig Openbox-temamappe"
-
-#: ../src/archive.c:167
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "Kunne ikke flytte til mappen \"%s\": %s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -178,3 +173,7 @@ msgstr "Skrifttype for on-screen-display:"
 #: ../src/obconf.glade.h:20
 msgid "Misc."
 msgstr "Diverse"
+
+#, c-format
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "Kunne ikke flytte til mappen \"%s\": %s"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:54+0100\n"
+"POT-Creation-Date: 2023-09-18 11:02+0200\n"
 "PO-Revision-Date: 2015-08-17 01:28+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439774920.243072\n"
 
-#: ../src/main.c:177
+#: ../src/main.c:185
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
@@ -27,11 +27,11 @@ msgstr ""
 "obconf.glade интерфейс файлын жүктеу сәтсіз. ObConf дұрыс орнатылмаған болуы "
 "мүмкін."
 
-#: ../src/main.c:206
+#: ../src/main.c:214
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr "rc.xml файлын жүктеу сәтсіз. Openbox дұрыс орнатылмаған болуы мүмкін."
 
-#: ../src/main.c:219
+#: ../src/main.c:227
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -87,11 +87,6 @@ msgstr "\"%s\" бумасын жасау сәтсіз: %s"
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" Openbox үшін дұрыс тема бумасы емес"
-
-#: ../src/archive.c:167
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "\"%s\" бумасына жылжыту сәтсіз: %s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -177,3 +172,7 @@ msgstr "Белсенді емес экрандағы хабарлама қарі
 #: ../src/obconf.glade.h:20
 msgid "Misc."
 msgstr "Таңд."
+
+#, c-format
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "\"%s\" бумасына жылжыту сәтсіз: %s"

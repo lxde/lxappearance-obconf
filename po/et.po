@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:54+0100\n"
+"POT-Creation-Date: 2023-09-18 11:02+0200\n"
 "PO-Revision-Date: 2015-08-17 01:28+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1439774918.470940\n"
 
-#: ../src/main.c:177
+#: ../src/main.c:185
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
@@ -26,12 +26,12 @@ msgstr ""
 "Liidese obconf.glade faili laadimine ebaõnnestus. ObConf ei ole ilmselt "
 "õigesti paigaldatud."
 
-#: ../src/main.c:206
+#: ../src/main.c:214
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 "Laadimine ebaõnnestus: rc.xml. Openbox ei ole ilmselt õigesti paigaldatud."
 
-#: ../src/main.c:219
+#: ../src/main.c:227
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -87,11 +87,6 @@ msgstr "Ei suuda luua kataloogi \"%s\": %s"
 #, c-format
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "\"%s\" ei paista olema kehtiv Openbox teema kataloog"
-
-#: ../src/archive.c:167
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "Ei õnnestu liikuda kataloogi \"%s\": %s"
 
 #: ../src/archive.c:203
 #, c-format
@@ -177,3 +172,7 @@ msgstr "Mitteaktiivse akna font:"
 #: ../src/obconf.glade.h:20
 msgid "Misc."
 msgstr "Varia"
+
+#, c-format
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "Ei õnnestu liikuda kataloogi \"%s\": %s"

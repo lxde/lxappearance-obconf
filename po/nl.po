@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lxappearance-obconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 23:54+0100\n"
+"POT-Creation-Date: 2023-09-18 11:02+0200\n"
 "PO-Revision-Date: 2014-08-26 15:47+0000\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-POOTLE-MTIME: 1409068024.000000\n"
 
-#: ../src/main.c:177
+#: ../src/main.c:185
 msgid ""
 "Failed to load the obconf.glade interface file. ObConf is probably not "
 "installed correctly."
@@ -27,13 +27,13 @@ msgstr ""
 "Kon het obconf.glade bedieningbestand niet laden. ObConf is waarschijnlijk "
 "niet correct geïnstalleerd."
 
-#: ../src/main.c:206
+#: ../src/main.c:214
 msgid "Failed to load an rc.xml. Openbox is probably not installed correctly."
 msgstr ""
 "Kon een rc.xml niet laden. Openbox is waarschijnlijk niet correct "
 "geïnstalleerd."
 
-#: ../src/main.c:219
+#: ../src/main.c:227
 #, c-format
 msgid ""
 "Error while parsing the Openbox configuration file. Your configuration file "
@@ -90,11 +90,6 @@ msgstr "Kon map '%s' niet aanmaken: %s"
 msgid "\"%s\" does not appear to be a valid Openbox theme directory"
 msgstr "'%s' lijkt geen geldige themamap te zijn voor Openbox"
 
-#: ../src/archive.c:167
-#, c-format
-msgid "Unable to move to directory \"%s\": %s"
-msgstr "Kon niet naar map '%s' verplaatsen: %s"
-
 #: ../src/archive.c:203
 #, c-format
 msgid ""
@@ -105,7 +100,8 @@ msgid ""
 "%s"
 msgstr ""
 "Kon het bestand '%s' niet uitpakken.\n"
-"Zorg er a.u.b. voor, dat '%s' beschrijfbaar is en dat het bestand een geldig\n"
+"Zorg er a.u.b. voor, dat '%s' beschrijfbaar is en dat het bestand een "
+"geldig\n"
 "thema-archief is voor Openbox. De volgende fouten werden gemeld:\n"
 "%s"
 
@@ -178,3 +174,7 @@ msgstr "Lettertype voor inactieve weergave op scherm:"
 #: ../src/obconf.glade.h:20
 msgid "Misc."
 msgstr "Divers"
+
+#, c-format
+#~ msgid "Unable to move to directory \"%s\": %s"
+#~ msgstr "Kon niet naar map '%s' verplaatsen: %s"
