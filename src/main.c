@@ -38,6 +38,7 @@
 #include "lxappearance/lxappearance.h"
 
 #include <gdk/gdkx.h>
+#include <libxml/xmlsave.h>
 
 GtkWidget *mainwin = NULL;
 
