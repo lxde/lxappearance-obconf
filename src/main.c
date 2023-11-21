@@ -33,12 +33,13 @@
 #include "appearance.h"
 #include "preview_update.h"
 #include "tree.h"
+
 #include <glib/gi18n-lib.h>
-
 #include "lxappearance/lxappearance.h"
-
 #include <gdk/gdkx.h>
-#include <libxml/xmlsave.h>
+
+#include <libxml/xmlsave.h> /* #if LIBXML_VERSION >= 21200 */
+
 
 GtkWidget *mainwin = NULL;
 
