@@ -58,7 +58,7 @@ static void theme_pixmap_paint(RrAppearance *a, gint w, gint h)
 static guint32 rr_color_pixel(const RrColor *c)
 {
     return (guint32)((RrColorRed(c) << 24) + (RrColorGreen(c) << 16) +
-                     + (RrColorBlue(c) << 8) + 0xff);
+                     (RrColorBlue(c) << 8) + 0xff);
 }
 
 #if GTK_CHECK_VERSION(3, 0, 0)
