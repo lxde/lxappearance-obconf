@@ -12,6 +12,8 @@ ObConf is written by:
    - Theme previews
  - Myles Green (rmg57@telus.net)
    - Icon
+ - Ingo Brückl
+   - Preview rendering with GTK+ 3
 
 LXAppearance plugin integration is done by:
 
